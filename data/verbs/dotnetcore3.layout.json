@@ -1,0 +1,3182 @@
+{
+ "archives": [
+  {
+   "hops": [
+    {
+     "slice": [
+      605312,
+      22836993
+     ]
+    },
+    "a0",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       4173824
+      ],
+      [
+       4202496,
+       4190208
+      ],
+      [
+       8396800,
+       4190208
+      ],
+      [
+       12591104,
+       4190208
+      ],
+      [
+       16785408,
+       4190208
+      ],
+      [
+       20979712,
+       868432
+      ]
+     ],
+     "size": 21811280
+    }
+   ],
+   "installer": 0,
+   "tool": "cabextract"
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      605312,
+      22836993
+     ]
+    },
+    "a1",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       177356
+      ]
+     ],
+     "size": 185548
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      605312,
+      22836993
+     ]
+    },
+    "a2",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       53292
+      ]
+     ],
+     "size": 61484
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      605344,
+      25615991
+     ]
+    },
+    "a0",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       4173824
+      ],
+      [
+       4202496,
+       4190208
+      ],
+      [
+       8396800,
+       4190208
+      ],
+      [
+       12591104,
+       4190208
+      ],
+      [
+       16785408,
+       4190208
+      ],
+      [
+       20979712,
+       3616100
+      ]
+     ],
+     "size": 24558948
+    }
+   ],
+   "installer": 1,
+   "tool": "cabextract"
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      605344,
+      25615991
+     ]
+    },
+    "a1",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       210542
+      ]
+     ],
+     "size": 218734
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      605344,
+      25615991
+     ]
+    },
+    "a2",
+    {
+     "ranges": [
+      [
+       20480,
+       4096
+      ],
+      [
+       16384,
+       4096
+      ],
+      [
+       24576,
+       60666
+      ]
+     ],
+     "size": 68858
+    }
+   ],
+   "installer": 1
+  }
+ ],
+ "files": [
+  {
+   "archive": 2,
+   "member": "fileCoreHostExe",
+   "size": 118672,
+   "to": "drive_c/Program Files (x86)/dotnet/dotnet.exe"
+  },
+  {
+   "archive": 1,
+   "member": "fil0A6FBF7055F420EC0F302868DDBD13EC",
+   "size": 470392,
+   "to": "drive_c/Program Files (x86)/dotnet/host/fxr/3.1.10/hostfxr.dll"
+  },
+  {
+   "archive": 2,
+   "member": "fileLicenseTxt",
+   "size": 9519,
+   "to": "drive_c/Program Files (x86)/dotnet/LICENSE.txt"
+  },
+  {
+   "archive": 0,
+   "member": "fil3C6FEAC8DE0CC4D3E44A158EC56C0E7B",
+   "size": 50,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/.version"
+  },
+  {
+   "archive": 0,
+   "member": "fil2A3265BE7673456A04ED38F2B6E7876D",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-console-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil7483653251F9083A792ED5F1BEB5528A",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-datetime-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3ABE57B71ADAFBA4553BD361EC1F291E",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-debug-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAFE89B8A9431B951AEE2945A20B8FDE7",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-errorhandling-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil846E98BA602EBC231E54C822578B48F2",
+   "size": 21768,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil54F34C949DBCCD139BA5E69AB987D700",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l1-2-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD737149E3E0CF2C8F6958CAABD0F5DB1",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l2-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil03A7FD76B57C47593A77842A2FDF0AE8",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-handle-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF0A768FF2C8E5DF0881CD6033D29C5D4",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-heap-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5E96DE2D58F43A03978DA2E4B959F7FA",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-interlocked-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil0A8F9412FA2D9176F04CC82CF9F0A76C",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-libraryloader-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil0249FC31BB12787AAA489D696D734120",
+   "size": 20744,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-localization-l1-2-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil172D7533B1450B687E8C8737CF3B91BB",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-memory-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil868B8F11D9821619F4D812C8DE0E4C68",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-namedpipe-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3947EF7B85404B2C6BBB84ECEC91DF91",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processenvironment-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCE508634CD9115F499132AFCD49A615A",
+   "size": 20232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processthreads-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB69A3329B452D5A6183611210D680B80",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processthreads-l1-1-1.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filDC48D768A3DF6C4D6A0A7C1CA56C5593",
+   "size": 17672,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-profile-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3005F16B5E6231D03C3B91A949CB80C4",
+   "size": 17672,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-rtlsupport-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil077A71CFAB1EE6AEAD9A613206AE5A19",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-string-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil9DB3D66A6AC7381CBADD8ADBE0FF9790",
+   "size": 20232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-synch-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil36D2653F39E10104D35D9EA0169B1F4F",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-synch-l1-2-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA9D6ACD85BB57DF8C094736A3377B6A9",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-sysinfo-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5B83A6D869FCD3417AA7C83694AF5324",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-timezone-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil147C5114DD036ADFB0C977734DB345BA",
+   "size": 18184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-util-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4C86AB58CCBA95B56C47A00246E9143A",
+   "size": 11656,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/API-MS-Win-core-xstate-l2-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil02B620E7B05967ECD5CA53958D7A39D4",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-conio-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6C1531BA93EEB6BFBC09503927A625A0",
+   "size": 22280,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-convert-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil92D9F443D8548E7079270A640FCE9DC3",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-environment-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filABFFEC9DF915AEB53AE932D3B527B123",
+   "size": 20232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-filesystem-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCBA1D23EC830F1BE6354BBF194B9FEE0",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-heap-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCE79F09CAA8C24F51FF800EDB7686837",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-locale-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil24D0B9C10AFDAE0393AADC5995D1B9E3",
+   "size": 28936,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-math-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5A5345756A80C6865EE574BB2F7F0385",
+   "size": 26376,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-multibyte-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4C69CD2CC47F9B51D32EB928E3245F75",
+   "size": 72968,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-private-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5E7A1096FBBE9DDA197A0574530EB039",
+   "size": 19208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-process-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filBD132D1B3C01D5E0EF58B44DC6E0F57E",
+   "size": 22792,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-runtime-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filFA8932C32441D00DA0E6FFC0672222D1",
+   "size": 24328,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-stdio-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filBE2495DA546CA835D133474B3AA3B5EA",
+   "size": 24328,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-string-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA4CDC2810C14A0D2E66ECF41D7A61ACD",
+   "size": 20744,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-time-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil06A521551C8EE1064874BA532F166916",
+   "size": 18696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-utility-l1-1-0.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCB1634B49837184A9D566C8E40630C2B",
+   "size": 720264,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/clrcompression.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filBCD17AD725322EA405CC560B269EA054",
+   "size": 243592,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/clretwrc.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5B28B403917D6E251F1106001B4A45AE",
+   "size": 1115016,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/clrjit.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil44B42A5146083BCA9BC8405B9F5EF74D",
+   "size": 4327304,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/coreclr.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil520D3F0AAEE48DC4C023F72FBF0B09ED",
+   "size": 121224,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/dbgshim.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF41D784CF82121783FA8756A004EA13E",
+   "size": 466304,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/hostpolicy.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF3058F0810696DAAD00428B869DE4A6A",
+   "size": 728968,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.CSharp.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filDA043C54DC82275F2373646EB7315353",
+   "size": 1188080,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.DiaSymReader.Native.x86.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF2E4E6250BC8B548F587C8238BC41CB9",
+   "size": 53492,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.NETCore.App.deps.json"
+  },
+  {
+   "archive": 0,
+   "member": "filA593CEB9BBE19179E1F4D411E018B889",
+   "size": 1127304,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.VisualBasic.Core.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil068DD729D913ECED37A180CBB05CCDAC",
+   "size": 16256,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.VisualBasic.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB6A42004971E788945FCE2D92B88E78D",
+   "size": 20872,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.Win32.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil8858756524AE549250B93CAB5ECC890F",
+   "size": 76168,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.Win32.Registry.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil723A6E466EC337178178B7DB18031256",
+   "size": 981880,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordaccore.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filFF914629269886A63BA60B4A2D16CF58",
+   "size": 981880,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordaccore_x86_x86_4.700.20.51601.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filEB3218F05E01EC1F561103ECB460A33E",
+   "size": 1026944,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordbi.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAD7B8CB7430414BC3F07B4AB42BF00BF",
+   "size": 57224,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorlib.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil061B7137BFA62D4445A3CB5383476368",
+   "size": 178568,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorrc.debug.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD1BC15CFAA636BFA1C1D8D09143BB6AF",
+   "size": 13192,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorrc.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil8298721D48B07615E413DC4B521DF8F7",
+   "size": 114056,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/netstandard.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4A8A4E27AF1279BA62EC706B7BE3EE1A",
+   "size": 277,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/SOS_README.md"
+  },
+  {
+   "archive": 0,
+   "member": "filBD00BFA445ED09D6DDB12FF2D6C9E080",
+   "size": 13696,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.AppContext.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE67389B19C6484C9B2B6E9333ADE6A4E",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Buffers.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB24A4B7B772BC896A4B67FA9EB5F7927",
+   "size": 171400,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Concurrent.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB0FB1E9BACBEA26B35D529E9453845EC",
+   "size": 293256,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE98800862BCD708CC2061AA82DB281C0",
+   "size": 568712,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Immutable.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5DEE8E5F5D103D321194BF8AFC9148CB",
+   "size": 85384,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.NonGeneric.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE6A3E5840A3CA0FE18F44B8D7DFCFE32",
+   "size": 80776,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Specialized.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF1FCDDA183D997FF53C6589863CF2337",
+   "size": 147336,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.Annotations.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6BF4D737094C1768D4C1E2C929438471",
+   "size": 15752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.DataAnnotations.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAE418AC74FD9EA205D78E3727D684231",
+   "size": 15752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE27373F95A19CA522F79DDDBCB354FC0",
+   "size": 32136,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.EventBasedAsync.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA2CED7C195891591000B38A71E9C4710",
+   "size": 49032,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil516CBC6C56EC1F8B0047B4A24DB32A20",
+   "size": 630656,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.TypeConverter.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3EC5D16D0D6114E1CB3DCE97DA3DB46A",
+   "size": 18312,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Configuration.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC31C9E2B7AD683BC7B95759FE1AF301A",
+   "size": 138120,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Console.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil7D9DCC6E399BA6FE0B5EB7F641C2D632",
+   "size": 23432,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Core.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil9794E9461AD946DA004204B54ABB0055",
+   "size": 2648456,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.Common.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE877B31A7B2DE4F4E8B92BA9B900991E",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.DataSetExtensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE8DF2AD700F3C422773229BD2BB6FAFB",
+   "size": 25480,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4BA1E7A74BB7F36327124A2A9DE48619",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Contracts.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil26D178DCD03AC9B236BF0DA0CADABF81",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Debug.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil70E5F15EC62F5A98219189C8098B8CD2",
+   "size": 91016,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.DiagnosticSource.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE1AFB27A012D77B3E281246BC1088A5D",
+   "size": 27016,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.FileVersionInfo.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2A086A483A168F84A27FD87FE27741A9",
+   "size": 231304,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Process.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil966408525564DE358178209247A7E5B2",
+   "size": 32648,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.StackTrace.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil28758DD8F7275A6EDC6CBC64DCD122F4",
+   "size": 50048,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.TextWriterTraceListener.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD399171E060CC92F4C3798AC90CC79CD",
+   "size": 16264,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Tools.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil7B98E77AA59B2952C66DCE11FFA88D4E",
+   "size": 106888,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.TraceSource.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC89242D74171793B7B4DBC3840F1E734",
+   "size": 15232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Tracing.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3A7FAF3CB7D893D15C32FFF0FE6364C7",
+   "size": 54144,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF0BF2D6CF7C4C0641BDC0E83DCE47A71",
+   "size": 19848,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Drawing.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC3A8B2ECB5743AAD869F81A921844376",
+   "size": 115080,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Drawing.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3F0A3563E43CA5C55A355D7B3567F6ED",
+   "size": 15240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Dynamic.Runtime.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF183E20546EBD2E52EBE59950AE0ABB5",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.Calendars.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAFB3AD35A5F2FD76A9A6FB8027550515",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB997A9F07AAF3654C9F4E8499CBAD6DF",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.Extensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2DC24613F8CE0EE37989D57725BA04EA",
+   "size": 63360,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.Brotli.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil31F4D8760ED6F6BB050D842B89C4E360",
+   "size": 224136,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE016BAAC04A34ED42D82A3C8292ADB5B",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.FileSystem.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil07435D36E1FD3218C44C34270A0212FC",
+   "size": 31112,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.ZipFile.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAC8471260D21D44775D601309F495068",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil21C05419B2CF831E8BF3D7F0DF11EB8B",
+   "size": 79240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.AccessControl.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF599BC114809042A9716A2274355834E",
+   "size": 194440,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil76F86215DB30FEA6B39316EBE0871884",
+   "size": 35720,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.DriveInfo.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil08E88EFF4D12D4D6148779D81DF0EC4D",
+   "size": 14208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2D47FB1443BEA8BF1C0F0C4FCB6FEB95",
+   "size": 62848,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.Watcher.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil01CE8EE2A4D25ADCF673A5DB11A2DFC6",
+   "size": 71560,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.IsolatedStorage.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD994A8EF3FA2292B5CC4EF7FC37ABC46",
+   "size": 59272,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.MemoryMappedFiles.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAC7D2E3988C70CC661025ADBE0327F1D",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Pipes.AccessControl.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB0080F3370A2CD68CE53D59C2D5703E9",
+   "size": 118664,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Pipes.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil0605775B078C986BF52ECE361C428B9D",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.UnmanagedMemoryStream.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD53EA2CF206DCDC93B980D30DBBCA4DC",
+   "size": 370056,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil08D59E4D0F715E131A5A96B31745922B",
+   "size": 4677512,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Expressions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5A82777C5B3BEE97BF279F297849D575",
+   "size": 1133952,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Parallel.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil886FE821D38AD2417C109F95A73C6260",
+   "size": 162176,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Queryable.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil19FF8BD98EBF7C997ADC47209BB8CC48",
+   "size": 167816,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Memory.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil9E59B04BCD33BDD77C27E7B87351A14B",
+   "size": 16264,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB240630529EF3BD0F221FECD5368E6C1",
+   "size": 1313152,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Http.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil99330762A2009CBD054965F7DF7A1BAD",
+   "size": 580488,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.HttpListener.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD5FEC7372FB3F259B8677CAE2375F77F",
+   "size": 485256,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Mail.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6D5293BDB242E2414536B99517E329A0",
+   "size": 78728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.NameResolution.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil347B9273EAACCF9A2025EEECFA89339D",
+   "size": 159616,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.NetworkInformation.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil8C68A07D2B7347F6A5D8CC25BB00E66D",
+   "size": 88968,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Ping.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil74CF2B26E821E64D856210527403C55E",
+   "size": 192392,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA0B24629F0BD79FC6AFA665B23D49FDC",
+   "size": 308616,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Requests.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF6428D84DFFE2A50AAB884B08E5A539C",
+   "size": 509832,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Security.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC0C0A64CC4E75C8A5CE25D6CCF884063",
+   "size": 31104,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.ServicePoint.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC7A07328A0838F77552BBBC4C547CAFA",
+   "size": 482184,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Sockets.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD472CDBA5F9BEB804D744AD406E70449",
+   "size": 138624,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebClient.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE75393415CABABE648BA0178E7B394FE",
+   "size": 62344,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebHeaderCollection.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF2B64143BD48BDCB88645CE602F3F160",
+   "size": 24456,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebProxy.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil631246308BAE4E82CDF08B0E1DB96502",
+   "size": 64392,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebSockets.Client.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC015BC54754AC9EFD6C4C9C3604C74B7",
+   "size": 123784,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebSockets.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC8F1B0B5FACAD8B9C79809C884EAADDF",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Numerics.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil223B6CDA3B8103D587B3BCF2CA9F1BA3",
+   "size": 142728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Numerics.Vectors.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAA92182DDEDA1E0C36A4C4CEB2324049",
+   "size": 79752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ObjectModel.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil715549185C86B07CD9EC16E9172BB82B",
+   "size": 8745864,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.CoreLib.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2A00C0AE05525E399F24186559A9593F",
+   "size": 1865608,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.DataContractSerialization.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2875C78CBBA71D5D8969C54F88F386CE",
+   "size": 229768,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Uri.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil8CA6689947E0DC70183B9EF4EBAB26D1",
+   "size": 7603592,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Xml.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil20EFA47B4BEBBB08E89E591E859C2A76",
+   "size": 328576,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Xml.Linq.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD548156D1592CCB2313AF84F8A22E765",
+   "size": 61824,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.DispatchProxy.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filECAA9956556DAA6D4C8B354E6F61A577",
+   "size": 15240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filEAE4221E798B5EF3B891FA85911B3111",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil958FC27EEE2D5D74359D85636CEF29B6",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.ILGeneration.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil15FB91F85521E80BA1C6E90CDE142CF1",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.Lightweight.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filDCE31083595035FA013DBF84CF41F815",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Extensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil893961B74EB02E22E30D769AD789B9BA",
+   "size": 998280,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Metadata.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filD423D4B0B848849B4FF8651B993801F1",
+   "size": 14720,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA4FA465A572CE70CF3D1C2278DD95FA2",
+   "size": 27016,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.TypeExtensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filBD50085251FD31805CF276BF4ADD851E",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.Reader.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB029518F8263B06B1856C0D50351A86C",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.ResourceManager.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil41F8382F50B8766592C38341B611DACE",
+   "size": 38792,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.Writer.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA8FE3E332B040E2EB749E562BE4FEEE4",
+   "size": 18304,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.CompilerServices.Unsafe.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil481263219BFF199D10B50BF1E0863EBC",
+   "size": 17280,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.CompilerServices.VisualC.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil24606C2DB497E9CA656BD7AC0F8D37CE",
+   "size": 52104,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil729CE7A749866AFB08896BD60D5B9F05",
+   "size": 191872,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Extensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil18B831801766F53E4CDA0EF7B294DDB2",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Handles.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6A48B17710C852CD172308EA60BF8B99",
+   "size": 50056,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil19100F968B7C1BB024613AFA3C5E1AD6",
+   "size": 25992,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.RuntimeInformation.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC2AB8C6377BFF2B0AFEDD82AE42B3D65",
+   "size": 15240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.WindowsRuntime.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil94AAEFA577E8DFA05FD3B757A0E5CDED",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Intrinsics.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil500FD8CCDB7716F6A1D8D38B1C8F7956",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Loader.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB0CC328A1E22DD69705D7B07D54E0FED",
+   "size": 188296,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Numerics.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil690413D6B5B3BBB38C0116692280F758",
+   "size": 15752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6E8D001476DFE005D2D6FA9F961094CD",
+   "size": 284544,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Formatters.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil85B1E4723C2DF59DDE9B685ADEEFC776",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Json.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil424942F123494503407958CBB5215191",
+   "size": 23944,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB484663051024831F65131244179B125",
+   "size": 15232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Xml.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE290514635CDE4679FBA46FC809C0210",
+   "size": 316296,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.WindowsRuntime.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil37C48F9A7D371CB2C8A266A38BA900A4",
+   "size": 74632,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.WindowsRuntime.UI.Xaml.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA7F7E8B4372338DEA31770F28471E776",
+   "size": 190856,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.AccessControl.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil36E548090B7E19414A4F901EBB0BD1C0",
+   "size": 80776,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Claims.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCA00E76BA30CA178AE9A993F364E78C5",
+   "size": 585600,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Algorithms.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2C019060654CEC8C669D832270411AD4",
+   "size": 373120,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Cng.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4AF3A354623620AFEED7B7DEDD8FF6E9",
+   "size": 159104,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Csp.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil14EFB128F8163E8877982C28E03578CC",
+   "size": 65920,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Encoding.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil588F2543E11B5CEE65E823AE012D3ED0",
+   "size": 32136,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.OpenSsl.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB9398B3D7BF060348F1B91E3BABC3CDC",
+   "size": 93064,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Primitives.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE7856A64084BD0112C5252D0B877AE5F",
+   "size": 408968,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.X509Certificates.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil918202BD124C83F94433484A1AB44044",
+   "size": 17288,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filC9405BDAACCFB93F2F9B0608843D20F4",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Principal.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil413869CD4B732E7F8ADE23F48240BDDF",
+   "size": 130952,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Principal.Windows.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil7D055BCFAB989A111C2004801C266770",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.SecureString.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4F56D1D0DA812FB3463F855B7F32B212",
+   "size": 15752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ServiceModel.Web.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2A53CD715144B63C9097004D1597D068",
+   "size": 14712,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ServiceProcess.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil214A06ED5C73BD71F48C0F3A4FA0AFA4",
+   "size": 845704,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.CodePages.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil0498105A4D1DE8C1949B9A9B184BF7EA",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil04DB7C1526D47B4FB55734C90DE75196",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.Extensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filF07D5516F721F39BF9C7722F0D345C2B",
+   "size": 91528,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encodings.Web.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filAC532344D6DAE90A0FC8DF78BFDD6D5E",
+   "size": 735624,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Json.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil2504AC18A3F0353D7A2A4C5633F915C7",
+   "size": 370056,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.RegularExpressions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filBA81252431316ABFBD344CCE439A5F4B",
+   "size": 101768,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Channels.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil04F861FC25600B2C3F271C96D91F8C84",
+   "size": 72584,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil97EF4F9FFF0C0BBD72E33A6C90DF1ACD",
+   "size": 15232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Overlapped.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5D1A6F31662A71403930781769B8585E",
+   "size": 423808,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Dataflow.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB084209A02A3CC828E072235044A8514",
+   "size": 15752,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil7C4D8F9A085ED7E2B8A979E8EBDA3BA2",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Extensions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil58EAF792EA87061D197FA6F271ECF2AF",
+   "size": 99208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Parallel.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6EAC07085BA0B4A1647AB3957DEFB5F3",
+   "size": 16776,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Thread.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4703AE9EB24F8F078650029745D10E41",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.ThreadPool.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA7D43BAD87C85A41A83A6E7648D7F747",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Timer.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil4C745BE2EE39B32CFFF9E9D2FA4C5FEB",
+   "size": 15240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Transactions.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filE7BBD9DE5476F92E049795957445ECB2",
+   "size": 308096,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Transactions.Local.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filED56B1D8ACE02A69F244618B2A95CBF9",
+   "size": 14216,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ValueTuple.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filFA2B46A9708035E9FA51C410BADADAC3",
+   "size": 13704,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Web.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB711C685050BAD0D85009950BA570236",
+   "size": 42376,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Web.HttpUtility.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil73D8C90152042CC53B7E4E66551D0208",
+   "size": 14208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Windows.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filB6FD03FF53E96330A2BB5B4DA2167C09",
+   "size": 23944,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil8861FA8D2BD261EF904ED0025DFBBD42",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.Linq.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3BEA0EA6E5F7BF24F035D78D405041C3",
+   "size": 21384,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.ReaderWriter.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil3F5E491D8DDD7B54C1CB8ECBFA9E23C2",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.Serialization.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil5E093560F8E502D773BC9523DC93D6B7",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XDocument.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil56B0A15566F42FD4371E9580C91D3AA3",
+   "size": 14728,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XmlDocument.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil6BD1354B499A113577D6ADC466FA67D4",
+   "size": 16776,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XmlSerializer.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filA6F7CE7C8EE38A676E2A6677ECED61FD",
+   "size": 14208,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XPath.dll"
+  },
+  {
+   "archive": 0,
+   "member": "filCD55D4F4C679102CC915FECCB5871067",
+   "size": 15744,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XPath.XDocument.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil60E2FE6B063194059325122F02A93FFD",
+   "size": 1172232,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/ucrtbase.dll"
+  },
+  {
+   "archive": 0,
+   "member": "fil0004C5CD9FF0B68C7911D74BD365C98C",
+   "size": 15240,
+   "to": "drive_c/Program Files (x86)/dotnet/shared/Microsoft.NETCore.App/3.1.10/WindowsBase.dll"
+  },
+  {
+   "archive": 2,
+   "member": "fileThirdPartyNoticesTxt",
+   "size": 31961,
+   "to": "drive_c/Program Files (x86)/dotnet/ThirdPartyNotices.txt"
+  },
+  {
+   "archive": 5,
+   "member": "fileCoreHostExe",
+   "size": 149904,
+   "to": "drive_c/Program Files/dotnet/dotnet.exe"
+  },
+  {
+   "archive": 4,
+   "member": "fil0A6FBF7055F420EC0F302868DDBD13EC",
+   "size": 599432,
+   "to": "drive_c/Program Files/dotnet/host/fxr/3.1.10/hostfxr.dll"
+  },
+  {
+   "archive": 5,
+   "member": "fileLicenseTxt",
+   "size": 9519,
+   "to": "drive_c/Program Files/dotnet/LICENSE.txt"
+  },
+  {
+   "archive": 3,
+   "member": "fil3C6FEAC8DE0CC4D3E44A158EC56C0E7B",
+   "size": 50,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/.version"
+  },
+  {
+   "archive": 3,
+   "member": "fil2A3265BE7673456A04ED38F2B6E7876D",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-console-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil7483653251F9083A792ED5F1BEB5528A",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-datetime-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3ABE57B71ADAFBA4553BD361EC1F291E",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-debug-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAFE89B8A9431B951AEE2945A20B8FDE7",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-errorhandling-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil846E98BA602EBC231E54C822578B48F2",
+   "size": 22280,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil54F34C949DBCCD139BA5E69AB987D700",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l1-2-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD737149E3E0CF2C8F6958CAABD0F5DB1",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-file-l2-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil03A7FD76B57C47593A77842A2FDF0AE8",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-handle-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF0A768FF2C8E5DF0881CD6033D29C5D4",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-heap-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5E96DE2D58F43A03978DA2E4B959F7FA",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-interlocked-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil0A8F9412FA2D9176F04CC82CF9F0A76C",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-libraryloader-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil0249FC31BB12787AAA489D696D734120",
+   "size": 21256,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-localization-l1-2-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil172D7533B1450B687E8C8737CF3B91BB",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-memory-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil868B8F11D9821619F4D812C8DE0E4C68",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-namedpipe-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3947EF7B85404B2C6BBB84ECEC91DF91",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processenvironment-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCE508634CD9115F499132AFCD49A615A",
+   "size": 20744,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processthreads-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB69A3329B452D5A6183611210D680B80",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-processthreads-l1-1-1.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filDC48D768A3DF6C4D6A0A7C1CA56C5593",
+   "size": 18184,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-profile-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3005F16B5E6231D03C3B91A949CB80C4",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-rtlsupport-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil077A71CFAB1EE6AEAD9A613206AE5A19",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-string-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil9DB3D66A6AC7381CBADD8ADBE0FF9790",
+   "size": 20744,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-synch-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil36D2653F39E10104D35D9EA0169B1F4F",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-synch-l1-2-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA9D6ACD85BB57DF8C094736A3377B6A9",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-sysinfo-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5B83A6D869FCD3417AA7C83694AF5324",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-timezone-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil147C5114DD036ADFB0C977734DB345BA",
+   "size": 18696,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-core-util-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil02B620E7B05967ECD5CA53958D7A39D4",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-conio-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6C1531BA93EEB6BFBC09503927A625A0",
+   "size": 22792,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-convert-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil92D9F443D8548E7079270A640FCE9DC3",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-environment-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filABFFEC9DF915AEB53AE932D3B527B123",
+   "size": 20744,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-filesystem-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCBA1D23EC830F1BE6354BBF194B9FEE0",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-heap-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCE79F09CAA8C24F51FF800EDB7686837",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-locale-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil24D0B9C10AFDAE0393AADC5995D1B9E3",
+   "size": 27912,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-math-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5A5345756A80C6865EE574BB2F7F0385",
+   "size": 26888,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-multibyte-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4C69CD2CC47F9B51D32EB928E3245F75",
+   "size": 71432,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-private-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5E7A1096FBBE9DDA197A0574530EB039",
+   "size": 19720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-process-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filBD132D1B3C01D5E0EF58B44DC6E0F57E",
+   "size": 23304,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-runtime-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filFA8932C32441D00DA0E6FFC0672222D1",
+   "size": 24840,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-stdio-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filBE2495DA546CA835D133474B3AA3B5EA",
+   "size": 24840,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-string-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA4CDC2810C14A0D2E66ECF41D7A61ACD",
+   "size": 21256,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-time-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil06A521551C8EE1064874BA532F166916",
+   "size": 19208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/api-ms-win-crt-utility-l1-1-0.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCB1634B49837184A9D566C8E40630C2B",
+   "size": 747400,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/clrcompression.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filBCD17AD725322EA405CC560B269EA054",
+   "size": 243592,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/clretwrc.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5B28B403917D6E251F1106001B4A45AE",
+   "size": 1304456,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/clrjit.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil44B42A5146083BCA9BC8405B9F5EF74D",
+   "size": 5599112,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/coreclr.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil520D3F0AAEE48DC4C023F72FBF0B09ED",
+   "size": 136064,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/dbgshim.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF41D784CF82121783FA8756A004EA13E",
+   "size": 590720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/hostpolicy.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF3058F0810696DAAD00428B869DE4A6A",
+   "size": 797568,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.CSharp.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA8B3A9C48A402A43B2F5D9280859058A",
+   "size": 1495800,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.DiaSymReader.Native.amd64.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF2E4E6250BC8B548F587C8238BC41CB9",
+   "size": 53366,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.NETCore.App.deps.json"
+  },
+  {
+   "archive": 3,
+   "member": "filA593CEB9BBE19179E1F4D411E018B889",
+   "size": 1209736,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.VisualBasic.Core.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil068DD729D913ECED37A180CBB05CCDAC",
+   "size": 16264,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.VisualBasic.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB6A42004971E788945FCE2D92B88E78D",
+   "size": 21384,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.Win32.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil8858756524AE549250B93CAB5ECC890F",
+   "size": 82824,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/Microsoft.Win32.Registry.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil723A6E466EC337178178B7DB18031256",
+   "size": 1263480,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordaccore.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filFB57D497DAA1C42DB4F145790C1EB457",
+   "size": 1263480,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordaccore_amd64_amd64_4.700.20.51601.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filEB3218F05E01EC1F561103ECB460A33E",
+   "size": 1318272,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscordbi.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAD7B8CB7430414BC3F07B4AB42BF00BF",
+   "size": 57224,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorlib.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil061B7137BFA62D4445A3CB5383476368",
+   "size": 178568,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorrc.debug.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD1BC15CFAA636BFA1C1D8D09143BB6AF",
+   "size": 13192,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/mscorrc.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil8298721D48B07615E413DC4B521DF8F7",
+   "size": 114056,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/netstandard.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4A8A4E27AF1279BA62EC706B7BE3EE1A",
+   "size": 277,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/SOS_README.md"
+  },
+  {
+   "archive": 3,
+   "member": "filBD00BFA445ED09D6DDB12FF2D6C9E080",
+   "size": 13704,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.AppContext.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE67389B19C6484C9B2B6E9333ADE6A4E",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Buffers.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB24A4B7B772BC896A4B67FA9EB5F7927",
+   "size": 188800,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Concurrent.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB0FB1E9BACBEA26B35D529E9453845EC",
+   "size": 331144,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE98800862BCD708CC2061AA82DB281C0",
+   "size": 648072,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Immutable.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5DEE8E5F5D103D321194BF8AFC9148CB",
+   "size": 96648,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.NonGeneric.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE6A3E5840A3CA0FE18F44B8D7DFCFE32",
+   "size": 89984,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Collections.Specialized.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF1FCDDA183D997FF53C6589863CF2337",
+   "size": 162184,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.Annotations.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6BF4D737094C1768D4C1E2C929438471",
+   "size": 15752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.DataAnnotations.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAE418AC74FD9EA205D78E3727D684231",
+   "size": 15752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE27373F95A19CA522F79DDDBCB354FC0",
+   "size": 34184,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.EventBasedAsync.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA2CED7C195891591000B38A71E9C4710",
+   "size": 53128,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil516CBC6C56EC1F8B0047B4A24DB32A20",
+   "size": 706952,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ComponentModel.TypeConverter.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3EC5D16D0D6114E1CB3DCE97DA3DB46A",
+   "size": 18312,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Configuration.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC31C9E2B7AD683BC7B95759FE1AF301A",
+   "size": 152968,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Console.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil7D9DCC6E399BA6FE0B5EB7F641C2D632",
+   "size": 23424,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Core.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil9794E9461AD946DA004204B54ABB0055",
+   "size": 2926472,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.Common.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE877B31A7B2DE4F4E8B92BA9B900991E",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.DataSetExtensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE8DF2AD700F3C422773229BD2BB6FAFB",
+   "size": 25480,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Data.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4BA1E7A74BB7F36327124A2A9DE48619",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Contracts.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil26D178DCD03AC9B236BF0DA0CADABF81",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Debug.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil70E5F15EC62F5A98219189C8098B8CD2",
+   "size": 99200,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.DiagnosticSource.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE1AFB27A012D77B3E281246BC1088A5D",
+   "size": 29064,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.FileVersionInfo.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2A086A483A168F84A27FD87FE27741A9",
+   "size": 256896,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Process.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil966408525564DE358178209247A7E5B2",
+   "size": 35208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.StackTrace.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil28758DD8F7275A6EDC6CBC64DCD122F4",
+   "size": 55688,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.TextWriterTraceListener.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD399171E060CC92F4C3798AC90CC79CD",
+   "size": 16776,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Tools.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil7B98E77AA59B2952C66DCE11FFA88D4E",
+   "size": 125312,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.TraceSource.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC89242D74171793B7B4DBC3840F1E734",
+   "size": 15240,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Diagnostics.Tracing.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3A7FAF3CB7D893D15C32FFF0FE6364C7",
+   "size": 54152,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF0BF2D6CF7C4C0641BDC0E83DCE47A71",
+   "size": 19848,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Drawing.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC3A8B2ECB5743AAD869F81A921844376",
+   "size": 123784,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Drawing.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3F0A3563E43CA5C55A355D7B3567F6ED",
+   "size": 15240,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Dynamic.Runtime.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF183E20546EBD2E52EBE59950AE0ABB5",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.Calendars.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAFB3AD35A5F2FD76A9A6FB8027550515",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB997A9F07AAF3654C9F4E8499CBAD6DF",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Globalization.Extensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2DC24613F8CE0EE37989D57725BA04EA",
+   "size": 69504,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.Brotli.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil31F4D8760ED6F6BB050D842B89C4E360",
+   "size": 247168,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE016BAAC04A34ED42D82A3C8292ADB5B",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.FileSystem.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil07435D36E1FD3218C44C34270A0212FC",
+   "size": 34184,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Compression.ZipFile.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAC8471260D21D44775D601309F495068",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil21C05419B2CF831E8BF3D7F0DF11EB8B",
+   "size": 86920,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.AccessControl.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF599BC114809042A9716A2274355834E",
+   "size": 217480,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil76F86215DB30FEA6B39316EBE0871884",
+   "size": 37760,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.DriveInfo.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil08E88EFF4D12D4D6148779D81DF0EC4D",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2D47FB1443BEA8BF1C0F0C4FCB6FEB95",
+   "size": 68488,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.FileSystem.Watcher.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil01CE8EE2A4D25ADCF673A5DB11A2DFC6",
+   "size": 79240,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.IsolatedStorage.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD994A8EF3FA2292B5CC4EF7FC37ABC46",
+   "size": 63368,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.MemoryMappedFiles.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAC7D2E3988C70CC661025ADBE0327F1D",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Pipes.AccessControl.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB0080F3370A2CD68CE53D59C2D5703E9",
+   "size": 130432,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.Pipes.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil0605775B078C986BF52ECE361C428B9D",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.IO.UnmanagedMemoryStream.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD53EA2CF206DCDC93B980D30DBBCA4DC",
+   "size": 420744,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil08D59E4D0F715E131A5A96B31745922B",
+   "size": 5256584,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Expressions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5A82777C5B3BEE97BF279F297849D575",
+   "size": 1310600,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Parallel.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil886FE821D38AD2417C109F95A73C6260",
+   "size": 177544,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Linq.Queryable.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil19FF8BD98EBF7C997ADC47209BB8CC48",
+   "size": 180104,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Memory.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil9E59B04BCD33BDD77C27E7B87351A14B",
+   "size": 16264,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB240630529EF3BD0F221FECD5368E6C1",
+   "size": 1478536,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Http.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil99330762A2009CBD054965F7DF7A1BAD",
+   "size": 653704,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.HttpListener.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD5FEC7372FB3F259B8677CAE2375F77F",
+   "size": 545160,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Mail.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6D5293BDB242E2414536B99517E329A0",
+   "size": 86408,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.NameResolution.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil347B9273EAACCF9A2025EEECFA89339D",
+   "size": 174984,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.NetworkInformation.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil8C68A07D2B7347F6A5D8CC25BB00E66D",
+   "size": 97672,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Ping.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil74CF2B26E821E64D856210527403C55E",
+   "size": 212872,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA0B24629F0BD79FC6AFA665B23D49FDC",
+   "size": 346504,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Requests.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF6428D84DFFE2A50AAB884B08E5A539C",
+   "size": 574344,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Security.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC0C0A64CC4E75C8A5CE25D6CCF884063",
+   "size": 33152,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.ServicePoint.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC7A07328A0838F77552BBBC4C547CAFA",
+   "size": 540552,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.Sockets.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD472CDBA5F9BEB804D744AD406E70449",
+   "size": 158600,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebClient.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE75393415CABABE648BA0178E7B394FE",
+   "size": 66440,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebHeaderCollection.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF2B64143BD48BDCB88645CE602F3F160",
+   "size": 25984,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebProxy.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil631246308BAE4E82CDF08B0E1DB96502",
+   "size": 71048,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebSockets.Client.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC015BC54754AC9EFD6C4C9C3604C74B7",
+   "size": 140680,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Net.WebSockets.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC8F1B0B5FACAD8B9C79809C884EAADDF",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Numerics.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil223B6CDA3B8103D587B3BCF2CA9F1BA3",
+   "size": 149384,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Numerics.Vectors.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAA92182DDEDA1E0C36A4C4CEB2324049",
+   "size": 87424,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ObjectModel.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil715549185C86B07CD9EC16E9172BB82B",
+   "size": 9558920,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.CoreLib.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2A00C0AE05525E399F24186559A9593F",
+   "size": 2063752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.DataContractSerialization.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2875C78CBBA71D5D8969C54F88F386CE",
+   "size": 242560,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Uri.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil8CA6689947E0DC70183B9EF4EBAB26D1",
+   "size": 8423816,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Xml.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil20EFA47B4BEBBB08E89E591E859C2A76",
+   "size": 370568,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Private.Xml.Linq.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD548156D1592CCB2313AF84F8A22E765",
+   "size": 68992,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.DispatchProxy.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filECAA9956556DAA6D4C8B354E6F61A577",
+   "size": 15232,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filEAE4221E798B5EF3B891FA85911B3111",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil958FC27EEE2D5D74359D85636CEF29B6",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.ILGeneration.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil15FB91F85521E80BA1C6E90CDE142CF1",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Emit.Lightweight.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filDCE31083595035FA013DBF84CF41F815",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Extensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil893961B74EB02E22E30D769AD789B9BA",
+   "size": 1070984,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Metadata.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filD423D4B0B848849B4FF8651B993801F1",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA4FA465A572CE70CF3D1C2278DD95FA2",
+   "size": 28552,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Reflection.TypeExtensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filBD50085251FD31805CF276BF4ADD851E",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.Reader.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB029518F8263B06B1856C0D50351A86C",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.ResourceManager.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil41F8382F50B8766592C38341B611DACE",
+   "size": 41864,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Resources.Writer.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA8FE3E332B040E2EB749E562BE4FEEE4",
+   "size": 18824,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.CompilerServices.Unsafe.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil481263219BFF199D10B50BF1E0863EBC",
+   "size": 17288,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.CompilerServices.VisualC.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil24606C2DB497E9CA656BD7AC0F8D37CE",
+   "size": 53128,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil729CE7A749866AFB08896BD60D5B9F05",
+   "size": 206216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Extensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil18B831801766F53E4CDA0EF7B294DDB2",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Handles.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6A48B17710C852CD172308EA60BF8B99",
+   "size": 53128,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil19100F968B7C1BB024613AFA3C5E1AD6",
+   "size": 27016,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.RuntimeInformation.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC2AB8C6377BFF2B0AFEDD82AE42B3D65",
+   "size": 15232,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.InteropServices.WindowsRuntime.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil94AAEFA577E8DFA05FD3B757A0E5CDED",
+   "size": 14720,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Intrinsics.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil500FD8CCDB7716F6A1D8D38B1C8F7956",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Loader.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB0CC328A1E22DD69705D7B07D54E0FED",
+   "size": 196488,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Numerics.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil690413D6B5B3BBB38C0116692280F758",
+   "size": 15744,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6E8D001476DFE005D2D6FA9F961094CD",
+   "size": 308616,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Formatters.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil85B1E4723C2DF59DDE9B685ADEEFC776",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Json.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil424942F123494503407958CBB5215191",
+   "size": 25480,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB484663051024831F65131244179B125",
+   "size": 15232,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.Serialization.Xml.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE290514635CDE4679FBA46FC809C0210",
+   "size": 355208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.WindowsRuntime.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil37C48F9A7D371CB2C8A266A38BA900A4",
+   "size": 75144,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Runtime.WindowsRuntime.UI.Xaml.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA7F7E8B4372338DEA31770F28471E776",
+   "size": 211336,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.AccessControl.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil36E548090B7E19414A4F901EBB0BD1C0",
+   "size": 88968,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Claims.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCA00E76BA30CA178AE9A993F364E78C5",
+   "size": 691080,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Algorithms.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2C019060654CEC8C669D832270411AD4",
+   "size": 432008,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Cng.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4AF3A354623620AFEED7B7DEDD8FF6E9",
+   "size": 177544,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Csp.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil14EFB128F8163E8877982C28E03578CC",
+   "size": 70536,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Encoding.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil588F2543E11B5CEE65E823AE012D3ED0",
+   "size": 32648,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.OpenSsl.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB9398B3D7BF060348F1B91E3BABC3CDC",
+   "size": 101768,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.Primitives.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE7856A64084BD0112C5252D0B877AE5F",
+   "size": 464264,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Cryptography.X509Certificates.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil918202BD124C83F94433484A1AB44044",
+   "size": 17288,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filC9405BDAACCFB93F2F9B0608843D20F4",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Principal.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil413869CD4B732E7F8ADE23F48240BDDF",
+   "size": 144776,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.Principal.Windows.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil7D055BCFAB989A111C2004801C266770",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Security.SecureString.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4F56D1D0DA812FB3463F855B7F32B212",
+   "size": 15752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ServiceModel.Web.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2A53CD715144B63C9097004D1597D068",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ServiceProcess.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil214A06ED5C73BD71F48C0F3A4FA0AFA4",
+   "size": 858496,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.CodePages.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil0498105A4D1DE8C1949B9A9B184BF7EA",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil04DB7C1526D47B4FB55734C90DE75196",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encoding.Extensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filF07D5516F721F39BF9C7722F0D345C2B",
+   "size": 99208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Encodings.Web.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filAC532344D6DAE90A0FC8DF78BFDD6D5E",
+   "size": 826760,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.Json.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil2504AC18A3F0353D7A2A4C5633F915C7",
+   "size": 393608,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Text.RegularExpressions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filBA81252431316ABFBD344CCE439A5F4B",
+   "size": 111488,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Channels.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil04F861FC25600B2C3F271C96D91F8C84",
+   "size": 76680,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil97EF4F9FFF0C0BBD72E33A6C90DF1ACD",
+   "size": 15232,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Overlapped.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5D1A6F31662A71403930781769B8585E",
+   "size": 478592,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Dataflow.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB084209A02A3CC828E072235044A8514",
+   "size": 15752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil7C4D8F9A085ED7E2B8A979E8EBDA3BA2",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Extensions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil58EAF792EA87061D197FA6F271ECF2AF",
+   "size": 107912,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Tasks.Parallel.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6EAC07085BA0B4A1647AB3957DEFB5F3",
+   "size": 16768,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Thread.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4703AE9EB24F8F078650029745D10E41",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.ThreadPool.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA7D43BAD87C85A41A83A6E7648D7F747",
+   "size": 14208,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Threading.Timer.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil4C745BE2EE39B32CFFF9E9D2FA4C5FEB",
+   "size": 15240,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Transactions.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filE7BBD9DE5476F92E049795957445ECB2",
+   "size": 348040,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Transactions.Local.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filED56B1D8ACE02A69F244618B2A95CBF9",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.ValueTuple.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filFA2B46A9708035E9FA51C410BADADAC3",
+   "size": 13704,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Web.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB711C685050BAD0D85009950BA570236",
+   "size": 44936,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Web.HttpUtility.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil73D8C90152042CC53B7E4E66551D0208",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Windows.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filB6FD03FF53E96330A2BB5B4DA2167C09",
+   "size": 23944,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil8861FA8D2BD261EF904ED0025DFBBD42",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.Linq.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3BEA0EA6E5F7BF24F035D78D405041C3",
+   "size": 21384,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.ReaderWriter.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil3F5E491D8DDD7B54C1CB8ECBFA9E23C2",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.Serialization.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil5E093560F8E502D773BC9523DC93D6B7",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XDocument.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil56B0A15566F42FD4371E9580C91D3AA3",
+   "size": 14728,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XmlDocument.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil6BD1354B499A113577D6ADC466FA67D4",
+   "size": 16776,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XmlSerializer.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filA6F7CE7C8EE38A676E2A6677ECED61FD",
+   "size": 14216,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XPath.dll"
+  },
+  {
+   "archive": 3,
+   "member": "filCD55D4F4C679102CC915FECCB5871067",
+   "size": 15752,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/System.Xml.XPath.XDocument.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil60E2FE6B063194059325122F02A93FFD",
+   "size": 1016584,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/ucrtbase.dll"
+  },
+  {
+   "archive": 3,
+   "member": "fil0004C5CD9FF0B68C7911D74BD365C98C",
+   "size": 15232,
+   "to": "drive_c/Program Files/dotnet/shared/Microsoft.NETCore.App/3.1.10/WindowsBase.dll"
+  },
+  {
+   "archive": 5,
+   "member": "fileThirdPartyNoticesTxt",
+   "size": 31961,
+   "to": "drive_c/Program Files/dotnet/ThirdPartyNotices.txt"
+  }
+ ],
+ "installers": [
+  {
+   "arch": "x86",
+   "sha256": "6ae8d2fb7a23ac4770fa815bc27614b2db0e89f5c078eb2744771bf5541cdba3",
+   "size": 23451472,
+   "url": "https://download.visualstudio.microsoft.com/download/pr/abb3fb5d-4e82-4ca8-bc03-ac13e988e608/b34036773a72b30c5dc5520ee6a2768f/dotnet-runtime-3.1.10-win-x86.exe"
+  },
+  {
+   "arch": "x64",
+   "sha256": "78ef39c732ec35e79a0c1a10010ea797733df2811d774709b0fde23dce02efdf",
+   "size": 26230496,
+   "url": "https://download.visualstudio.microsoft.com/download/pr/9845b4b0-fb52-48b6-83cf-4c431558c29b/41025de7a76639eeff102410e7015214/dotnet-runtime-3.1.10-win-x64.exe"
+  }
+ ],
+ "notes": [
+  "dotnet-runtime-3.1.10-win-x86.msi: custom actions not run: WixBroadcastEnvironmentChange",
+  "dotnet-hostfxr-3.1.10-win-x86.msi: custom actions not run: WixBroadcastEnvironmentChange",
+  "dotnet-host-3.1.10-win-x86.msi: custom actions not run: WixBroadcastEnvironmentChange",
+  "dotnet-runtime-3.1.10-win-x64.msi: custom actions not run: WixBroadcastEnvironmentChange",
+  "dotnet-hostfxr-3.1.10-win-x64.msi: custom actions not run: WixBroadcastEnvironmentChange",
+  "dotnet-host-3.1.10-win-x64.msi: custom actions not run: WixBroadcastEnvironmentChange"
+ ],
+ "registry": [
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x86",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\dotnet\\Setup\\InstalledVersions\\x86\\sharedfx\\Microsoft.NETCore.App",
+   "name": "3.1.10",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\Windows\\Windows Error Reporting\\RuntimeExceptionHelperModules",
+   "name": "C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\KnownManagedDebuggingDlls",
+   "name": "C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\KnownFunctionTableDlls",
+   "name": "C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\MiniDumpAuxiliaryDlls",
+   "name": "C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\coreclr.dll",
+   "type": "REG_SZ",
+   "value": "C:\\Program Files (x86)\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x86",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{6906ADCE-5B40-40A2-BF7E-3FDF2D1F067D}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x86",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Runtime - 3.1.10 (x86)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x86",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\dotnet\\Setup\\InstalledVersions\\x86\\hostfxr",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "3.1.10"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x86",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{08B73751-670A-4865-B9B3-53E50D5DEF73}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x86",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Host FX Resolver - 3.1.10 (x86)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x86",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x86",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{74B7E137-57CB-4592-B3CF-3A398C2C758D}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x86",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Host - 3.1.10 (x86)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\dotnet\\Setup\\InstalledVersions\\x86\\sharedhost",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "3.1.10"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\dotnet\\Setup\\InstalledVersions\\x64\\sharedfx\\Microsoft.NETCore.App",
+   "name": "3.1.10",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting\\RuntimeExceptionHelperModules",
+   "name": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\KnownManagedDebuggingDlls",
+   "name": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\KnownFunctionTableDlls",
+   "name": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\MiniDumpAuxiliaryDlls",
+   "name": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\coreclr.dll",
+   "type": "REG_SZ",
+   "value": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\3.1.10\\mscordaccore.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x64",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{396D7BC8-E3C8-4B3E-8C60-D50D94FDF09D}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\dotnet_runtime_24.104.29419_x64",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Runtime - 3.1.10 (x64)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\dotnet\\Setup\\InstalledVersions\\x64\\hostfxr",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "3.1.10"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x64",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{752B4412-A129-4CB2-AD96-B6D97EAD3090}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_HostFxr_24.104.29419_x64",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Host FX Resolver - 3.1.10 (x64)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "24.104.29419"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x64",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{52B42932-15C1-45D4-8904-FC3117EEE69B}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Dotnet_CLI_SharedHost_24.104.29419_x64",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft .NET Core Host - 3.1.10 (x64)"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\dotnet\\Setup\\InstalledVersions\\x64\\sharedhost",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "3.1.10"
+  }
+ ],
+ "requiresTools": [
+  "cabextract"
+ ],
+ "schema": 1,
+ "unpackedBytes": 130627728,
+ "verb": "dotnetcore3"
+}

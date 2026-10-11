@@ -4140,7 +4140,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet10.layout.json",
+        "sha256": "b3e509ea79de236323f69c025e11d25c941a4a28651e2185f90ace053f06f16b"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-10.0.0-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 10.0 LTS"
     },
@@ -4274,6 +4281,7 @@
     "dotnet40": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 67108864,
       "includes": [
         "remove_mono",
         "winxp"
@@ -4286,6 +4294,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet40.layout.json",
+        "sha256": "0fd5e4ae47bc033e0a9cc0c756a8db192de155fac32e6c4c609a4ef28131f96b"
+      },
       "msiProperties": {
         "ServicePackLevel": "2",
         "VersionNT": "501",
@@ -4375,12 +4387,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.0"
     },
     "dotnet45": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 67108864,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4393,6 +4410,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet45.layout.json",
+        "sha256": "b5061647fb6daa4a6a4e78c5265974ec657ef724b894b5cf315b530894a54edd"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4470,12 +4491,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.5"
     },
     "dotnet452": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4488,6 +4514,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet452.layout.json",
+        "sha256": "7233db00ba6c467280daf88d254e87af4714efd70dbaa91ff190c54be439ebba"
+      },
+      "msi": [
+        "netfx_Full_GDR_x86.msi",
+        "netfx_Full_GDR_x64.msi"
+      ],
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4545,12 +4579,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.5.2"
     },
     "dotnet462": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet461"
@@ -4563,6 +4602,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet462.layout.json",
+        "sha256": "9aa89ec55c1d872021b86b6fd16ee810cb2163aa5087ac55d160659eef626221"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4620,12 +4663,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.6.2"
     },
     "dotnet472": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet462"
@@ -4638,6 +4686,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet472.layout.json",
+        "sha256": "e452b2fe0aec8f3f9bc2243e4ed81f6c69f7e157dadcdca2eb626a48e95c1f2d"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4695,12 +4747,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.7.2"
     },
     "dotnet48": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4713,6 +4770,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet48.layout.json",
+        "sha256": "fe32aaace647142e30b056f981c782bd51eec28bf5504745dbd64e03ef04454a"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4770,6 +4831,10 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.8"
     },
@@ -4789,7 +4854,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet6.layout.json",
+        "sha256": "a99c23b08c2ab73da3878a7749d296c40b2724f529b79ed3460dca0642ce4f6f"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-6.0.36-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 6.0 LTS"
     },
@@ -4809,7 +4881,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet7.layout.json",
+        "sha256": "d1667dd9c26eddca4a13db2d2e7aeead6c349820a425da9e152036ba7feda154"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-7.0.20-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 7.0 LTS"
     },
@@ -4829,7 +4908,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet8.layout.json",
+        "sha256": "196dd1743acc1cb6d0dcc65e3d2a472d57894bd86369f0bfcdcb5256d920951b"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-8.0.12-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 8.0 LTS"
     },
@@ -4849,7 +4935,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet9.layout.json",
+        "sha256": "a15299d0751631b2c79a49dd58b50ce61acead5d85da40fb61bbfce21cd05bc6"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-9.0.14-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 9.0 LTS"
     },
@@ -4869,7 +4962,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetcore3.layout.json",
+        "sha256": "c1a311f353a42e31d379ed11822e490bee1509873740098a38925ae8d1e71188"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-3.1.10-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Core Runtime 3.1 LTS"
     },
@@ -4889,7 +4989,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop10.layout.json",
+        "sha256": "b42bd306cf0fe325a1890744e1943b97797e07e40e5acc64d3a02f549fcb22d2"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-10.0.0-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 10.0 LTS"
     },
@@ -4909,7 +5016,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop6.layout.json",
+        "sha256": "f98c4d643299f052c28b8ff67604cebd3b605ac8e7eb56777f138df2fdf5391e"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-6.0.36-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 6.0 LTS"
     },
@@ -4929,7 +5043,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop8.layout.json",
+        "sha256": "d8853012ee36c1201919b599fc10474d3c69b702c9b1306333113e2c67e9e884"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-8.0.12-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 8.0 LTS"
     },
@@ -4949,7 +5070,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop9.layout.json",
+        "sha256": "02e5ab8ca99b39a35161e631e2089b53293888175d249e817b8534f8f5a12728"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-9.0.7-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 9.0 LTS"
     },

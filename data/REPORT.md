@@ -121,6 +121,79 @@
 
 `*` = referenced by at least one fix.
 
+## Verb classes
+
+| class | verbs | used by fixes |
+|---|---|---|
+| component | 58 | 31 |
+| registry | 28 | 4 |
+| download | 33 | 25 |
+| offline_installer | 29 | 17 |
+| exec | 5 | 5 |
+| skip | 11 | 9 |
+
+### Byte-range downloads
+
+| verb | slices (MB) |
+|---|---|
+| crypt32 | 54, 62, 35 |
+| gdiplus | 31, 55 |
+| msxml3 | 82, 84 |
+| oleaut32 | 59, 68 |
+| urlmon | 12, 17, 40, 16 |
+| usp10 | 13, 20 |
+| wininet | 56, 29, 40, 16 |
+
+### Offline installers
+
+| verb | used by fixes | layout | requires tools | 7z dictionary |
+|---|---|---|---|---|
+| dotnet10 | no | yes | cabextract | - |
+| dotnet20 | yes | no | - | - |
+| dotnet20sp2 | no | no | - | - |
+| dotnet35 | yes | no | - | - |
+| dotnet35sp1 | yes | no | - | - |
+| dotnet40 | yes | yes | 7zz, cabextract | 64 MB |
+| dotnet45 | yes | yes | 7zz, cabextract | 64 MB |
+| dotnet452 | no | yes | 7zz, cabextract | 512 MB |
+| dotnet462 | yes | yes | 7zz, cabextract | 512 MB |
+| dotnet472 | no | yes | 7zz, cabextract | 512 MB |
+| dotnet48 | yes | yes | 7zz, cabextract | 512 MB |
+| dotnet6 | no | yes | cabextract | - |
+| dotnet7 | no | yes | cabextract | - |
+| dotnet8 | no | yes | cabextract | - |
+| dotnet9 | no | yes | cabextract | - |
+| dotnetcore3 | yes | yes | cabextract | - |
+| dotnetdesktop10 | yes | yes | cabextract | - |
+| dotnetdesktop6 | no | yes | cabextract | - |
+| dotnetdesktop8 | yes | yes | cabextract | - |
+| dotnetdesktop9 | yes | yes | cabextract | - |
+| msxml4 | no | yes | - | - |
+| vcrun2005 | no | yes | - | - |
+| vcrun2012 | no | yes | - | - |
+| vcrun2015 | yes | yes | - | - |
+| vcrun2017 | yes | yes | - | - |
+| vcrun2019 | yes | yes | - | - |
+| vcrun2022 | yes | yes | - | - |
+| xna31 | yes | yes | - | - |
+| xna40 | yes | yes | - | - |
+
+### Skipped
+
+| verb | used by fixes | reason |
+|---|---|---|
+| allfonts | yes | installs every winetricks font (over 1 GB of downloads) |
+| directx9 | no | winetricks marks it a deprecated no-op; use the individual d3dx verbs |
+| eossdk | yes | the EOS SDK archive is 580 MB and its installer only adds the Epic overlay service |
+| gui | yes | opens the interactive winetricks GUI |
+| hidewineexports=disable | no | needs the wine-staging HideWineExports patch, which our Wine builds do not have |
+| hidewineexports=enable | yes | needs the wine-staging HideWineExports patch, which our Wine builds do not have |
+| icodecs | yes | the Indeo codec installer needs a GUI and registers drivers under Wine |
+| ie8 | yes | Internet Explorer 8 needs its own installer and the Windows 7 SP1 update |
+| mdx | yes | Managed DirectX needs its assemblies registered in the .NET GAC by the DirectX installer |
+| powershell | yes | PowerShell Core needs its MSI run under Wine |
+| webview2 | yes | the WebView2 runtime installer does not work under Wine on Android |
+
 ## Non-Steam fixes without a store id in umu-database (umu id used as id)
 
 - gamefixes-zoomplatform/umu-12810.py

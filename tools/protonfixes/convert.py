@@ -3891,6 +3891,49 @@ def generate(pf_root, wt_paths, db_path, out_dir, upstream_commit=None, upstream
     return docs, verbs
 
 
+def verb_class_report(verbs, used):
+    """The `## Verb classes` section: what the app does with each verb (`class`, see tools/verbs/README.md)."""
+    lines = ['## Verb classes', '']
+    by_class = {}
+    for n, v in sorted(verbs.items()):
+        by_class.setdefault(v.get('class'), []).append(n)
+    lines.append('| class | verbs | used by fixes |')
+    lines.append('|---|---|---|')
+    for cls in VERBS.CLASSES:
+        names = by_class.get(cls, [])
+        lines.append(f'| {cls} | {len(names)} | {sum(1 for n in names if n in used)} |')
+    lines.append('')
+    ranged = [n for n in by_class.get('download', []) if any(f.get('hops') for f in verbs[n].get('files', []))]
+    if ranged:
+        lines.append('### Byte-range downloads')
+        lines.append('')
+        lines.append('| verb | slices (MB) |')
+        lines.append('|---|---|')
+        for n in ranged:
+            sizes = [f['hops'][0]['length'] / 1e6 for f in verbs[n]['files'] if f.get('hops')]
+            lines.append(f'| {n} | {", ".join("%.0f" % x for x in sizes)} |')
+        lines.append('')
+    lines.append('### Offline installers')
+    lines.append('')
+    lines.append('| verb | used by fixes | layout | requires tools | 7z dictionary |')
+    lines.append('|---|---|---|---|---|')
+    for n in by_class.get('offline_installer', []):
+        v = verbs[n]
+        tools = ', '.join(v.get('requiresTools', [])) or '-'
+        dict_size = f'{v["dictSizeBytes"] >> 20} MB' if v.get('dictSizeBytes') else '-'
+        lines.append(f'| {n} | {"yes" if n in used else "no"} | {"yes" if v.get("layout") else "no"} | '
+                     f'{tools} | {dict_size} |')
+    lines.append('')
+    lines.append('### Skipped')
+    lines.append('')
+    lines.append('| verb | used by fixes | reason |')
+    lines.append('|---|---|---|')
+    for n in by_class.get('skip', []):
+        lines.append(f'| {n} | {"yes" if n in used else "no"} | {_md(verbs[n].get("reason", ""))} |')
+    lines.append('')
+    return lines
+
+
 def _md(s):
     return s.replace('|', '\\|').replace('\n', ' ')
 
@@ -4017,6 +4060,7 @@ def build_report(docs, verbs, entries, collisions, unmapped, upstream_commit, wt
         lines.append('')
     lines.append('`*` = referenced by at least one fix.')
     lines.append('')
+    lines.extend(verb_class_report(verbs, used))
     if unmapped:
         lines.append('## Non-Steam fixes without a store id in umu-database (umu id used as id)')
         lines.append('')
