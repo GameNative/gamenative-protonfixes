@@ -1,0 +1,16 @@
+{
+  "upstream": "gamefixes-steam/429720.py",
+  "upstreamSha256": "6980ebdaf1668ab1415ff1ca9b2d4005bd1e321eab9c6f8c9b860a90a129af9b",
+  "comment": "IMSCARED. Upstream replaces the prefix Desktop folder with a link to the host ~/Desktop, because the game puts files there for the player. Android has no host desktop, so the prefix Desktop folder is kept (and created if missing).",
+  "confidence": "medium: the files the game writes stay inside the prefix Desktop folder",
+  "steps": [
+    {
+      "op": "file",
+      "action": "mkdir",
+      "to": "${drive_c}/users/${user}/Desktop"
+    }
+  ],
+  "notes": [
+    "the game writes its files to the prefix Desktop folder, not to a host desktop"
+  ]
+}

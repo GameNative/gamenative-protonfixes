@@ -1,0 +1,25 @@
+{
+  "upstream": "gamefixes-steam/409090.py",
+  "upstreamSha256": "fbcc2fecd568cc0bd3be311b972dea0dc4d9863dce9373df2aee8cf648990198",
+  "comment": "The Big Secret of a Small Town. Installs dgvoodoo2, changes Resolution=max to unforced in dgvoodoo.conf, and uses dgVoodoo's d3d9 as d3d9.dll. The upstream sed address /[DirectX]/ is a character class that matches every Resolution line, so the edit is: first \"max\" on each line that contains \"Resolution\".",
+  "confidence": "medium: depends on the dgvoodoo2 verb putting dgvoodoo.conf and dgd3d9.dll in syswow64",
+  "steps": [
+    {
+      "op": "verb",
+      "name": "dgvoodoo2"
+    },
+    {
+      "op": "text_replace",
+      "path": "${drive_c}/windows/syswow64/dgvoodoo.conf",
+      "regex": true,
+      "from": "(?m)^(?=.*Resolution)(.*?)max",
+      "to": "$1unforced"
+    },
+    {
+      "op": "file",
+      "action": "copy",
+      "from": "${drive_c}/windows/syswow64/dgd3d9.dll",
+      "to": "${drive_c}/windows/syswow64/d3d9.dll"
+    }
+  ]
+}

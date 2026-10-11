@@ -1,0 +1,401 @@
+{
+  "upstream": "gamefixes-steam/2229850.py",
+  "upstreamSha256": "ff29818f9fd62f9b74ea58b562e5a827fdfa8e04b1c6ff1bfc6f19285fe37e5a",
+  "comment": "C&C Red Alert 2. With NO_CNCNET set to a yes value, use cnc-ddraw (rename the game ddraw.dll once, install cnc_ddraw). Otherwise install the CnCNet launcher (cncnet_ra2) and start it instead of the game; when that verb could not be installed, fall back to cnc-ddraw like upstream does. Steps rely on per-step evaluation of `when`: the fallback runs only when cncnet_ra2 is still not installed after its own step. The ddraw.dll rename comes before the cnc_ddraw verb so that the verb step does not hide it.",
+  "confidence": "medium: upstream lower-cases NO_CNCNET; only the lower-case spellings are matched here.",
+  "steps": [
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "1"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "1"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "on"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "on"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "true"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "true"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "y"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "y"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "yes"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "env": "NO_CNCNET",
+          "equals": "yes"
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cncnet_ra2",
+      "when": [
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "1"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "on"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "true"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "y"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "yes"
+          }
+        },
+        {
+          "not": {
+            "verbInstalled": "cncnet_ra2"
+          }
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "move",
+      "from": "${install}/ddraw.dll",
+      "to": "${install}/ddraw.dll.bak",
+      "when": [
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "1"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "on"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "true"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "y"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "yes"
+          }
+        },
+        {
+          "not": {
+            "verbInstalled": "cncnet_ra2"
+          }
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        },
+        {
+          "fileExists": "${install}/ddraw.dll"
+        }
+      ]
+    },
+    {
+      "op": "verb",
+      "name": "cnc_ddraw",
+      "when": [
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "1"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "on"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "true"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "y"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "yes"
+          }
+        },
+        {
+          "not": {
+            "verbInstalled": "cncnet_ra2"
+          }
+        },
+        {
+          "not": {
+            "verbInstalled": "cnc_ddraw"
+          }
+        }
+      ]
+    },
+    {
+      "op": "replace_command",
+      "from": "Ra2.exe",
+      "to": "CnCNetYRLauncher.exe",
+      "when": [
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "1"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "on"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "true"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "y"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "yes"
+          }
+        },
+        {
+          "fileExists": "${install}/CnCNetYRLauncher.exe"
+        }
+      ]
+    },
+    {
+      "op": "replace_command",
+      "from": "RA2MD.exe",
+      "to": "CnCNetYRLauncher.exe",
+      "when": [
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "1"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "on"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "true"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "y"
+          }
+        },
+        {
+          "not": {
+            "env": "NO_CNCNET",
+            "equals": "yes"
+          }
+        },
+        {
+          "fileExists": "${install}/CnCNetYRLauncher.exe"
+        }
+      ]
+    }
+  ]
+}

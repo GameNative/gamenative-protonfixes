@@ -1,0 +1,55 @@
+{
+  "upstream": "gamefixes-steam/1873170.py",
+  "upstreamSha256": "670516f0e01fbe7f875c7138070a11f9f332b5637f5d32d9db66d394e0a2cd64",
+  "comment": "Cease to Breathe. Downloads NW.js 0.86.0 (sha256-checked), extracts it, copies the nwjs folder over the game, deletes the extracted folder, and turns off the window frame in package.json. The copy and the delete are keyed on the extracted folder, not on nw.exe, because the copy creates nw.exe and a per-step check would skip the delete.",
+  "confidence": "high",
+  "steps": [
+    {
+      "op": "replace_command",
+      "from": "CTB.exe",
+      "to": "nw.exe"
+    },
+    {
+      "op": "download",
+      "url": "https://dl.nwjs.io/v0.86.0/nwjs-v0.86.0-win-x64.zip",
+      "sha256": "ed2681847162e0fa457dd55e293b6f331ccd58acedd934a98e7fe1406c26dd4f",
+      "to": "${install}",
+      "extract": true,
+      "backup": [],
+      "when": [
+        {
+          "fileMissing": "${install}/nw.exe"
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "copy",
+      "from": "${install}/nwjs-v0.86.0-win-x64",
+      "to": "${install}",
+      "recursive": true,
+      "when": [
+        {
+          "fileExists": "${install}/nwjs-v0.86.0-win-x64"
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "delete",
+      "to": "${install}/nwjs-v0.86.0-win-x64",
+      "recursive": true,
+      "when": [
+        {
+          "fileExists": "${install}/nwjs-v0.86.0-win-x64"
+        }
+      ]
+    },
+    {
+      "op": "text_replace",
+      "path": "${install}/package.json",
+      "from": "\"frame\": true",
+      "to": "\"frame\": false"
+    }
+  ]
+}

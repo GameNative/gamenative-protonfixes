@@ -1,0 +1,22 @@
+{
+  "upstream": "gamefixes-steam/1382330.py",
+  "upstreamSha256": "798bf48279e5f863cd172b495cbef3c3cd8dce01970aeb1b4805aa8e4a8d1613",
+  "comment": "Persona 5 Strikers. On Intel hybrid CPUs (12th to 15th gen) upstream pins the game to the P-cores with taskset, read from /proc/cpuinfo and sysfs. GameNative only runs on ARM, so this never applies.",
+  "confidence": "high",
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "pins the game to the Intel P-cores (taskset) from the host CPU topology",
+      "source": "",
+      "when": [
+        {
+          "intel_hybrid": true
+        }
+      ]
+    }
+  ],
+  "coverage": "full",
+  "notes": [
+    "only applies to Intel hybrid CPUs"
+  ]
+}

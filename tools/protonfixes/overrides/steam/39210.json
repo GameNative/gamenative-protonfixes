@@ -1,0 +1,58 @@
+{
+  "upstream": "gamefixes-steam/39210.py",
+  "upstreamSha256": "10e6c5e7d2c59180f4bfe2217b2ebb9b09ec3ef5f0e47ab190e8996a1ec54087",
+  "comment": "FFXIV. Removes -issteam without Steam, and under Wayland forces WebView2RuntimeInvalid 1 in FFXIV_BOOT.cfg: create the file if missing, otherwise rewrite the existing value, otherwise append the line. The regex uses Java syntax ($1 in the replacement).",
+  "confidence": "high (the Wayland part never applies on GameNative)",
+  "steps": [
+    {
+      "op": "replace_command",
+      "from": "-issteam",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    },
+    {
+      "op": "file",
+      "action": "mkdir",
+      "to": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn"
+    },
+    {
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "content": "<FINAL FANTASY XIV Config File>\n\n<Version>\nWebView2RuntimeInvalid 1\n",
+      "ifMissing": true,
+      "encoding": "utf-8",
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    },
+    {
+      "op": "text_replace",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "regex": true,
+      "from": "(?m)^(WebView2RuntimeInvalid)\\s+\\d+\\s*$",
+      "to": "$1 1",
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    },
+    {
+      "op": "append_line",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "line": "WebView2RuntimeInvalid 1",
+      "ifAbsent": true,
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    }
+  ]
+}

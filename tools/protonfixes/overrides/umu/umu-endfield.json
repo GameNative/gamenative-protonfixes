@@ -1,0 +1,10 @@
+{
+  "upstream": "gamefixes-umu/umu-endfield.py",
+  "upstreamSha256": "cf91e882554303927e9d8d2f7efcd7d098f3b87561d4d759b674a7a70847929b",
+  "comment": "Arknights: Endfield. Upstream links LocalLow/HG_IL2CPP_MMAP0..63 to /dev/shm so the game's large mmapped files stay in RAM. This is a load-time optimisation only and has no Android equivalent, so it is a no-op.",
+  "confidence": "high",
+  "steps": [],
+  "notes": [
+    "the /dev/shm load-time optimisation is skipped"
+  ]
+}

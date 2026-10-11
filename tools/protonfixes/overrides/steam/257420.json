@@ -1,0 +1,28 @@
+{
+  "upstream": "gamefixes-steam/257420.py",
+  "upstreamSha256": "7447e6f24243b6b3cf43ce4fa4d505b30934cc3c1268790ec01f58df5b4d98f8",
+  "comment": "Serious Sam (257420). Upstream backs up UserCfg.lua once and appends the OpenAL line. The backup creates the file that guards the append, so the append is made idempotent with ifAbsent instead of sharing the guard.",
+  "confidence": "high",
+  "steps": [
+    {
+      "op": "file",
+      "action": "copy",
+      "from": "${install}/UserCfg.lua",
+      "to": "${install}/UserCfg.lua.bak",
+      "when": [
+        {
+          "fileExists": "${install}/UserCfg.lua"
+        },
+        {
+          "fileMissing": "${install}/UserCfg.lua.bak"
+        }
+      ]
+    },
+    {
+      "op": "append_line",
+      "path": "${install}/UserCfg.lua",
+      "line": "sfx_strAPI = \"OpenAL\";",
+      "ifAbsent": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "upstream": "gamefixes-steam/2246340.py",
+  "upstreamSha256": "4e3c65003798c4587965d1da6560435e89c1a2ef7ab82558c2175f6943c979b1",
+  "comment": "Monster Hunter Wilds. Upstream links the Monster Hunter: World (582010) Steam userdata save folder of every local Steam account into this prefix. Here only the signed-in account is used. ${steam_account_id} is the 32-bit account id (the userdata folder name).",
+  "confidence": "medium: assumes the other prefix keeps Steam userdata at C:\\Program Files (x86)\\Steam\\userdata",
+  "steps": [
+    {
+      "op": "import_saves",
+      "fromAppid": 582010,
+      "copy": false,
+      "path": "../../Program Files (x86)/Steam/userdata/${steam_account_id}/582010"
+    }
+  ]
+}

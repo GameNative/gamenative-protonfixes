@@ -1,0 +1,24 @@
+{
+  "upstream": "gamefixes-steam/452440.py",
+  "upstreamSha256": "804f70449ec33693b4c6ae5c7af85429465cebe25526824ecd36305b669f62be",
+  "comment": "Flowers - Le Volume Sur Printemps. Runs the font installer that ships with the game when the font is not in the prefix yet. Upstream also checks the installer sha256; exec cannot check that.",
+  "confidence": "medium: exec step shape from WS4; the installer checksum is not verified",
+  "steps": [
+    {
+      "op": "exec",
+      "path": "${install}/font/overlock_mod_font_installer.exe",
+      "args": [
+        "/silent"
+      ],
+      "once": "overlock-mod-font",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/Fonts/Overlock-Mod.ttf"
+        },
+        {
+          "fileExists": "${install}/font/overlock_mod_font_installer.exe"
+        }
+      ]
+    }
+  ]
+}

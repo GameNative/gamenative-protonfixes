@@ -1,0 +1,39 @@
+{
+  "upstream": "gamefixes-steam/3590.py",
+  "upstreamSha256": "089774cd8faa0d6461a3e26bfdfc017f10e81279370ce8a8a874679efda00e38",
+  "comment": "Plants vs. Zombies GOTY. The launcher unpacks popcapgame1.exe into ProgramData and starts it. Upstream starts a thread that waits for that file, copies it next to the game as PlantsVsZombies_good.exe and kills the game so Steam starts it again. Here the copy happens at the start of the next launch instead, and replace_command then starts the copied exe in the same launch.",
+  "confidence": "medium: the first launch still goes through the launcher; the second launch uses the copied exe.",
+  "steps": [
+    {
+      "op": "launch_args",
+      "append": "-changedir"
+    },
+    {
+      "op": "file",
+      "action": "copy",
+      "from": "${drive_c}/ProgramData/PopCap Games/PlantsVsZombies/popcapgame1.exe",
+      "to": "${install}/PlantsVsZombies_good.exe",
+      "when": [
+        {
+          "fileExists": "${drive_c}/ProgramData/PopCap Games/PlantsVsZombies/popcapgame1.exe"
+        },
+        {
+          "fileMissing": "${install}/PlantsVsZombies_good.exe"
+        }
+      ]
+    },
+    {
+      "op": "replace_command",
+      "from": "PlantsVsZombies.exe",
+      "to": "PlantsVsZombies_good.exe",
+      "when": [
+        {
+          "fileExists": "${install}/PlantsVsZombies_good.exe"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "the copied exe is used from the launch after the launcher has unpacked popcapgame1.exe"
+  ]
+}

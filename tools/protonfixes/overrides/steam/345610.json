@@ -1,0 +1,19 @@
+{
+  "upstream": "gamefixes-steam/345610.py",
+  "upstreamSha256": "f6eb9c2e9eefa35387cf141e5f713142412aa76b92c186fc498e4d4157010518",
+  "comment": "The Fruit of Grisaia. Sets ENABLE_GAMESCOPE_WSI=0 when the game runs inside gamescope.",
+  "confidence": "high (never applies on GameNative)",
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "ENABLE_GAMESCOPE_WSI": "0"
+      },
+      "when": [
+        {
+          "gamescope": true
+        }
+      ]
+    }
+  ]
+}
