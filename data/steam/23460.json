@@ -18,11 +18,11 @@
     {
       "op": "env",
       "set": {
-        "PROTON_NO_XALIA": "0"
+        "PROTON_USE_XALIA": "1"
       }
     }
   ],
   "store": "steam",
   "upstream": "gamefixes-steam/23460.py",
-  "upstreamCommit": "c0b36e4"
+  "upstreamCommit": "e89ce7b"
 }

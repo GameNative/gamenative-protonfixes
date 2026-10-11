@@ -716,7 +716,7 @@
       "coverage": "full",
       "file": "steam/1112400.json",
       "name": "Project Torque",
-      "sha256": "9281e7d3a0d34c85f9e215c80a02f58a2b65f2009fce6299a19b2081fad8ab10"
+      "sha256": "cfdaad727bec900522a331fe92228923f5c1eb46bb96f2c3b13c281efd4b9bc4"
     },
     "steam/1144400": {
       "coverage": "full",
@@ -1340,7 +1340,7 @@
       "coverage": "full",
       "file": "steam/23460.json",
       "name": "Ceville",
-      "sha256": "aa287474f05892a6836b66044ecff9256cf10fe0e29a9a906750f2ad9c145786"
+      "sha256": "52b8de3953761015846f37e7da805c7a58d59e73bc9b5981bed663c5d0772fcc"
     },
     "steam/240600": {
       "coverage": "full",
@@ -2831,9 +2831,9 @@
       "sha256": "7cf296a6a4a322246ecde0dd6dda43fcd7e42f1c6cbd68d1566579adcc6e18c2"
     }
   },
-  "generatedAt": "2026-10-11T10:34:14Z",
+  "generatedAt": "2026-10-11T12:08:26Z",
   "schema": 1,
-  "upstreamCommit": "7e57c0cb4e6d5918d3825cfdd5e3cf00d28700a0",
-  "upstreamDate": "2026-10-10T13:56:58-06:00",
+  "upstreamCommit": "e89ce7b43800b0df4c37015239d64952fb42ed8b",
+  "upstreamDate": "2026-10-11T03:03:38-06:00",
   "winetricksCommit": "f3890f670867b5ffbc3938726db45c0f7d16c8ba"
 }

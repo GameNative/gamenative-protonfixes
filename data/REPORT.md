@@ -1,6 +1,6 @@
 # protonfixes import report
 
-- umu-protonfixes commit: `7e57c0cb4e6d5918d3825cfdd5e3cf00d28700a0`
+- umu-protonfixes commit: `e89ce7b43800b0df4c37015239d64952fb42ed8b`
 - winetricks commit: `f3890f670867b5ffbc3938726db45c0f7d16c8ba`
 - upstream fix files: 468 (354 real files, 114 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
 - documents written: 468 (354 canonical, 114 aliases)

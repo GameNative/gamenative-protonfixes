@@ -16,11 +16,21 @@
       "op": "verb"
     },
     {
+      "name": "dotnet40",
+      "op": "verb"
+    },
+    {
       "name": "win10",
       "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "PROTON_USE_XALIA": "0"
+      }
     }
   ],
   "store": "steam",
   "upstream": "gamefixes-steam/1112400.py",
-  "upstreamCommit": "26e2e54"
+  "upstreamCommit": "e89ce7b"
 }

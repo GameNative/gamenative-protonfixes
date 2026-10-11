@@ -1262,7 +1262,7 @@
       "sha256": "967b31024bebc1ae30f9159bc67eff55285a1928e9c6539314384884bfa0cf33"
     }
   },
-  "generatedAt": "2026-10-11T10:30:14Z",
+  "generatedAt": "2026-10-11T12:12:09Z",
   "schema": 1,
   "unparsed": [
     {
@@ -1276,6 +1276,6 @@
   ],
   "upstream": "ValveSoftware/Proton",
   "upstreamBranch": "proton_11.0",
-  "upstreamCommit": "bc896217",
+  "upstreamCommit": "bc89621",
   "upstreamDate": "2026-10-09T18:21:45+03:00"
 }
