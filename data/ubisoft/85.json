@@ -1,0 +1,15 @@
+{
+  "canonical": {
+    "id": "19900",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "85",
+  "name": "Far Cry 2",
+  "schema": 1,
+  "steps": [],
+  "store": "ubisoft",
+  "umuId": "umu-19900",
+  "upstream": "gamefixes-ubisoft/umu-19900.py",
+  "upstreamCommit": "490f513"
+}

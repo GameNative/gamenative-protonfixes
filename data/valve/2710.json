@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2710",
+  "name": "Act of War: Direct Action",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noforcelgadd"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

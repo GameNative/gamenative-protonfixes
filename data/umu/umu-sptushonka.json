@@ -1,0 +1,34 @@
+{
+  "coverage": "full",
+  "id": "umu-sptushonka",
+  "name": "SP-Tushonka",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dotnetdesktop9",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "version": "n,b",
+        "winhttp": "n,b"
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\X11 Driver",
+      "op": "registry",
+      "values": {
+        "UseTakeFocus": {
+          "type": "REG_SZ",
+          "value": "N"
+        }
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-sptushonka",
+  "upstream": "gamefixes-umu/umu-sptushonka.py",
+  "upstreamCommit": "d036a51"
+}

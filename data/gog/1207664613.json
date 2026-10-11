@@ -1,0 +1,31 @@
+{
+  "canonical": {
+    "id": "269330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207664613",
+  "name": "Chronology",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet20",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet40",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-269330",
+  "upstream": "gamefixes-gog/umu-269330.py",
+  "upstreamCommit": "26e2e54"
+}

@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "876340",
+  "name": "VR Slots 3D",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

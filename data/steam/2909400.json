@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2909400",
+  "name": "Final Fantasy VII Rebirth",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": false,
+      "fromAppid": 1462040,
+      "op": "import_saves",
+      "path": "Documents/My Games/FINAL FANTASY VII REMAKE"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2909400.py",
+  "upstreamCommit": "45dccdd"
+}

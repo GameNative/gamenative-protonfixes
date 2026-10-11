@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "414740",
+  "name": "RAID: World War II",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noesync",
+        "nofsync"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

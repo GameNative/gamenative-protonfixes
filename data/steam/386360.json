@@ -1,0 +1,33 @@
+{
+  "coverage": "full",
+  "id": "386360",
+  "name": "SMITE",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "symlink",
+      "from": "${install}/EasyAntiCheat/easyanticheat_x64.so",
+      "op": "file",
+      "to": "${install}/Win64/EasyAntiCheat/easyanticheat_x64.so",
+      "when": [
+        {
+          "fileMissing": "${install}/Win64/EasyAntiCheat/easyanticheat_x64.so"
+        }
+      ]
+    },
+    {
+      "action": "symlink",
+      "from": "${install}/EasyAntiCheat/easyanticheat_x86.so",
+      "op": "file",
+      "to": "${install}/Win32/EasyAntiCheat/easyanticheat_x86.so",
+      "when": [
+        {
+          "fileMissing": "${install}/Win32/EasyAntiCheat/easyanticheat_x86.so"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/386360.py",
+  "upstreamCommit": "490f513"
+}

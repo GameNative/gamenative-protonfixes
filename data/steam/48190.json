@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "48190",
+  "name": "Assassin's Creed: Brotherhood",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-playoffline",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/48190.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "240600",
+  "name": "MotorGP",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/240600.py",
+  "upstreamCommit": "490f513"
+}

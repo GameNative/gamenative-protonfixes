@@ -1,0 +1,32 @@
+{
+  "aliases": [
+    {
+      "id": "1875",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "368500",
+  "name": "Assassin's Creed: Syndicate",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "nvapi": "d",
+        "nvapi64": "d",
+        "nvcuda": "d",
+        "nvcuvid": "d",
+        "nvencodeapi": "d",
+        "nvencodeapi64": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/368500.py",
+  "upstreamCommit": "8b13bff"
+}

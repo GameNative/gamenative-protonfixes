@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "1837106902",
+      "store": "gog"
+    },
+    {
+      "id": "umu-39200",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "39200",
+  "name": "Dungeon Siege 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/39200.py",
+  "upstreamCommit": "a2c80f7"
+}

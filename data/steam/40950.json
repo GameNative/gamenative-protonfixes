@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "40950",
+  "name": "Stronghold HD",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/40950.py",
+  "upstreamCommit": "490f513"
+}

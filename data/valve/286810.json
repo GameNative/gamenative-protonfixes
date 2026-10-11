@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "286810",
+  "name": "Hard Truck Apocalypse: Rise of Clans / Ex Machina: Meridian 113",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 30,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

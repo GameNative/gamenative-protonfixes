@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "512490",
+  "name": "Zombie Estate 2",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "fnad3d11"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1056640",
+  "name": "Phantasy Star Online 2",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "WINE_NO_OPEN_FILE_SEARCH": "pso2_bin/data"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1056640.py",
+  "upstreamCommit": "490f513"
+}

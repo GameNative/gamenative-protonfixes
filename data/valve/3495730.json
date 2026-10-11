@@ -1,0 +1,21 @@
+{
+  "coverage": "none",
+  "id": "3495730",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: gamescope is not used",
+      "source": "self.env[\"WINE_DISABLE_GAMESCOPE_MAX_SIZE_HACK\"] = \"1\"",
+      "step": {
+        "op": "env",
+        "set": {
+          "WINE_DISABLE_GAMESCOPE_MAX_SIZE_HACK": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

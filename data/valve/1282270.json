@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1282270",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_LIMIT_ADDRESS_SPACE": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

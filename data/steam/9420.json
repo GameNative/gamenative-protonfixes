@@ -1,0 +1,23 @@
+{
+  "canonical": {
+    "id": "9350",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "9420",
+  "name": "Supreme Commander",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "fsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/9420.py",
+  "upstreamCommit": "75337fd"
+}

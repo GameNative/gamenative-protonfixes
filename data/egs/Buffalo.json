@@ -1,0 +1,24 @@
+{
+  "canonical": {
+    "id": "40800",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Buffalo",
+  "name": "Super Meat Boy",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "xact",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-40800",
+  "upstream": "gamefixes-egs/umu-40800.py",
+  "upstreamCommit": "490f513"
+}

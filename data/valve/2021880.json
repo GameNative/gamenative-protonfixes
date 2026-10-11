@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2021880",
+  "name": "Ara: History Untold",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "hidevggpu"
+      ],
+      "flags": [
+        "hidevggpu"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

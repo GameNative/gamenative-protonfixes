@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "umu-limelightlj",
+  "name": "LimeLight Lemonade Jam",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "version": "n,b"
+      }
+    },
+    {
+      "append": "-vomstyle=layer",
+      "op": "launch_args"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-limelightlj",
+  "upstream": "gamefixes-umu/umu-limelightlj.py",
+  "upstreamCommit": "c43c368"
+}

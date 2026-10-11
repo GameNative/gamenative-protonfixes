@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "910830",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1339695996",
+  "name": "Rebel Galaxy Outlaw",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-910830",
+  "upstream": "gamefixes-gog/umu-910830.py",
+  "upstreamCommit": "490f513"
+}

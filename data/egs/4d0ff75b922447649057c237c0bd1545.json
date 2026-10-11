@@ -1,0 +1,22 @@
+{
+  "aliases": [
+    {
+      "id": "umu-306130",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "4d0ff75b922447649057c237c0bd1545",
+  "name": "The Elder Scrolls Online",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "webview2",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-306130",
+  "upstream": "gamefixes-egs/umu-306130.py",
+  "upstreamCommit": "09c0a8a"
+}

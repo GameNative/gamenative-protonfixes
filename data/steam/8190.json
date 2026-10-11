@@ -1,0 +1,27 @@
+{
+  "coverage": "full",
+  "id": "8190",
+  "name": "Just Cause 2 - Complete Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx10",
+      "op": "verb"
+    },
+    {
+      "append": "-borderless",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/8190.py",
+  "upstreamCommit": "490f513"
+}

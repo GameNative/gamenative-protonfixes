@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "1245620",
+  "name": "Elden Ring: Create the `DLC.bdt` and `DLC.bhd` files to work around the \"Inappropriate activity detected\" error for players that don't own the DLC",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "touch",
+      "op": "file",
+      "to": "${install}/Game/DLC.bdt"
+    },
+    {
+      "action": "touch",
+      "op": "file",
+      "to": "${install}/Game/DLC.bhd"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1245620.py",
+  "upstreamCommit": "6c45ced"
+}

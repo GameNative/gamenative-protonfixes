@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "4553",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "916440",
+  "name": "Anno 1800",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/916440.py",
+  "upstreamCommit": "8b13bff"
+}

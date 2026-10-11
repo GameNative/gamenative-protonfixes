@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "2229830",
+  "name": "Command & Conquer and The Covert Operations",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 1,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

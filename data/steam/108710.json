@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "108710",
+  "name": "Alan Wake",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/108710.py",
+  "upstreamCommit": "490f513"
+}

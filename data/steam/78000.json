@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "78000",
+  "name": "Bejeweled 3",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_NO_D3D10": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/78000.py",
+  "upstreamCommit": "490f513"
+}

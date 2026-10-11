@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "312450",
+  "name": "Order of Battle: World War II",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "corefonts",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/312450.py",
+  "upstreamCommit": "490f513"
+}

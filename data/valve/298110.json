@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "298110",
+  "name": "Far Cry 4",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

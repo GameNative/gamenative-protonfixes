@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "447040",
+  "name": "Watch_Dogs 2",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-eac_launcher -nosplash",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/447040.py",
+  "upstreamCommit": "490f513"
+}

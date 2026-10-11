@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "16700",
+  "name": "Stronghold Crusader Extreme HD",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/16700.py",
+  "upstreamCommit": "490f513"
+}

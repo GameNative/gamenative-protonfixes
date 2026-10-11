@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "378630",
+  "name": "Shadows on the Vatican - Act II: Wrath",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "SotV_Launcher.exe",
+      "op": "replace_command",
+      "to": "hd/SotV2.exe"
+    },
+    {
+      "op": "cwd",
+      "path": "${install}/hd"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/378630.py",
+  "upstreamCommit": "490f513"
+}

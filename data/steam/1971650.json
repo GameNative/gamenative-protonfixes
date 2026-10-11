@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1971650",
+  "name": "Octopath Traveler 2",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": true,
+      "fromAppid": 2203230,
+      "op": "import_saves",
+      "path": "Documents/My Games/Octopath_Traveler2/Steam/${steam_id64}/SaveGames"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1971650.py",
+  "upstreamCommit": "b830c6f"
+}

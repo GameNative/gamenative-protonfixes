@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "umu-heroesofnewerthreborn",
+  "name": "Heroes of Newerth: Reborn",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "gdiplus",
+      "op": "verb"
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    },
+    {
+      "name": "ie8",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-heroesofnewerthreborn",
+  "upstream": "gamefixes-umu/umu-heroesofnewerthreborn.py",
+  "upstreamCommit": "7ec7dd9"
+}

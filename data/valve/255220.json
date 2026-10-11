@@ -1,0 +1,22 @@
+{
+  "coverage": "none",
+  "id": "255220",
+  "name": "GRID Autosport",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flagNotes": {
+        "disablenvapi": "conditional upstream: try; open('/proc/modules'); not drivers.intersection({'nvidia', 'nouveau', 'nova'})"
+      },
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

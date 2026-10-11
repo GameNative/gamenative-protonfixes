@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "976730",
+  "name": "Halo:MCC",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/976730.py",
+  "upstreamCommit": "a5e814a"
+}

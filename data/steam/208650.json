@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "208650",
+  "name": "Batman Arkham Knight",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/208650.py",
+  "upstreamCommit": "490f513"
+}

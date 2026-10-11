@@ -1,0 +1,15 @@
+{
+  "coverage": "none",
+  "id": "1506830",
+  "name": "FIFA 22",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: uses the alternative arial.ttf shipped with Proton",
+      "source": "create_fonts_symlinks ALTERNATIVES"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

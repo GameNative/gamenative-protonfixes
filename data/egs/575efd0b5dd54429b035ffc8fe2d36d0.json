@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "575efd0b5dd54429b035ffc8fe2d36d0",
+  "name": "Marvel Rivals",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "epic_launch_helper.exe",
+      "op": "replace_command",
+      "to": "MarvelRivals_Launcher.exe"
+    },
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "1"
+      }
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-2767030",
+  "upstream": "gamefixes-egs/umu-2767030.py",
+  "upstreamCommit": "b8ef9f0"
+}

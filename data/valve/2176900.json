@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2176900",
+  "name": "Fablecraft",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

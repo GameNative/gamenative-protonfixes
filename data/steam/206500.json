@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "206500",
+  "name": "AirMech Strike",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "/dx11",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/206500.py",
+  "upstreamCommit": "490f513"
+}

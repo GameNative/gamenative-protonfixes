@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "524220",
+  "name": "NieR: Automata",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_LIMIT_RESOLUTIONS": "32"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

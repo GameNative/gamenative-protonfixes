@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "638970",
+  "name": "Yakuza 0",
+  "schema": 1,
+  "steps": [
+    {
+      "fsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/638970.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "Petunia",
+  "name": "Metro 2033 Redux",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-286690",
+  "upstream": "gamefixes-egs/umu-286690.py",
+  "upstreamCommit": "697ae5f"
+}

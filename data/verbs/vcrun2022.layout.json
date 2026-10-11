@@ -1,0 +1,1094 @@
+{
+ "archives": [
+  {
+   "hops": [
+    {
+     "slice": [
+      685904,
+      13257056
+     ]
+    },
+    "a10"
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      685904,
+      13257056
+     ]
+    },
+    "a11"
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      686152,
+      24939223
+     ]
+    },
+    "a13"
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      686152,
+      24939223
+     ]
+    },
+    "a12"
+   ],
+   "installer": 1
+  }
+ ],
+ "files": [
+  {
+   "archive": 3,
+   "member": "concrt140.dll_amd64",
+   "size": 324208,
+   "to": "drive_c/windows/system32/concrt140.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140.dll_amd64",
+   "size": 5629600,
+   "to": "drive_c/windows/system32/mfc140.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140chs.dll_amd64",
+   "size": 51360,
+   "to": "drive_c/windows/system32/mfc140chs.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140cht.dll_amd64",
+   "size": 51328,
+   "to": "drive_c/windows/system32/mfc140cht.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140deu.dll_amd64",
+   "size": 80008,
+   "to": "drive_c/windows/system32/mfc140deu.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140enu.dll_amd64",
+   "size": 70272,
+   "to": "drive_c/windows/system32/mfc140enu.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140esn.dll_amd64",
+   "size": 78928,
+   "to": "drive_c/windows/system32/mfc140esn.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140fra.dll_amd64",
+   "size": 80000,
+   "to": "drive_c/windows/system32/mfc140fra.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140ita.dll_amd64",
+   "size": 77952,
+   "to": "drive_c/windows/system32/mfc140ita.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140jpn.dll_amd64",
+   "size": 59008,
+   "to": "drive_c/windows/system32/mfc140jpn.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140kor.dll_amd64",
+   "size": 58448,
+   "to": "drive_c/windows/system32/mfc140kor.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140rus.dll_amd64",
+   "size": 75856,
+   "to": "drive_c/windows/system32/mfc140rus.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfc140u.dll_amd64",
+   "size": 5664848,
+   "to": "drive_c/windows/system32/mfc140u.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfcm140.dll_amd64",
+   "size": 96392,
+   "to": "drive_c/windows/system32/mfcm140.dll"
+  },
+  {
+   "archive": 2,
+   "member": "mfcm140u.dll_amd64",
+   "size": 96336,
+   "to": "drive_c/windows/system32/mfcm140u.dll"
+  },
+  {
+   "archive": 3,
+   "member": "msvcp140.dll_amd64",
+   "size": 557728,
+   "to": "drive_c/windows/system32/msvcp140.dll"
+  },
+  {
+   "archive": 3,
+   "member": "msvcp140_1.dll_amd64",
+   "size": 35952,
+   "to": "drive_c/windows/system32/msvcp140_1.dll"
+  },
+  {
+   "archive": 3,
+   "member": "msvcp140_2.dll_amd64",
+   "size": 280200,
+   "to": "drive_c/windows/system32/msvcp140_2.dll"
+  },
+  {
+   "archive": 3,
+   "member": "msvcp140_atomic_wait.dll_amd64",
+   "size": 50304,
+   "to": "drive_c/windows/system32/msvcp140_atomic_wait.dll"
+  },
+  {
+   "archive": 3,
+   "member": "msvcp140_codecvt_ids.dll_amd64",
+   "size": 31872,
+   "to": "drive_c/windows/system32/msvcp140_codecvt_ids.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vcamp140.dll_amd64",
+   "size": 418944,
+   "to": "drive_c/windows/system32/vcamp140.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vccorlib140.dll_amd64",
+   "size": 352384,
+   "to": "drive_c/windows/system32/vccorlib140.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vcomp140.dll_amd64",
+   "size": 193152,
+   "to": "drive_c/windows/system32/vcomp140.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vcruntime140.dll_amd64",
+   "size": 124544,
+   "to": "drive_c/windows/system32/vcruntime140.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vcruntime140_1.dll_amd64",
+   "size": 49792,
+   "to": "drive_c/windows/system32/vcruntime140_1.dll"
+  },
+  {
+   "archive": 3,
+   "member": "vcruntime140_threads.dll_amd64",
+   "size": 38528,
+   "to": "drive_c/windows/system32/vcruntime140_threads.dll"
+  },
+  {
+   "archive": 0,
+   "member": "concrt140.dll_x86",
+   "size": 259688,
+   "to": "drive_c/windows/syswow64/concrt140.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140.dll_x86",
+   "size": 4853888,
+   "to": "drive_c/windows/syswow64/mfc140.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140chs.dll_x86",
+   "size": 51360,
+   "to": "drive_c/windows/syswow64/mfc140chs.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140cht.dll_x86",
+   "size": 51280,
+   "to": "drive_c/windows/syswow64/mfc140cht.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140deu.dll_x86",
+   "size": 79984,
+   "to": "drive_c/windows/syswow64/mfc140deu.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140enu.dll_x86",
+   "size": 70280,
+   "to": "drive_c/windows/syswow64/mfc140enu.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140esn.dll_x86",
+   "size": 78976,
+   "to": "drive_c/windows/syswow64/mfc140esn.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140fra.dll_x86",
+   "size": 79976,
+   "to": "drive_c/windows/syswow64/mfc140fra.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140ita.dll_x86",
+   "size": 77936,
+   "to": "drive_c/windows/syswow64/mfc140ita.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140jpn.dll_x86",
+   "size": 59008,
+   "to": "drive_c/windows/syswow64/mfc140jpn.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140kor.dll_x86",
+   "size": 58496,
+   "to": "drive_c/windows/syswow64/mfc140kor.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140rus.dll_x86",
+   "size": 75912,
+   "to": "drive_c/windows/syswow64/mfc140rus.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfc140u.dll_x86",
+   "size": 4880464,
+   "to": "drive_c/windows/syswow64/mfc140u.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfcm140.dll_x86",
+   "size": 87152,
+   "to": "drive_c/windows/syswow64/mfcm140.dll"
+  },
+  {
+   "archive": 1,
+   "member": "mfcm140u.dll_x86",
+   "size": 87120,
+   "to": "drive_c/windows/syswow64/mfcm140u.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msvcp140.dll_x86",
+   "size": 447616,
+   "to": "drive_c/windows/syswow64/msvcp140.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msvcp140_1.dll_x86",
+   "size": 33896,
+   "to": "drive_c/windows/syswow64/msvcp140_1.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msvcp140_2.dll_x86",
+   "size": 294992,
+   "to": "drive_c/windows/syswow64/msvcp140_2.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msvcp140_atomic_wait.dll_x86",
+   "size": 47240,
+   "to": "drive_c/windows/syswow64/msvcp140_atomic_wait.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msvcp140_codecvt_ids.dll_x86",
+   "size": 30824,
+   "to": "drive_c/windows/syswow64/msvcp140_codecvt_ids.dll"
+  },
+  {
+   "archive": 0,
+   "member": "vcamp140.dll_x86",
+   "size": 383616,
+   "to": "drive_c/windows/syswow64/vcamp140.dll"
+  },
+  {
+   "archive": 0,
+   "member": "vccorlib140.dll_x86",
+   "size": 287360,
+   "to": "drive_c/windows/syswow64/vccorlib140.dll"
+  },
+  {
+   "archive": 0,
+   "member": "vcomp140.dll_x86",
+   "size": 163488,
+   "to": "drive_c/windows/syswow64/vcomp140.dll"
+  },
+  {
+   "archive": 0,
+   "member": "vcruntime140.dll_x86",
+   "size": 91216,
+   "to": "drive_c/windows/syswow64/vcruntime140.dll"
+  },
+  {
+   "archive": 0,
+   "member": "vcruntime140_threads.dll_x86",
+   "size": 36000,
+   "to": "drive_c/windows/syswow64/vcruntime140_threads.dll"
+  }
+ ],
+ "installers": [
+  {
+   "arch": "x86",
+   "sha256": "0c09f2611660441084ce0df425c51c11e147e6447963c3690f97e0b25c55ed64",
+   "size": 13953392,
+   "url": "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+  },
+  {
+   "arch": "x64",
+   "sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+   "size": 25635768,
+   "url": "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+  }
+ ],
+ "notes": [],
+ "registry": [
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_x86,v14",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_x86,v14",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{922480B5-CAEB-4B1B-AAA4-9716EFDCE26B}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_x86,v14",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_x86,v14",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X86",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_x86,v14",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{C18FB403-1E88-43C8-AD8A-CED50F23DE8B}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_x86,v14",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_amd64,v14",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeAdditional",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_amd64,v14",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{86AB2CC9-08BD-4643-B0F9-F82D006D72FF}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeAdditionalVSU_amd64,v14",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "v14.44.35211.00"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_amd64,v14",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Major",
+   "type": "REG_DWORD",
+   "value": "14"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Minor",
+   "type": "REG_DWORD",
+   "value": "44"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Bld",
+   "type": "REG_DWORD",
+   "value": "35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\VisualStudio\\14.0\\VC\\Runtimes\\X64",
+   "name": "Rbld",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SP",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "Version",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\14.0\\RuntimeMinimum",
+   "name": "UpdateVersion",
+   "type": "REG_SZ",
+   "value": "14.44.35211"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_amd64,v14",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{43B0D101-A022-48F4-9D04-BA404CEB1D53}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Installer\\Dependencies\\Microsoft.VS.VC_RuntimeMinimumVSU_amd64,v14",
+   "name": "DisplayName",
+   "type": "REG_SZ",
+   "value": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211"
+  }
+ ],
+ "schema": 1,
+ "unpackedBytes": 27295712,
+ "verb": "vcrun2022"
+}

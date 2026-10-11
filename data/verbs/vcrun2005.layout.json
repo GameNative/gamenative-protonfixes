@@ -1,0 +1,919 @@
+{
+ "archives": [
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       2686976,
+       73983
+      ]
+     ],
+     "size": 73983
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       2121216,
+       558717
+      ]
+     ],
+     "size": 558717
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       587776,
+       1523350
+      ]
+     ],
+     "size": 1523350
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       504832,
+       64646
+      ]
+     ],
+     "size": 64646
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       467456,
+       30751
+      ]
+     ],
+     "size": 30751
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       2680320,
+       5596
+      ]
+     ],
+     "size": 5596
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       2111488,
+       5596
+      ]
+     ],
+     "size": 5596
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       569856,
+       5594
+      ]
+     ],
+     "size": 5594
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       498688,
+       5604
+      ]
+     ],
+     "size": 5604
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       461824,
+       5598
+      ]
+     ],
+     "size": 5598
+    }
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      2629972
+     ]
+    },
+    "vcredis1.cab"
+   ],
+   "installer": 0
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       3122688,
+       53634
+      ]
+     ],
+     "size": 53634
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       1969664,
+       1146404
+      ]
+     ],
+     "size": 1146404
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       543232,
+       1342806
+      ]
+     ],
+     "size": 1342806
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       1892352,
+       62150
+      ]
+     ],
+     "size": 62150
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       489472,
+       37576
+      ]
+     ],
+     "size": 37576
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       3116544,
+       5600
+      ]
+     ],
+     "size": 5600
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       1954816,
+       5598
+      ]
+     ],
+     "size": 5598
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       527360,
+       5596
+      ]
+     ],
+     "size": 5596
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       1886208,
+       5602
+      ]
+     ],
+     "size": 5602
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredist.msi",
+    {
+     "ranges": [
+      [
+       483328,
+       5604
+      ]
+     ],
+     "size": 5604
+    }
+   ],
+   "installer": 1
+  },
+  {
+   "hops": [
+    {
+     "slice": [
+      64852,
+      3098216
+     ]
+    },
+    "vcredis1.cab"
+   ],
+   "installer": 1
+  }
+ ],
+ "files": [
+  {
+   "archive": 21,
+   "member": "FL_msdia71_dll_2_____A64.3643236F_FC70_11D3_A536_0090278A1BB8",
+   "size": 914944,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/VC/amd64/msdia80.dll"
+  },
+  {
+   "archive": 10,
+   "member": "FL_msdia71_dll_2_____X86.3643236F_FC70_11D3_A536_0090278A1BB8",
+   "size": 641536,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/VC/msdia80.dll"
+  },
+  {
+   "archive": 11,
+   "member": "ul_ATL80.dll.837BF1EB_D770_94EB_FF1F_C8B3B9A1E18E",
+   "size": 113664,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/ATL80.dll"
+  },
+  {
+   "archive": 12,
+   "member": "ul_msvcm80.dll.844EFBA7_1C24_93B2_FF1F_C8B3B9A1E18E",
+   "size": 515072,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcm80.dll"
+  },
+  {
+   "archive": 12,
+   "member": "ul_msvcp80.dll.844EFBA7_1C24_93B2_FF1F_C8B3B9A1E18E",
+   "size": 1068368,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcp80.dll"
+  },
+  {
+   "archive": 12,
+   "member": "ul_msvcr80.dll.844EFBA7_1C24_93B2_FF1F_C8B3B9A1E18E",
+   "size": 802640,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcr80.dll"
+  },
+  {
+   "archive": 13,
+   "member": "ul_mfc80.dll.8731EA9C_B0D8_8F16_FF1F_C8B3B9A1E18E",
+   "size": 1658368,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80.dll"
+  },
+  {
+   "archive": 13,
+   "member": "ul_mfc80u.dll.8731EA9C_B0D8_8F16_FF1F_C8B3B9A1E18E",
+   "size": 1654784,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80u.dll"
+  },
+  {
+   "archive": 13,
+   "member": "ul_mfcm80.dll.8731EA9C_B0D8_8F16_FF1F_C8B3B9A1E18E",
+   "size": 65024,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfcm80.dll"
+  },
+  {
+   "archive": 13,
+   "member": "ul_mfcm80u.dll.8731EA9C_B0D8_8F16_FF1F_C8B3B9A1E18E",
+   "size": 63488,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfcm80u.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80CHS.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 33280,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80CHS.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80CHT.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 33792,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80CHT.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80DEU.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 54272,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80DEU.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80ENU.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 47104,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ENU.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80ESP.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 51712,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ESP.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80FRA.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 52736,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80FRA.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80ITA.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 52224,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ITA.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80JPN.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 38912,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80JPN.dll"
+  },
+  {
+   "archive": 14,
+   "member": "ul_mfc80KOR.dll.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 38400,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80KOR.dll"
+  },
+  {
+   "archive": 15,
+   "member": "ul_vcomp.dll.09D44781_D142_FE32_FF1F_C8B3B9A1E18E",
+   "size": 87552,
+   "to": "drive_c/windows/winsxs/amd64_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/vcomp.dll"
+  },
+  {
+   "archive": 11,
+   "member": "ul_manifest.837BF1EB_D770_94EB_FF1F_C8B3B9A1E18E",
+   "size": 468,
+   "to": "drive_c/windows/winsxs/manifests/amd64_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 12,
+   "member": "ul_manifest.844EFBA7_1C24_93B2_FF1F_C8B3B9A1E18E",
+   "size": 1872,
+   "to": "drive_c/windows/winsxs/manifests/amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 13,
+   "member": "ul_manifest.8731EA9C_B0D8_8F16_FF1F_C8B3B9A1E18E",
+   "size": 2374,
+   "to": "drive_c/windows/winsxs/manifests/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 14,
+   "member": "ul_manifest.608113E0_F3B6_C6EE_FF1F_C8B3B9A1E18E",
+   "size": 1242,
+   "to": "drive_c/windows/winsxs/manifests/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 15,
+   "member": "ul_manifest.09D44781_D142_FE32_FF1F_C8B3B9A1E18E",
+   "size": 471,
+   "to": "drive_c/windows/winsxs/manifests/amd64_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 0,
+   "member": "ul_manifest.97F81AF1_0E47_DC99_FF1F_C8B3B9A1E18E",
+   "size": 466,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 1,
+   "member": "ul_manifest.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E",
+   "size": 1870,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 2,
+   "member": "ul_manifest.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E",
+   "size": 2372,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 3,
+   "member": "ul_manifest.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 1240,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 4,
+   "member": "ul_manifest.1E507087_0819_45E0_FF1F_C8B3B9A1E18E",
+   "size": 469,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef.manifest"
+  },
+  {
+   "archive": 16,
+   "member": "ul_manifest.51B6FD4C_6551_1104_FF1F_C8B3B9A1E18E",
+   "size": 808,
+   "to": "drive_c/windows/winsxs/policies/amd64_microsoft.vc80.atl_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 17,
+   "member": "ul_manifest.4F6D20F0_CCE5_1492_FF1F_C8B3B9A1E18E",
+   "size": 808,
+   "to": "drive_c/windows/winsxs/policies/amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 18,
+   "member": "ul_manifest.543B9DD3_E71B_0D13_FF1F_C8B3B9A1E18E",
+   "size": 808,
+   "to": "drive_c/windows/winsxs/policies/amd64_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 19,
+   "member": "ul_manifest.BDF6E439_056A_10D7_FF1F_C8B3B9A1E18E",
+   "size": 814,
+   "to": "drive_c/windows/winsxs/policies/amd64_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 20,
+   "member": "ul_manifest.F03DCAB0_5F6D_2EAB_FF1F_C8B3B9A1E18E",
+   "size": 814,
+   "to": "drive_c/windows/winsxs/policies/amd64_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 5,
+   "member": "ul_manifest.66332652_9C28_58B1_FF1F_C8B3B9A1E18E",
+   "size": 804,
+   "to": "drive_c/windows/winsxs/policies/x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 6,
+   "member": "ul_manifest.63E949F6_03BC_5C40_FF1F_C8B3B9A1E18E",
+   "size": 804,
+   "to": "drive_c/windows/winsxs/policies/x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 7,
+   "member": "ul_manifest.68B7C6D9_1DF2_54C1_FF1F_C8B3B9A1E18E",
+   "size": 804,
+   "to": "drive_c/windows/winsxs/policies/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 8,
+   "member": "ul_manifest.D2730D3F_3C41_5884_FF1F_C8B3B9A1E18E",
+   "size": 810,
+   "to": "drive_c/windows/winsxs/policies/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 9,
+   "member": "ul_manifest.04B9F3B6_9645_7658_FF1F_C8B3B9A1E18E",
+   "size": 810,
+   "to": "drive_c/windows/winsxs/policies/x86_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_none_deadbeef/8.0.50727.6195.policy"
+  },
+  {
+   "archive": 0,
+   "member": "ul_ATL80.dll.97F81AF1_0E47_DC99_FF1F_C8B3B9A1E18E",
+   "size": 97280,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.atl_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/ATL80.dll"
+  },
+  {
+   "archive": 1,
+   "member": "ul_msvcm80.dll.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E",
+   "size": 479232,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcm80.dll"
+  },
+  {
+   "archive": 1,
+   "member": "ul_msvcp80.dll.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E",
+   "size": 554832,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcp80.dll"
+  },
+  {
+   "archive": 1,
+   "member": "ul_msvcr80.dll.98CB24AD_52FB_DB5F_FF1F_C8B3B9A1E18E",
+   "size": 632656,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/msvcr80.dll"
+  },
+  {
+   "archive": 2,
+   "member": "ul_mfc80.dll.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E",
+   "size": 1101824,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80.dll"
+  },
+  {
+   "archive": 2,
+   "member": "ul_mfc80u.dll.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E",
+   "size": 1093120,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80u.dll"
+  },
+  {
+   "archive": 2,
+   "member": "ul_mfcm80.dll.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E",
+   "size": 69632,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfcm80.dll"
+  },
+  {
+   "archive": 2,
+   "member": "ul_mfcm80u.dll.9BAE13A2_E7AF_D6C3_FF1F_C8B3B9A1E18E",
+   "size": 57856,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfcm80u.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80CHS.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 40960,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80CHS.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80CHT.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 45056,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80CHT.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80DEU.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 65536,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80DEU.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80ENU.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 57344,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ENU.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80ESP.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 61440,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ESP.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80FRA.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 61440,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80FRA.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80ITA.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 61440,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80ITA.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80JPN.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 49152,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80JPN.dll"
+  },
+  {
+   "archive": 3,
+   "member": "ul_mfc80KOR.dll.74FD3CE6_2A8D_0E9C_FF1F_C8B3B9A1E18E",
+   "size": 49152,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.mfcloc_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/mfc80KOR.dll"
+  },
+  {
+   "archive": 4,
+   "member": "ul_vcomp.dll.1E507087_0819_45E0_FF1F_C8B3B9A1E18E",
+   "size": 65536,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc80.openmp_1fc8b3b9a1e18e3b_8.0.50727.6195_none_deadbeef/vcomp.dll"
+  }
+ ],
+ "installers": [
+  {
+   "arch": "x86",
+   "sha256": "8648c5fc29c44b9112fe52f9a33f80e7fc42d10f3b5b42b2121542a13e44adfd",
+   "size": 2710520,
+   "url": "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE"
+  },
+  {
+   "arch": "x64",
+   "sha256": "4487570bd86e2e1aac29db2a1d0a91eb63361fcaac570808eb327cd4e0e2240d",
+   "size": 3179000,
+   "url": "https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE"
+  }
+ ],
+ "notes": [
+  "vcredist.msi: custom actions not run: SxsInstallCA",
+  "vcredist.msi: custom actions not run: SxsInstallCA"
+ ],
+ "registry": [
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0",
+   "name": "SP",
+   "type": "REG_SZ",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SP",
+   "type": "REG_SZ",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\DevDiv\\VC\\Servicing\\8.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "Install",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0",
+   "name": "SP",
+   "type": "REG_SZ",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "InstallerType",
+   "type": "REG_SZ",
+   "value": "MSI"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SP",
+   "type": "REG_SZ",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0\\RED\\1033",
+   "name": "SPName",
+   "type": "REG_SZ",
+   "value": "RTM"
+  },
+  {
+   "hive": "HKLM",
+   "key": "SOFTWARE\\Microsoft\\DevDiv\\VC\\Servicing\\8.0",
+   "name": "SPIndex",
+   "type": "REG_DWORD",
+   "value": "0"
+  }
+ ],
+ "schema": 1,
+ "unpackedBytes": 12652288,
+ "verb": "vcrun2005"
+}

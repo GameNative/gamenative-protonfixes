@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2437170",
+  "name": "Smite 2",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "0"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2437170.py",
+  "upstreamCommit": "6bc80d8"
+}

@@ -1,0 +1,25 @@
+{
+  "coverage": "full",
+  "id": "1382330",
+  "name": "Persona 5 Strikers",
+  "notes": [
+    "only applies to Intel hybrid CPUs"
+  ],
+  "override": "tools/protonfixes/overrides/steam/1382330.json",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "pins the game to the Intel P-cores (taskset) from the host CPU topology",
+      "source": "",
+      "when": [
+        {
+          "intel_hybrid": true
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1382330.py",
+  "upstreamCommit": "70bdd8a"
+}

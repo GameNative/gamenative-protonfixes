@@ -1,0 +1,47 @@
+{
+  "aliases": [
+    {
+      "id": "1207661753",
+      "store": "gog"
+    },
+    {
+      "id": "1207661763",
+      "store": "gog"
+    },
+    {
+      "id": "1207661773",
+      "store": "gog"
+    },
+    {
+      "id": "1207661783",
+      "store": "gog"
+    },
+    {
+      "id": "1207661793",
+      "store": "gog"
+    },
+    {
+      "id": "1207661803",
+      "store": "gog"
+    },
+    {
+      "id": "1207661813",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "1207661743",
+  "name": "Heroes Chronicles [Chapter 1] - Warlords of the Wasteland",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Warlords.exe",
+      "op": "replace_command",
+      "to": "Warlords_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661743",
+  "upstream": "gamefixes-gog/umu-1207661743.py",
+  "upstreamCommit": "fbfebf9"
+}

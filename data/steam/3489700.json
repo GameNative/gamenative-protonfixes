@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "3489700",
+  "name": "Stellar Blade",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dwmapi": "n,b"
+      },
+      "when": [
+        {
+          "fileExists": "${install}/SB/Binaries/Win64/ue4ss"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3489700.py",
+  "upstreamCommit": "1cec055"
+}

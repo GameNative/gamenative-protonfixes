@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1286880",
+  "name": "Ship Graveyard Simulator",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "vulkan-1": "b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1286880.py",
+  "upstreamCommit": "8854a7c"
+}

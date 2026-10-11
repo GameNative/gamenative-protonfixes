@@ -1,0 +1,36 @@
+{
+  "aliases": [
+    {
+      "id": "9d2d0eb64d5c44529cece33fe2a46482",
+      "store": "egs"
+    },
+    {
+      "id": "umu-271590",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "271590",
+  "name": "Grand Theft Auto V",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKLM",
+      "key": "System\\CurrentControlSet\\Services\\winebus",
+      "op": "registry",
+      "values": {
+        "DisableHidraw": {
+          "type": "REG_DWORD",
+          "value": "1"
+        },
+        "Enable SDL": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/271590.py",
+  "upstreamCommit": "747f295"
+}

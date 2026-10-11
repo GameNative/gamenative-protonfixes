@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "49900",
+  "name": "Plain Sight",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xna31",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/49900.py",
+  "upstreamCommit": "6c45ced"
+}

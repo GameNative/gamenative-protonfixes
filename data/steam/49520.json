@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "49520",
+  "name": "Borderlands 2",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Launcher.exe",
+      "op": "replace_command",
+      "to": "Borderlands2.exe"
+    },
+    {
+      "append": "-NoSplash",
+      "op": "launch_args"
+    },
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/49520.py",
+  "upstreamCommit": "490f513"
+}

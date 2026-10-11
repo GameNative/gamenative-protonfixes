@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "Speedwell",
+  "name": "Metro Last Light Redux",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-287390",
+  "upstream": "gamefixes-egs/umu-287390.py",
+  "upstreamCommit": "6e89450"
+}

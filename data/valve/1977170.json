@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1977170",
+  "name": "Jusant",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "hideintelgpu"
+      ],
+      "flags": [
+        "hideintelgpu"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

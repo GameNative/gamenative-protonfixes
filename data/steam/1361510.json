@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1361510",
+  "name": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2017",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1361510.py",
+  "upstreamCommit": "77cf0c8"
+}

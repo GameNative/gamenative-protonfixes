@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "11440",
+  "name": "DiRT",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 4,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

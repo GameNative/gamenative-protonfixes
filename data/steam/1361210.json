@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "1361210",
+  "name": "Warhammer 40,000: Darktide",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Launcher.exe",
+      "op": "replace_command",
+      "to": "../binaries/Darktide.exe"
+    },
+    {
+      "append": "-eac-untrusted --bundle-dir ../bundle --ini settings",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1361210.py",
+  "upstreamCommit": "77147fd"
+}

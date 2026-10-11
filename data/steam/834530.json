@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "834530",
+  "name": "Yakuza Kiwami",
+  "schema": 1,
+  "steps": [
+    {
+      "fsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/834530.py",
+  "upstreamCommit": "490f513"
+}

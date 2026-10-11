@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "15100",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "0b9d1072cd674b8b91c8e25e9d695ed9",
+  "name": "Assassins Creed I",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 31,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-15100",
+  "upstream": "gamefixes-egs/umu-15100.py",
+  "upstreamCommit": "77147fd"
+}

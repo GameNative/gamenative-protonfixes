@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1544020",
+  "name": "The Callisto Protocol",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1544020.py",
+  "upstreamCommit": "75337fd"
+}

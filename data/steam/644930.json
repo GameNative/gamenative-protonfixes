@@ -1,0 +1,27 @@
+{
+  "aliases": [
+    {
+      "id": "1335738339",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "644930",
+  "name": "They Are Billions",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "gdiplus",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "WINE_MONO_HIDETYPES": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/644930.py",
+  "upstreamCommit": "2bc0787"
+}

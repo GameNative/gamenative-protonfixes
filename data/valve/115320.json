@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "115320",
+  "name": "Prototype 2",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 8,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,27 @@
+{
+  "coverage": "full",
+  "id": "105450",
+  "name": "Age Of Empire 3: Complete Collection",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    },
+    {
+      "name": "l3codecx",
+      "op": "verb"
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    },
+    {
+      "name": "winxp",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/105450.py",
+  "upstreamCommit": "490f513"
+}

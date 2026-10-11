@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1228964594",
+  "name": "Soldier of Fortune II: Double Helix - Gold Edition",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1228964594",
+  "upstream": "gamefixes-gog/umu-1228964594.py",
+  "upstreamCommit": "5282529"
+}

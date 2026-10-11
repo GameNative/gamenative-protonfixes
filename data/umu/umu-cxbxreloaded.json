@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "umu-cxbxreloaded",
+  "name": "Cxbx-Reloaded",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-cxbxreloaded",
+  "upstream": "gamefixes-umu/umu-cxbxreloaded.py",
+  "upstreamCommit": "e020419"
+}

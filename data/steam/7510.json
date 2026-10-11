@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "7510",
+  "name": "X-Blades",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "launcher\\.exe$",
+      "op": "replace_command",
+      "regex": true,
+      "to": "xblades.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/7510.py",
+  "upstreamCommit": "3d7215c"
+}

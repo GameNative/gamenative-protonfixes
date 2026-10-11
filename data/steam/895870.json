@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "895870",
+  "name": "Project Wingman",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/895870.py",
+  "upstreamCommit": "490f513"
+}

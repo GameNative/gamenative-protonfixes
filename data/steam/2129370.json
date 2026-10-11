@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "2129370",
+  "name": "S&box Editor",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnetdesktop10",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2129370.py",
+  "upstreamCommit": "c0b36e4"
+}

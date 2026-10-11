@@ -1,0 +1,31 @@
+{
+  "coverage": "full",
+  "id": "umu-aa2",
+  "name": "Artificial Academy 2",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "vcrun2015",
+      "op": "verb"
+    },
+    {
+      "name": "dotnetcore3",
+      "op": "verb"
+    },
+    {
+      "name": "fakejapanese_ipamona",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-aa2",
+  "upstream": "gamefixes-umu/umu-aa2.py",
+  "upstreamCommit": "26e2e54"
+}

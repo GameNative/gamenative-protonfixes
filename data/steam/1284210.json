@@ -1,0 +1,31 @@
+{
+  "aliases": [
+    {
+      "id": "8d87562b481d44dd938c6a34a87d7355",
+      "store": "egs"
+    },
+    {
+      "id": "umu-1284210",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "1284210",
+  "name": "Guild Wars 2®",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "-provider",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1284210.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,96 @@
+{
+  "coverage": "full",
+  "id": "3932890",
+  "name": "Escape From Tarkov",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "appid": 1161040,
+      "op": "runtime_app"
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "append": "--disable-software-rasterizer",
+      "op": "launch_args"
+    },
+    {
+      "hive": "HKLM",
+      "key": "System\\CurrentControlSet\\Services\\BEService",
+      "op": "registry",
+      "values": {
+        "DisplayName": {
+          "type": "REG_SZ",
+          "value": "BattlEye Service"
+        },
+        "ErrorControl": {
+          "type": "REG_DWORD",
+          "value": "1"
+        },
+        "ImagePath": {
+          "type": "REG_SZ",
+          "value": "C:\\Program Files (x86)\\Common Files\\BattlEye\\BEService_x64.exe"
+        },
+        "ObjectName": {
+          "type": "REG_SZ",
+          "value": "LocalSystem"
+        },
+        "PreshutdownTimeout": {
+          "type": "REG_DWORD",
+          "value": "180000"
+        },
+        "Start": {
+          "type": "REG_DWORD",
+          "value": "2"
+        },
+        "Type": {
+          "type": "REG_DWORD",
+          "value": "16"
+        },
+        "WOW64": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      },
+      "when": [
+        {
+          "fileMissing": "${drive_c}/Program Files (x86)/Common Files/BattlEye"
+        }
+      ]
+    },
+    {
+      "action": "copy",
+      "from": "${install}/build/BattlEye",
+      "op": "file",
+      "recursive": true,
+      "to": "${drive_c}/Program Files (x86)/Common Files/BattlEye",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/Program Files (x86)/Common Files/BattlEye"
+        }
+      ]
+    },
+    {
+      "from": "-LaunchFromSteam",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3932890.py",
+  "upstreamCommit": "26e2e54"
+}

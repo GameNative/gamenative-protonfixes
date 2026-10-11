@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1207659230",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "245450",
+  "name": "Wizardry 8",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/245450.py",
+  "upstreamCommit": "f8b45c6"
+}

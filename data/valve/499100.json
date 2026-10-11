@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "499100",
+  "name": "Dark Parables: The Exiled Prince Collector's Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

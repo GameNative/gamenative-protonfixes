@@ -1,0 +1,24 @@
+{
+  "canonical": {
+    "id": "39190",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1185868626",
+  "name": "Dungeon Siege",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "Zonematch=true",
+      "op": "launch_args"
+    },
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-39190",
+  "upstream": "gamefixes-gog/umu-39190.py",
+  "upstreamCommit": "a2c80f7"
+}

@@ -1,0 +1,27 @@
+{
+  "canonical": {
+    "id": "39500",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "65600",
+  "name": "Gothic 3: Forsaken Gods Enhanced Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "encoding": "cp1251",
+      "op": "ini",
+      "path": "${install}/Ini/ge3.ini",
+      "section": "Engine.Setup",
+      "values": {
+        "FpS.Max": "0",
+        "Timer.ThreadSafe": "false"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/65600.py",
+  "upstreamCommit": "8854a7c"
+}

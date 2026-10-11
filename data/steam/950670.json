@@ -1,0 +1,51 @@
+{
+  "coverage": "partial",
+  "id": "950670",
+  "name": "Gothic Playable Teaser",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${install}/GothicRemake/Saved/Config/WindowsNoEditor"
+    },
+    {
+      "action": "touch",
+      "op": "file",
+      "to": "${install}/GothicRemake/Saved/Config/WindowsNoEditor/Engine.ini"
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/GothicRemake/Saved/Config/WindowsNoEditor/Engine.ini",
+      "section": "Core.Log",
+      "values": {
+        "Global": "off",
+        "LogInteractiveProcess": "all off"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/GothicRemake/Saved/Config/WindowsNoEditor/Engine.ini",
+      "section": "SystemSettings",
+      "values": {
+        "r.DefaultFeature.MotionBlur": "0",
+        "r.DepthOfFieldQuality": "0",
+        "r.LensFlareQuality": "0",
+        "r.MotionBlur.Max": "0",
+        "r.MotionBlurQuality": "0"
+      }
+    },
+    {
+      "op": "unsupported",
+      "reason": "Path.glob()",
+      "source": "for file in log_files:\n    file_size = file.stat().st_size  # Bytes\n    file_size = file_size // 1000 // 1000  # Megabytes\n    if file.is_file() and file_size > 10:\n        log.info(f'Removing log file \"{file}\" with a size of {file_size} MB.')\n        file.unlink()"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/950670.py",
+  "upstreamCommit": "8854a7c"
+}

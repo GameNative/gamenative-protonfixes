@@ -1,0 +1,755 @@
+{
+ "archives": [
+  {
+   "hops": [
+    {
+     "ranges": [
+      [
+       504320,
+       1915951
+      ]
+     ],
+     "size": 1915951
+    }
+   ],
+   "installer": 0
+  }
+ ],
+ "files": [
+  {
+   "archive": 0,
+   "member": "xmleula.rtf",
+   "size": 154033,
+   "to": "drive_c/Program Files (x86)/MSXML 4.0/xmleula.rtf"
+  },
+  {
+   "archive": 0,
+   "member": "msxml4.dll.246EB7AD_459A_4FA8_83D1_41A46D7634B7",
+   "size": 1328968,
+   "to": "drive_c/windows/syswow64/msxml4.dll"
+  },
+  {
+   "archive": 0,
+   "member": "msxml4r.dll.246EB7AD_459A_4FA8_83D1_41A46D7634B7",
+   "size": 88904,
+   "to": "drive_c/windows/syswow64/msxml4r.dll"
+  },
+  {
+   "archive": 0,
+   "member": "ul_manifest.74974F83_779E_3983_FF6B_D6B9ABF34537",
+   "size": 3977,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.msxml2_6bd6b9abf345378f_4.30.2100.0_none_deadbeef.manifest"
+  },
+  {
+   "archive": 0,
+   "member": "ul_manifest.7277524D_AF9E_03D8_FF6B_D6B9ABF34537",
+   "size": 841,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.msxml2r_6bd6b9abf345378f_4.30.2100.0_none_deadbeef.manifest"
+  },
+  {
+   "archive": 0,
+   "member": "ul_msxml4.dll.74974F83_779E_3983_FF6B_D6B9ABF34537",
+   "size": 1328968,
+   "to": "drive_c/windows/winsxs/x86_microsoft.msxml2_6bd6b9abf345378f_4.30.2100.0_none_deadbeef/msxml4.dll"
+  },
+  {
+   "archive": 0,
+   "member": "ul_msxml4r.dll.7277524D_AF9E_03D8_FF6B_D6B9ABF34537",
+   "size": 88904,
+   "to": "drive_c/windows/winsxs/x86_microsoft.msxml2r_6bd6b9abf345378f_4.30.2100.0_none_deadbeef/msxml4r.dll"
+  }
+ ],
+ "installers": [
+  {
+   "arch": "any",
+   "sha256": "47c2ae679c37815da9267c81fc3777de900ad2551c11c19c2840938b346d70bb",
+   "size": 2434048,
+   "url": "https://web.archive.org/web/20210506101448id_/http://download.microsoft.com/download/A/2/D/A2D8587D-0027-4217-9DAD-38AFDB0A177E/msxml.msi"
+  }
+ ],
+ "notes": [
+  "msxml.msi: 1 TypeLib rows not applied"
+ ],
+ "registry": [
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML DOM Document 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.DOMDocument.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C0-F192-11D4-A65F-0040963251E5}\\TypeLib",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.DOMDocument.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML DOM Document 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.DOMDocument.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C0-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Free Threaded XML DOM Document 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.FreeThreadedDOMDocument.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C1-F192-11D4-A65F-0040963251E5}\\TypeLib",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.FreeThreadedDOMDocument.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Free Threaded XML DOM Document 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.FreeThreadedDOMDocument.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C1-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML Data Source Object 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Apartment"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.DSOControl.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C4-F192-11D4-A65F-0040963251E5}\\TypeLib",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.DSOControl.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML Data Source Object 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.DSOControl.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C4-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML HTTP 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Apartment"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.XMLHTTP.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C5-F192-11D4-A65F-0040963251E5}\\TypeLib",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XMLHTTP.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML HTTP 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XMLHTTP.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C5-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Server XML HTTP 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Apartment"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.ServerXMLHTTP.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C6-F192-11D4-A65F-0040963251E5}\\TypeLib",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{F5078F18-C551-11D3-89B9-0000F81FE221}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.ServerXMLHTTP.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Server XML HTTP 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.ServerXMLHTTP.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C6-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C2-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML Schema Cache 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C2-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C2-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C2-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.XMLSchemaCache.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C2-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XMLSchemaCache.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XML Schema Cache 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XMLSchemaCache.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C2-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C3-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XSL Template 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C3-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C3-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C3-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.XSLTemplate.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C3-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XSLTemplate.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "XSL Template 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.XSLTemplate.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C3-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "SAX XML Reader 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.SAXXMLReader.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.SAXXMLReader.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "SAX XML Reader 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.SAXXMLReader.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{7C6E29BC-8B8B-4C3D-859E-AF6CD158BE0F}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{00B7E0AB-817A-44AD-A04B-D1148D524136}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MX XML Reader 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{00B7E0AB-817A-44AD-A04B-D1148D524136}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{00B7E0AB-817A-44AD-A04B-D1148D524136}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C8-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXXMLWriter 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C8-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C8-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C8-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.MXXMLWriter.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C8-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXXMLWriter.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXXMLWriter 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXXMLWriter.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C8-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C9-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXHTMLWriter 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C9-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C9-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C9-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.MXHTMLWriter.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969C9-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXHTMLWriter.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXHTMLWriter 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXHTMLWriter.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969C9-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969CA-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "SAXAttributes 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969CA-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969CA-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969CA-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.SAXAttributes.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969CA-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.SAXAttributes.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "SAXAttributes 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.SAXAttributes.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969CA-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969D6-F192-11D4-A65F-0040963251E5}",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXNamespaceManager 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969D6-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969D6-F192-11D4-A65F-0040963251E5}\\InProcServer32",
+   "name": "ThreadingModel",
+   "type": "REG_SZ",
+   "value": "Both"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969D6-F192-11D4-A65F-0040963251E5}\\ProgID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Msxml2.MXNamespaceManager.4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\CLSID\\{88D969D6-F192-11D4-A65F-0040963251E5}\\Version",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXNamespaceManager.4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "MXNamespaceManager 4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\Msxml2.MXNamespaceManager.4.0\\CLSID",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "{88D969D6-F192-11D4-A65F-0040963251E5}"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\TypeLib\\{F5078F18-C551-11D3-89B9-0000F81FE221}\\4.0",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "Microsoft XML, v4.0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\TypeLib\\{F5078F18-C551-11D3-89B9-0000F81FE221}\\4.0\\0",
+   "type": "KEY"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\TypeLib\\{F5078F18-C551-11D3-89B9-0000F81FE221}\\4.0\\0\\win32",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "C:\\windows\\syswow64\\msxml4.dll"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\TypeLib\\{F5078F18-C551-11D3-89B9-0000F81FE221}\\4.0\\FLAGS",
+   "name": "",
+   "type": "REG_SZ",
+   "value": "0"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Classes\\TypeLib\\{F5078F18-C551-11D3-89B9-0000F81FE221}\\4.0\\HELPDIR",
+   "name": "",
+   "type": "REG_SZ",
+   "value": ""
+  }
+ ],
+ "schema": 1,
+ "unpackedBytes": 2994595,
+ "verb": "msxml4"
+}

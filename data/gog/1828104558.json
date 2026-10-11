@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1828104558",
+  "name": "Soldier of Fortune: Platinum Edition",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1828104558",
+  "upstream": "gamefixes-gog/umu-1828104558.py",
+  "upstreamCommit": "72c4f69"
+}

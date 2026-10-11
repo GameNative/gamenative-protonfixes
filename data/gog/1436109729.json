@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "990050",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1436109729",
+  "name": "Death end re;Quest",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 2,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-990050",
+  "upstream": "gamefixes-gog/umu-990050.py",
+  "upstreamCommit": "4db5d04"
+}

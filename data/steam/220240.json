@@ -1,0 +1,26 @@
+{
+  "aliases": [
+    {
+      "id": "Hellebore",
+      "store": "egs"
+    },
+    {
+      "id": "46",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "220240",
+  "name": "Far Cry 3",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 24,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/220240.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1971870",
+  "name": "Mortal Kombat 1",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "0"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1971870.py",
+  "upstreamCommit": "6bc80d8"
+}

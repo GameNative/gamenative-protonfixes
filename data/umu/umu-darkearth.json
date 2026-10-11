@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-darkearth",
+  "name": "Dark Earth",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "cnc_ddraw",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-darkearth",
+  "upstream": "gamefixes-umu/umu-darkearth.py",
+  "upstreamCommit": "f78be4d"
+}

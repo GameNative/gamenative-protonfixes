@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "438100",
+  "name": "VRChat",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/AppData/Roaming/yt-dlp/plugins/ge-proton-vrchat/yt_dlp_plugins/extractor"
+    },
+    {
+      "content": "\"\"\"Keep VRChat's outdated yt-dlp compatible with YouTube.\"\"\"\n\nfrom yt_dlp.extractor.youtube import YoutubeIE\nfrom yt_dlp.extractor.youtube._base import INNERTUBE_CLIENTS\n\n\nif \"android\" in INNERTUBE_CLIENTS:\n    YoutubeIE._DEFAULT_CLIENTS = (\"android\",)\n    YoutubeIE._DEFAULT_JSLESS_CLIENTS = (\"android\",)\n\n\ndef _is_h264(format_info):\n    codec = (format_info.get(\"vcodec\") or \"\").lower()\n    return codec.startswith((\"avc1\", \"avc\", \"h264\"))\n\n\ndef _has_audio(format_info):\n    return (format_info.get(\"acodec\") or \"\").lower() not in (\"\", \"none\")\n\n\nif \"android\" in YoutubeIE._DEFAULT_CLIENTS:\n    _original_real_extract = YoutubeIE._real_extract\n\n    if not getattr(_original_real_extract, \"_ge_proton_vrchat_muxed\", False):\n        def _real_extract_muxed(self, url):\n            info = _original_real_extract(self, url)\n            formats = info.get(\"formats\") or []\n            muxed_h264 = [\n                format_info for format_info in formats\n                if _is_h264(format_info) and _has_audio(format_info)\n            ]\n\n            if muxed_h264:\n                info[\"formats\"] = muxed_h264\n            else:\n                # Preserve playback on videos without a muxed rendition,\n                # even though those may still lack audio in VRChat.\n                info[\"formats\"] = [\n                    format_info for format_info in formats\n                    if _is_h264(format_info)\n                    or ((format_info.get(\"vcodec\") or \"\").lower() == \"none\"\n                        and _has_audio(format_info))\n                ]\n\n            return info\n\n        _real_extract_muxed._ge_proton_vrchat_muxed = True\n        YoutubeIE._real_extract = _real_extract_muxed\n",
+      "encoding": "utf-8",
+      "ifMissing": false,
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/AppData/Roaming/yt-dlp/plugins/ge-proton-vrchat/yt_dlp_plugins/extractor/vrchat_visionos.py"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/438100.py",
+  "upstreamCommit": "df2002f"
+}

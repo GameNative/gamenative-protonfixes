@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1250410",
+  "name": "Flight Simulator 2020",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-FastLaunch",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1250410.py",
+  "upstreamCommit": "490f513"
+}

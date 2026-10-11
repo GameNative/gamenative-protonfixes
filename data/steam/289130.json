@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "289130",
+  "name": "Endless Legend",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-useembedded",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/289130.py",
+  "upstreamCommit": "490f513"
+}

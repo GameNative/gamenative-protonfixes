@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "72850",
+  "name": "72850",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "SkyrimLauncher.exe",
+      "op": "replace_command",
+      "to": "skse_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/skse_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/72850.py",
+  "upstreamCommit": "58829d1"
+}

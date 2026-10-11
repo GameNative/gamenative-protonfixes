@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "963930",
+  "name": "Contractors VR",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/963930.py",
+  "upstreamCommit": "490f513"
+}

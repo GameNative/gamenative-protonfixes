@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "1284210",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "8d87562b481d44dd938c6a34a87d7355",
+  "name": "Guild Wars 2®",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "-provider",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-1284210",
+  "upstream": "gamefixes-egs/umu-1284210.py",
+  "upstreamCommit": "490f513"
+}

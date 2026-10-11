@@ -1,0 +1,24 @@
+{
+  "canonical": {
+    "id": "397540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Catnip",
+  "name": "Borderlands 3",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-397540",
+  "upstream": "gamefixes-egs/umu-397540.py",
+  "upstreamCommit": "f1cada0"
+}

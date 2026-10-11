@@ -1,0 +1,43 @@
+{
+  "coverage": "full",
+  "id": "3590",
+  "name": "Plants vs. Zombies: Game of the Year",
+  "notes": [
+    "the copied exe is used from the launch after the launcher has unpacked popcapgame1.exe"
+  ],
+  "override": "tools/protonfixes/overrides/steam/3590.json",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-changedir",
+      "op": "launch_args"
+    },
+    {
+      "action": "copy",
+      "from": "${drive_c}/ProgramData/PopCap Games/PlantsVsZombies/popcapgame1.exe",
+      "op": "file",
+      "to": "${install}/PlantsVsZombies_good.exe",
+      "when": [
+        {
+          "fileExists": "${drive_c}/ProgramData/PopCap Games/PlantsVsZombies/popcapgame1.exe"
+        },
+        {
+          "fileMissing": "${install}/PlantsVsZombies_good.exe"
+        }
+      ]
+    },
+    {
+      "from": "PlantsVsZombies.exe",
+      "op": "replace_command",
+      "to": "PlantsVsZombies_good.exe",
+      "when": [
+        {
+          "fileExists": "${install}/PlantsVsZombies_good.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3590.py",
+  "upstreamCommit": "487cc24"
+}

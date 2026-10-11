@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "200940",
+  "name": "Sonic CD",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "mdx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/200940.py",
+  "upstreamCommit": "490f513"
+}

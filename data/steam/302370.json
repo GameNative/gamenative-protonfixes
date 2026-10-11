@@ -1,0 +1,23 @@
+{
+  "aliases": [
+    {
+      "id": "1207658769",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "302370",
+  "name": "Tex Murphy: Overseer",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_USE_D7VK": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/302370.py",
+  "upstreamCommit": "6dd6fa5"
+}

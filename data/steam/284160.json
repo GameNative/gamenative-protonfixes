@@ -1,0 +1,27 @@
+{
+  "coverage": "full",
+  "id": "284160",
+  "name": "BeamNG.drive",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/284160.py",
+  "upstreamCommit": "490f513"
+}

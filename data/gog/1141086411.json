@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1141086411",
+  "name": "Silent Hill 4: The Room",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3d8": "n,b",
+        "dsound": "n,b"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1141086411",
+  "upstream": "gamefixes-gog/umu-1141086411.py",
+  "upstreamCommit": "8854a7c"
+}

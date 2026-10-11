@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1240440",
+  "name": "Halo Infinite",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

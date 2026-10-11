@@ -1,0 +1,27 @@
+{
+  "aliases": [
+    {
+      "id": "1441704976",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "9010",
+  "name": "Return to Castle Wolfenstein",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/9010.py",
+  "upstreamCommit": "72c4f69"
+}

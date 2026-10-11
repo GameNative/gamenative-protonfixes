@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "913740",
+  "name": "WORLD OF HORROR",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/913740.py",
+  "upstreamCommit": "490f513"
+}

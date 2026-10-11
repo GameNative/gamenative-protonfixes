@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "6030",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1428935917",
+  "name": "Star Wars™: Jedi Knight™ II - Jedi Outcast™",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-6030",
+  "upstream": "gamefixes-gog/umu-6030.py",
+  "upstreamCommit": "72c4f69"
+}

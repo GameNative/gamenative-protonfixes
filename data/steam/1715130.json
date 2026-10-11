@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1715130",
+  "name": "Crysis Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1715130.py",
+  "upstreamCommit": "a5e814a"
+}

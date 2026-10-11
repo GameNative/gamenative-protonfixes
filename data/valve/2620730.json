@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2620730",
+  "name": "DEVIATOR",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "nomfdxgiman"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

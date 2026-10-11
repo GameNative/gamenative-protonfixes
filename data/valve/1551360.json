@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1551360",
+  "name": "Forza Horizon 5",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

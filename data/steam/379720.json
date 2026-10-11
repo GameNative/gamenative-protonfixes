@@ -1,0 +1,40 @@
+{
+  "aliases": [
+    {
+      "id": "1390579243",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "379720",
+  "name": "DOOM (2016)",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "+r_renderAPI 1",
+      "op": "launch_args"
+    },
+    {
+      "backup": [
+        "CChromaEditorLibrary.dll"
+      ],
+      "extract": true,
+      "op": "download",
+      "sha256": null,
+      "to": "${install}",
+      "url": "https://github.com/Riesi/CChromaEditor/files/2277158/CChromaEditorLibrary.zip",
+      "when": [
+        {
+          "fileMissing": "${install}/CChromaEditorLibrary.dll.bak"
+        }
+      ]
+    },
+    {
+      "name": "mfc140",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/379720.py",
+  "upstreamCommit": "827c1be"
+}

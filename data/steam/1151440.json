@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1151440",
+  "name": "Utawarerumono: Mask of Truth",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": false,
+      "fromAppid": 1149550,
+      "op": "import_saves",
+      "path": "Documents/AQUAPLUS/Utawarerumono Mask of Deception/Save"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1151440.py",
+  "upstreamCommit": "46d3ad5"
+}

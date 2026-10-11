@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "2138710",
+  "name": "Sifu",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${drive_c}/users/${user}/AppData/Local/Sifu/Saved/Config/WindowsClient/Engine.ini",
+      "section": "/script/engine.renderersettings",
+      "values": {
+        "r.CreateShadersOnLoad": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2138710.py",
+  "upstreamCommit": "fbe5cff"
+}

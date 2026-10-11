@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "287240",
+  "name": "Eterium Demo",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "fnad3d11"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

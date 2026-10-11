@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "287450",
+  "name": "Rise of Nations: Extended Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "crypt32",
+      "op": "verb"
+    },
+    {
+      "name": "directmusic",
+      "op": "verb"
+    },
+    {
+      "name": "sound=alsa",
+      "op": "verb"
+    },
+    {
+      "name": "directplay",
+      "op": "verb"
+    },
+    {
+      "from": "patriots.exe",
+      "op": "replace_command",
+      "to": "riseofnations.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/287450.py",
+  "upstreamCommit": "490f513"
+}

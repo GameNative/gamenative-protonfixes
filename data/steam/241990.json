@@ -1,0 +1,41 @@
+{
+  "coverage": "full",
+  "id": "241990",
+  "name": "Sorcerer King",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "usp10",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2008",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2015",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "SDNXLFonts": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/241990.py",
+  "upstreamCommit": "8522ac4"
+}

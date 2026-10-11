@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "34330",
+  "name": "Total War: Shogun 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/34330.py",
+  "upstreamCommit": "115af45"
+}

@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1833855510",
+  "name": "Just Cause 2 - Complete Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\GOG.com\\GalaxyClient",
+      "op": "registry",
+      "values": {}
+    },
+    {
+      "append": "-borderless",
+      "op": "launch_args"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-8190",
+  "upstream": "gamefixes-gog/umu-8190.py",
+  "upstreamCommit": "596f977"
+}

@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "Buffalo",
+      "store": "egs"
+    }
+  ],
+  "coverage": "full",
+  "id": "40800",
+  "name": "Super Meat Boy",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "xact",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/40800.py",
+  "upstreamCommit": "490f513"
+}

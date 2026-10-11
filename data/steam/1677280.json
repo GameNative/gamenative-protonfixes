@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1677280",
+  "name": "Company Of Heroes 3",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ucrtbase2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1677280.py",
+  "upstreamCommit": "d05cc89"
+}

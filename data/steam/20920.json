@@ -1,0 +1,16 @@
+{
+  "aliases": [
+    {
+      "id": "1207658930",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "20920",
+  "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+  "schema": 1,
+  "steps": [],
+  "store": "steam",
+  "upstream": "gamefixes-steam/20920.py",
+  "upstreamCommit": "490f513"
+}

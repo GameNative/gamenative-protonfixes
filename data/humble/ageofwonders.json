@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "61500",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "ageofwonders",
+  "name": "Age of Wonders",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "icodecs",
+      "op": "verb"
+    }
+  ],
+  "store": "humble",
+  "umuId": "umu-61500",
+  "upstream": "gamefixes-humble/umu-61500.py",
+  "upstreamCommit": "490f513"
+}

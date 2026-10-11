@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "231430",
+  "name": "Company Of Heroes 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ucrtbase2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/231430.py",
+  "upstreamCommit": "d05cc89"
+}

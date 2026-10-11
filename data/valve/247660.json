@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "247660",
+  "name": "Deadly Premonition: The Director's Cut",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noxalia"
+      ],
+      "flags": [
+        "noxalia"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

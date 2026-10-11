@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "435150",
+  "name": "Divinity: Original Sin 2 - Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

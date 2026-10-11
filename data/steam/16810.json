@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "16810",
+  "name": "Civilization IV: Colonization",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "oleaut32",
+      "op": "verb"
+    },
+    {
+      "name": "msxml3",
+      "op": "verb"
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/16810.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1795390",
+  "name": "Carnage Cross",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "CarnageCross/CarnageCross",
+      "op": "replace_command",
+      "regex": true,
+      "to": "CarnageCross/CarnageCross/Binaries/Win64/CarnageCross-Win64-Shipping.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1795390.py",
+  "upstreamCommit": "490f513"
+}

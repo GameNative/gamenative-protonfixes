@@ -1,0 +1,15 @@
+{
+  "coverage": "none",
+  "id": "352130",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: Proton steam.exe launcher shim",
+      "source": "del self.dlloverrides[\"steam.exe\"]"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

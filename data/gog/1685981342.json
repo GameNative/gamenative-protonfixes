@@ -1,0 +1,33 @@
+{
+  "canonical": {
+    "id": "452440",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1685981342",
+  "name": "Flowers - Le Volume Sur Ete",
+  "override": "tools/protonfixes/overrides/steam/452440.json",
+  "schema": 1,
+  "steps": [
+    {
+      "args": [
+        "/silent"
+      ],
+      "once": "overlock-mod-font",
+      "op": "exec",
+      "path": "${install}/font/overlock_mod_font_installer.exe",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/Fonts/Overlock-Mod.ttf"
+        },
+        {
+          "fileExists": "${install}/font/overlock_mod_font_installer.exe"
+        }
+      ]
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1685981342",
+  "upstream": "gamefixes-gog/umu-1685981342.py",
+  "upstreamCommit": "490f513"
+}

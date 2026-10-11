@@ -1,0 +1,44 @@
+{
+  "canonical": {
+    "id": "582660",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-582660",
+  "name": "Black Desert Online",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "--steam",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    },
+    {
+      "op": "env",
+      "set": {
+        "WINE_DISABLE_KERNEL_WRITEWATCH": "1"
+      }
+    },
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/Documents/Black Desert"
+    },
+    {
+      "content": "launcherGpu = 0\nlauncherOffScreen = 0",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/Documents/Black Desert/GameOptionLauncher.txt"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-582660",
+  "upstream": "gamefixes-umu/umu-582660.py",
+  "upstreamCommit": "97e668d"
+}

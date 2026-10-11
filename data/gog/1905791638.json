@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1905791638",
+  "name": "Alien Breed: Impact",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-22610",
+  "upstream": "gamefixes-gog/umu-22610.py",
+  "upstreamCommit": "490f513"
+}

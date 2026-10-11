@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2074920",
+  "name": "The First Descendant",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "WINE_BLOCK_HOSTS": "modules-cdn.eac-prod.on.epicgames.com"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2074920.py",
+  "upstreamCommit": "3f2db9f"
+}

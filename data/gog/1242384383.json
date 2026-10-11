@@ -1,0 +1,22 @@
+{
+  "canonical": {
+    "id": "367500",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1242384383",
+  "name": "Dragon's Dogma: Dark Arisen",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SDL_JOYSTICK_HIDAPI": "0"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-367500",
+  "upstream": "gamefixes-gog/umu-367500.py",
+  "upstreamCommit": "12fdd5a"
+}

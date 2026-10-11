@@ -1,0 +1,27 @@
+{
+  "aliases": [
+    {
+      "id": "1428935726",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "6020",
+  "name": "Star Wars™: Jedi Knight™ - Jedi Academy™",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/6020.py",
+  "upstreamCommit": "72c4f69"
+}

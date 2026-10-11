@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "282900",
+  "name": "Hyperdimension Neptunia Re;Birth1",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "AMD_DEBUG": "nowc",
+        "radeonsi_disable_sam": "true"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/282900.py",
+  "upstreamCommit": "490f513"
+}

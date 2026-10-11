@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "6920",
+  "name": "Deus Ex: Invisible War",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dsound",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/6920.py",
+  "upstreamCommit": "b830c6f"
+}

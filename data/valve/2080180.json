@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2080180",
+  "name": "Go Home Annie Demo",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

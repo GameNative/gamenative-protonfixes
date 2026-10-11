@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "570940",
+  "name": "Dark Souls Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2017",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/570940.py",
+  "upstreamCommit": "490f513"
+}

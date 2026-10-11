@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "219990",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1449651388",
+  "name": "Grim Dawn",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-219990",
+  "upstream": "gamefixes-gog/umu-219990.py",
+  "upstreamCommit": "490f513"
+}

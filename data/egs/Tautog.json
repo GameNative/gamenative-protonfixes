@@ -1,0 +1,24 @@
+{
+  "canonical": {
+    "id": "298110",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Tautog",
+  "name": "Far Cry 4",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-298110",
+  "upstream": "gamefixes-egs/umu-298110.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "231990",
+  "name": "Spider-Man: Shattered Dimensions",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "xact",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/231990.py",
+  "upstreamCommit": "490f513"
+}

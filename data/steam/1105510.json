@@ -1,0 +1,23 @@
+{
+  "aliases": [
+    {
+      "id": "1896187920",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "1105510",
+  "name": "Yakuza 5 Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "WINE_DISABLE_SFN": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1105510.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "213330",
+  "name": "LEGO® Batman 2 DC Super Heroes™",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_41",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/213330.py",
+  "upstreamCommit": "490f513"
+}

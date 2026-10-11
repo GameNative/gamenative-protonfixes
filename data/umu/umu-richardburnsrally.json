@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "umu-richardburnsrally",
+  "name": "Richard Burns Rally",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "mfc70": "n,b",
+        "mfc71": "n,b",
+        "msvci70": "n,b",
+        "msvcp70": "n,b",
+        "msvcp71": "n,b",
+        "msvcr71": "n,b"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-richardburnsrally",
+  "upstream": "gamefixes-umu/umu-richardburnsrally.py",
+  "upstreamCommit": "854a6bd"
+}

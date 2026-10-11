@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "2057392130",
+  "name": "Kane & Lynch 2: Dog Days - Complete Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\GOG.com\\GalaxyClient",
+      "op": "registry",
+      "values": {}
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-28000",
+  "upstream": "gamefixes-gog/umu-28000.py",
+  "upstreamCommit": "596f977"
+}

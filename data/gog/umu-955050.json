@@ -1,0 +1,27 @@
+{
+  "canonical": {
+    "id": "955050",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-955050",
+  "name": "Bright Memory",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "nvapi": "d",
+        "nvapi64": "d",
+        "nvcuda": "d",
+        "nvcuvid": "d",
+        "nvencodeapi": "d",
+        "nvencodeapi64": "d"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-955050",
+  "upstream": "gamefixes-gog/umu-955050.py",
+  "upstreamCommit": "4dfafb0"
+}

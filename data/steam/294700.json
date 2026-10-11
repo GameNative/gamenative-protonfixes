@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "294700",
+  "name": "Putt-Putt: Pep's Birthday Surprise",
+  "schema": 1,
+  "steps": [
+    {
+      "letter": "r",
+      "op": "dos_device",
+      "path": "/tmp",
+      "type": "cdrom"
+    },
+    {
+      "hive": "HKLM",
+      "key": "System\\MountedDevices",
+      "op": "registry",
+      "values": {
+        "\\??\\Volume{00000000-0000-0000-0000-000000000052}": {
+          "type": "REG_BINARY",
+          "value": "2f746d7000"
+        },
+        "\\DosDevices\\R:": {
+          "type": "REG_BINARY",
+          "value": "5c005c002e005c0064003a000000"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/294700.py",
+  "upstreamCommit": "4425d4b"
+}

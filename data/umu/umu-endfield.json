@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "umu-endfield",
+  "name": "Arknights: Endfield",
+  "notes": [
+    "the /dev/shm load-time optimisation is skipped"
+  ],
+  "override": "tools/protonfixes/overrides/umu/umu-endfield.json",
+  "schema": 1,
+  "steps": [],
+  "store": "umu",
+  "umuId": "umu-endfield",
+  "upstream": "gamefixes-umu/umu-endfield.py",
+  "upstreamCommit": "3798c13"
+}

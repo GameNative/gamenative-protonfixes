@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "730830",
+  "name": "Escape from Monkey Island™",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dgvoodoo2",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/730830.py",
+  "upstreamCommit": "490f513"
+}

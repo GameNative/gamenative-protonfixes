@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "35130",
+  "name": "Lara Croft and the Guardian of Light",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-tenshisz",
+  "name": "Angelic☆Chaos RE-BOOT!",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-vomstyle=layer",
+      "op": "launch_args"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-tenshisz",
+  "upstream": "gamefixes-umu/umu-tenshisz.py",
+  "upstreamCommit": "a08c5a6"
+}

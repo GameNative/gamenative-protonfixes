@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "506510",
+  "name": "Shadows of Adam",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dcomp": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/506510.py",
+  "upstreamCommit": "8854a7c"
+}

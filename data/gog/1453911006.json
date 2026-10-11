@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "1144400",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1453911006",
+  "name": "Senren * Banka",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-vomstyle=layer",
+      "op": "launch_args"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1144400",
+  "upstream": "gamefixes-gog/umu-1144400.py",
+  "upstreamCommit": "27ce400"
+}

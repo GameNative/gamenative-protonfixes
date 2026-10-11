@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "55150",
+  "name": "Warhammer 40,000: Space Marine",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

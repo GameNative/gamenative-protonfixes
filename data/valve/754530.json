@@ -1,0 +1,15 @@
+{
+  "coverage": "none",
+  "id": "754530",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "not convertible",
+      "source": "srcdir = os.path.join(steam_linux_path, 'userdata') dstdir = os.path.join(self.prefix_dir, self.steam_in_pfx_dir, 'userdata') for userid in os.listdir(srcdir): srcvdf = os.path.join(srcdir, userid, 'config', 'localconfig.vdf') dstvdf = os.path.join(dstdir, userid, 'config', 'localconfig.vdf') if not os.path.exists(srcvdf): continue os.makedirs(os.path.dirname(dstvdf), exist_ok=True) shutil.copyfil"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

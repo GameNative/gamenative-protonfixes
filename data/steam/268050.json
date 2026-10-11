@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "268050",
+  "name": "The Evil Within",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "win7",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "PULSE_LATENCY_MSEC": "60"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/268050.py",
+  "upstreamCommit": "490f513"
+}

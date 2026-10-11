@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "46500",
+  "name": "Syberia",
+  "schema": 1,
+  "steps": [
+    {
+      "content": "800 600 32 0 BaseCMO.cmo",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${install}/player.ini"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/46500.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,26 @@
+{
+  "coverage": "full",
+  "id": "105400",
+  "name": "Fable III",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xliveless",
+      "op": "verb"
+    },
+    {
+      "action": "delete",
+      "op": "file",
+      "recursive": true,
+      "to": "${drive_c}/Program Files/Common Files/Microsoft Shared/Windows Live",
+      "when": [
+        {
+          "fileExists": "${drive_c}/Program Files/Common Files/Microsoft Shared/Windows Live"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/105400.py",
+  "upstreamCommit": "780f7c7"
+}

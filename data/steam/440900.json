@@ -1,0 +1,24 @@
+{
+  "coverage": "full",
+  "id": "440900",
+  "name": "Conan Exiles",
+  "schema": 1,
+  "steps": [
+    {
+      "appid": 1161040,
+      "op": "runtime_app"
+    },
+    {
+      "from": "FuncomLauncher.exe",
+      "op": "replace_command",
+      "to": "../ConanSandbox/Binaries/Win64/ConanSandbox_BE.exe"
+    },
+    {
+      "append": "-BattlEye",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/440900.py",
+  "upstreamCommit": "8758952"
+}

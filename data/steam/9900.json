@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "9900",
+  "name": "Star Trek Online",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/9900.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,20 @@
+{
+  "aliases": [
+    {
+      "id": "3b78108a811d497db768899400edd842",
+      "store": "egs"
+    },
+    {
+      "id": "85",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "19900",
+  "name": "Far Cry 2",
+  "schema": 1,
+  "steps": [],
+  "store": "steam",
+  "upstream": "gamefixes-steam/19900.py",
+  "upstreamCommit": "490f513"
+}

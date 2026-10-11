@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1743464065",
+  "name": "Alien Breed 3: Descent",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-22670",
+  "upstream": "gamefixes-gog/umu-22670.py",
+  "upstreamCommit": "490f513"
+}

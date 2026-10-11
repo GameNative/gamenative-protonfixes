@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "316260",
+  "name": "Disney Universe",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

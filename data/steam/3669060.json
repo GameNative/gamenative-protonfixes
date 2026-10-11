@@ -1,0 +1,26 @@
+{
+  "coverage": "full",
+  "id": "3669060",
+  "name": "Blade & Soul NEO",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3669060.py",
+  "upstreamCommit": "26e2e54"
+}

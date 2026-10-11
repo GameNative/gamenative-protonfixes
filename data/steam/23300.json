@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "23300",
+  "name": "Yosumin",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/23300.py",
+  "upstreamCommit": "f04757b"
+}

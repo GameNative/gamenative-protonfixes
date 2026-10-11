@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2055290",
+  "name": "Sonic Colors: Ultimate",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapzeromemory"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

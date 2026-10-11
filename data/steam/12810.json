@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "umu-12810",
+      "store": "zoomplatform"
+    }
+  ],
+  "coverage": "full",
+  "id": "12810",
+  "name": "Overlord II",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/12810.py",
+  "upstreamCommit": "490f513"
+}

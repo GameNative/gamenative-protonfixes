@@ -1,0 +1,26 @@
+{
+  "aliases": [
+    {
+      "id": "Hapuka",
+      "store": "egs"
+    },
+    {
+      "id": "205",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "233270",
+  "name": "Far Cry Blood Dragon",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 24,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/233270.py",
+  "upstreamCommit": "490f513"
+}

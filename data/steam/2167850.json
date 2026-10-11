@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2167850",
+  "name": "Summoner's War Chronicles",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "0"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2167850.py",
+  "upstreamCommit": "6bc80d8"
+}

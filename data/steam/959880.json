@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "959880",
+  "name": "Dungeon Town",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Microsoft\\Windows NT\\CurrentVersion\\FontSubstitutes",
+      "op": "registry",
+      "values": {
+        "SourceHanSans-Medium": {
+          "type": "REG_SZ",
+          "value": "Source Han Sans Medium"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/959880.py",
+  "upstreamCommit": "22832f0"
+}

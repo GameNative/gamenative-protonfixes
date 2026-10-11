@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "375900",
+  "name": "Trackmania Turbo",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/375900.py",
+  "upstreamCommit": "8b13bff"
+}

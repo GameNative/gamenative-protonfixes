@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "813780",
+  "name": "Age of Empires II: DE",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/813780.py",
+  "upstreamCommit": "a5e814a"
+}

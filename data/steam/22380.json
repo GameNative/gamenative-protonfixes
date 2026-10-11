@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "22380",
+  "name": "Fallout: New Vegas Ultimate Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "FalloutNVLauncher.exe",
+      "op": "replace_command",
+      "to": "nvse_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/nvse_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/22380.py",
+  "upstreamCommit": "58829d1"
+}

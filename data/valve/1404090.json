@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1404090",
+  "name": "Trivia Tricks",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

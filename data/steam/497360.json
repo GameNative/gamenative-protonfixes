@@ -1,0 +1,87 @@
+{
+  "coverage": "partial",
+  "id": "497360",
+  "name": "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned",
+  "schema": 1,
+  "steps": [
+    {
+      "letter": "r",
+      "op": "dos_device",
+      "path": "/tmp",
+      "type": "cdrom"
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Sierra On-Line",
+      "op": "registry",
+      "values": {}
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Sierra On-Line\\Gabriel Knight 3",
+      "op": "registry",
+      "values": {}
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Sierra On-Line\\Gabriel Knight 3\\App",
+      "op": "registry",
+      "values": {
+        "Run Count": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Sierra On-Line\\Gabriel Knight 3\\Engine",
+      "op": "registry",
+      "values": {
+        "Full Screen": {
+          "type": "REG_DWORD",
+          "value": "1"
+        },
+        "Monitor": {
+          "type": "REG_DWORD",
+          "value": "0"
+        },
+        "Rasterizer": {
+          "type": "REG_SZ",
+          "value": "detect"
+        },
+        "Rasterizer GUID": {
+          "type": "REG_SZ",
+          "value": "{00000000-0000-0000-0000-000000000000}"
+        },
+        "Screen Height": {
+          "type": "REG_DWORD",
+          "value": "768"
+        }
+      }
+    },
+    {
+      "op": "unsupported",
+      "reason": "derived screen resolution expression",
+      "source": "util.regedit_add(\n    'HKCU\\\\Software\\\\Sierra On-Line\\\\Gabriel Knight 3\\\\Engine',\n    'Screen Width',\n    'REG_DWORD',\n    hex(width),\n)"
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Sierra On-Line\\Gabriel Knight 3\\Engine\\Hardware",
+      "op": "registry",
+      "values": {
+        "Gamma": {
+          "type": "REG_SZ",
+          "value": "1.5"
+        },
+        "Surface Quality": {
+          "type": "REG_SZ",
+          "value": "High"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/497360.py",
+  "upstreamCommit": "0536ccf"
+}

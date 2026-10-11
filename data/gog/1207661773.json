@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661773",
+  "name": "Heroes Chronicles [Chapter 4] - Clash of the Dragons",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Dragons.exe",
+      "op": "replace_command",
+      "to": "Dragons_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661773",
+  "upstream": "gamefixes-gog/umu-1207661773.py",
+  "upstreamCommit": "fbfebf9"
+}

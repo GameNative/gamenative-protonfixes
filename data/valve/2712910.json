@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2712910",
+  "name": "Spark & Kling",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "nomfdxgiman"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

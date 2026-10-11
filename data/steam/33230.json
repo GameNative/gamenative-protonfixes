@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "33230",
+  "name": "Assassin's Creed 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/33230.py",
+  "upstreamCommit": "8b13bff"
+}

@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-zerozone",
+  "name": "Zero Zone",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "cnc_ddraw",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-zerozone",
+  "upstream": "gamefixes-umu/umu-zerozone.py",
+  "upstreamCommit": "77147fd"
+}

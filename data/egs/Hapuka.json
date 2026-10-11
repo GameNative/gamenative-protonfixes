@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "233270",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Hapuka",
+  "name": "Far Cry 3 Blood Dragon",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 24,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-233270",
+  "upstream": "gamefixes-egs/umu-233270.py",
+  "upstreamCommit": "490f513"
+}

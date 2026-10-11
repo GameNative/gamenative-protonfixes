@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2322010",
+  "name": "God of War Ragnarök",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2322010.py",
+  "upstreamCommit": "77147fd"
+}

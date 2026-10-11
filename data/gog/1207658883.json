@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "61500",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207658883",
+  "name": "Age of Wonders",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "icodecs",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-61500",
+  "upstream": "gamefixes-gog/umu-61500.py",
+  "upstreamCommit": "490f513"
+}

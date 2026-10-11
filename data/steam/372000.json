@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "372000",
+  "name": "Tree Of Savior",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2013",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/372000.py",
+  "upstreamCommit": "7ffe360"
+}

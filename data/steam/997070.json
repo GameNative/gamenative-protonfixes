@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "997070",
+  "name": "Marvel's Avengers",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/997070.py",
+  "upstreamCommit": "a5e814a"
+}

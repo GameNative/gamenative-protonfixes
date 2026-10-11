@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "252430",
+  "name": "Dusty Revenge: Co-Op Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2010",
+      "op": "verb"
+    },
+    {
+      "name": "dsound",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/252430.py",
+  "upstreamCommit": "490f513"
+}

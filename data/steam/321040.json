@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "umu-321040",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "321040",
+  "name": "Dirt 3",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "openal",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/321040.py",
+  "upstreamCommit": "490f513"
+}

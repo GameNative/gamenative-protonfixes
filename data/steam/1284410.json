@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1284410",
+  "name": "GWENT: The Witcher Card Game",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc140",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1284410.py",
+  "upstreamCommit": "490f513"
+}

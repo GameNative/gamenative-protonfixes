@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "2623190",
+  "name": "2623190",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "OblivionRemastered.exe",
+      "op": "replace_command",
+      "to": "OblivionRemastered/Binaries/Win64/obse64_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/OblivionRemastered/Binaries/Win64/obse64_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2623190.py",
+  "upstreamCommit": "58829d1"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "none",
+  "id": "1549250",
+  "name": "Undecember",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: changes Proton's steam.exe launch command",
+      "source": "argv = [g_proton.wine_bin, \"c:\\\\Program Files (x86)\\\\Steam\\\\steam.exe\"]"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

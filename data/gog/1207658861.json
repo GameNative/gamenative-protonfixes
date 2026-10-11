@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1207658861",
+  "name": "Two Worlds Epic Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xact",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207658861",
+  "upstream": "gamefixes-gog/umu-1207658861.py",
+  "upstreamCommit": "91b2d73"
+}

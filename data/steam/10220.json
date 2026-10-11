@@ -1,0 +1,41 @@
+{
+  "aliases": [
+    {
+      "id": "a60669f1-9742-4d13-ae55-e62b5d5157ed",
+      "store": "zoomplatform"
+    }
+  ],
+  "coverage": "full",
+  "id": "10220",
+  "name": "Postal III",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "lucida",
+      "op": "verb"
+    },
+    {
+      "name": "courier",
+      "op": "verb"
+    },
+    {
+      "name": "verdana",
+      "op": "verb"
+    },
+    {
+      "name": "trebuchet",
+      "op": "verb"
+    },
+    {
+      "name": "arial",
+      "op": "verb"
+    },
+    {
+      "name": "tahoma",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/10220.py",
+  "upstreamCommit": "490f513"
+}

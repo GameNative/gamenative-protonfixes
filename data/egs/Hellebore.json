@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "220240",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Hellebore",
+  "name": "Far Cry 3",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 24,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-220240",
+  "upstream": "gamefixes-egs/umu-220240.py",
+  "upstreamCommit": "490f513"
+}

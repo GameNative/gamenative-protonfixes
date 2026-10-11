@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "593600",
+  "name": "PixARK",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "mprapi": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/593600.py",
+  "upstreamCommit": "8854a7c"
+}

@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "618970",
+  "name": "Outcast - Second Contact",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 4,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

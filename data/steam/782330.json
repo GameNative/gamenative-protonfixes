@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "782330",
+  "name": "DOOM Eternal",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "+com_skipSignInManager 1",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/782330.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1661434114",
+  "name": "Dino Crisis",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n,b",
+        "dinput": "n,b"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1661434114",
+  "upstream": "gamefixes-gog/umu-1661434114.py",
+  "upstreamCommit": "8854a7c"
+}

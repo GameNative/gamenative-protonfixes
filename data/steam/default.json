@@ -1,0 +1,37 @@
+{
+  "coverage": "full",
+  "launchOptions": [
+    {
+      "name": "-pf_tricks",
+      "step": {
+        "name": "{value}",
+        "op": "verb"
+      }
+    },
+    {
+      "name": "-pf_dxvk_set",
+      "split": "=",
+      "step": {
+        "op": "dxvk_config",
+        "set": {
+          "{key}": "{value}"
+        }
+      }
+    },
+    {
+      "name": "-pf_replace_cmd",
+      "split": "=",
+      "step": {
+        "from": "{key}",
+        "op": "replace_command",
+        "regex": true,
+        "to": "{value}"
+      }
+    }
+  ],
+  "schema": 1,
+  "steps": [],
+  "store": "steam",
+  "upstream": "gamefixes-steam/default.py",
+  "upstreamCommit": "6095dbb"
+}

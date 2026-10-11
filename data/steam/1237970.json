@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1237970",
+  "name": "Titanfall® 2: Ultimate Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "move",
+      "from": "${install}/Titanfall2.exe.bak",
+      "op": "file",
+      "to": "${install}/Titanfall2.exe",
+      "when": [
+        {
+          "fileExists": "${install}/Titanfall2.exe.bak"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1237970.py",
+  "upstreamCommit": "490f513"
+}

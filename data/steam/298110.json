@@ -1,0 +1,29 @@
+{
+  "aliases": [
+    {
+      "id": "Tautog",
+      "store": "egs"
+    },
+    {
+      "id": "856",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "298110",
+  "name": "Far Cry 4",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/298110.py",
+  "upstreamCommit": "490f513"
+}

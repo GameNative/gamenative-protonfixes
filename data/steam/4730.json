@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "4730",
+  "name": "Outrun 2006: Coast 2 Coast",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/4730.py",
+  "upstreamCommit": "490f513"
+}

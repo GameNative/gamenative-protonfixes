@@ -1,0 +1,54 @@
+{
+  "aliases": [
+    {
+      "id": "1716740",
+      "store": "steam"
+    },
+    {
+      "id": "22370",
+      "store": "steam"
+    },
+    {
+      "id": "22380",
+      "store": "steam"
+    },
+    {
+      "id": "2623190",
+      "store": "steam"
+    },
+    {
+      "id": "377160",
+      "store": "steam"
+    },
+    {
+      "id": "489830",
+      "store": "steam"
+    },
+    {
+      "id": "72850",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "22330",
+  "name": "22330",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "OblivionLauncher.exe",
+      "op": "replace_command",
+      "to": "obse_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/obse_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/22330.py",
+  "upstreamCommit": "58829d1"
+}

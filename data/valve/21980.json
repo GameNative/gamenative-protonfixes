@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "21980",
+  "name": "Call of Juarez: Bound in Blood",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapzeromemory"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

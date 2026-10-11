@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2561580",
+  "name": "Horizon Zero Dawn Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": false,
+      "fromAppid": 1151640,
+      "op": "import_saves",
+      "path": "Documents/Horizon Zero Dawn"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2561580.py",
+  "upstreamCommit": "283df32"
+}

@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2677660",
+  "name": "Indiana Jones and the Great Circle",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "__GL_13ebad": "0x1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2677660.py",
+  "upstreamCommit": "e17e2a2"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "225640",
+  "name": "Sacred 2 Gold",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/225640.py",
+  "upstreamCommit": "490f513"
+}

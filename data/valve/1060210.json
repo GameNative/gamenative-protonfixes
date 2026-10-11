@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1060210",
+  "name": "Disaster Report 4: Summer Memories",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noesync",
+        "nofsync"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

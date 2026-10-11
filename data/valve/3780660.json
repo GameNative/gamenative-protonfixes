@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "3780660",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

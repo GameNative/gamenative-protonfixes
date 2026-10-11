@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "6270",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "08d0018e-5ee1-40b7-95ff-35a06ba69191",
+  "name": "Ducati World Championship",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "icodecs",
+      "op": "verb"
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-6270",
+  "upstream": "gamefixes-zoomplatform/umu-6270.py",
+  "upstreamCommit": "490f513"
+}

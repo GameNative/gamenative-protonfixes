@@ -1,0 +1,46 @@
+{
+  "coverage": "full",
+  "id": "244210",
+  "name": "Assetto Corsa",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dwrite": "n,b"
+      }
+    },
+    {
+      "name": "win10",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "PULSE_LATENCY_MSEC": "60"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/244210.py",
+  "upstreamCommit": "26e2e54"
+}

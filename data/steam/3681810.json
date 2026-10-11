@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "3681810",
+  "name": "Blue Protocol: Star Resonance",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "win7",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3681810.py",
+  "upstreamCommit": "f7a576d"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "410900",
+  "name": "Forts",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ole32",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/410900.py",
+  "upstreamCommit": "490f513"
+}

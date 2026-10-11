@@ -1,0 +1,15 @@
+{
+  "canonical": {
+    "id": "19900",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "3b78108a811d497db768899400edd842",
+  "name": "Far Cry 2",
+  "schema": 1,
+  "steps": [],
+  "store": "egs",
+  "umuId": "umu-19900",
+  "upstream": "gamefixes-egs/umu-19900.py",
+  "upstreamCommit": "490f513"
+}

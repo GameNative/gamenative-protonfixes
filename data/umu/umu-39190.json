@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-39190",
+  "name": "Dungeon Siege",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-39190",
+  "upstream": "gamefixes-umu/umu-39190.py",
+  "upstreamCommit": "a2c80f7"
+}

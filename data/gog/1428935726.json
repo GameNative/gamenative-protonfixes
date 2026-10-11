@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "6020",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1428935726",
+  "name": "Star Wars™: Jedi Knight™ - Jedi Academy™",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-6020",
+  "upstream": "gamefixes-gog/umu-6020.py",
+  "upstreamCommit": "72c4f69"
+}

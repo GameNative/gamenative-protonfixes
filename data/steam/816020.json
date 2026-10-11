@@ -1,0 +1,24 @@
+{
+  "coverage": "full",
+  "id": "816020",
+  "name": "JUMP FORCE",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "JUMP_FORCE.exe",
+      "op": "replace_command",
+      "to": "JUMP_FORCE/Binaries/Win64/JUMP_FORCE-Win64-Shipping.exe"
+    },
+    {
+      "append": "-eac-nop-loaded",
+      "op": "launch_args"
+    },
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/816020.py",
+  "upstreamCommit": "490f513"
+}

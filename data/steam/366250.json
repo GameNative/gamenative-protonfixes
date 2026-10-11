@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "366250",
+  "name": "METAL SLUG",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_46",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/366250.py",
+  "upstreamCommit": "490f513"
+}

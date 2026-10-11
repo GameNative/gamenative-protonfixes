@@ -1,0 +1,59 @@
+{
+  "coverage": "full",
+  "id": "1873170",
+  "name": "Cease to Breathe",
+  "override": "tools/protonfixes/overrides/steam/1873170.json",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "CTB.exe",
+      "op": "replace_command",
+      "to": "nw.exe"
+    },
+    {
+      "backup": [],
+      "extract": true,
+      "op": "download",
+      "sha256": "ed2681847162e0fa457dd55e293b6f331ccd58acedd934a98e7fe1406c26dd4f",
+      "to": "${install}",
+      "url": "https://dl.nwjs.io/v0.86.0/nwjs-v0.86.0-win-x64.zip",
+      "when": [
+        {
+          "fileMissing": "${install}/nw.exe"
+        }
+      ]
+    },
+    {
+      "action": "copy",
+      "from": "${install}/nwjs-v0.86.0-win-x64",
+      "op": "file",
+      "recursive": true,
+      "to": "${install}",
+      "when": [
+        {
+          "fileExists": "${install}/nwjs-v0.86.0-win-x64"
+        }
+      ]
+    },
+    {
+      "action": "delete",
+      "op": "file",
+      "recursive": true,
+      "to": "${install}/nwjs-v0.86.0-win-x64",
+      "when": [
+        {
+          "fileExists": "${install}/nwjs-v0.86.0-win-x64"
+        }
+      ]
+    },
+    {
+      "from": "\"frame\": true",
+      "op": "text_replace",
+      "path": "${install}/package.json",
+      "to": "\"frame\": false"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1873170.py",
+  "upstreamCommit": "ad53f66"
+}

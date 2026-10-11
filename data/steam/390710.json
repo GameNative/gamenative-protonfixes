@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "390710",
+  "name": "SUGURI 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dxof",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/390710.py",
+  "upstreamCommit": "490f513"
+}

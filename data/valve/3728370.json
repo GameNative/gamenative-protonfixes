@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "3728370",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

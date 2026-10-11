@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "916440",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "4553",
+  "name": "Anno 1800",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "ubisoft",
+  "umuId": "umu-916440",
+  "upstream": "gamefixes-ubisoft/umu-916440.py",
+  "upstreamCommit": "8b13bff"
+}

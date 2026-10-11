@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "3837340",
+  "name": "FINAL FANTASY VII",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noxalia"
+      ],
+      "flags": [
+        "noxalia"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

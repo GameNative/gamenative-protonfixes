@@ -1,0 +1,22 @@
+{
+  "canonical": {
+    "id": "1105510",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1896187920",
+  "name": "Yakuza 5 Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "WINE_DISABLE_SFN": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1105510",
+  "upstream": "gamefixes-gog/umu-1105510.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,35 @@
+{
+  "canonical": {
+    "id": "2475980",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "2505910",
+  "name": "Gobliiins 5 (and Demo - 2505910)",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/acsetup.cfg",
+      "section": "language",
+      "values": {
+        "translation": "English"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/acsetup.cfg",
+      "section": "graphics",
+      "values": {
+        "filter": "Linear"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2505910.py",
+  "upstreamCommit": "8854a7c"
+}

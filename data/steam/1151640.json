@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1209025141",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "1151640",
+  "name": "Horizon Zero Dawn™ Complete Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1151640.py",
+  "upstreamCommit": "a5e814a"
+}

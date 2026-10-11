@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2395210",
+  "name": "Tony Hawk's Pro Skater 1 + 2",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "forcenvapi"
+      ],
+      "flags": [
+        "forcenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

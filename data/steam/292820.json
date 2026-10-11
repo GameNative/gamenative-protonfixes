@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "292820",
+  "name": "Pajama Sam 4: Life is Rough When you Lose your Stuff!",
+  "schema": 1,
+  "steps": [
+    {
+      "letter": "r",
+      "op": "dos_device",
+      "path": "/tmp",
+      "type": "cdrom"
+    },
+    {
+      "hive": "HKLM",
+      "key": "System\\MountedDevices",
+      "op": "registry",
+      "values": {
+        "\\??\\Volume{00000000-0000-0000-0000-000000000052}": {
+          "type": "REG_BINARY",
+          "value": "2f746d7000"
+        },
+        "\\DosDevices\\R:": {
+          "type": "REG_BINARY",
+          "value": "5c005c002e005c0064003a000000"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/292820.py",
+  "upstreamCommit": "a74b2d9"
+}

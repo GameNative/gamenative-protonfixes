@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "508980",
+  "name": "Crashday Redline Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "key": "FSAA",
+      "note": "upstream only sets the key when it already exists",
+      "op": "json_set",
+      "path": "${drive_c}/users/${user}/AppData/Local/Crashday/config/graphics.config",
+      "value": 0
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/508980.py",
+  "upstreamCommit": "9244ea3"
+}

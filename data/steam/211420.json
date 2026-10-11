@@ -1,0 +1,65 @@
+{
+  "coverage": "full",
+  "id": "211420",
+  "name": "Dark Souls Prepare To Die Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput8": "n,b"
+      },
+      "when": [
+        {
+          "fileExists": "${install}/DATA/dinput8.dll"
+        }
+      ]
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\DllOverrides",
+      "op": "registry",
+      "values": {
+        "dinput8": {
+          "type": "REG_SZ",
+          "value": "native,builtin"
+        }
+      },
+      "when": [
+        {
+          "fileExists": "${install}/DATA/dinput8.dll"
+        }
+      ]
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput8": "b"
+      },
+      "when": [
+        {
+          "fileMissing": "${install}/DATA/dinput8.dll"
+        }
+      ]
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\DllOverrides",
+      "op": "registry",
+      "values": {
+        "dinput8": {
+          "type": "REG_SZ",
+          "value": "builtin"
+        }
+      },
+      "when": [
+        {
+          "fileMissing": "${install}/DATA/dinput8.dll"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/211420.py",
+  "upstreamCommit": "19cbf11"
+}

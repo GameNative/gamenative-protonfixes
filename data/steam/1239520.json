@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1239520",
+  "name": "Madden NFL 21 needs vcrun2019 for online mode to work",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1239520.py",
+  "upstreamCommit": "a5e814a"
+}

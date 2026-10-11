@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661813",
+  "name": "Heroes Chronicles [Chapter 8] - The Sword of Frost",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Sword.exe",
+      "op": "replace_command",
+      "to": "Sword_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661813",
+  "upstream": "gamefixes-gog/umu-1207661813.py",
+  "upstreamCommit": "fbfebf9"
+}

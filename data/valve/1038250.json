@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1038250",
+  "name": "DIRT 5",
+  "schema": 1,
+  "steps": [
+    {
+      "note": "WINE_CPU_TOPOLOGY \"P\": performance cores only",
+      "op": "cpu_topology",
+      "value": "P"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

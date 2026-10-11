@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "750920",
+  "name": "Shadow of the Tomb Raider",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/750920.py",
+  "upstreamCommit": "7ffe360"
+}

@@ -1,0 +1,21 @@
+{
+  "coverage": "none",
+  "id": "3513350",
+  "name": "Wuthering Waves",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr",
+        "noxalia"
+      ],
+      "flags": [
+        "noopwr",
+        "noxalia"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

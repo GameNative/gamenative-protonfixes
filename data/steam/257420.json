@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "257420",
+  "name": "Serious Sam 4",
+  "override": "tools/protonfixes/overrides/steam/257420.json",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "copy",
+      "from": "${install}/UserCfg.lua",
+      "op": "file",
+      "to": "${install}/UserCfg.lua.bak",
+      "when": [
+        {
+          "fileExists": "${install}/UserCfg.lua"
+        },
+        {
+          "fileMissing": "${install}/UserCfg.lua.bak"
+        }
+      ]
+    },
+    {
+      "ifAbsent": true,
+      "line": "sfx_strAPI = \"OpenAL\";",
+      "op": "append_line",
+      "path": "${install}/UserCfg.lua"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/257420.py",
+  "upstreamCommit": "490f513"
+}

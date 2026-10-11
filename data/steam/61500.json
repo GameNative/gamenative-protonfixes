@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "1207658883",
+      "store": "gog"
+    },
+    {
+      "id": "ageofwonders",
+      "store": "humble"
+    }
+  ],
+  "coverage": "full",
+  "id": "61500",
+  "name": "Age of Wonders",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "icodecs",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/61500.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "1174180",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "Heather",
+  "name": "Red Dead Redemption 2",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-fullscreen -vulkan",
+      "op": "launch_args"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-1174180",
+  "upstream": "gamefixes-egs/umu-1174180.py",
+  "upstreamCommit": "2d4b15d"
+}

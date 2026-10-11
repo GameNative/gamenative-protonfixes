@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "16730",
+  "name": "Legendary",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "winxp",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/16730.py",
+  "upstreamCommit": "c568092"
+}

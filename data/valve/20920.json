@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "20920",
+  "name": "The Witcher 2: Assassins of Kings Enchanced Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

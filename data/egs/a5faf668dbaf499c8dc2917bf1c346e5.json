@@ -1,0 +1,40 @@
+{
+  "canonical": {
+    "id": "3513350",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "a5faf668dbaf499c8dc2917bf1c346e5",
+  "name": "Wuthering Waves",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "sourcehansans",
+      "op": "verb"
+    },
+    {
+      "name": "fakechinese",
+      "op": "verb"
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "unset": [
+        "SteamOS"
+      ]
+    },
+    {
+      "op": "env",
+      "unset": [
+        "SteamDeck"
+      ]
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-3513350",
+  "upstream": "gamefixes-egs/umu-3513350.py",
+  "upstreamCommit": "8325a1a"
+}

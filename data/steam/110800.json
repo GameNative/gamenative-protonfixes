@@ -1,0 +1,31 @@
+{
+  "coverage": "full",
+  "id": "110800",
+  "name": "L.A. Noire",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "append": "-dx11",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/110800.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1339695996",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "910830",
+  "name": "Rebel Galaxy Outlaw",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/910830.py",
+  "upstreamCommit": "490f513"
+}

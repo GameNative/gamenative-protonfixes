@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "214510",
+  "name": "LEGO The Lord of the Rings",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_41",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/214510.py",
+  "upstreamCommit": "490f513"
+}

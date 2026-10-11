@@ -1,0 +1,26 @@
+{
+  "aliases": [
+    {
+      "id": "Larkspur",
+      "store": "egs"
+    },
+    {
+      "id": "2010",
+      "store": "ubisoft"
+    }
+  ],
+  "coverage": "full",
+  "id": "371660",
+  "name": "Far Cry Primal",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 31,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/371660.py",
+  "upstreamCommit": "490f513"
+}

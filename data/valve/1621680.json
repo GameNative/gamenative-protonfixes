@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1621680",
+  "name": "Sword and Fairy 4",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noforcelgadd"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

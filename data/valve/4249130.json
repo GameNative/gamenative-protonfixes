@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "4249130",
+  "name": "Dino Crisis",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "19900",
+  "name": "Far Cry 2",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

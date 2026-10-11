@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "65930",
+  "name": "The Bureau: XCOM® Declassified™",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "fsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/65930.py",
+  "upstreamCommit": "490f513"
+}

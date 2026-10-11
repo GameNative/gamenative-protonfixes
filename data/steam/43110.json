@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "43110",
+  "name": "Metro 2033",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/43110.py",
+  "upstreamCommit": "573da0d"
+}

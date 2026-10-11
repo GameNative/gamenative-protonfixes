@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "20570",
+  "name": "Warhammer 40,000: Dawn of War II - Chaos Rising",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 8,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

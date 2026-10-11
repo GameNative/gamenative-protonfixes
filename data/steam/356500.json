@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "356500",
+  "name": "STAR WARS™ Galactic Battlegrounds Saga",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "icodecs",
+      "op": "verb"
+    },
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/356500.py",
+  "upstreamCommit": "490f513"
+}

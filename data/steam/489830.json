@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "489830",
+  "name": "The Elder Scrolls V: Skyrim Special Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "SkyrimSELauncher.exe",
+      "op": "replace_command",
+      "to": "skse64_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/skse64_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/489830.py",
+  "upstreamCommit": "58829d1"
+}

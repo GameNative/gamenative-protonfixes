@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "298030",
+  "name": "Total Annihilation",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/298030.py",
+  "upstreamCommit": "2abbeb5"
+}

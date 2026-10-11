@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "1613450",
+  "name": "Halo 2 mod tools",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "msxml3",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1613450.py",
+  "upstreamCommit": "a5e814a"
+}

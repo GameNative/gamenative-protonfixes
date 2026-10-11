@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "227320",
+  "name": "You Need a Budget 4",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "corefonts",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/227320.py",
+  "upstreamCommit": "490f513"
+}

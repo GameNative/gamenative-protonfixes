@@ -1,0 +1,21 @@
+{
+  "coverage": "none",
+  "id": "787810",
+  "name": "Rogue Heroes: Ruins of Tasos",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: Proton media converter blank.mka is not shipped",
+      "source": "os.environ.get(\"PROTON_MEDIACONV_NO_VIDEO\", \"1\" if os.environ.get(\"SteamGameId\", 0) in ( \"283640\", # Salt and Sanctuary \"455490\", # Don't Die Dateless, Dummy! \"787810\", # Rogue Heroes: Ruins of Tasos \"1199570\", # Rogue Heroes: Ruins of Tasos Demo \"1491460\", # Tor Eternum \"1588990\", # Tor Eternum Demo \"1895130\", # Darza's Dominion ) else \"0\") != \"0\"",
+      "step": {
+        "op": "env",
+        "set": {
+          "PROTON_MEDIACONV_NO_VIDEO": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

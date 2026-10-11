@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "249610",
+  "name": "Galactic Arms Race",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "fnad3d11"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

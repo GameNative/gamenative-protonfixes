@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2052410",
+  "name": "WITCH ON THE HOLY NIGHT",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

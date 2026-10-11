@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "253430",
+  "name": "CastleMiner Z",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xna40",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/253430.py",
+  "upstreamCommit": "f1af20f"
+}

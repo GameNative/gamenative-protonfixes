@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "2111630",
+  "name": "JR East Train Simulator",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2008",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2111630.py",
+  "upstreamCommit": "3690896"
+}

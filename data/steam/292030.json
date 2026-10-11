@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "292030",
+  "name": "The Witcher 3: Wild Hunt",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/292030.py",
+  "upstreamCommit": "7686472"
+}

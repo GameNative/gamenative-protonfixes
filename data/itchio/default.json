@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "launchOptions": [],
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "itchio",
+  "upstream": "gamefixes-itchio/default.py",
+  "upstreamCommit": "fe62dc9"
+}

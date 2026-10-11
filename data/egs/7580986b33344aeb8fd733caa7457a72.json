@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "7580986b33344aeb8fd733caa7457a72",
+  "name": "Asphalt 8 - Car Racing Game",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-7580986b33344aeb8fd733caa7457a72",
+  "upstream": "gamefixes-egs/umu-7580986b33344aeb8fd733caa7457a72.py",
+  "upstreamCommit": "0de79fe"
+}

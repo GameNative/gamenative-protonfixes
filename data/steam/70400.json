@@ -1,0 +1,51 @@
+{
+  "coverage": "full",
+  "id": "70400",
+  "name": "Recettear: An Item Shop's Tale",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dmime",
+      "op": "verb"
+    },
+    {
+      "name": "dmloader",
+      "op": "verb"
+    },
+    {
+      "name": "dmsynth",
+      "op": "verb"
+    },
+    {
+      "name": "dmusic",
+      "op": "verb"
+    },
+    {
+      "name": "dsound",
+      "op": "verb"
+    },
+    {
+      "name": "dswave",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "streamci": "n"
+      }
+    },
+    {
+      "name": "sound=alsa",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "PULSE_LATENCY_MSEC": "60"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/70400.py",
+  "upstreamCommit": "8854a7c"
+}

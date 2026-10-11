@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1876280",
+  "name": "PAIcom",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1876280.py",
+  "upstreamCommit": "26e2e54"
+}

@@ -1,0 +1,24 @@
+{
+  "coverage": "full",
+  "id": "633230",
+  "name": "Naruto To Boruto",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "NARUTO.exe",
+      "op": "replace_command",
+      "to": "NARUTO/Binaries/Win64/NARUTO-Win64-Shipping.exe"
+    },
+    {
+      "append": "-eac-nop-loaded",
+      "op": "launch_args"
+    },
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/633230.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "329380",
+  "name": "Stealth Inc 2: A Game of Clones",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dsound",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/329380.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,35 @@
+{
+  "canonical": {
+    "id": "409720",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "b22ce34b4ce0408c97a888554447479b",
+  "name": "BioShock 2 Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "fsync": false,
+      "op": "sync"
+    },
+    {
+      "hive": "HKLM",
+      "key": "System\\CurrentControlSet\\Services\\winebus",
+      "op": "registry",
+      "values": {
+        "DisableHidraw": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-409720",
+  "upstream": "gamefixes-egs/umu-409720.py",
+  "upstreamCommit": "76ad49b"
+}

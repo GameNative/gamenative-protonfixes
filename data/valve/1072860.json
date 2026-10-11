@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1072860",
+  "name": "Real Scary",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "fnad3d11"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

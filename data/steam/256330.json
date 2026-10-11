@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "256330",
+  "name": "WRC 4",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_42",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "xact",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/256330.py",
+  "upstreamCommit": "7ffe360"
+}

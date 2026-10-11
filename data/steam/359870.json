@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "359870",
+  "name": "FFX/X-2 HD Remaster",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/Documents/SQUARE ENIX/FINAL FANTASY X&X-2 HD Remaster"
+    },
+    {
+      "content": "Language=en",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/Documents/SQUARE ENIX/FINAL FANTASY X&X-2 HD Remaster/GameSetting.ini"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/359870.py",
+  "upstreamCommit": "d7ddc19"
+}

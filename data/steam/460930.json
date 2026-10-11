@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "460930",
+  "name": "Ghost Recon WIldlands",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/460930.py",
+  "upstreamCommit": "8b13bff"
+}

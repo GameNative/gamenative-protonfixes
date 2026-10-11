@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "70000",
+  "name": "Dino D-Day",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 28,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

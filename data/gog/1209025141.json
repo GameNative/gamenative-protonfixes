@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "1151640",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1209025141",
+  "name": "Horizon Zero Dawn™ Complete Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1151640",
+  "upstream": "gamefixes-gog/umu-1151640.py",
+  "upstreamCommit": "a5e814a"
+}

@@ -1,0 +1,19 @@
+{
+  "canonical": {
+    "id": "39540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "245050",
+  "name": "SpellForce 2 - Demons Of The Past",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/245050.py",
+  "upstreamCommit": "4eef22e"
+}

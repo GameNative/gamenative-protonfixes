@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "230410",
+  "name": "Warframe",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "0"
+      }
+    },
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/230410.py",
+  "upstreamCommit": "73c5586"
+}

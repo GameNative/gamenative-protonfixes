@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "374320",
+  "name": "DARK SOULS III",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_LIMIT_RESOLUTIONS": "32"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

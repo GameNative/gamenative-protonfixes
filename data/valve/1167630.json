@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1167630",
+  "name": "Teardown",
+  "schema": 1,
+  "steps": [
+    {
+      "note": "aarch64 hosts only",
+      "op": "env",
+      "set": {
+        "MIMALLOC_DISABLE_REDIRECT": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

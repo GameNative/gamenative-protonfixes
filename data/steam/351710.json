@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "351710",
+  "name": "Hyperdimension Neptunia Re;Birth2: Sisters Generation",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "AMD_DEBUG": "nowc",
+        "radeonsi_disable_sam": "true"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/351710.py",
+  "upstreamCommit": "490f513"
+}

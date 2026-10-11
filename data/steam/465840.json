@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "465840",
+  "name": "The Last Blade",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_46",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/465840.py",
+  "upstreamCommit": "490f513"
+}

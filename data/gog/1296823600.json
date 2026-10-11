@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "3556750",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1296823600",
+  "name": "Warhammer 40000: Dawn of War - Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ucrtbase2019",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-3556750",
+  "upstream": "gamefixes-gog/umu-3556750.py",
+  "upstreamCommit": "8719713"
+}

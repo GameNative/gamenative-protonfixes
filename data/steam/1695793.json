@@ -1,0 +1,26 @@
+{
+  "coverage": "full",
+  "id": "1695793",
+  "name": "the Halo Reach mod tools Foundation gamemode",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet35",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet45",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1695793.py",
+  "upstreamCommit": "26e2e54"
+}

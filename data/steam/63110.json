@@ -1,0 +1,26 @@
+{
+  "coverage": "full",
+  "id": "63110",
+  "name": "Alter Ego",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "AlterEgo.exe",
+      "op": "replace_command",
+      "to": "./RunDev.exe"
+    },
+    {
+      "append": "AlterEgo.ebr",
+      "op": "launch_args"
+    },
+    {
+      "op": "env",
+      "set": {
+        "SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS": "0"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/63110.py",
+  "upstreamCommit": "490f513"
+}

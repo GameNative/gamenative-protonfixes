@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "535850",
+  "name": "Micro Machines World Series",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "OPENSSL_ia32cap": "~0x20000000"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

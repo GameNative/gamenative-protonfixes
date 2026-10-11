@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "261510",
+  "name": "Tesla Effect: A Tex Murphy Adventure",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "corefonts",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/261510.py",
+  "upstreamCommit": "490f513"
+}

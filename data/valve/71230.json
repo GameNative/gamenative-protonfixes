@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "71230",
+  "name": "Crazy Taxi",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heaptopdown"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

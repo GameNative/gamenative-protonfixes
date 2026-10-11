@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "281280",
+  "name": "Mashed",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "winxp",
+      "op": "verb"
+    },
+    {
+      "append": "-VS0 -CS0",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/281280.py",
+  "upstreamCommit": "d5e30e1"
+}

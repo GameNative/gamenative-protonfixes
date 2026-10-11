@@ -1,0 +1,30 @@
+{
+  "coverage": "full",
+  "id": "63710",
+  "name": "BIT.TRIP Runner",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "openal",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3dcompiler_43": "n",
+        "d3dx9_43": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/63710.py",
+  "upstreamCommit": "786c7dc"
+}

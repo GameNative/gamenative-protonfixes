@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "1578751750",
+  "name": "Mafia III: Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\GOG.com\\GalaxyClient",
+      "op": "registry",
+      "values": {}
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-360430",
+  "upstream": "gamefixes-gog/umu-360430.py",
+  "upstreamCommit": "596f977"
+}

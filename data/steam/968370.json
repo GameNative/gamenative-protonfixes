@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "968370",
+  "name": "The Blind Prophet",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3d9": "d"
+      }
+    },
+    {
+      "name": "segoe_script",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/968370.py",
+  "upstreamCommit": "8854a7c"
+}

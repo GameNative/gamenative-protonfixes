@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-283310",
+  "name": "Soulbringer",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-283310",
+  "upstream": "gamefixes-umu/umu-283310.py",
+  "upstreamCommit": "17a6484"
+}

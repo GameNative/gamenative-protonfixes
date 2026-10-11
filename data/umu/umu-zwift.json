@@ -1,0 +1,35 @@
+{
+  "coverage": "full",
+  "id": "umu-zwift",
+  "name": "Zwift",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "webview2",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-zwift",
+  "upstream": "gamefixes-umu/umu-zwift.py",
+  "upstreamCommit": "45e7eff"
+}

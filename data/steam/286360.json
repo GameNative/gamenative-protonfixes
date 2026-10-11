@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "286360",
+  "name": "Shadows on the Vatican - Act I: Greed",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "SotV_Launcher.exe",
+      "op": "replace_command",
+      "to": "hd/SotV1.exe"
+    },
+    {
+      "op": "cwd",
+      "path": "${install}/hd"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/286360.py",
+  "upstreamCommit": "490f513"
+}

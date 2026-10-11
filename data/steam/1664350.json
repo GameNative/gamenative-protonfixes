@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1664350",
+  "name": "Ship Graveyard Simulator Prologue",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "vulkan-1": "b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1664350.py",
+  "upstreamCommit": "8854a7c"
+}

@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "12810",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-12810",
+  "name": "Overlord II",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-12810",
+  "upstream": "gamefixes-zoomplatform/umu-12810.py",
+  "upstreamCommit": "490f513"
+}

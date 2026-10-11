@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "518790",
+  "name": "The Hunter: Call of the Wild",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "nvapi": "d",
+        "nvapi64": "d",
+        "nvcuda": "d",
+        "nvcuvid": "d",
+        "nvencodeapi": "d",
+        "nvencodeapi64": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/518790.py",
+  "upstreamCommit": "490f513"
+}

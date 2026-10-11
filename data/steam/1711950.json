@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1711950",
+  "name": "GWENT: Rogue Mage",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc140",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1711950.py",
+  "upstreamCommit": "490f513"
+}

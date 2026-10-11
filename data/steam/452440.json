@@ -1,0 +1,42 @@
+{
+  "aliases": [
+    {
+      "id": "1685981342",
+      "store": "gog"
+    },
+    {
+      "id": "1697970811",
+      "store": "gog"
+    },
+    {
+      "id": "2044697588",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "452440",
+  "name": "Flowers - Le Volume Sur Printemps",
+  "override": "tools/protonfixes/overrides/steam/452440.json",
+  "schema": 1,
+  "steps": [
+    {
+      "args": [
+        "/silent"
+      ],
+      "once": "overlock-mod-font",
+      "op": "exec",
+      "path": "${install}/font/overlock_mod_font_installer.exe",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/Fonts/Overlock-Mod.ttf"
+        },
+        {
+          "fileExists": "${install}/font/overlock_mod_font_installer.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/452440.py",
+  "upstreamCommit": "490f513"
+}

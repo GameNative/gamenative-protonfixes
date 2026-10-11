@@ -1,0 +1,32 @@
+{
+  "aliases": [
+    {
+      "id": "1207664613",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "269330",
+  "name": "Chronology",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet20",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet40",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/269330.py",
+  "upstreamCommit": "26e2e54"
+}

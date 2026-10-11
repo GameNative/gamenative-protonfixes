@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661763",
+  "name": "Heroes Chronicles [Chapter 3] - Masters of the Elements",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Elements.exe",
+      "op": "replace_command",
+      "to": "Elements_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661763",
+  "upstream": "gamefixes-gog/umu-1207661763.py",
+  "upstreamCommit": "fbfebf9"
+}

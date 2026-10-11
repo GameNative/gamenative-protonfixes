@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2135150",
+  "name": "Elin",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "winhttp": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2135150.py",
+  "upstreamCommit": "8854a7c"
+}

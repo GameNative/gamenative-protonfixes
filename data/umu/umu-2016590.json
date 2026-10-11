@@ -1,0 +1,35 @@
+{
+  "coverage": "full",
+  "id": "umu-2016590",
+  "name": "Dark and Darker",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "wininet",
+      "op": "verb"
+    },
+    {
+      "name": "urlmon",
+      "op": "verb"
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\AppDefaults\\DungeonCrawler.exe\\DllOverrides",
+      "op": "registry",
+      "values": {
+        "urlmon": {
+          "type": "REG_SZ",
+          "value": "builtin"
+        },
+        "wininet": {
+          "type": "REG_SZ",
+          "value": "builtin"
+        }
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-2016590",
+  "upstream": "gamefixes-umu/umu-2016590.py",
+  "upstreamCommit": "490f513"
+}

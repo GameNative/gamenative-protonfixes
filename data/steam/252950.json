@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "252950",
+  "name": "Rocket League®",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "eossdk",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/252950.py",
+  "upstreamCommit": "487cc24"
+}

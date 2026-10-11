@@ -1,0 +1,33 @@
+{
+  "coverage": "full",
+  "id": "2277560",
+  "name": "Wuchang",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dwmapi": "n,b"
+      },
+      "when": [
+        {
+          "fileExists": "${install}/Project_Plague/Binaries/Win64/ue4ss"
+        }
+      ]
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dsound": "n,b"
+      },
+      "when": [
+        {
+          "fileExists": "${install}/Project_Plague/Binaries/Win64/bitfix"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2277560.py",
+  "upstreamCommit": "974d308"
+}

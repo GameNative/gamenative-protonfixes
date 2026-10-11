@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1222370",
+  "name": "Necromunda: Hired Gun",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Necromunda.exe",
+      "op": "replace_command",
+      "to": "Necromunda/Binaries/Win64/Necromunda-Win64-Shipping.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1222370.py",
+  "upstreamCommit": "490f513"
+}

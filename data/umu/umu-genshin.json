@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "41869934302e4b8cafac2d3c0e7c293d",
+      "store": "egs"
+    }
+  ],
+  "coverage": "full",
+  "id": "umu-genshin",
+  "name": "Genshin Impact",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "UMU_USE_STEAM": "1",
+        "WINE_DISABLE_VULKAN_OPWR": "1"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-genshin",
+  "upstream": "gamefixes-umu/umu-genshin.py",
+  "upstreamCommit": "6b65ead"
+}

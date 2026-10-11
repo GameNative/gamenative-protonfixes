@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "254840",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207658782",
+  "name": "Ground Control 2: Operation Exodus Special Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "verdana",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-254840",
+  "upstream": "gamefixes-gog/umu-254840.py",
+  "upstreamCommit": "44d8004"
+}

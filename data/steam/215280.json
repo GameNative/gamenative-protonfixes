@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "215280",
+  "name": "Secret World Legends",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/215280.py",
+  "upstreamCommit": "490f513"
+}

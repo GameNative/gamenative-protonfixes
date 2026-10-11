@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "launchOptions": [],
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\com.epicgames.launcher",
+      "op": "registry",
+      "values": {}
+    }
+  ],
+  "store": "egs",
+  "upstream": "gamefixes-egs/default.py",
+  "upstreamCommit": "9361196"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1017900",
+  "name": "Age of Empires: DE",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-NoStartup",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1017900.py",
+  "upstreamCommit": "490f513"
+}

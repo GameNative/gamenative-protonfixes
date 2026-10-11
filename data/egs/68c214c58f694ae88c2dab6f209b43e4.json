@@ -1,0 +1,22 @@
+{
+  "canonical": {
+    "id": "2552430",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "68c214c58f694ae88c2dab6f209b43e4",
+  "name": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "SteamDeck": "1"
+      }
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-2552430",
+  "upstream": "gamefixes-egs/umu-2552430.py",
+  "upstreamCommit": "4b528b8"
+}

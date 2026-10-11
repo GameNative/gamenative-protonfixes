@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661783",
+  "name": "Heroes Chronicles [Chapter 5] - The World Tree",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "WorldTree.exe",
+      "op": "replace_command",
+      "to": "WorldTree_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661783",
+  "upstream": "gamefixes-gog/umu-1207661783.py",
+  "upstreamCommit": "fbfebf9"
+}

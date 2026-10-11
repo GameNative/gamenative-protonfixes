@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "700600",
+  "name": "Evil Genius 2",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "eg2.exe",
+      "op": "replace_command",
+      "to": "../bin/evilgenius_vulkan.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/700600.py",
+  "upstreamCommit": "490f513"
+}

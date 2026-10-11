@@ -1,0 +1,23 @@
+{
+  "canonical": {
+    "id": "1500540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "7ea03b9c-98d7-4ba1-a1e8-40e266233950",
+  "name": "Hardwar",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput": "n,b",
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-1500540",
+  "upstream": "gamefixes-zoomplatform/umu-1500540.py",
+  "upstreamCommit": "9bbdffa"
+}

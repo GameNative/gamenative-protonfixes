@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "312670",
+  "name": "Strange Brigade",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "StrangeBrigade.exe",
+      "op": "replace_command",
+      "to": "StrangeBrigade_Vulkan.exe"
+    },
+    {
+      "append": "-skipdrivercheck -noHDR",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/312670.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,22 @@
+{
+  "canonical": {
+    "id": "302370",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207658769",
+  "name": "Tex Murphy: Overseer",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_USE_D7VK": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-302370",
+  "upstream": "gamefixes-gog/umu-302370.py",
+  "upstreamCommit": "6dd6fa5"
+}

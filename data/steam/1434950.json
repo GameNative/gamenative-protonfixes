@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1434950",
+  "name": "HighFleet",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1434950.py",
+  "upstreamCommit": "490f513"
+}

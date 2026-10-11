@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1324471032",
+  "name": "Middle-earth™: Shadow of War™",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-356190",
+  "upstream": "gamefixes-gog/umu-356190.py",
+  "upstreamCommit": "46d3ad5"
+}

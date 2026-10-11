@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "644930",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1335738339",
+  "name": "They Are Billions",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "gdiplus",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "WINE_MONO_HIDETYPES": "1"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-644930",
+  "upstream": "gamefixes-gog/umu-644930.py",
+  "upstreamCommit": "2bc0787"
+}

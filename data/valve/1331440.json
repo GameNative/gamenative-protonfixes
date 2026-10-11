@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1331440",
+  "name": "FUSER",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "nomfdxgiman"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "359550",
+  "name": "Rainbow Six Siege",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "vk_x11_override_min_image_count": "2"
+      }
+    },
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/359550.py",
+  "upstreamCommit": "b84fb67"
+}

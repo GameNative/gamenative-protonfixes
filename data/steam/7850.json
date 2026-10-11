@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "7850",
+  "name": "Cryostasis",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/7850.py",
+  "upstreamCommit": "490f513"
+}

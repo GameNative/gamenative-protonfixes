@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "428660",
+  "name": "Deliver Us The Moon",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "MoonMan.exe",
+      "op": "replace_command",
+      "to": "MoonMan/Binaries/Win64/MoonMan-Win64-Shipping.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/428660.py",
+  "upstreamCommit": "490f513"
+}

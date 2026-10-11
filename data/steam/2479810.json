@@ -1,0 +1,31 @@
+{
+  "coverage": "full",
+  "id": "2479810",
+  "name": "Gray Zone Warfare",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "chmod_ro",
+      "op": "file",
+      "to": "${install}/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xb9af63cee2e43b6c_0x3cb3b3354fb31606.dat",
+      "when": [
+        {
+          "fileExists": "${install}/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xb9af63cee2e43b6c_0x3cb3b3354fb31606.dat"
+        }
+      ]
+    },
+    {
+      "action": "chmod_ro",
+      "op": "file",
+      "to": "${install}/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xaf497c273f87b6e4_0x7a22fc105639587d.dat",
+      "when": [
+        {
+          "fileExists": "${install}/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xaf497c273f87b6e4_0x7a22fc105639587d.dat"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2479810.py",
+  "upstreamCommit": "77147fd"
+}

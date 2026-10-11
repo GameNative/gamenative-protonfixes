@@ -1,0 +1,29 @@
+{
+  "coverage": "full",
+  "id": "umu-nfsu2",
+  "name": "Need for Speed: Underground 2",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 1,
+      "nosmt": false,
+      "op": "cpu_topology"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput8": "n,b"
+      }
+    },
+    {
+      "letter": "d",
+      "op": "dos_device",
+      "path": "/tmp",
+      "type": "cdrom"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-nfsu2",
+  "upstream": "gamefixes-umu/umu-nfsu2.py",
+  "upstreamCommit": "daed54c"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1577120",
+  "name": "The Quarry",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "forcenvapi"
+      ],
+      "flags": [
+        "forcenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

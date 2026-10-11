@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "umu-pkhex",
+  "name": "PKHeX",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnetdesktop9",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-pkhex",
+  "upstream": "gamefixes-umu/umu-pkhex.py",
+  "upstreamCommit": "26e2e54"
+}

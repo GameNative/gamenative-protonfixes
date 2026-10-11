@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "311240",
+  "name": "Zero Escape: Zero Time Dilemma",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "libglesv2": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/311240.py",
+  "upstreamCommit": "c3569a0"
+}

@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "553850",
+  "name": "Helldivers 2",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapzeromemory"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

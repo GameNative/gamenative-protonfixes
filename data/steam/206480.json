@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "206480",
+  "name": "Dungeons & Dragons Online",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "libglesv2": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/206480.py",
+  "upstreamCommit": "8854a7c"
+}

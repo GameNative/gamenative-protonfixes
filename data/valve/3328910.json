@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "3328910",
+  "name": "MySims Kingdom",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heaptopdown"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

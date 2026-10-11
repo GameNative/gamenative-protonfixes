@@ -1,0 +1,21 @@
+{
+  "coverage": "none",
+  "id": "1282690",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "desktop-only: GPU vendor hiding has no meaning on Android GPUs",
+      "source": "self.env[\"WINE_HIDE_AMD_GPU\"] = \"1\"",
+      "step": {
+        "op": "env",
+        "set": {
+          "WINE_HIDE_AMD_GPU": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

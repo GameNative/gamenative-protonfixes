@@ -1,0 +1,46 @@
+{
+  "canonical": {
+    "id": "228260",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1445591825",
+  "name": "Fallen Enchantress: Legendary Heroes",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "usp10",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2008",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2015",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "SDNXLFonts": "d"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1445591825",
+  "upstream": "gamefixes-gog/umu-1445591825.py",
+  "upstreamCommit": "8522ac4"
+}

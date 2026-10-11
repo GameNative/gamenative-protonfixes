@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "Bulbul",
+  "name": "MudRunner",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-675010",
+  "upstream": "gamefixes-egs/umu-675010.py",
+  "upstreamCommit": "fe51a79"
+}

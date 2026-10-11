@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "1993581340",
+  "name": "Mafia: Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\GOG.com\\GalaxyClient",
+      "op": "registry",
+      "values": {}
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1030840",
+  "upstream": "gamefixes-gog/umu-1030840.py",
+  "upstreamCommit": "d9efd5f"
+}

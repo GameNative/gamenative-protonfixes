@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "212500",
+  "name": "The Lord of the Rings Online™",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "libglesv2": "d"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/212500.py",
+  "upstreamCommit": "12c7d09"
+}

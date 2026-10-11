@@ -1,0 +1,30 @@
+{
+  "aliases": [
+    {
+      "id": "1436109729",
+      "store": "gog"
+    },
+    {
+      "id": "1725170251",
+      "store": "gog"
+    },
+    {
+      "id": "1266220",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "990050",
+  "name": "Death end re;Quest",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 2,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/990050.py",
+  "upstreamCommit": "4db5d04"
+}

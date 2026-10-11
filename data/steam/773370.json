@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "773370",
+  "name": "Exo One",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/773370.py",
+  "upstreamCommit": "490f513"
+}

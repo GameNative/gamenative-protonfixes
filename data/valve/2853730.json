@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2853730",
+  "name": "Skull and Bones",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

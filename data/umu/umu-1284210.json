@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "1284210",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-1284210",
+  "name": "Guild Wars 2",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "-provider",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-1284210",
+  "upstream": "gamefixes-umu/umu-1284210.py",
+  "upstreamCommit": "490f513"
+}

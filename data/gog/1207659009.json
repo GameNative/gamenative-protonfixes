@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "1207659009",
+  "name": "The Journeyman Project 3: Legacy of Time",
+  "schema": 1,
+  "steps": [
+    {
+      "letter": "d",
+      "op": "dos_device",
+      "path": "${install}/data",
+      "type": "cdrom"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207659009",
+  "upstream": "gamefixes-gog/umu-1207659009.py",
+  "upstreamCommit": "ed90314"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1557480",
+  "name": "Project MIKHAIL: A Muv-Luv War Story",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1557480.py",
+  "upstreamCommit": "490f513"
+}

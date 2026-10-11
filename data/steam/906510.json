@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "906510",
+  "name": "Conception PLUS: Maidens of the Twelve Stars",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/906510.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "282140",
+  "name": "SOMA",
+  "schema": 1,
+  "steps": [
+    {
+      "ntsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/282140.py",
+  "upstreamCommit": "61b8d3d"
+}

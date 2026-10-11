@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1172620",
+  "name": "Sea of Thieves",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

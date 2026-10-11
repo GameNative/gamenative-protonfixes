@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "2231380",
+  "name": "Tom Clancy's Ghost Recon Breakpoint",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ubisoftconnect",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2231380.py",
+  "upstreamCommit": "8b13bff"
+}

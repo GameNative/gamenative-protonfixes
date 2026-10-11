@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "266840",
+  "name": "Age of Mythology: Extended Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Launcher.exe",
+      "op": "replace_command",
+      "to": "aomx.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/266840.py",
+  "upstreamCommit": "490f513"
+}

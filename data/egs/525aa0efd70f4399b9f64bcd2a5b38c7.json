@@ -1,0 +1,30 @@
+{
+  "canonical": {
+    "id": "umu-zenlesszonezero",
+    "store": "umu"
+  },
+  "coverage": "full",
+  "id": "525aa0efd70f4399b9f64bcd2a5b38c7",
+  "name": "Zenless Zone Zero",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_SET_GAME_DRIVE": "1"
+      }
+    },
+    {
+      "op": "env",
+      "set": {
+        "UMU_USE_STEAM": "1",
+        "WINE_DISABLE_VULKAN_OPWR": "1"
+      }
+    }
+  ],
+  "store": "egs",
+  "umuId": "umu-825cd0b5286c404289d456d47561cc1a",
+  "upstream": "gamefixes-egs/umu-825cd0b5286c404289d456d47561cc1a.py",
+  "upstreamCommit": "41d6415"
+}

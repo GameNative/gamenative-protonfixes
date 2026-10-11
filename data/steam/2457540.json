@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2457540",
+  "name": "Cardfight!! Vanguard Dear Days 2",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": false,
+      "fromAppid": 1881420,
+      "op": "import_saves",
+      "path": "Saved Games/VG2/SAVELOAD"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2457540.py",
+  "upstreamCommit": "b830c6f"
+}

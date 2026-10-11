@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "888040",
+  "name": "Metal Fatigue",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noforcelgadd"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

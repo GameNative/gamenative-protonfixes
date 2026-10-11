@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1284190",
+  "name": "Planet Crafter",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": true,
+      "fromAppid": 1754850,
+      "op": "import_saves",
+      "path": "AppData/LocalLow/MijuGames/Planet Crafter"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1284190.py",
+  "upstreamCommit": "144dc40"
+}

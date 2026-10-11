@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "292030",
+  "name": "The Witcher 3: Wild Hunt",
+  "schema": 1,
+  "steps": [
+    {
+      "appOverrides": {
+        "setup*": {
+          "X87ReducedPrecision": "0"
+        }
+      },
+      "note": "FEX AppOverrides keyed by executable glob, aarch64 hosts only",
+      "op": "fex_app_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "287310",
+  "name": "Re-Volt",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n",
+        "dinput": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/287310.py",
+  "upstreamCommit": "8854a7c"
+}

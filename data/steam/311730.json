@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "311730",
+  "name": "DEAD OR ALIVE 5 Last Round",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "fsync": false,
+      "op": "sync"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/311730.py",
+  "upstreamCommit": "490f513"
+}

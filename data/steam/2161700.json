@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2161700",
+  "name": "Persona 3 Reload",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": true,
+      "fromAppid": 3358440,
+      "op": "import_saves",
+      "path": "AppData/Roaming/SEGA/P3R/Steam/${steam_id64}"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2161700.py",
+  "upstreamCommit": "9bbdffa"
+}

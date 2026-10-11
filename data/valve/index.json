@@ -1,0 +1,1287 @@
+{
+  "defaults": {
+    "compatFlags": [
+      "gamedrive"
+    ],
+    "dllOverrides": {
+      "beclient.dll": "b,n",
+      "beclient_x64.dll": "b,n",
+      "dotnetfx35.exe": "b",
+      "dotnetfx35setup.exe": "b",
+      "steam.exe": "b",
+      "winebth.sys": "d"
+    },
+    "forcelgaddByDefault": true
+  },
+  "desktopOnlyFlags": {
+    "disablenvapi": "dxvk-nvapi is not shipped",
+    "dxvkd3d8": "the graphics wrapper is chosen by the container",
+    "forcenvapi": "dxvk-nvapi is not shipped",
+    "gamedrive": "Steam library drive mapping (s:) is desktop Steam layout",
+    "hideapu": "GPU vendor hiding has no meaning on Android GPUs",
+    "hideintelgpu": "GPU vendor hiding has no meaning on Android GPUs",
+    "hidenvgpu": "GPU vendor hiding has no meaning on Android GPUs",
+    "hidevggpu": "GPU vendor hiding has no meaning on Android GPUs",
+    "noopwr": "Vulkan OPWR presentation path of desktop winex11",
+    "noxalia": "Xalia accessibility layer is not shipped",
+    "noxim": "X input method handling of desktop hosts",
+    "steamdrive": "Steam client drive mapping (t:) is desktop Steam layout",
+    "wined3d": "the graphics wrapper is chosen by the container",
+    "wined3d11": "the graphics wrapper is chosen by the container",
+    "xalia": "Xalia accessibility layer is not shipped"
+  },
+  "entries": {
+    "steam/": {
+      "coverage": "none",
+      "file": "valve/.json",
+      "name": null,
+      "sha256": "f915681c520753574340c5bfbd11709b4cd625e44c8fe20e0680c956e96cb6ca"
+    },
+    "steam/10150": {
+      "coverage": "full",
+      "file": "valve/10150.json",
+      "name": "Prototype",
+      "sha256": "1d2c5cd1706d3b9aabdcf9e325ea5b977770694aa7ea75ee992996abb7e90fbc"
+    },
+    "steam/1017900": {
+      "coverage": "full",
+      "file": "valve/1017900.json",
+      "name": "Age of Empires: Definitive Edition",
+      "sha256": "6b520e2dd77842436799e64bbcf93d006e702affd7f3ac97540310ce3ebddeec"
+    },
+    "steam/1026680": {
+      "coverage": "none",
+      "file": "valve/1026680.json",
+      "name": "FINAL FANTASY VIII - REMASTERED",
+      "sha256": "140d98ced21a97d1b87ca02e1ed3405c3019f5c1fa332dab86f8087c6e4bc284"
+    },
+    "steam/1029890": {
+      "coverage": "full",
+      "file": "valve/1029890.json",
+      "name": "Layers of Fear 2",
+      "sha256": "f75ad7585f22ac7859ee7ab00db64cb08ef0a3bc0e1df05d2944ac8f9d3d0ca6"
+    },
+    "steam/1038250": {
+      "coverage": "full",
+      "file": "valve/1038250.json",
+      "name": "DIRT 5",
+      "sha256": "0131054625c69a9e025a002efa9e27e1d06a939356d5aeea3565723f0b14126b"
+    },
+    "steam/1051200": {
+      "coverage": "full",
+      "file": "valve/1051200.json",
+      "name": "Trover Saves the Universe",
+      "sha256": "9ed18e826d7a98def4935366257343fe9de4abd432c2e3186330a814ae4fc266"
+    },
+    "steam/1052070": {
+      "coverage": "full",
+      "file": "valve/1052070.json",
+      "name": "Burning Daylight",
+      "sha256": "af0aededfa2dc26144b2d88310eea4146dcf91597ccbdf62c361d76d0a7a08b7"
+    },
+    "steam/1055610": {
+      "coverage": "full",
+      "file": "valve/1055610.json",
+      "name": "Deep Space Battle Simulator",
+      "sha256": "b334f039f0acad09be7fc5a37bfb1df11515c20264f98dfebc6c09e1525696e8"
+    },
+    "steam/1056090": {
+      "coverage": "none",
+      "file": "valve/1056090.json",
+      "name": "Ori and the Will of the Wisps",
+      "sha256": "338e0ac443b96fcaf071b9f92bcc2a177a6e5562cb158b37c16a16b9e86b8ed8"
+    },
+    "steam/1058450": {
+      "coverage": "full",
+      "file": "valve/1058450.json",
+      "name": "MY HERO ONE'S JUSTICE 2",
+      "sha256": "7ad9db8820af3c49714b65fb11e4ab4b889da48111de4458415cdbc946ff1817"
+    },
+    "steam/1060210": {
+      "coverage": "full",
+      "file": "valve/1060210.json",
+      "name": "Disaster Report 4: Summer Memories",
+      "sha256": "1a0a0dd7f63ca3818b6e76c3af1727bc7301ab2fe0b824b6f903c21c1d7cdeb2"
+    },
+    "steam/1072860": {
+      "coverage": "full",
+      "file": "valve/1072860.json",
+      "name": "Real Scary",
+      "sha256": "fc38eb206252a325d474781e9a918edef0245ee22cc8b0142164401e2f369655"
+    },
+    "steam/108710": {
+      "coverage": "none",
+      "file": "valve/108710.json",
+      "name": "Alan Wake",
+      "sha256": "758e924cd98caff12a2d2d688af8612954e601fcbb47b54a11f4e7185c44623e"
+    },
+    "steam/1088850": {
+      "coverage": "none",
+      "file": "valve/1088850.json",
+      "name": "Marvel's Guardians of the Galaxy",
+      "sha256": "c43997a86b00cd84e0a61e43a3851bae6721425f769c390ee8a05c8faf5dd4d6"
+    },
+    "steam/1092660": {
+      "coverage": "full",
+      "file": "valve/1092660.json",
+      "name": "Blair Witch",
+      "sha256": "3e20ec08a14b260f4352711db77d489088154f63b528ff0d1808de897dbd5aaa"
+    },
+    "steam/1096570": {
+      "coverage": "full",
+      "file": "valve/1096570.json",
+      "name": "SONG OF HORROR COMPLETE EDITION",
+      "sha256": "750eb6d8ef4a02efff34f475c02692c97d10e239ae6979331bd8bac4d4a01970"
+    },
+    "steam/1097840": {
+      "coverage": "none",
+      "file": "valve/1097840.json",
+      "name": "Gears 5",
+      "sha256": "ff50a1eed3fefa2579de954ccdadff3f1b2b1e774f7236b9ef82e8adc937ec9b"
+    },
+    "steam/1133320": {
+      "coverage": "full",
+      "file": "valve/1133320.json",
+      "name": "Westworld Awakening",
+      "sha256": "920ba11d983d3231c28837e514e4a56d5a19f3a44f4640d056d40c4322952a52"
+    },
+    "steam/11440": {
+      "coverage": "full",
+      "file": "valve/11440.json",
+      "name": "DiRT",
+      "sha256": "f14497c9f7724968257bd2dfd5b943b762ea074d73d7d83bf5eac7e90c660fe9"
+    },
+    "steam/1150080": {
+      "coverage": "full",
+      "file": "valve/1150080.json",
+      "name": "Azur Lane: Crosswave",
+      "sha256": "06aedccbd0ba334aa3779339bd59999672f4595218fb155883865d798f9b7c11"
+    },
+    "steam/115320": {
+      "coverage": "full",
+      "file": "valve/115320.json",
+      "name": "Prototype 2",
+      "sha256": "f829542fa67895ce6d5683c5319da1415904aecc285333b6e35671180d1bd0ad"
+    },
+    "steam/1167630": {
+      "coverage": "full",
+      "file": "valve/1167630.json",
+      "name": "Teardown",
+      "sha256": "d8e18c755c9d5a52f172e89b8faf2653daf24c66844b79ad62a44d03719e4f92"
+    },
+    "steam/1172620": {
+      "coverage": "none",
+      "file": "valve/1172620.json",
+      "name": "Sea of Thieves",
+      "sha256": "9607765eea3bdd084df3288455ae36e3f1e5a9f4305de030977d6b8cab2d100b"
+    },
+    "steam/1180660": {
+      "coverage": "none",
+      "file": "valve/1180660.json",
+      "name": "Tell Me Why",
+      "sha256": "f216268a98e33074c18d8fbdf9bca13ebe5819eea6d71e18dba62ec5f41d40b8"
+    },
+    "steam/1183470": {
+      "coverage": "full",
+      "file": "valve/1183470.json",
+      "name": "Imperiums: Greek Wars",
+      "sha256": "aa0bb57d6cde0071fc00f011f8eb1347a2726fb9315e584acee7f9b7e40e3eae"
+    },
+    "steam/1184050": {
+      "coverage": "none",
+      "file": "valve/1184050.json",
+      "name": "Gears Tactics",
+      "sha256": "d23809a9fb3f6f82a77a786e5e97aad0b8d1c80370ff5f538b681a01e7617aaf"
+    },
+    "steam/1189800": {
+      "coverage": "none",
+      "file": "valve/1189800.json",
+      "name": "Bleeding Edge",
+      "sha256": "8f5f245768c76c64e131469fa32f7fa2c93ecce153eca649df4d20fb6f1bc27e"
+    },
+    "steam/1195460": {
+      "coverage": "full",
+      "file": "valve/1195460.json",
+      "name": "Last Year",
+      "sha256": "f6ba9b72e697b0ca3b33acfae3fb51f62a6be5c7c492220cd5733558183a5fe0"
+    },
+    "steam/1199570": {
+      "coverage": "none",
+      "file": "valve/1199570.json",
+      "name": "Rogue Heroes: Ruins of Tasos Demo",
+      "sha256": "0342e1f812f8739be1f0f169b1c99e0c20701dcc745b8ae7fa095e382fddf08c"
+    },
+    "steam/1233570": {
+      "coverage": "none",
+      "file": "valve/1233570.json",
+      "name": null,
+      "sha256": "655a6fd94de716e8de5b9e265b4fa5a5ae1adcf603ba4e57a649f988d0553fc6"
+    },
+    "steam/1233880": {
+      "coverage": "full",
+      "file": "valve/1233880.json",
+      "name": "Disgaea 4 Complete+",
+      "sha256": "0df8a80629fa467704d5e0b46d4b05f9e57d1a5089db85474de7bef804540cd8"
+    },
+    "steam/1237970": {
+      "coverage": "full",
+      "file": "valve/1237970.json",
+      "name": "Titanfall® 2",
+      "sha256": "372579115c869b2fb05d599e507a0fcfda20d9a77d535d3ce77e254bf33881a0"
+    },
+    "steam/1238430": {
+      "coverage": "none",
+      "file": "valve/1238430.json",
+      "name": "Tell Me Why Chapter 2",
+      "sha256": "825236805da10ae815ac669816613a3af9911daef0c536a21080305f554b7b8e"
+    },
+    "steam/1240440": {
+      "coverage": "none",
+      "file": "valve/1240440.json",
+      "name": "Halo Infinite",
+      "sha256": "e8278a8dde31860e34011cd9ebc34ac077a08082f32863c480dd568844521960"
+    },
+    "steam/1244950": {
+      "coverage": "none",
+      "file": "valve/1244950.json",
+      "name": "Battletoads",
+      "sha256": "d0b5284944303e4ce43289df881eaba62ff125f63cbf3c4463d6d1796d9d6e7e"
+    },
+    "steam/1250410": {
+      "coverage": "none",
+      "file": "valve/1250410.json",
+      "name": "Microsoft Flight Simulator",
+      "sha256": "72a276615b2d99c7a04a747d75b744267e3cb88fbd794dd0921cf866878a86fa"
+    },
+    "steam/1252330": {
+      "coverage": "none",
+      "file": "valve/1252330.json",
+      "name": "Deathloop",
+      "sha256": "a0a701f5613d0fb07c5058a484fcdf2235a0a19249501ae04a33545a9bf3aaa7"
+    },
+    "steam/1266670": {
+      "coverage": "none",
+      "file": "valve/1266670.json",
+      "name": "Tell Me Why Chapter 3",
+      "sha256": "8daddf3cb70d960d4ae435307ae94539d57049eaba1f184db6950859517b3376"
+    },
+    "steam/1282270": {
+      "coverage": "full",
+      "file": "valve/1282270.json",
+      "name": null,
+      "sha256": "0eb6fdf1fbe41cf2ea594d2d4a0aa4c9477d0d24c28f0aaa3ff1fb573e4a8c0e"
+    },
+    "steam/1282690": {
+      "coverage": "none",
+      "file": "valve/1282690.json",
+      "name": null,
+      "sha256": "2d6e59490c86c4f70fae7a076947fa14900e21f03abdb1bba3dc4815fef106b5"
+    },
+    "steam/1293830": {
+      "coverage": "none",
+      "file": "valve/1293830.json",
+      "name": "Forza Horizon 4",
+      "sha256": "a1ebb02ef96ab494b947de4495a3431caa0e56783e252444043f273435638e2e"
+    },
+    "steam/1313860": {
+      "coverage": "none",
+      "file": "valve/1313860.json",
+      "name": "FIFA 21",
+      "sha256": "2d009a2512a7c5fa4d6dd0f631800300e1c414f43d94fb49509c317705b62dbe"
+    },
+    "steam/1331440": {
+      "coverage": "full",
+      "file": "valve/1331440.json",
+      "name": "FUSER",
+      "sha256": "4771f19ff63c73acf275fd9a001efb78482f26e85b04a6ad200b9476247a89f4"
+    },
+    "steam/1342260": {
+      "coverage": "full",
+      "file": "valve/1342260.json",
+      "name": "SAMURAI SHODOWN",
+      "sha256": "5309f2e6e68871eea15b43d5d0db2d87f9eb697b3f8cd8c98185e5c61f6a61e9"
+    },
+    "steam/1404090": {
+      "coverage": "full",
+      "file": "valve/1404090.json",
+      "name": "Trivia Tricks",
+      "sha256": "49fe4f2680672de27c74a2ad6ef4f4b73a94ed07671287ec5fe7de35b4ed2040"
+    },
+    "steam/1418100": {
+      "coverage": "none",
+      "file": "valve/1418100.json",
+      "name": "Swords of Legends Online",
+      "sha256": "0c215b9d62b4e4b53903c1e4498ee19343fc2b43fd31898d7232b0c99a99e5cc"
+    },
+    "steam/1466860": {
+      "coverage": "none",
+      "file": "valve/1466860.json",
+      "name": "Age of Empires IV",
+      "sha256": "92a15e434386d4173d7c05cf3f7394f0f9e630576670c91d46ffbc0f6a9d9ea9"
+    },
+    "steam/1491460": {
+      "coverage": "none",
+      "file": "valve/1491460.json",
+      "name": "Tor Eternum",
+      "sha256": "1155ddb8aad7fbc34f955295b4bc979dda9d4de05b73997c5427a10132d7d88f"
+    },
+    "steam/1506830": {
+      "coverage": "none",
+      "file": "valve/1506830.json",
+      "name": "FIFA 22",
+      "sha256": "3ce06d3c68030b4f7025473447cd0ea789d76a6f4845db6228f260697e02aea2"
+    },
+    "steam/1524630": {
+      "coverage": "none",
+      "file": "valve/1524630.json",
+      "name": "KeepUp Survival",
+      "sha256": "3f2433bfc88a15be2bed113c29edf1edf3805b0aa77d0cc7428b9d660291c21f"
+    },
+    "steam/1549250": {
+      "coverage": "none",
+      "file": "valve/1549250.json",
+      "name": "Undecember",
+      "sha256": "7010a229b98d9e18fc33b66fac32a716daaeb4d1d5d81212de4464eabec5b265"
+    },
+    "steam/1551360": {
+      "coverage": "none",
+      "file": "valve/1551360.json",
+      "name": "Forza Horizon 5",
+      "sha256": "19dc7a21eb4eed6e35ba35f7648ae6e383ea9dec657bf568fb63159661e2bd4e"
+    },
+    "steam/15620": {
+      "coverage": "full",
+      "file": "valve/15620.json",
+      "name": "Warhammer 40,000: Dawn of War II",
+      "sha256": "c68ad9368c6307e57eb2d0c67e892f6480573906ef8045598ab2064ed5b55380"
+    },
+    "steam/1577120": {
+      "coverage": "none",
+      "file": "valve/1577120.json",
+      "name": "The Quarry",
+      "sha256": "864cd591b70e0c7ab2354f65ecf08a30074abf722b0880f97fc5361bb07a1689"
+    },
+    "steam/1588990": {
+      "coverage": "none",
+      "file": "valve/1588990.json",
+      "name": "Tor Eternum Demo",
+      "sha256": "507cc102f8299a2cfd27f0ad857c9d5fd93634417705c83e08c1b29d71118bf8"
+    },
+    "steam/1621680": {
+      "coverage": "full",
+      "file": "valve/1621680.json",
+      "name": "Sword and Fairy 4",
+      "sha256": "3b4f558f2c9d6e9ebef5fa7aa38ac9e94a1981b672935651518c745aad6afdc6"
+    },
+    "steam/1672970": {
+      "coverage": "none",
+      "file": "valve/1672970.json",
+      "name": "Minecraft Dungeons",
+      "sha256": "757ddaf3cb1dd56d6f889d1e4179deb6a454cd6bf1cfc8a61ffe07e6b8385293"
+    },
+    "steam/1761380": {
+      "coverage": "none",
+      "file": "valve/1761380.json",
+      "name": "Otherworld Legends (just to disable nvcuda.dll)",
+      "sha256": "7684eef62b1473873dad5f17d8f735df75ee7a1252e95d0d47f9cb86a5e48898"
+    },
+    "steam/1808500": {
+      "coverage": "none",
+      "file": "valve/1808500.json",
+      "name": "ARC Raiders",
+      "sha256": "124add0283822b05345fde368d66bb46e91a40bb7d3cfba1e85257db5bb260f6"
+    },
+    "steam/1895130": {
+      "coverage": "none",
+      "file": "valve/1895130.json",
+      "name": "Darza's Dominion",
+      "sha256": "d6b0819807e336ada6e1e94f91ffbdc3a8bc3a9036e2832726db16d91ccbc876"
+    },
+    "steam/1928420": {
+      "coverage": "full",
+      "file": "valve/1928420.json",
+      "name": null,
+      "sha256": "250f433431019f124e862fa43a7350ad658e0ff06ffaa3eaf3ea6517a4eb1a07"
+    },
+    "steam/1939100": {
+      "coverage": "none",
+      "file": "valve/1939100.json",
+      "name": "Go Home Annie",
+      "sha256": "2d165613240dd814cd808221af82b91c84f8193c14194f943165702803dea07c"
+    },
+    "steam/1977170": {
+      "coverage": "none",
+      "file": "valve/1977170.json",
+      "name": "Jusant",
+      "sha256": "74634854b19654bbc7d851930d164cd4251d89907c20356074027a1223d6c246"
+    },
+    "steam/1985810": {
+      "coverage": "none",
+      "file": "valve/1985810.json",
+      "name": "CoD: Black Ops Cold War",
+      "sha256": "eae7b324f6985f9768ab6d9783fade223157d4c5c1fed83462c81a0ac3404da6"
+    },
+    "steam/19900": {
+      "coverage": "full",
+      "file": "valve/19900.json",
+      "name": "Far Cry 2",
+      "sha256": "8c7767760091120ca69ab8b55a360b4e892683e6db9d1249addf74969ebdc74f"
+    },
+    "steam/2012840": {
+      "coverage": "full",
+      "file": "valve/2012840.json",
+      "name": "Portal with RTX",
+      "sha256": "764f9ee8a5733e96d53546b7c7297e8ba2675f4f6182e0e7ed3d414a1718fece"
+    },
+    "steam/201510": {
+      "coverage": "full",
+      "file": "valve/201510.json",
+      "name": "Flatout 3",
+      "sha256": "fdf0b9b08f5e67e625928222db25df05c3846c39c35b950a808db4d95cda1443"
+    },
+    "steam/2021880": {
+      "coverage": "none",
+      "file": "valve/2021880.json",
+      "name": "Ara: History Untold",
+      "sha256": "011d8c661be3b6d8e13aae5d89a969f5dad2f7b85ac11745610f88cb8a1bf148"
+    },
+    "steam/202750": {
+      "coverage": "none",
+      "file": "valve/202750.json",
+      "name": "Alan Wake's American Nightmare",
+      "sha256": "9caeeb8d168d457b0595d57b3b3d05f16d078b023431cc4014ac17330353c9f0"
+    },
+    "steam/202990": {
+      "coverage": "full",
+      "file": "valve/202990.json",
+      "name": "Call of Duty: Black Ops II - Multiplayer",
+      "sha256": "396e4608c15ef946423401f9608a1e49141a990b042d6e42c3c65e17406e8b79"
+    },
+    "steam/204450": {
+      "coverage": "full",
+      "file": "valve/204450.json",
+      "name": "Call of Juarez: Gunslinger",
+      "sha256": "19c669f5851310748337c5be4d4b30b8ecbad960785f8ba4122ccede25d1190f"
+    },
+    "steam/2052410": {
+      "coverage": "full",
+      "file": "valve/2052410.json",
+      "name": "WITCH ON THE HOLY NIGHT",
+      "sha256": "94ea88e3e52065e9e2f708c3108bb02f66ccf8b616f35f97e7709a32501e99ad"
+    },
+    "steam/2055290": {
+      "coverage": "full",
+      "file": "valve/2055290.json",
+      "name": "Sonic Colors: Ultimate",
+      "sha256": "ca0ecc4ace65c30c5ec22782a2f0b6abda7a30d06d1976bbba1e62288e19fea9"
+    },
+    "steam/20570": {
+      "coverage": "full",
+      "file": "valve/20570.json",
+      "name": "Warhammer 40,000: Dawn of War II - Chaos Rising",
+      "sha256": "78a6e34e542c1e91644fb9a1c910cf95e798254e732e998fb5f52de722c40eff"
+    },
+    "steam/2067160": {
+      "coverage": "none",
+      "file": "valve/2067160.json",
+      "name": "Simulakros",
+      "sha256": "01dc6332f6eb9cfb5263cd7674ac053bec2b58c330097abc0b369ef5b82c36cf"
+    },
+    "steam/2073850": {
+      "coverage": "none",
+      "file": "valve/2073850.json",
+      "name": "The Finals",
+      "sha256": "0f1c3f13b96545b9c9acab957ebca66359626686ea5f9ccd012c92dfc256f3e5"
+    },
+    "steam/2080180": {
+      "coverage": "none",
+      "file": "valve/2080180.json",
+      "name": "Go Home Annie Demo",
+      "sha256": "7dbec735c36b7258cb20fef4465b290260a4ba1dd6674a33481a6d8df34c7a62"
+    },
+    "steam/20920": {
+      "coverage": "full",
+      "file": "valve/20920.json",
+      "name": "The Witcher 2: Assassins of Kings Enchanced Edition",
+      "sha256": "6051774ae4af63b7acc6ae4f7c7eaee7bdaa8081ffcf7e7099edfb8cf4c52a26"
+    },
+    "steam/212910": {
+      "coverage": "full",
+      "file": "valve/212910.json",
+      "name": "Call of Duty: Black Ops II - Zombies",
+      "sha256": "53b8532a5f8dcbc55943dd30b1cb0a463c30a9475eba555e2b80e37327c19912"
+    },
+    "steam/2176900": {
+      "coverage": "none",
+      "file": "valve/2176900.json",
+      "name": "Fablecraft",
+      "sha256": "086a637550236b3bc17e3e5a314c207f7279f977cd56a77788b7f407596bca77"
+    },
+    "steam/21980": {
+      "coverage": "full",
+      "file": "valve/21980.json",
+      "name": "Call of Juarez: Bound in Blood",
+      "sha256": "203e1c39e19e8112afb52b177db4f533c1643260a8334728ae39638bb57a4296"
+    },
+    "steam/2229830": {
+      "coverage": "full",
+      "file": "valve/2229830.json",
+      "name": "Command & Conquer and The Covert Operations",
+      "sha256": "3cc65ce6dd6ea5f6a160ae6afc33d7199b61f37fc972691e8a4dbbf360bc487b"
+    },
+    "steam/229480": {
+      "coverage": "full",
+      "file": "valve/229480.json",
+      "name": "Dungeons & Dragons: Chronicles of Mystara",
+      "sha256": "bafc67da32755006b58136f076b1336ac004f2219d70e2da4fd57a68c1c956d1"
+    },
+    "steam/230410": {
+      "coverage": "none",
+      "file": "valve/230410.json",
+      "name": "Warframe",
+      "sha256": "a14916c512fa3a4c2032657de70b9524ff089168127225668e8f9611cf6adf18"
+    },
+    "steam/2322010": {
+      "coverage": "none",
+      "file": "valve/2322010.json",
+      "name": "God of War: Ragnarok",
+      "sha256": "64b5da4e192a02672f7705d01feca5f2fef0eb95d42e6db047fee597400e927d"
+    },
+    "steam/233130": {
+      "coverage": "none",
+      "file": "valve/233130.json",
+      "name": "Shadow Warrior",
+      "sha256": "284bfc2a5efd158612cc3147bb03c50270c9c86605203fe45b5c8ec983227500"
+    },
+    "steam/2395210": {
+      "coverage": "none",
+      "file": "valve/2395210.json",
+      "name": "Tony Hawk's Pro Skater 1 + 2",
+      "sha256": "3e8488586d3d8476bed1fcb47a74f9891062554f0d559c7e768611256ad91aa0"
+    },
+    "steam/2471120": {
+      "coverage": "full",
+      "file": "valve/2471120.json",
+      "name": null,
+      "sha256": "b9dbba25db9b01ed99d443530fc9e07932bd453942e924a25487732c8f604295"
+    },
+    "steam/247660": {
+      "coverage": "none",
+      "file": "valve/247660.json",
+      "name": "Deadly Premonition: The Director's Cut",
+      "sha256": "e0c81e93cc8f38dc8f07caa69a326464a6783e489d05622d9a57e5d18fda30d1"
+    },
+    "steam/249610": {
+      "coverage": "full",
+      "file": "valve/249610.json",
+      "name": "Galactic Arms Race",
+      "sha256": "e65cfba065c9c7620e69a9160aa9a4a9668a4e0b628d896044d50e500304e081"
+    },
+    "steam/255220": {
+      "coverage": "none",
+      "file": "valve/255220.json",
+      "name": "GRID Autosport",
+      "sha256": "526ce4d4d16423f2aecd1b50e41ef16daed3d857a59c63cc58d626e1bfdc980a"
+    },
+    "steam/257420": {
+      "coverage": "none",
+      "file": "valve/257420.json",
+      "name": "Serious Sam 4",
+      "sha256": "f8474b5c98fee63c3a32609e566ef84ca7e5a98ee4f247a428d5e495c391be1a"
+    },
+    "steam/259170": {
+      "coverage": "full",
+      "file": "valve/259170.json",
+      "name": "Alone in the Dark",
+      "sha256": "828f0da01095c47ebb38d4098cb92dc465e232fef9608005beec4b15c4c04d21"
+    },
+    "steam/2620730": {
+      "coverage": "full",
+      "file": "valve/2620730.json",
+      "name": "DEVIATOR",
+      "sha256": "3149e9bd026324eab807bf5e0f502ebc4a8ba023dc5dd58227e8a7283180e024"
+    },
+    "steam/2621010": {
+      "coverage": "none",
+      "file": "valve/2621010.json",
+      "name": "Simulakros Demo",
+      "sha256": "2af469028dc315c5d8ccb368a802251e9ed607c5dd69bf9555b0c8c39e62836f"
+    },
+    "steam/2630": {
+      "coverage": "full",
+      "file": "valve/2630.json",
+      "name": "Call of Duty 2",
+      "sha256": "3bdc3664ec63326483ac8db14346b940746dc2c164e2b64e19518c588ccd157f"
+    },
+    "steam/2698940": {
+      "coverage": "none",
+      "file": "valve/2698940.json",
+      "name": "The Crew Motorfest",
+      "sha256": "ed99aafed05e212ee864f0f9b3156cb690b2505c260aeab2f183bceef24b3987"
+    },
+    "steam/2710": {
+      "coverage": "full",
+      "file": "valve/2710.json",
+      "name": "Act of War: Direct Action",
+      "sha256": "27087302c2847a2aa2f2c446eea9918e9ce58f9987c1245eb565d82903c22b1b"
+    },
+    "steam/2712910": {
+      "coverage": "full",
+      "file": "valve/2712910.json",
+      "name": "Spark & Kling",
+      "sha256": "8428d95c170be4898cbe2372fe34ecad5929399516d6a7ab56db26a3c45cabba"
+    },
+    "steam/275850": {
+      "coverage": "full",
+      "file": "valve/275850.json",
+      "name": "No Man's Sky",
+      "sha256": "3b61e728b0d1637714c7ac4f1b1f15138a9c5994003f8a3daa51cfcd827325aa"
+    },
+    "steam/2767030": {
+      "coverage": "full",
+      "file": "valve/2767030.json",
+      "name": null,
+      "sha256": "e5b56512566a5e4c39bbf66fab69228d6b1cd164ff8fe6f85988a6b04790870b"
+    },
+    "steam/280200": {
+      "coverage": "full",
+      "file": "valve/280200.json",
+      "name": "Eterium",
+      "sha256": "285b9793ad9634a1ecd10e3fedfcf6b0b1de7c07d73e696fd61331492847852e"
+    },
+    "steam/283640": {
+      "coverage": "none",
+      "file": "valve/283640.json",
+      "name": "Salt and Sanctuary",
+      "sha256": "63125292ae6081d21f992f0512c094b9428715e7f5cff1949acb4e8dc40b5b22"
+    },
+    "steam/285190": {
+      "coverage": "full",
+      "file": "valve/285190.json",
+      "name": "Warhammer 40,000: Dawn of War III",
+      "sha256": "2085d65c938f2d72fabe7a70692945ee90733957221429a85fe98662399b48a3"
+    },
+    "steam/2853730": {
+      "coverage": "none",
+      "file": "valve/2853730.json",
+      "name": "Skull and Bones",
+      "sha256": "48d6af2acea6d565fc33ca8ed17f4fc8d1c693e11bce8eb6b58e8aa40885a18b"
+    },
+    "steam/286810": {
+      "coverage": "full",
+      "file": "valve/286810.json",
+      "name": "Hard Truck Apocalypse: Rise of Clans / Ex Machina: Meridian 113",
+      "sha256": "1f53a94075424b23d8e3a1bdbd1ec80f1b8e101d0e6808b16abe68ea821272e5"
+    },
+    "steam/287240": {
+      "coverage": "full",
+      "file": "valve/287240.json",
+      "name": "Eterium Demo",
+      "sha256": "ffe07319ff1b4c368c843072b430e5ef4471d9bbd4d61d982d6efafb67ef3a75"
+    },
+    "steam/2882920": {
+      "coverage": "full",
+      "file": "valve/2882920.json",
+      "name": "SSR Wives: The Murder Of My Winter Crush Demo",
+      "sha256": "f19482ee1f85154cd32d279c42b6d4f06378b906c95cba8317c4e763f20b198a"
+    },
+    "steam/292030": {
+      "coverage": "full",
+      "file": "valve/292030.json",
+      "name": "The Witcher 3: Wild Hunt",
+      "sha256": "76714709a83eefcc48d6c95da238d701b5d4839ec8c6a6d4185bbf657700d863"
+    },
+    "steam/2963870": {
+      "coverage": "full",
+      "file": "valve/2963870.json",
+      "name": null,
+      "sha256": "e1654b7d0dfc9d50e9add3cedee06a7dfe11ff6de909f0357ddce0a8817b607f"
+    },
+    "steam/298110": {
+      "coverage": "full",
+      "file": "valve/298110.json",
+      "name": "Far Cry 4",
+      "sha256": "1ce8e1f2e54152006b0e7ec49f57ced8d332eea965979f842e80b014da1e6d70"
+    },
+    "steam/311210": {
+      "coverage": "none",
+      "file": "valve/311210.json",
+      "name": "CoD: Black Ops 3",
+      "sha256": "94e1547317cdb86e344bd8409064008eb9e7a9270d42fc726d644a0fec9d99b6"
+    },
+    "steam/312530": {
+      "coverage": "full",
+      "file": "valve/312530.json",
+      "name": "Duck Game",
+      "sha256": "3fbff61db319f36d8a1edc85819ad789f04648dc548089fc0d759f16316f4b9e"
+    },
+    "steam/316260": {
+      "coverage": "full",
+      "file": "valve/316260.json",
+      "name": "Disney Universe",
+      "sha256": "403e1be50a918edadfcc3e6ef0330fa6873c51ed3146c0abec0b151b5db654cf"
+    },
+    "steam/3328910": {
+      "coverage": "full",
+      "file": "valve/3328910.json",
+      "name": "MySims Kingdom",
+      "sha256": "05dc75ea51860c4827a379cdee938dfe4064c6a75597c496572c733fecdf88ca"
+    },
+    "steam/337000": {
+      "coverage": "none",
+      "file": "valve/337000.json",
+      "name": "Deus Ex: Mankind Divided",
+      "sha256": "8535c39d8a6e3e32982570e4e7ee564afd5fd9536bc69206af18c6a5aa32c20a"
+    },
+    "steam/3495730": {
+      "coverage": "none",
+      "file": "valve/3495730.json",
+      "name": null,
+      "sha256": "86b451191ef4837097058c24e7775176f191738a5f3896d8d1e0d2f6c003d023"
+    },
+    "steam/35130": {
+      "coverage": "full",
+      "file": "valve/35130.json",
+      "name": "Lara Croft and the Guardian of Light",
+      "sha256": "e765223dd4adf5666ffb235ecfadb31702519c73c4c78483b9b7435a3ee7a15e"
+    },
+    "steam/3513350": {
+      "coverage": "none",
+      "file": "valve/3513350.json",
+      "name": "Wuthering Waves",
+      "sha256": "bb420a8b27e0ec41bd803420cb3f4123a60486857311957963a1c94b5d66a615"
+    },
+    "steam/352130": {
+      "coverage": "none",
+      "file": "valve/352130.json",
+      "name": null,
+      "sha256": "f479b52dba18c507c79f59e2396b0b2b6e519388d790cfe994e598d5c5bc7ffe"
+    },
+    "steam/357190": {
+      "coverage": "full",
+      "file": "valve/357190.json",
+      "name": "Ultimate Marvel vs Capcom 3",
+      "sha256": "df8905d60f53f1280be80483e2e7c99e0747819c528c33a6657762796970059e"
+    },
+    "steam/366870": {
+      "coverage": "full",
+      "file": "valve/366870.json",
+      "name": "Narcosis",
+      "sha256": "404a77916ff8c75e98a5f90caa052ee846ee27fd4dd66becbc6dc137e0d2861e"
+    },
+    "steam/368500": {
+      "coverage": "none",
+      "file": "valve/368500.json",
+      "name": "Assassin's Creed Syndicate",
+      "sha256": "f793e9298fcfba85c8c171ca32ad0b34fb5af42f677ab41951b093e945c5ad2a"
+    },
+    "steam/3728370": {
+      "coverage": "none",
+      "file": "valve/3728370.json",
+      "name": null,
+      "sha256": "1ffc9838571e08e0e19108d01edb4fbdd4877df5551ebd950cc394e8b1a1b2ec"
+    },
+    "steam/374320": {
+      "coverage": "full",
+      "file": "valve/374320.json",
+      "name": "DARK SOULS III",
+      "sha256": "17d9ef7a47966a0933df931d06b0346d1cc19b4b4c88bbd1d2280d778313b043"
+    },
+    "steam/3754990": {
+      "coverage": "none",
+      "file": "valve/3754990.json",
+      "name": null,
+      "sha256": "1ac96130907f21fa58c9af8bca5c5f1a2b5b31183df6df42885bea4953dad855"
+    },
+    "steam/3780660": {
+      "coverage": "full",
+      "file": "valve/3780660.json",
+      "name": null,
+      "sha256": "e6be61f0f6b9c07873dc4cddc12b0f2ad123cf857f498ea8c26ccc420e6bf912"
+    },
+    "steam/3837340": {
+      "coverage": "none",
+      "file": "valve/3837340.json",
+      "name": "FINAL FANTASY VII",
+      "sha256": "d8291f208d3184b7df898053785aceebadf7348b8f898edf34ca6870c295e065"
+    },
+    "steam/386360": {
+      "coverage": "full",
+      "file": "valve/386360.json",
+      "name": "SMITE",
+      "sha256": "2e339a963161e3bb98ce930a8e19515f578b34390f7810f2689e45985438eaa6"
+    },
+    "steam/392110": {
+      "coverage": "full",
+      "file": "valve/392110.json",
+      "name": "ENDLESS Space 2",
+      "sha256": "6ba328a4c84896d27cc3742693db010c9b24b15994984309ed125759199aa699"
+    },
+    "steam/39540": {
+      "coverage": "full",
+      "file": "valve/39540.json",
+      "name": "SpellForce: Platinum Edition",
+      "sha256": "999ecdeae60d1470d63e5997992ab921c9a2ac542d4684a04b3606ff38d8deee"
+    },
+    "steam/399810": {
+      "coverage": "full",
+      "file": "valve/399810.json",
+      "name": "Call of Cthulhu",
+      "sha256": "baba04999f1b910684eef64f3012ed58d14372428816effae5e116d91c340664"
+    },
+    "steam/406970": {
+      "coverage": "full",
+      "file": "valve/406970.json",
+      "name": "The Uncertain: Last Quiet Day",
+      "sha256": "4b958e51054bf31e5650283d0b1b864dba9773baad69b2e1624482805172b107"
+    },
+    "steam/407810": {
+      "coverage": "none",
+      "file": "valve/407810.json",
+      "name": "Hard Reset Redux",
+      "sha256": "5f1acf9cc6d7aed4426cfe1b26d261ba7316e0342bb9ac37b6f8736a67e5e81c"
+    },
+    "steam/414740": {
+      "coverage": "full",
+      "file": "valve/414740.json",
+      "name": "RAID: World War II",
+      "sha256": "e5a700af7a7630e635a20985e2fd9797f7acf7c250523c018f2de7813d02e7f5"
+    },
+    "steam/415200": {
+      "coverage": "full",
+      "file": "valve/415200.json",
+      "name": "Motorsport Manager",
+      "sha256": "a8d9b0ea2556ab88cdd7ad155eefe3dc8aa018fbb5927e40d86756d8b5e2607a"
+    },
+    "steam/420290": {
+      "coverage": "full",
+      "file": "valve/420290.json",
+      "name": "Blackwake",
+      "sha256": "9413bbaffb90385b1698e6878167b5f5c6c2f26982102d81224a808918bd2369"
+    },
+    "steam/4249100": {
+      "coverage": "full",
+      "file": "valve/4249100.json",
+      "name": "Resident Evil",
+      "sha256": "0cc231a28bfb599f491d58d64c0e2ea79b86b0779c69d4d1ca2e0ec4e844a4e1"
+    },
+    "steam/4249110": {
+      "coverage": "full",
+      "file": "valve/4249110.json",
+      "name": "Resident Evil 2",
+      "sha256": "c8270ac2fb849ef697b195428dd80d8e640108a55c1be2c029a05029789aaf5a"
+    },
+    "steam/4249130": {
+      "coverage": "full",
+      "file": "valve/4249130.json",
+      "name": "Dino Crisis",
+      "sha256": "7f55e1c74cbe6d570a4bb2873db7123b3ab14126f3099ff8ba11f61b962c9c07"
+    },
+    "steam/4249150": {
+      "coverage": "full",
+      "file": "valve/4249150.json",
+      "name": "Breath of Fire IV",
+      "sha256": "b95b0837f308f021ea5fbd00a5138ac32ead36dd0906e1f8293ba04323cb6ec3"
+    },
+    "steam/425670": {
+      "coverage": "full",
+      "file": "valve/425670.json",
+      "name": "Seraph",
+      "sha256": "668795f595d9bd8ba0e436d007791e9da501a40feb85f9e404b1b16ace188ce7"
+    },
+    "steam/433100": {
+      "coverage": "full",
+      "file": "valve/433100.json",
+      "name": "The Town of Light",
+      "sha256": "1f385f165b3077f1cf6231f54478bc7f9586c008eb33893e7e4ea770c27f9815"
+    },
+    "steam/433530": {
+      "coverage": "full",
+      "file": "valve/433530.json",
+      "name": "Heliborne - Enhanced Edition",
+      "sha256": "95770bfb7676ca0cf599a50a2f0e93c41c5c9af31e625c59a13b0896d2a6f6d4"
+    },
+    "steam/435150": {
+      "coverage": "none",
+      "file": "valve/435150.json",
+      "name": "Divinity: Original Sin 2 - Definitive Edition",
+      "sha256": "4098f7c391d3618f13535a1aba274697f201de4ec51f0b5809022d4545694b79"
+    },
+    "steam/437630": {
+      "coverage": "full",
+      "file": "valve/437630.json",
+      "name": "State of Mind",
+      "sha256": "2f59fed357e7aaf44f0019b2111f08fd06f67564da11943fc3cfe962bc5546c9"
+    },
+    "steam/442780": {
+      "coverage": "full",
+      "file": "valve/442780.json",
+      "name": "STRAFE: Gold Edition",
+      "sha256": "75544c27a7cdcc97edffa427a7bc85c059d89e79d0efbad50215136f570d0391"
+    },
+    "steam/44350": {
+      "coverage": "none",
+      "file": "valve/44350.json",
+      "name": "GRID 2",
+      "sha256": "f98ab240a35163fb4f34d9a8bae998cf36f203626287148de29f7c5681867f9f"
+    },
+    "steam/447020": {
+      "coverage": "full",
+      "file": "valve/447020.json",
+      "name": "Farming Simulator 17",
+      "sha256": "532c670099b8bbaae1adddd51d34cb2701dd39c224cb46aada2c2f1326b9811c"
+    },
+    "steam/448230": {
+      "coverage": "full",
+      "file": "valve/448230.json",
+      "name": "AsteroidsHD",
+      "sha256": "fa608c2f4c640b50bcdcb401813a7570a6cf3f320f0fd0af87c32b29028d026a"
+    },
+    "steam/451520": {
+      "coverage": "full",
+      "file": "valve/451520.json",
+      "name": "theBlu: Season 1",
+      "sha256": "4006f23006fa6b0ca5cc35e12f7b1d3dbbc87e75c1810f9b0306aa8aff38a390"
+    },
+    "steam/455490": {
+      "coverage": "none",
+      "file": "valve/455490.json",
+      "name": "Don't Die Dateless, Dummy!",
+      "sha256": "f2d236f9e2ce0c223267b89cd5ba7cbf2bbdecdf0933166730795f7bb25478d7"
+    },
+    "steam/463150": {
+      "coverage": "full",
+      "file": "valve/463150.json",
+      "name": "BARRIER X",
+      "sha256": "722ebc819f01e5f25f6075aad98c921e1c3d56101de7ab9bb51f6d00085c0110"
+    },
+    "steam/469610": {
+      "coverage": "full",
+      "file": "valve/469610.json",
+      "name": "Rick and Morty: Virtual Rick-ality",
+      "sha256": "f6ea7eda0cd08ea2cf1ac70e6107a5243f0107c331be1caa0686b9fc4a57fdcb"
+    },
+    "steam/485030": {
+      "coverage": "full",
+      "file": "valve/485030.json",
+      "name": "PLANET ALPHA",
+      "sha256": "18ff337d1080f04f9d1f1a4701d21cbc219ef25f153bd4f96af9e6e18b154d41"
+    },
+    "steam/487720": {
+      "coverage": "full",
+      "file": "valve/487720.json",
+      "name": "Agony",
+      "sha256": "d04ad18b5bc039ba729112d9cd514aea7666151fb9b009d03f05a518b31ec264"
+    },
+    "steam/492230": {
+      "coverage": "full",
+      "file": "valve/492230.json",
+      "name": "Space Hulk: Tactics",
+      "sha256": "b9d242b08efde7b5e28b8db0f69b98023511f892503fa1950bc546a4baa17a15"
+    },
+    "steam/495420": {
+      "coverage": "none",
+      "file": "valve/495420.json",
+      "name": "State of Decay 2: Juggernaut Edition",
+      "sha256": "91d40053de662f89941784de91318dd89b0116be7432d5ce3f15c3fdd513375b"
+    },
+    "steam/499100": {
+      "coverage": "full",
+      "file": "valve/499100.json",
+      "name": "Dark Parables: The Exiled Prince Collector's Edition",
+      "sha256": "d4af63a9f4095086f641fe21463a2a6abb3f717b216ccf27a709b2c08e8f460c"
+    },
+    "steam/500810": {
+      "coverage": "full",
+      "file": "valve/500810.json",
+      "name": "Arcanum",
+      "sha256": "7dd00654b46264b07b497457601d3d7634602a6c45a1c69db664f4df845bbf94"
+    },
+    "steam/505170": {
+      "coverage": "none",
+      "file": "valve/505170.json",
+      "name": "Carmageddon: Max Damage",
+      "sha256": "63599cdbcb3e8adcba463bdf941ee39902338cbd22d6d1c61ab9bb76859d472b"
+    },
+    "steam/512490": {
+      "coverage": "full",
+      "file": "valve/512490.json",
+      "name": "Zombie Estate 2",
+      "sha256": "10281f570c83df80aad0845040e69877477a76bc6f333b2e805cf66d1b57f30d"
+    },
+    "steam/521890": {
+      "coverage": "full",
+      "file": "valve/521890.json",
+      "name": "Hello Neighbor",
+      "sha256": "e68f751881f505d4c636e2db9b8d687e5a4736190d999aeeef637fca7a32d35d"
+    },
+    "steam/524220": {
+      "coverage": "full",
+      "file": "valve/524220.json",
+      "name": "NieR: Automata",
+      "sha256": "8b6debabeee3ec0bed85cf05f73edf5ec74f7c818329365827bfd62093685ca0"
+    },
+    "steam/535850": {
+      "coverage": "full",
+      "file": "valve/535850.json",
+      "name": "Micro Machines World Series",
+      "sha256": "500515a874546e84efb384a3313e208b7e092b1a1d785d2e433350f24bd9f93b"
+    },
+    "steam/544920": {
+      "coverage": "full",
+      "file": "valve/544920.json",
+      "name": "Darwin Project",
+      "sha256": "ff6400114a1480604a954b4b0c697dc005010186b54f461bf7f8cb6e932a2c34"
+    },
+    "steam/55150": {
+      "coverage": "full",
+      "file": "valve/55150.json",
+      "name": "Warhammer 40,000: Space Marine",
+      "sha256": "baceddec2e012764d55a0d76a3e650e0af0c85e4c1938f75586806b76e8b399d"
+    },
+    "steam/551770": {
+      "coverage": "full",
+      "file": "valve/551770.json",
+      "name": "ECHO",
+      "sha256": "cf5c309a6afdb06fe21c3617e51262fe2942df584596f457486205372990ca08"
+    },
+    "steam/553850": {
+      "coverage": "full",
+      "file": "valve/553850.json",
+      "name": "Helldivers 2",
+      "sha256": "978b51cbe6a3b5275a66d7f4e2cc3c1210d0b8e3e01e4490e37ca01c2671b7de"
+    },
+    "steam/556180": {
+      "coverage": "full",
+      "file": "valve/556180.json",
+      "name": "Mysterium: A Psychic Clue Game",
+      "sha256": "8912017dd545acc9a12df118d38c8aec29e6e8f3c38804d37125be23b443ddf0"
+    },
+    "steam/558260": {
+      "coverage": "full",
+      "file": "valve/558260.json",
+      "name": "Gravel",
+      "sha256": "1cf31076eb91bc112488df47e13e667d9dfc8821bb64b7562806266112ae171c"
+    },
+    "steam/561600": {
+      "coverage": "full",
+      "file": "valve/561600.json",
+      "name": "MXGP3 - The Official Motocross Videogame",
+      "sha256": "11398e745eaf8e914b181208021041f9ecb4e940f49bbafb632b5c077d968f0e"
+    },
+    "steam/56400": {
+      "coverage": "full",
+      "file": "valve/56400.json",
+      "name": "Warhammer 40,000: Dawn of War II - Retribution",
+      "sha256": "bfa3259dfb5c73de17b710b8dae2e52bcdcacb51963f4db78308b7855b33bdc9"
+    },
+    "steam/618970": {
+      "coverage": "full",
+      "file": "valve/618970.json",
+      "name": "Outcast - Second Contact",
+      "sha256": "920bdb725dbc11654c227843c49351d67e1c038d26a64551de5f76db7ba83efa"
+    },
+    "steam/649950": {
+      "coverage": "full",
+      "file": "valve/649950.json",
+      "name": "Ashen",
+      "sha256": "f7d47320f139c94a9da00cce1fa82b0956ef2a38fdcefe1dc707f811ddd50064"
+    },
+    "steam/65540": {
+      "coverage": "full",
+      "file": "valve/65540.json",
+      "name": "Gothic 1 Classic",
+      "sha256": "d2ab21e5d414a3f6515042450846d362ca83599a5240ef954c5c6f88c90dda60"
+    },
+    "steam/661920": {
+      "coverage": "full",
+      "file": "valve/661920.json",
+      "name": "Claybook",
+      "sha256": "d594f8051c3a1a1b44b8f65b2b85932dd4157ccb0364b76b21cad74d060f388a"
+    },
+    "steam/682990": {
+      "coverage": "full",
+      "file": "valve/682990.json",
+      "name": "Drug Dealer Simulator",
+      "sha256": "4b9f1883ddad0f122ce0881cd754d585d3559a97092b58140a730d43c9f2e9ac"
+    },
+    "steam/70000": {
+      "coverage": "full",
+      "file": "valve/70000.json",
+      "name": "Dino D-Day",
+      "sha256": "fb8f69c4bf2f2af850129f537637ac1e31df30d7c14ecb9b1c5858b24f0458fa"
+    },
+    "steam/711750": {
+      "coverage": "full",
+      "file": "valve/711750.json",
+      "name": "Monster Energy Supercross - The Official Videogame",
+      "sha256": "720e4ca94fdc7d06997b4d7a7e65d780d9a4ea5f3dcae37942932f1b974a414e"
+    },
+    "steam/71230": {
+      "coverage": "full",
+      "file": "valve/71230.json",
+      "name": "Crazy Taxi",
+      "sha256": "c1f504922c48f45002cd5be93b91f388110cf8f15054fa1598d84198ef950331"
+    },
+    "steam/730830": {
+      "coverage": "full",
+      "file": "valve/730830.json",
+      "name": "Escape from Monkey Island",
+      "sha256": "4389b0cdd93cf81e25ef4614f1efce02c37c8288b41a77a1428dde03c7a95f08"
+    },
+    "steam/748360": {
+      "coverage": "full",
+      "file": "valve/748360.json",
+      "name": "MY HERO ONE'S JUSTICE",
+      "sha256": "183f153bac0e07b73eb43ba1bb1ba9a65d18b72f9361e900b96c6087c2011a84"
+    },
+    "steam/754530": {
+      "coverage": "none",
+      "file": "valve/754530.json",
+      "name": null,
+      "sha256": "c1590ede29027fb37943766a00804ead7ca20457b7b53cea17765a53e64765b7"
+    },
+    "steam/759740": {
+      "coverage": "full",
+      "file": "valve/759740.json",
+      "name": "RIDE 3",
+      "sha256": "59c58c01f3d49d31a26de7f37c223ac59b8a2f382dd871a8456fe3816a5329e4"
+    },
+    "steam/775900": {
+      "coverage": "full",
+      "file": "valve/775900.json",
+      "name": "MotoGP18",
+      "sha256": "0b3f15f0a575070d2e98bafbb737b208fcf438b529a8436434d0daa2673a9066"
+    },
+    "steam/783170": {
+      "coverage": "full",
+      "file": "valve/783170.json",
+      "name": "INSOMNIA: The Ark",
+      "sha256": "703cf5b9cdc2c5abd18cbedcac63abac2fb6a17ee9ff14088f388ac467617460"
+    },
+    "steam/787810": {
+      "coverage": "none",
+      "file": "valve/787810.json",
+      "name": "Rogue Heroes: Ruins of Tasos",
+      "sha256": "a630c65c01f2a071e5cdec33f1b980baffbcc5e94372cce68084a25baca4eb9c"
+    },
+    "steam/789910": {
+      "coverage": "full",
+      "file": "valve/789910.json",
+      "name": "Planet of the Apes: Last Frontier",
+      "sha256": "b0c7dbce55941184a9b42f1f605e772b421efdbc3638ce7f34392a83b2414815"
+    },
+    "steam/798290": {
+      "coverage": "full",
+      "file": "valve/798290.json",
+      "name": "MXGP PRO",
+      "sha256": "1662e40517eff6395704932ab6e358c22ce4721d803e55551d08769d117acb19"
+    },
+    "steam/813780": {
+      "coverage": "none",
+      "file": "valve/813780.json",
+      "name": "Age of Empires II: Definitive Edition",
+      "sha256": "534b230ebff107c84a36c1c31662e2713241aca9e285141a3761a1254eccaba1"
+    },
+    "steam/814380": {
+      "coverage": "full",
+      "file": "valve/814380.json",
+      "name": "Sekiro: Shadows Die Twice",
+      "sha256": "dfe50b5ce0fe3b20a9cb28c05fb52b8acf3f0f33de094cd24403afd7b41133cb"
+    },
+    "steam/824280": {
+      "coverage": "full",
+      "file": "valve/824280.json",
+      "name": "Monster Jam Steel Titans",
+      "sha256": "a584669a259ef625b2c53e7c59ae214a67c0452e0cf0263053cc8cb340d911f2"
+    },
+    "steam/834280": {
+      "coverage": "full",
+      "file": "valve/834280.json",
+      "name": "Fishing Sim World: Pro Tour",
+      "sha256": "eef5cf92076df7a1038ccd0a6500119454a1629502bf9878a1a97de04ff8e7e9"
+    },
+    "steam/876340": {
+      "coverage": "full",
+      "file": "valve/876340.json",
+      "name": "VR Slots 3D",
+      "sha256": "400cfe50f4fbee3b4c06aed23ea332aaf5bc3118ecc3ccfb35f50ca5956aedec"
+    },
+    "steam/879420": {
+      "coverage": "full",
+      "file": "valve/879420.json",
+      "name": "Agony UNRATED",
+      "sha256": "977474a764dc20189857c4133c541ef024077d3d8c3194d1d86ab58f8a43d4b7"
+    },
+    "steam/882020": {
+      "coverage": "full",
+      "file": "valve/882020.json",
+      "name": "Monster Energy Supercross - The Official Videogame 2",
+      "sha256": "afedc2c88ee3edf44c7df4781ed1321f28cea61d02ca6a72af195b8ba6268b79"
+    },
+    "steam/888040": {
+      "coverage": "full",
+      "file": "valve/888040.json",
+      "name": "Metal Fatigue",
+      "sha256": "3a07f53c3ba26ab7ba5a431fbd3f5800cf3011f66dd789731ca659c198ddd899"
+    },
+    "steam/890880": {
+      "coverage": "full",
+      "file": "valve/890880.json",
+      "name": "FROSTBITE: Deadly Climate",
+      "sha256": "ae7f4bd15e1b761d161222cf7c29c8539ed346b066dc0689a661a5759f05797c"
+    },
+    "steam/933110": {
+      "coverage": "none",
+      "file": "valve/933110.json",
+      "name": "Age of Empires III: Definitive Edition",
+      "sha256": "ff1cc272d390dfd70a53e3c9e1a9f8318d5b62d209dfda61f0cb22c329e5d10f"
+    },
+    "steam/962130": {
+      "coverage": "none",
+      "file": "valve/962130.json",
+      "name": "Grounded",
+      "sha256": "805aad65da94d1dbb42b6fe603a88b7ef11ee06b3ba01b05a93643f11dfca821"
+    },
+    "steam/967390": {
+      "coverage": "full",
+      "file": "valve/967390.json",
+      "name": "Chronos: Before the Ashes",
+      "sha256": "5d7b97c2fa93b70c8ccf8253eb67d8c8727fd17ac5569b7c0850f1fb1fb18214"
+    },
+    "steam/968870": {
+      "coverage": "full",
+      "file": "valve/968870.json",
+      "name": "Close to the Sun",
+      "sha256": "ba7173f2d7be056909556982275e063f37341580d59d5b37673a509584554f98"
+    },
+    "steam/976730": {
+      "coverage": "none",
+      "file": "valve/976730.json",
+      "name": "Halo: The Master Chief Collection",
+      "sha256": "133ebba0ae251d765a60161dbd6502158ea7dec9076ff173c54673ab85c71294"
+    },
+    "steam/996580": {
+      "coverage": "full",
+      "file": "valve/996580.json",
+      "name": "Spyro Reignited Trilogy",
+      "sha256": "967b31024bebc1ae30f9159bc67eff55285a1928e9c6539314384884bfa0cf33"
+    }
+  },
+  "generatedAt": "2026-10-11T08:57:19Z",
+  "schema": 1,
+  "unparsed": [
+    {
+      "ids": [
+        "2767030",
+        "2274200"
+      ],
+      "kind": "all-except",
+      "source": "if os.environ.get(\"SteamGameId\", 0) not in [\"2767030\", \"2274200\"]: self.dlloverrides[\"opencl\"] = \"n,d\""
+    }
+  ],
+  "upstream": "ValveSoftware/Proton",
+  "upstreamBranch": "proton_11.0",
+  "upstreamCommit": "bc896217",
+  "upstreamDate": "2026-10-09T18:21:45+03:00"
+}

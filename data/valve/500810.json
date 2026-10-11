@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "500810",
+  "name": "Arcanum",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

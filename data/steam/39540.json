@@ -1,0 +1,45 @@
+{
+  "aliases": [
+    {
+      "id": "1123662938",
+      "store": "gog"
+    },
+    {
+      "id": "1207658719",
+      "store": "gog"
+    },
+    {
+      "id": "1207660473",
+      "store": "gog"
+    },
+    {
+      "id": "1914219141",
+      "store": "gog"
+    },
+    {
+      "id": "245050",
+      "store": "steam"
+    },
+    {
+      "id": "39550",
+      "store": "steam"
+    },
+    {
+      "id": "65530",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "39540",
+  "name": "SpellForce Platinum",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/39540.py",
+  "upstreamCommit": "4eef22e"
+}

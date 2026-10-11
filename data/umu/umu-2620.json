@@ -1,0 +1,26 @@
+{
+  "canonical": {
+    "id": "2620",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-2620",
+  "name": "Call of Duty",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-2620",
+  "upstream": "gamefixes-umu/umu-2620.py",
+  "upstreamCommit": "5282529"
+}

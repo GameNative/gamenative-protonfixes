@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "21680",
+  "name": "Bionic Commander Rearmed",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/21680.py",
+  "upstreamCommit": "490f513"
+}

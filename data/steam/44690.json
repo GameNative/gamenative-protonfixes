@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "44690",
+  "name": "GT Legends",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/44690.py",
+  "upstreamCommit": "490f513"
+}

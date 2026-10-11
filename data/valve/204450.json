@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "204450",
+  "name": "Call of Juarez: Gunslinger",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

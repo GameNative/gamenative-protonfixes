@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1233880",
+  "name": "Disgaea 4 Complete+",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noesync",
+        "nofsync"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

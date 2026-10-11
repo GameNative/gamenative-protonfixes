@@ -1,0 +1,27 @@
+{
+  "coverage": "full",
+  "id": "umu-starcitizen",
+  "name": "Star Citizen",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "powershell",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dotNetFx45_Full_setup.exe": "d",
+        "dxwebsetup.exe": "d"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-starcitizen",
+  "upstream": "gamefixes-umu/umu-starcitizen.py",
+  "upstreamCommit": "77147fd"
+}

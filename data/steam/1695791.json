@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "1695791",
+  "name": "Halo 3 mod tools",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "msxml3",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1695791.py",
+  "upstreamCommit": "a5e814a"
+}

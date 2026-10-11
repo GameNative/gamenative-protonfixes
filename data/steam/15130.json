@@ -1,0 +1,50 @@
+{
+  "aliases": [
+    {
+      "id": "1207658746",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "15130",
+  "name": "Beyond Good & Evil™",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dsound",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    },
+    {
+      "name": "arial",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\Ubisoft",
+      "op": "registry",
+      "values": {}
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\Ubisoft\\Beyond Good & Evil",
+      "op": "registry",
+      "values": {
+        "InstallLanguage": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/15130.py",
+  "upstreamCommit": "490f513"
+}

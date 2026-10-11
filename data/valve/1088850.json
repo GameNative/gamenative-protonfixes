@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1088850",
+  "name": "Marvel's Guardians of the Galaxy",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

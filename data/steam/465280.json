@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "465280",
+  "name": "Yesterday Origins",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "win7",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/465280.py",
+  "upstreamCommit": "490f513"
+}

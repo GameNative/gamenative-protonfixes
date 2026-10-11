@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "70650",
+  "name": "Worms: Blast",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directmusic",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/70650.py",
+  "upstreamCommit": "5467bdc"
+}

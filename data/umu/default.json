@@ -1,0 +1,9 @@
+{
+  "coverage": "full",
+  "launchOptions": [],
+  "schema": 1,
+  "steps": [],
+  "store": "umu",
+  "upstream": "gamefixes-umu/default.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "1185868626",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "39190",
+  "name": "Dungeon Siege",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "Zonematch=true",
+      "op": "launch_args"
+    },
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/39190.py",
+  "upstreamCommit": "a2c80f7"
+}

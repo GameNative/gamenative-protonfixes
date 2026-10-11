@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "e87704e6-e558-4605-8981-89a7914742e0",
+  "name": "Duke Nukem: Manhattan Project",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3d8": "n,b"
+      }
+    },
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-240200",
+  "upstream": "gamefixes-zoomplatform/umu-240200.py",
+  "upstreamCommit": "a5e814a"
+}

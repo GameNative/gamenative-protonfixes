@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "729040",
+  "name": "Borderlands GOTY",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Launcher.exe",
+      "op": "replace_command",
+      "to": "BorderlandsGOTY.exe"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/729040.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,21 @@
+{
+  "coverage": "full",
+  "id": "1097150",
+  "name": "Fall Guys",
+  "schema": 1,
+  "steps": [
+    {
+      "appid": 1826330,
+      "op": "runtime_app"
+    },
+    {
+      "op": "env",
+      "set": {
+        "DOTNET_BUNDLE_EXTRACT_BASE_DIR": ""
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1097150.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "winetricks-gui",
+  "name": "Call Winetricks GUI",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "gui",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "winetricks-gui",
+  "upstream": "gamefixes-umu/winetricks-gui.py",
+  "upstreamCommit": "54be139"
+}

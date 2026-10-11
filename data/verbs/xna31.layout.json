@@ -1,0 +1,598 @@
+{
+ "archives": [
+  {
+   "hops": [
+    {
+     "ranges": [
+      [
+       5120,
+       4096
+      ],
+      [
+       2048,
+       3072
+      ],
+      [
+       9216,
+       56320
+      ],
+      [
+       66048,
+       65536
+      ],
+      [
+       132096,
+       64512
+      ],
+      [
+       197120,
+       65536
+      ],
+      [
+       263168,
+       64512
+      ],
+      [
+       328192,
+       65536
+      ],
+      [
+       394240,
+       64512
+      ],
+      [
+       459264,
+       65536
+      ],
+      [
+       525312,
+       64512
+      ],
+      [
+       590336,
+       65536
+      ],
+      [
+       656384,
+       64512
+      ],
+      [
+       721408,
+       65536
+      ],
+      [
+       787456,
+       64512
+      ],
+      [
+       852480,
+       65536
+      ],
+      [
+       918528,
+       64512
+      ],
+      [
+       983552,
+       65536
+      ],
+      [
+       1049600,
+       64512
+      ],
+      [
+       1114624,
+       65536
+      ],
+      [
+       1180672,
+       64512
+      ],
+      [
+       1245696,
+       65536
+      ],
+      [
+       1311744,
+       64512
+      ],
+      [
+       1376768,
+       65536
+      ],
+      [
+       1442816,
+       64512
+      ],
+      [
+       1507840,
+       65536
+      ],
+      [
+       1573888,
+       64512
+      ],
+      [
+       1638912,
+       65536
+      ],
+      [
+       1704960,
+       64512
+      ],
+      [
+       1769984,
+       65536
+      ],
+      [
+       1836032,
+       64512
+      ],
+      [
+       1901056,
+       65536
+      ],
+      [
+       1967104,
+       64512
+      ],
+      [
+       2032128,
+       65536
+      ],
+      [
+       2098176,
+       64512
+      ],
+      [
+       2163200,
+       65536
+      ],
+      [
+       2229248,
+       64512
+      ],
+      [
+       2294272,
+       65536
+      ],
+      [
+       2360320,
+       64512
+      ],
+      [
+       2425344,
+       65536
+      ],
+      [
+       2491392,
+       64512
+      ],
+      [
+       2556416,
+       65536
+      ],
+      [
+       2622464,
+       64512
+      ],
+      [
+       2687488,
+       65536
+      ],
+      [
+       2753536,
+       64512
+      ],
+      [
+       2818560,
+       65536
+      ],
+      [
+       2884608,
+       64512
+      ],
+      [
+       2949632,
+       65536
+      ],
+      [
+       3015680,
+       64512
+      ],
+      [
+       3080704,
+       65536
+      ],
+      [
+       3146752,
+       64512
+      ],
+      [
+       3211776,
+       65536
+      ],
+      [
+       3277824,
+       64512
+      ],
+      [
+       3342848,
+       65536
+      ],
+      [
+       3408896,
+       64512
+      ],
+      [
+       3473920,
+       65536
+      ],
+      [
+       3539968,
+       64512
+      ],
+      [
+       3604992,
+       65536
+      ],
+      [
+       3671040,
+       64512
+      ],
+      [
+       3736064,
+       65536
+      ],
+      [
+       3802112,
+       64512
+      ],
+      [
+       3867136,
+       65536
+      ],
+      [
+       3933184,
+       64512
+      ],
+      [
+       3998208,
+       65536
+      ],
+      [
+       4064256,
+       64512
+      ],
+      [
+       4129280,
+       65536
+      ],
+      [
+       4195328,
+       64512
+      ],
+      [
+       4260352,
+       65536
+      ],
+      [
+       4326400,
+       64512
+      ],
+      [
+       4391424,
+       65536
+      ],
+      [
+       4457472,
+       64512
+      ],
+      [
+       4522496,
+       65536
+      ],
+      [
+       4588544,
+       64512
+      ],
+      [
+       4653568,
+       65536
+      ],
+      [
+       4719616,
+       64512
+      ],
+      [
+       4784640,
+       65536
+      ],
+      [
+       4850688,
+       64512
+      ],
+      [
+       4915712,
+       65536
+      ],
+      [
+       4981760,
+       64512
+      ],
+      [
+       5046784,
+       65536
+      ],
+      [
+       5112832,
+       64512
+      ],
+      [
+       5177856,
+       65536
+      ],
+      [
+       5243904,
+       64512
+      ],
+      [
+       5308928,
+       65536
+      ],
+      [
+       5374976,
+       64512
+      ],
+      [
+       5440000,
+       65536
+      ],
+      [
+       5506048,
+       64512
+      ],
+      [
+       5571072,
+       65536
+      ],
+      [
+       5637120,
+       64512
+      ],
+      [
+       5702144,
+       65536
+      ],
+      [
+       5768192,
+       64512
+      ],
+      [
+       5833216,
+       65536
+      ],
+      [
+       5899264,
+       64512
+      ],
+      [
+       5964288,
+       65536
+      ],
+      [
+       6030336,
+       64512
+      ],
+      [
+       6095360,
+       65536
+      ],
+      [
+       6161408,
+       64512
+      ],
+      [
+       6226432,
+       65536
+      ],
+      [
+       6292480,
+       64512
+      ],
+      [
+       6357504,
+       65536
+      ],
+      [
+       6423552,
+       64512
+      ],
+      [
+       6488576,
+       65536
+      ],
+      [
+       6554624,
+       64512
+      ],
+      [
+       6619648,
+       65536
+      ],
+      [
+       6685696,
+       64512
+      ],
+      [
+       6750720,
+       26354
+      ]
+     ],
+     "size": 6722290
+    }
+   ],
+   "installer": 0
+  }
+ ],
+ "files": [
+  {
+   "archive": 0,
+   "member": "XnaVisualizer_dll_File",
+   "size": 47464,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/XNA/Framework/Shared/xnavisualizer.dll"
+  },
+  {
+   "archive": 0,
+   "member": "XnaVisualizerPS_dll_File",
+   "size": 17240,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/XNA/Framework/Shared/XnaVisualizerPS.dll"
+  },
+  {
+   "archive": 0,
+   "member": "EULA_File",
+   "size": 7123,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/XNA/Framework/v3.1/EULA.txt"
+  },
+  {
+   "archive": 0,
+   "member": "XnaNative_dll_File",
+   "size": 2258776,
+   "to": "drive_c/Program Files (x86)/Common Files/Microsoft Shared/XNA/Framework/v3.1/XnaNative.dll"
+  },
+  {
+   "archive": 0,
+   "member": "APR_DXRedist_D3DX9_File",
+   "size": 1609639,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/APR2007_d3dx9_33_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_XInput_File",
+   "size": 56902,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/APR2007_xinput_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_SetupDLL_File",
+   "size": 94024,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/DSETUP.dll"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_Setup32DLL_File",
+   "size": 1691464,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/dsetup32.dll"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_DXSetup_File",
+   "size": 525128,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/DXSETUP.exe"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_DXUpdate_File",
+   "size": 95304,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/dxupdate.cab"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_X3DAudio_File",
+   "size": 21298,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/Mar2009_X3DAudio_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_XACT_File",
+   "size": 92732,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/Mar2009_xact_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "DXRedist_XAudio2_File",
+   "size": 273010,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/Mar2009_XAudio_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "OCT_DXRedist_D3DX9_File",
+   "size": 1128177,
+   "to": "drive_c/Program Files (x86)/Microsoft XNA/XNA Game Studio/v3.1/Redist/DX Redist/OCT2006_d3dx9_31_x86.cab"
+  },
+  {
+   "archive": 0,
+   "member": "Microsoft_Xna_Framework_Game_dll_GAC",
+   "size": 98304,
+   "to": "drive_c/windows/assembly/GAC_32/Microsoft.Xna.Framework.Game/3.1.0.00000__6d5c3888ef60e27d/Microsoft.Xna.Framework.Game.dll"
+  },
+  {
+   "archive": 0,
+   "member": "Microsoft_Xna_Framework_dll_GAC",
+   "size": 1034752,
+   "to": "drive_c/windows/assembly/GAC_32/Microsoft.Xna.Framework/3.1.0.00000__6d5c3888ef60e27d/Microsoft.Xna.Framework.dll"
+  },
+  {
+   "archive": 0,
+   "member": "ul_manifest.21022.08.Microsoft_VC90_CRT_x86.RTM.0138F525_6C8A_333F_A105_14AE030B9A54",
+   "size": 1857,
+   "to": "drive_c/windows/winsxs/manifests/x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_none_deadbeef.manifest"
+  },
+  {
+   "archive": 0,
+   "member": "ul_msvcm90.dll.21022.08.Microsoft_VC90_CRT_x86.RTM.0138F525_6C8A_333F_A105_14AE030B9A54",
+   "size": 224768,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_none_deadbeef/msvcm90.dll"
+  },
+  {
+   "archive": 0,
+   "member": "ul_msvcp90.dll.21022.08.Microsoft_VC90_CRT_x86.RTM.0138F525_6C8A_333F_A105_14AE030B9A54",
+   "size": 568832,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_none_deadbeef/msvcp90.dll"
+  },
+  {
+   "archive": 0,
+   "member": "ul_msvcr90.dll.21022.08.Microsoft_VC90_CRT_x86.RTM.0138F525_6C8A_333F_A105_14AE030B9A54",
+   "size": 655872,
+   "to": "drive_c/windows/winsxs/x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_none_deadbeef/msvcr90.dll"
+  }
+ ],
+ "installers": [
+  {
+   "arch": "any",
+   "sha256": "187e7e6b08fe35428d945612a7d258bfed25fad53cc54882983abdc73fe60f91",
+   "size": 7671808,
+   "url": "https://web.archive.org/web/20120325004645id_/https://download.microsoft.com/download/5/9/1/5912526C-B950-4662-99B6-119A83E60E5C/xnafx31_redist.msi"
+  }
+ ],
+ "notes": [
+  "xnafx31_redist.msi: custom actions not run: CA_InstallDirectX",
+  "xnafx31_redist.msi: 1 SelfReg rows not applied"
+ ],
+ "registry": [
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\XNA\\Framework\\v3.1",
+   "name": "NativeLibraryPath",
+   "type": "REG_SZ",
+   "value": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\XNA\\Framework\\v3.1\\"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\XNA\\Framework\\v3.1",
+   "name": "Installed",
+   "type": "REG_DWORD",
+   "value": "1"
+  },
+  {
+   "hive": "HKLM",
+   "key": "Software\\Wow6432Node\\Microsoft\\XNA\\Framework\\v3.1",
+   "name": "ProductVersion",
+   "type": "REG_SZ",
+   "value": "3.1.10527.0"
+  }
+ ],
+ "schema": 1,
+ "unpackedBytes": 10502666,
+ "verb": "xna31"
+}

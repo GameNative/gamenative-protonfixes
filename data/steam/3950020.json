@@ -1,0 +1,51 @@
+{
+  "aliases": [
+    {
+      "id": "58c7aa4f48be44f3b40f5f78f62c84b7",
+      "store": "egs"
+    },
+    {
+      "id": "umu-3950020",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "3950020",
+  "name": "Duet Night Abyss",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_SET_GAME_DRIVE": "1"
+      }
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dcomp": "d"
+      }
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "libGLESv2": "d"
+      },
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    },
+    {
+      "op": "env",
+      "set": {
+        "PROTON_ENABLE_INT3_HACK": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3950020.py",
+  "upstreamCommit": "77147fd"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "627270",
+  "name": "Injustice 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/627270.py",
+  "upstreamCommit": "a5e814a"
+}

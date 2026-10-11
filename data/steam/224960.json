@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "224960",
+  "name": "Tomb Raider 1",
+  "schema": 1,
+  "steps": [
+    {
+      "content": "[glide]\nglide = emu\n\n",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${install}/glide_fix.conf"
+    },
+    {
+      "append": "-conf glide_fix.conf",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/224960.py",
+  "upstreamCommit": "490f513"
+}

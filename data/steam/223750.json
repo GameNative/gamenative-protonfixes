@@ -1,0 +1,29 @@
+{
+  "coverage": "full",
+  "id": "223750",
+  "name": "DCS World",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dx11_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "wbemprox": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/223750.py",
+  "upstreamCommit": "9bbdffa"
+}

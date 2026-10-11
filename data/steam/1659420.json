@@ -1,0 +1,22 @@
+{
+  "aliases": [
+    {
+      "id": "0ef5f1eaa6be4d648f6e9252aa02c5cf",
+      "store": "egs"
+    }
+  ],
+  "coverage": "full",
+  "id": "1659420",
+  "name": "UNCHARTED™: Legacy of Thieves Collection",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1659420.py",
+  "upstreamCommit": "490f513"
+}

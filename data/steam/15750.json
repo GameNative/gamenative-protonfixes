@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "1207658950",
+      "store": "gog"
+    },
+    {
+      "id": "dcabd2be-5c6b-4364-bed7-154cb4b19f9e",
+      "store": "zoomplatform"
+    }
+  ],
+  "coverage": "full",
+  "id": "15750",
+  "name": "Oddworld: Stranger's Wrath HD",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc90",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/15750.py",
+  "upstreamCommit": "490f513"
+}

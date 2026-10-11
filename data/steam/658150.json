@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "658150",
+  "name": "Skeleton Boomerang",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/658150.py",
+  "upstreamCommit": "490f513"
+}

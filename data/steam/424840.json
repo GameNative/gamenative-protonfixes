@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "424840",
+  "name": "Little Nightmares",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-onethread",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/424840.py",
+  "upstreamCommit": "490f513"
+}

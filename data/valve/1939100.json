@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1939100",
+  "name": "Go Home Annie",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

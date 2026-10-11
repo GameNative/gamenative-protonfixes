@@ -1,0 +1,23 @@
+{
+  "coverage": "full",
+  "id": "42890",
+  "name": "Sword of the Stars",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_42",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_31",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/42890.py",
+  "upstreamCommit": "265ad3c"
+}

@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "umu-model2",
+  "name": "Model 2 Emulator",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_42",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_42",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9",
+      "op": "verb"
+    },
+    {
+      "name": "xact",
+      "op": "verb"
+    },
+    {
+      "name": "xact_x64",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-model2",
+  "upstream": "gamefixes-umu/umu-model2.py",
+  "upstreamCommit": "a0e14a7"
+}

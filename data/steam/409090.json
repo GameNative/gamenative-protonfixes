@@ -1,0 +1,29 @@
+{
+  "coverage": "full",
+  "id": "409090",
+  "name": "The Big Secret of a Small Town",
+  "override": "tools/protonfixes/overrides/steam/409090.json",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dgvoodoo2",
+      "op": "verb"
+    },
+    {
+      "from": "(?m)^(?=.*Resolution)(.*?)max",
+      "op": "text_replace",
+      "path": "${drive_c}/windows/syswow64/dgvoodoo.conf",
+      "regex": true,
+      "to": "$1unforced"
+    },
+    {
+      "action": "copy",
+      "from": "${drive_c}/windows/syswow64/dgd3d9.dll",
+      "op": "file",
+      "to": "${drive_c}/windows/syswow64/d3d9.dll"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/409090.py",
+  "upstreamCommit": "490f513"
+}

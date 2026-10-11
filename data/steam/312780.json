@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "312780",
+  "name": "Way of the Samurai 4",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/312780.py",
+  "upstreamCommit": "7e57c0c"
+}

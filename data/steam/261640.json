@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "261640",
+  "name": "Borderlands: The Pre-Sequel",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Launcher.exe",
+      "op": "replace_command",
+      "to": "BorderlandsPreSequel.exe"
+    },
+    {
+      "append": "-NoSplash",
+      "op": "launch_args"
+    },
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/261640.py",
+  "upstreamCommit": "5c40c78"
+}

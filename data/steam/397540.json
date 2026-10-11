@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "Catnip",
+      "store": "egs"
+    }
+  ],
+  "coverage": "full",
+  "id": "397540",
+  "name": "Borderlands 3",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/397540.py",
+  "upstreamCommit": "f1cada0"
+}

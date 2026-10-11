@@ -1,0 +1,62 @@
+{
+  "coverage": "full",
+  "id": "312060",
+  "name": "FFXIV Demo",
+  "override": "tools/protonfixes/overrides/steam/312060.json",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "-issteam",
+      "op": "replace_command",
+      "to": "",
+      "when": [
+        {
+          "nosteam": true
+        }
+      ]
+    },
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn"
+    },
+    {
+      "content": "<FINAL FANTASY XIV Config File>\n\n<Version>\nWebView2RuntimeInvalid 1\n",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    },
+    {
+      "from": "(?m)^(WebView2RuntimeInvalid)\\s+\\d+\\s*$",
+      "op": "text_replace",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "regex": true,
+      "to": "$1 1",
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    },
+    {
+      "ifAbsent": true,
+      "line": "WebView2RuntimeInvalid 1",
+      "op": "append_line",
+      "path": "${drive_c}/users/${user}/Documents/My Games/FINAL FANTASY XIV - A Realm Reborn/FFXIV_BOOT.cfg",
+      "when": [
+        {
+          "wayland": true
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/312060.py",
+  "upstreamCommit": "657e560"
+}

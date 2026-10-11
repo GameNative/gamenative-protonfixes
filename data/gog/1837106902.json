@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "39200",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1837106902",
+  "name": "Dungeon Siege 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-39200",
+  "upstream": "gamefixes-gog/umu-39200.py",
+  "upstreamCommit": "a2c80f7"
+}

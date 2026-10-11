@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "23460",
+  "name": "Ceville",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet35sp1",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "PROTON_NO_XALIA": "0"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/23460.py",
+  "upstreamCommit": "c0b36e4"
+}

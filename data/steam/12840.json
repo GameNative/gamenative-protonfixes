@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "12840",
+  "name": "Dirt 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xliveless",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/12840.py",
+  "upstreamCommit": "490f513"
+}

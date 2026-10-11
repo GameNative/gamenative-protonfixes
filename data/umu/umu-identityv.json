@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-identityv",
+  "name": "Identity V",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-identityv",
+  "upstream": "gamefixes-umu/umu-identityv.py",
+  "upstreamCommit": "0792d02"
+}

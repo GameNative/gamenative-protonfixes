@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2679460",
+  "name": "Metaphor ReFantazio",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": true,
+      "fromAppid": 3130330,
+      "op": "import_saves",
+      "path": "AppData/Roaming/SEGA/METAPHOR/Steam/${steam_id64}"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2679460.py",
+  "upstreamCommit": "9bbdffa"
+}

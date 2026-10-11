@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1346400",
+  "name": "Battle Engine Aquila",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dsound",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1346400.py",
+  "upstreamCommit": "5a9779f"
+}

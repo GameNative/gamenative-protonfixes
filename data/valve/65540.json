@@ -1,0 +1,14 @@
+{
+  "coverage": "full",
+  "id": "65540",
+  "name": "Gothic 1 Classic",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 16,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

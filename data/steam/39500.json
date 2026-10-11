@@ -1,0 +1,29 @@
+{
+  "aliases": [
+    {
+      "id": "65600",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "39500",
+  "name": "Gothic 3",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "encoding": "cp1251",
+      "op": "ini",
+      "path": "${install}/Ini/ge3.ini",
+      "section": "Engine.Setup",
+      "values": {
+        "FpS.Max": "0",
+        "Timer.ThreadSafe": "false"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/39500.py",
+  "upstreamCommit": "8854a7c"
+}

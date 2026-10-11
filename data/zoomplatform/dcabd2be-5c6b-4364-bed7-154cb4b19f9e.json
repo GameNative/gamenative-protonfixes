@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "15750",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "dcabd2be-5c6b-4364-bed7-154cb4b19f9e",
+  "name": "Oddworld: Stranger's Wrath HD",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc90",
+      "op": "verb"
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-15750",
+  "upstream": "gamefixes-zoomplatform/umu-15750.py",
+  "upstreamCommit": "490f513"
+}

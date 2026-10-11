@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1786995757",
+  "name": "Alien Breed 2: Assault",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-22650",
+  "upstream": "gamefixes-gog/umu-22650.py",
+  "upstreamCommit": "490f513"
+}

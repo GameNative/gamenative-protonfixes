@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "647830",
+  "name": "LEGO® Marvel Super Heroes 2",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 4,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/647830.py",
+  "upstreamCommit": "f4bf7bc"
+}

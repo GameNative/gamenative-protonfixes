@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2012840",
+  "name": "Portal with RTX",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "nohardwarescheduling"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

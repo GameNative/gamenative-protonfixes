@@ -1,0 +1,19 @@
+{
+  "canonical": {
+    "id": "39540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "65530",
+  "name": "SpellForce 2 - Faith in Destiny",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/65530.py",
+  "upstreamCommit": "4eef22e"
+}

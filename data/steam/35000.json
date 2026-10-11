@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "35000",
+  "name": "Mini Ninjas",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "openal",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/35000.py",
+  "upstreamCommit": "75337fd"
+}

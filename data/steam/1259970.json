@@ -1,0 +1,30 @@
+{
+  "coverage": "full",
+  "id": "1259970",
+  "name": "Pes 2021",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "name": "allfonts",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet462",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1259970.py",
+  "upstreamCommit": "26e2e54"
+}

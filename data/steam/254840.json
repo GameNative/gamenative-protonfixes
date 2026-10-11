@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1207658782",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "254840",
+  "name": "Ground Control II: Operation Exodus",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "verdana",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/254840.py",
+  "upstreamCommit": "44d8004"
+}

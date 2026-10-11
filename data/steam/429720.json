@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "429720",
+  "name": "IMSCARED",
+  "notes": [
+    "the game writes its files to the prefix Desktop folder, not to a host desktop"
+  ],
+  "override": "tools/protonfixes/overrides/steam/429720.json",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/Desktop"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/429720.py",
+  "upstreamCommit": "490f513"
+}

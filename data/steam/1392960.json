@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1392960",
+  "name": "STORY OF SEASONS: Pioneers of Olive Town",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1392960.py",
+  "upstreamCommit": "4db5d04"
+}

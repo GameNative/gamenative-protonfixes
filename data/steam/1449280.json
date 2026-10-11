@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1449280",
+  "name": "Ghostbusters: The Video Game Remastered (2019)",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/AppData/Local/GHOSTBUSTERS"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1449280.py",
+  "upstreamCommit": "780f7c7"
+}

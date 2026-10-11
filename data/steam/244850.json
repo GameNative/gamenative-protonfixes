@@ -1,0 +1,37 @@
+{
+  "coverage": "full",
+  "id": "244850",
+  "name": "Space Engineers",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "xaudio29",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    },
+    {
+      "backup": true,
+      "op": "xml",
+      "path": "${install}/Bin64/SpaceEngineers.exe.config",
+      "value": "<loadFromRemoteSources enabled=\"true\" />\n<gcServer enabled = \"true\" />",
+      "xpath": "//runtime"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/244850.py",
+  "upstreamCommit": "26e2e54"
+}

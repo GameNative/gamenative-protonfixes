@@ -1,0 +1,19 @@
+{
+  "canonical": {
+    "id": "39540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "39550",
+  "name": "SpellForce 2 - Anniversary Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/39550.py",
+  "upstreamCommit": "4eef22e"
+}

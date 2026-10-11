@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "813780",
+  "name": "Age of Empires II: Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

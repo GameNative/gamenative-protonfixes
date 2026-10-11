@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "307780",
+  "name": "Mortal Kombat X",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "xact_x64",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/307780.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1238430",
+  "name": "Tell Me Why Chapter 2",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "4d0ff75b922447649057c237c0bd1545",
+    "store": "egs"
+  },
+  "coverage": "full",
+  "id": "umu-306130",
+  "name": "The Elder Scrolls Online",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "webview2",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-306130",
+  "upstream": "gamefixes-umu/umu-306130.py",
+  "upstreamCommit": "09c0a8a"
+}

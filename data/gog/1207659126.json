@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "1207659126",
+  "name": "Medal of Honor: Allied Assault War Chest",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "MESA_EXTENSION_MAX_YEAR": "2002",
+        "__GL_ExtensionStringVersion": "17700"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207659126",
+  "upstream": "gamefixes-gog/umu-1207659126.py",
+  "upstreamCommit": "72c4f69"
+}

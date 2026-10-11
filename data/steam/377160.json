@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "377160",
+  "name": "Fallout 4",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Fallout4Launcher.exe",
+      "op": "replace_command",
+      "to": "f4se_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/f4se_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/377160.py",
+  "upstreamCommit": "58829d1"
+}

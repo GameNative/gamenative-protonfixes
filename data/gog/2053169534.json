@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "333980",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "2053169534",
+  "name": "Akiba's Trip: Undead & Undressed",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-333980",
+  "upstream": "gamefixes-gog/umu-333980.py",
+  "upstreamCommit": "7ffe360"
+}

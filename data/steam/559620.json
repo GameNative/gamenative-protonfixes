@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "559620",
+  "name": "Outlaws + A Handful of Missions",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n,b",
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/559620.py",
+  "upstreamCommit": "8854a7c"
+}

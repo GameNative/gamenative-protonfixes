@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "212910",
+  "name": "Call of Duty: Black Ops II - Zombies",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

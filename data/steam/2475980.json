@@ -1,0 +1,97 @@
+{
+  "aliases": [
+    {
+      "id": "2505910",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "2475980",
+  "name": "Gobliiins 5 (and Demo - 2505910)",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part1/acsetup.cfg",
+      "section": "language",
+      "values": {
+        "translation": "English"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part1/acsetup.cfg",
+      "section": "graphics",
+      "values": {
+        "filter": "Linear"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part2/acsetup.cfg",
+      "section": "language",
+      "values": {
+        "translation": "English"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part2/acsetup.cfg",
+      "section": "graphics",
+      "values": {
+        "filter": "Linear"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part3/acsetup.cfg",
+      "section": "language",
+      "values": {
+        "translation": "English"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part3/acsetup.cfg",
+      "section": "graphics",
+      "values": {
+        "filter": "Linear"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part4/acsetup.cfg",
+      "section": "language",
+      "values": {
+        "translation": "English"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "op": "ini",
+      "path": "${install}/Gobliiins5-Part4/acsetup.cfg",
+      "section": "graphics",
+      "values": {
+        "filter": "Linear"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2475980.py",
+  "upstreamCommit": "8854a7c"
+}

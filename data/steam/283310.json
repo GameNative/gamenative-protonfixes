@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1207659003",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "283310",
+  "name": "Soulbringer",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc42",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/283310.py",
+  "upstreamCommit": "17a6484"
+}

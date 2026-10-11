@@ -1,0 +1,27 @@
+{
+  "coverage": "full",
+  "id": "umu-pantheonrotf",
+  "name": "Pantheon: Rise of the Fallen",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "name": "win10",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-pantheonrotf",
+  "upstream": "gamefixes-umu/umu-pantheonrotf.py",
+  "upstreamCommit": "26e2e54"
+}

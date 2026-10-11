@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "205650",
+  "name": "The Testament of Sherlock Holmes",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/205650.py",
+  "upstreamCommit": "c7ef740"
+}

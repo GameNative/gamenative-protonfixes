@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "22370",
+  "name": "Fallout 3: Game of the Year Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "FalloutLauncher.exe",
+      "op": "replace_command",
+      "to": "fose_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/fose_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/22370.py",
+  "upstreamCommit": "58829d1"
+}

@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "39540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1914219141",
+  "name": "SpellForce 2 - Faith in Destiny",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-65530",
+  "upstream": "gamefixes-gog/umu-65530.py",
+  "upstreamCommit": "4eef22e"
+}

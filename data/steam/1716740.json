@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "22330",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1716740",
+  "name": "1716740",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Starfield.exe",
+      "op": "replace_command",
+      "to": "sfse_loader.exe",
+      "when": [
+        {
+          "fileMissing": "${install}/modorganizer2"
+        },
+        {
+          "fileExists": "${install}/sfse_loader.exe"
+        }
+      ]
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1716740.py",
+  "upstreamCommit": "58829d1"
+}

@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1449651388",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "219990",
+  "name": "Grim Dawn",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/219990.py",
+  "upstreamCommit": "490f513"
+}

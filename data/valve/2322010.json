@@ -1,0 +1,22 @@
+{
+  "coverage": "none",
+  "id": "2322010",
+  "name": "God of War: Ragnarok",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "condition not expressible: os.environ.get(\"SteamDeck\", 0) == \"1\"",
+      "source": "self.env[\"PROTON_DISABLE_HIDRAW\"] = \"0x054C/0x05C4,0x054C/0x09CC,0x054C/0x0BA0,0x054C/0x0CE6,0x054C/0x0DF2\"",
+      "step": {
+        "note": "upstream condition: os.environ.get(\"SteamDeck\", 0) == \"1\"",
+        "op": "env",
+        "set": {
+          "PROTON_DISABLE_HIDRAW": "0x054C/0x05C4,0x054C/0x09CC,0x054C/0x0BA0,0x054C/0x0CE6,0x054C/0x0DF2"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

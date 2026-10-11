@@ -1,0 +1,76 @@
+{
+  "aliases": [
+    {
+      "id": "1207658682",
+      "store": "gog"
+    },
+    {
+      "id": "1207658718",
+      "store": "gog"
+    },
+    {
+      "id": "1467450",
+      "store": "steam"
+    },
+    {
+      "id": "39510",
+      "store": "steam"
+    }
+  ],
+  "coverage": "full",
+  "id": "65540",
+  "name": "Gothic",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "encoding": "cp1251",
+      "op": "ini",
+      "path": "${install}/system/Gothic.ini",
+      "section": "GAME",
+      "values": {
+        "scaleVideos": "1"
+      }
+    },
+    {
+      "backup": true,
+      "createIfMissing": false,
+      "encoding": "cp1251",
+      "op": "ini",
+      "path": "${install}/system/Gothic.ini",
+      "section": "VIDEO",
+      "values": {
+        "zVidResFullscreenBPP": "32",
+        "zVidResFullscreenX": "${screen_w}",
+        "zVidResFullscreenY": "${screen_h}"
+      }
+    },
+    {
+      "name": "directmusic",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "*dsound": "b"
+      }
+    },
+    {
+      "op": "env",
+      "set": {
+        "PULSE_LATENCY_MSEC": "90"
+      }
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "ddraw": "n,b",
+        "dinput": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/65540.py",
+  "upstreamCommit": "bf69a0c"
+}

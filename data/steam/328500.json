@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "328500",
+  "name": "Potatoman Seeks the Troof",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/windows/syswow64/Macromed/Flash"
+    },
+    {
+      "ifAbsent": true,
+      "line": "OverrideGPUValidation=1",
+      "op": "append_line",
+      "path": "${drive_c}/windows/syswow64/Macromed/Flash/mms.cfg"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/328500.py",
+  "upstreamCommit": "490f513"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1244950",
+  "name": "Battletoads",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

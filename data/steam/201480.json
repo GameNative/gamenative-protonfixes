@@ -1,0 +1,53 @@
+{
+  "coverage": "full",
+  "id": "201480",
+  "name": "Serious Sam: The Random Encounter",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dmband",
+      "op": "verb"
+    },
+    {
+      "name": "dmime",
+      "op": "verb"
+    },
+    {
+      "name": "dmloader",
+      "op": "verb"
+    },
+    {
+      "name": "dmsynth",
+      "op": "verb"
+    },
+    {
+      "name": "dmstyle",
+      "op": "verb"
+    },
+    {
+      "name": "dmusic",
+      "op": "verb"
+    },
+    {
+      "name": "dsound",
+      "op": "verb"
+    },
+    {
+      "name": "dswave",
+      "op": "verb"
+    },
+    {
+      "name": "directplay",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "streamci": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/201480.py",
+  "upstreamCommit": "8854a7c"
+}

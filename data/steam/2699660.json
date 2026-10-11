@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "2699660",
+  "name": "PowerWash Adventure",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2699660.py",
+  "upstreamCommit": "82852f8"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "495420",
+  "name": "State of Decay 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    },
+    {
+      "name": "win7",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/495420.py",
+  "upstreamCommit": "490f513"
+}

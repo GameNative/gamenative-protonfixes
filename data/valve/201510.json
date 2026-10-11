@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "201510",
+  "name": "Flatout 3",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "noesync",
+        "nofsync"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

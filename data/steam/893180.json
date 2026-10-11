@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "893180",
+  "name": "Catherine Classic",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/893180.py",
+  "upstreamCommit": "7ffe360"
+}

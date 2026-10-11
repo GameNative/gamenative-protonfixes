@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "233270",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "205",
+  "name": "Far Cry Blood Dragon",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 24,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "ubisoft",
+  "umuId": "umu-233270",
+  "upstream": "gamefixes-ubisoft/umu-233270.py",
+  "upstreamCommit": "490f513"
+}

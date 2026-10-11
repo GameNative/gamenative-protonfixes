@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1030830",
+  "name": "Mafia II: Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1030830.py",
+  "upstreamCommit": "490f513"
+}

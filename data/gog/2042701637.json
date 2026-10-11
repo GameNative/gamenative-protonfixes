@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "1662840",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "2042701637",
+  "name": "Parquet",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-vomstyle=layer",
+      "op": "launch_args"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1662840",
+  "upstream": "gamefixes-gog/umu-1662840.py",
+  "upstreamCommit": "873faa2"
+}

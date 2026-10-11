@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "337000",
+  "name": "Deus Ex: Mankind Divided",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noxalia"
+      ],
+      "flags": [
+        "noxalia"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

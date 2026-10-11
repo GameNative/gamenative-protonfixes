@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661803",
+  "name": "Heroes Chronicles [Chapter 7] - Revolt of the Beastmasters",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "Beastmaster.exe",
+      "op": "replace_command",
+      "to": "Beastmaster_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661803",
+  "upstream": "gamefixes-gog/umu-1207661803.py",
+  "upstreamCommit": "fbfebf9"
+}

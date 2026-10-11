@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1761380",
+  "name": "Otherworld Legends (just to disable nvcuda.dll)",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "disablenvapi"
+      ],
+      "flags": [
+        "disablenvapi"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

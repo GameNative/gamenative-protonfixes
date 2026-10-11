@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "1183470",
+  "name": "Imperiums: Greek Wars",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "heapdelayfree"
+      ],
+      "op": "compat_config"
+    },
+    {
+      "op": "env",
+      "set": {
+        "WINE_MONO_HIDETYPES": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

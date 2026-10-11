@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1252330",
+  "name": "Deathloop",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "hideapu"
+      ],
+      "flags": [
+        "hideapu"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

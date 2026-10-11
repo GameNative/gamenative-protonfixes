@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1671210",
+  "name": "Deltarune",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": true,
+      "fromAppid": 1690940,
+      "op": "import_saves",
+      "path": "AppData/Local/DELTARUNE"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1671210.py",
+  "upstreamCommit": "eb94668"
+}

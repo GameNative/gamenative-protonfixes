@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "39540",
+  "name": "SpellForce: Platinum Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PROTON_LIMIT_RESOLUTIONS": "16"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

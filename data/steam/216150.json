@@ -1,0 +1,261 @@
+{
+  "coverage": "full",
+  "id": "216150",
+  "name": "MapleStory",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\X11 Driver",
+      "op": "registry",
+      "values": {
+        "Grab": {
+          "type": "REG_SZ",
+          "value": "N"
+        },
+        "GrabFullscreen": {
+          "type": "REG_SZ",
+          "value": "N"
+        },
+        "UseLinuxInputEvents": {
+          "type": "REG_SZ",
+          "value": "Y"
+        },
+        "UseTakeFocus": {
+          "type": "REG_SZ",
+          "value": "N"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\DirectInput",
+      "op": "registry",
+      "values": {
+        "KeyboardUseNonExclusive": {
+          "type": "REG_SZ",
+          "value": "Y"
+        },
+        "MouseUseNonExclusive": {
+          "type": "REG_SZ",
+          "value": "Y"
+        },
+        "UseLinuxInputEvents": {
+          "type": "REG_SZ",
+          "value": "Y"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\AppDefaults\\MapleStory.exe",
+      "op": "registry",
+      "values": {
+        "Version": {
+          "type": "REG_SZ",
+          "value": "win10"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\AppDefaults\\nxsteam.exe",
+      "op": "registry",
+      "values": {
+        "Version": {
+          "type": "REG_SZ",
+          "value": "win10"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\AppDefaults\\SteamConnectorHelper.exe",
+      "op": "registry",
+      "values": {
+        "Version": {
+          "type": "REG_SZ",
+          "value": "win10"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Nexon Launcher",
+      "op": "registry",
+      "values": {
+        "Install Directory": {
+          "type": "REG_SZ",
+          "value": "C:\\Nexon\\Launcher"
+        },
+        "Region": {
+          "type": "REG_SZ",
+          "value": "1"
+        },
+        "User Data": {
+          "type": "REG_SZ",
+          "value": "{\"setup-id\":\"372e7640-20f4-419c-ada0-4ad0d76c33d9\",\"time\":1748271149}"
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\Applications\\nexon_launcher.exe\\shell\\open",
+      "op": "registry",
+      "values": {
+        "FriendlyAppName": {
+          "type": "REG_SZ",
+          "value": "Nexon Launcher"
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\nxl",
+      "op": "registry",
+      "values": {
+        "": {
+          "type": "REG_SZ",
+          "value": "URL:nxl protocol"
+        },
+        "URL Protocol": {
+          "type": "REG_SZ",
+          "value": ""
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\nxl\\DefaultIcon",
+      "op": "registry",
+      "values": {
+        "": {
+          "type": "REG_SZ",
+          "value": "C:\\Nexon\\Launcher\\nexon_launcher.exe"
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\nxl\\shell",
+      "op": "registry",
+      "values": {
+        "": {
+          "type": "REG_SZ",
+          "value": ""
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\nxl\\shell\\open",
+      "op": "registry",
+      "values": {
+        "": {
+          "type": "REG_SZ",
+          "value": ""
+        },
+        "Friendly App Name": {
+          "type": "REG_SZ",
+          "value": "Nexon Launcher"
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Classes\\nxl\\shell\\open\\command",
+      "op": "registry",
+      "values": {
+        "": {
+          "type": "REG_SZ",
+          "value": "\"C:\\Nexon\\Launcher\\nexon_launcher.exe\" \"%1\""
+        }
+      }
+    },
+    {
+      "hive": "HKLM",
+      "key": "Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Nexon Nexon Launcher",
+      "op": "registry",
+      "values": {
+        "DisplayIcon": {
+          "type": "REG_SZ",
+          "value": "\"C:\\Nexon\\Launcher\\logo.ico\""
+        },
+        "DisplayName": {
+          "type": "REG_SZ",
+          "value": "Nexon Launcher"
+        },
+        "DisplayVersion": {
+          "type": "REG_SZ",
+          "value": "2.3.0"
+        },
+        "EstimatedSize": {
+          "type": "REG_DWORD",
+          "value": "11080"
+        },
+        "HelpLink": {
+          "type": "REG_SZ",
+          "value": "\"http://www.nexon.net/legal/terms-of-use/\""
+        },
+        "InstallLocation": {
+          "type": "REG_SZ",
+          "value": "\"C:\\Nexon\\Launcher\""
+        },
+        "NoModify": {
+          "type": "REG_DWORD",
+          "value": "1"
+        },
+        "NoRepair": {
+          "type": "REG_DWORD",
+          "value": "1"
+        },
+        "Publisher": {
+          "type": "REG_SZ",
+          "value": "Nexon"
+        },
+        "QuietUninstallString": {
+          "type": "REG_SZ",
+          "value": "\"C:\\Nexon\\Launcher\\uninstall.exe\" /S"
+        },
+        "URLInfoAbout": {
+          "type": "REG_SZ",
+          "value": "\"http://www.nexon.net\""
+        },
+        "URLUpdateInfo": {
+          "type": "REG_SZ",
+          "value": "\"http://www.nexon.net\""
+        },
+        "UninstallString": {
+          "type": "REG_SZ",
+          "value": "\"C:\\Nexon\\Launcher\\uninstall.exe\""
+        },
+        "VersionMajor": {
+          "type": "REG_DWORD",
+          "value": "2"
+        },
+        "VersionMinor": {
+          "type": "REG_DWORD",
+          "value": "3"
+        }
+      }
+    },
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine\\Direct3D",
+      "op": "registry",
+      "values": {
+        "CSMT": {
+          "type": "REG_SZ",
+          "value": "disabled"
+        },
+        "cb_access_map_w": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/216150.py",
+  "upstreamCommit": "4cb24f7"
+}

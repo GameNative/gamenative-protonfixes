@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "371660",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "2010",
+  "name": "Far Cry Primal",
+  "schema": 1,
+  "steps": [
+    {
+      "limit": 31,
+      "nosmt": false,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "ubisoft",
+  "umuId": "umu-371660",
+  "upstream": "gamefixes-ubisoft/umu-371660.py",
+  "upstreamCommit": "490f513"
+}

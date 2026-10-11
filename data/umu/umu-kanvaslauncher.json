@@ -1,0 +1,36 @@
+{
+  "coverage": "full",
+  "id": "umu-kanvaslauncher",
+  "name": "kanvaslauncher https://gitgud.io/playervalley/kanvaslauncherpublic",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "mfc80",
+      "op": "verb"
+    },
+    {
+      "name": "mfc90",
+      "op": "verb"
+    },
+    {
+      "name": "dotnetdesktop8",
+      "op": "verb"
+    },
+    {
+      "name": "corefonts",
+      "op": "verb"
+    },
+    {
+      "name": "pptfonts",
+      "op": "verb"
+    },
+    {
+      "name": "tahoma",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-kanvaslauncher",
+  "upstream": "gamefixes-umu/umu-kanvaslauncher.py",
+  "upstreamCommit": "f842871"
+}

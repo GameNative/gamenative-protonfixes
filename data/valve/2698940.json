@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "2698940",
+  "name": "The Crew Motorfest",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "hidenvgpu"
+      ],
+      "flags": [
+        "hidenvgpu"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

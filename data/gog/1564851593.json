@@ -1,0 +1,32 @@
+{
+  "coverage": "full",
+  "id": "1564851593",
+  "name": "Flowers - Le Volume Sur Hiver",
+  "schema": 1,
+  "steps": [
+    {
+      "backup": [
+        "config.json",
+        "d3d9.dll"
+      ],
+      "extract": true,
+      "note": "upstream skips this when the target files already carry the patched checksum",
+      "op": "download",
+      "sha256": "caed98ec44d4270290f0652502344a40c1d45216caa8935b41e7d9f461ae2d24",
+      "to": "${install}",
+      "url": "https://github.com/user-attachments/files/16136393/d3d9-2206220222.zip",
+      "when": [
+        {
+          "fileExists": "${install}/config.json"
+        },
+        {
+          "fileExists": "${install}/d3d9.dll"
+        }
+      ]
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1564851593",
+  "upstream": "gamefixes-gog/umu-1564851593.py",
+  "upstreamCommit": "b15be33"
+}

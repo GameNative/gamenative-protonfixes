@@ -1,0 +1,27 @@
+{
+  "aliases": [
+    {
+      "id": "umu-2620",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "2620",
+  "name": "Call of Duty",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2620.py",
+  "upstreamCommit": "5282529"
+}

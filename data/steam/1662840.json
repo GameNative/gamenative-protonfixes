@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "2042701637",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "1662840",
+  "name": "Parquet",
+  "schema": 1,
+  "steps": [
+    {
+      "append": "-vomstyle=layer",
+      "op": "launch_args"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1662840.py",
+  "upstreamCommit": "873faa2"
+}

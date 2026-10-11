@@ -1,0 +1,24 @@
+{
+  "aliases": [
+    {
+      "id": "7ea03b9c-98d7-4ba1-a1e8-40e266233950",
+      "store": "zoomplatform"
+    }
+  ],
+  "coverage": "full",
+  "id": "1500540",
+  "name": "Hardwar",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput": "n,b",
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1500540.py",
+  "upstreamCommit": "9bbdffa"
+}

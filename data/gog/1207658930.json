@@ -1,0 +1,15 @@
+{
+  "canonical": {
+    "id": "20920",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207658930",
+  "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+  "schema": 1,
+  "steps": [],
+  "store": "gog",
+  "umuId": "umu-20920",
+  "upstream": "gamefixes-gog/umu-20920.py",
+  "upstreamCommit": "490f513"
+}

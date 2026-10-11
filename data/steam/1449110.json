@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1449110",
+  "name": "The Outer Worlds 2",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2022",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1449110.py",
+  "upstreamCommit": "540dbc4"
+}

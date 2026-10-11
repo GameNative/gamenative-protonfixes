@@ -1,0 +1,28 @@
+{
+  "coverage": "full",
+  "id": "436670",
+  "name": "The Legend of Heroes: Trails in the Sky the 3rd",
+  "schema": 1,
+  "steps": [
+    {
+      "action": "mkdir",
+      "op": "file",
+      "to": "${drive_c}/users/${user}/Saved Games/FALCOM/ED_SORA3",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/users/${user}/Saved Games/FALCOM/ED_SORA3/ed6_win3.ini"
+        }
+      ]
+    },
+    {
+      "content": "[Video]\nAdapterDX9=0\nDeviceDX9=0\nModeDX9=48\nWidthDX9=640\nHeightDX9=480\nFormatDX9=22\nVendorIDDX9=4098\nDeviceIDDX9=30032\nKeepAspect=1\nHardwareVertexShaderDX9=1\nWindowMode=1\nUseMipmap=0\nWaitVSync=1\nLowTexture=0\nTextureFilter=2\nFpsMode=0\nFullAntiAlias=0\nLowEffect=0\nShadowQuality=2\nHighResoText=1\nForceTextReso=0\nHighResoAssets=1\nBoostFont=0\nMinimapMode=1\nStatusMode=1\nMenu=0\nGlowOn=1\nMoviePlay=1\n[Sound]\nBgmOff=0\nSeOff=0\nBgmVolume=6\nSeVolume=6\nNotUseDirectSound=0\nNotUseDirectSound3d=0\nBtVoiceOff=0\nBtVoiceLang=0\nSoftwareSoundBuffer=0\nNoBeeping=0\nBgmPack=0\n[Control]\nCamera45Deg=1\nUseGamaPad=1\nKeyboardUseDI=1\nMouseUseDI=1\nDefaultRun=0\nChrTrans=0\nAnalog=1\nRightCamera=1\nInvertCamera=0\nLastAccessFile=0\nButtonMode=1\nKeyboard=20111b41585a2628252742434d10564e12\nGamePad=000108050403020907060a0b\nPadDeviceNo=0\nPadSensitivity=60\nMouse=0102\nUseWheel=1\nWheelReverse=0\nRetryOffset=0\nTurboLvField=2\nTurboLvBattle=4\n[Mg05]\nMG05InversY=0\nMG05Sensitive=0\n",
+      "encoding": "utf-8",
+      "ifMissing": true,
+      "op": "write_file",
+      "path": "${drive_c}/users/${user}/Saved Games/FALCOM/ED_SORA3/ed6_win3.ini"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/436670.py",
+  "upstreamCommit": "71bf2c9"
+}

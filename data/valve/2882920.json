@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "2882920",
+  "name": "SSR Wives: The Murder Of My Winter Crush Demo",
+  "schema": 1,
+  "steps": [
+    {
+      "flags": [
+        "nomfdxgiman"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

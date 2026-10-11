@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "242760",
+  "name": "The Forest",
+  "schema": 1,
+  "steps": [
+    {
+      "nosmt": true,
+      "op": "cpu_topology"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/242760.py",
+  "upstreamCommit": "490f513"
+}

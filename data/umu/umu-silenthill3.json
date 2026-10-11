@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "umu-silenthill3",
+  "name": "Silent Hill 3",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directmusic",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dsound": "b"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-silenthill3",
+  "upstream": "gamefixes-umu/umu-silenthill3.py",
+  "upstreamCommit": "8854a7c"
+}

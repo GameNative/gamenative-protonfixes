@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "63700",
+  "name": "BIT.TRIP BEAT",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dx9_43",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/63700.py",
+  "upstreamCommit": "490f513"
+}

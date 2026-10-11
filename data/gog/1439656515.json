@@ -1,0 +1,35 @@
+{
+  "canonical": {
+    "id": "409720",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1439656515",
+  "name": "BioShock Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "esync": false,
+      "op": "sync"
+    },
+    {
+      "fsync": false,
+      "op": "sync"
+    },
+    {
+      "hive": "HKLM",
+      "key": "System\\CurrentControlSet\\Services\\winebus",
+      "op": "registry",
+      "values": {
+        "DisableHidraw": {
+          "type": "REG_DWORD",
+          "value": "1"
+        }
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-409710",
+  "upstream": "gamefixes-gog/umu-409710.py",
+  "upstreamCommit": "76ad49b"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [
+    {
+      "id": "1428935917",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "6030",
+  "name": "Star Wars: Jedi Knight II - Jedi Outcast",
+  "notes": [
+    "upstream fix has no main()"
+  ],
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/6030.py",
+  "upstreamCommit": "72c4f69"
+}

@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "311210",
+  "name": "Black Ops III",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "sound=alsa",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/311210.py",
+  "upstreamCommit": "7ffe360"
+}

@@ -1,0 +1,32 @@
+{
+  "canonical": {
+    "id": "50620",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-50620",
+  "name": "Darksiders",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_42",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_46",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-50620",
+  "upstream": "gamefixes-gog/umu-50620.py",
+  "upstreamCommit": "596da39"
+}

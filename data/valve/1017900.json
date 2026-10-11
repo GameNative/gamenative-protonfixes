@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "1017900",
+  "name": "Age of Empires: Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "nomfdxgiman",
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

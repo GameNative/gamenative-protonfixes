@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "1976029387",
+  "name": "LEGO® Pirates of the Caribbean: The Video Game",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-311770",
+  "upstream": "gamefixes-gog/umu-311770.py",
+  "upstreamCommit": "b830c6f"
+}

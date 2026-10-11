@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "377840",
+  "name": "FINAL FANTASY IX",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "PULSE_LATENCY_MSEC": "60"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/377840.py",
+  "upstreamCommit": "6970e8f"
+}

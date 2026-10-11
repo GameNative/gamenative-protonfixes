@@ -1,0 +1,15 @@
+{
+  "coverage": "none",
+  "id": "",
+  "name": null,
+  "schema": 1,
+  "steps": [
+    {
+      "op": "unsupported",
+      "reason": "not convertible",
+      "source": "return"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

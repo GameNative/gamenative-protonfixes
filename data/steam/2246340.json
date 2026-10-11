@@ -1,0 +1,18 @@
+{
+  "coverage": "full",
+  "id": "2246340",
+  "name": "Monster Hunter Wilds",
+  "override": "tools/protonfixes/overrides/steam/2246340.json",
+  "schema": 1,
+  "steps": [
+    {
+      "copy": false,
+      "fromAppid": 582010,
+      "op": "import_saves",
+      "path": "../../Program Files (x86)/Steam/userdata/${steam_account_id}/582010"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2246340.py",
+  "upstreamCommit": "129e2b0"
+}

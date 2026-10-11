@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "257420",
+  "name": "Serious Sam 4",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "hidevggpu"
+      ],
+      "flags": [
+        "hidevggpu"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}

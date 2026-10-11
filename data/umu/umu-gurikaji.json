@@ -1,0 +1,28 @@
+{
+  "canonical": {
+    "id": "345610",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-gurikaji",
+  "name": "The Fruit of Grisaia",
+  "override": "tools/protonfixes/overrides/steam/345610.json",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "set": {
+        "ENABLE_GAMESCOPE_WSI": "0"
+      },
+      "when": [
+        {
+          "gamescope": true
+        }
+      ]
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-gurikaji",
+  "upstream": "gamefixes-umu/umu-gurikaji.py",
+  "upstreamCommit": "2ad4134"
+}

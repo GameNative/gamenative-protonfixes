@@ -1,0 +1,25 @@
+{
+  "coverage": "full",
+  "id": "1798886022",
+  "name": "Hexen II",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_OLD_GL_STRING": "1"
+      }
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-9060",
+  "upstream": "gamefixes-gog/umu-9060.py",
+  "upstreamCommit": "77147fd"
+}

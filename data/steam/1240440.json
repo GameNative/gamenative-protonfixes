@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "1240440",
+  "name": "Halo Infinite needs vcrun2019",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "vcrun2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1240440.py",
+  "upstreamCommit": "a5e814a"
+}

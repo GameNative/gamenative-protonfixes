@@ -1,0 +1,21 @@
+{
+  "canonical": {
+    "id": "1207661743",
+    "store": "gog"
+  },
+  "coverage": "full",
+  "id": "1207661793",
+  "name": "Heroes Chronicles [Chapter 6] - The Fiery Moon",
+  "schema": 1,
+  "steps": [
+    {
+      "from": "FieryMoon.exe",
+      "op": "replace_command",
+      "to": "FieryMoon_og.exe"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207661793",
+  "upstream": "gamefixes-gog/umu-1207661793.py",
+  "upstreamCommit": "fbfebf9"
+}

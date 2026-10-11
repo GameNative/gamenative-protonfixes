@@ -1,0 +1,20 @@
+{
+  "coverage": "full",
+  "id": "4bff76f4-566a-4714-b481-95d3343afe22",
+  "name": "Incoming Trilogy",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3d8": "n,b",
+        "ddraw": "b",
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "zoomplatform",
+  "umuId": "umu-4bff76f4-566a-4714-b481-95d3343afe22",
+  "upstream": "gamefixes-zoomplatform/umu-4bff76f4-566a-4714-b481-95d3343afe22.py",
+  "upstreamCommit": "8854a7c"
+}

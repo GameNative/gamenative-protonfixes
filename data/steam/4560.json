@@ -1,0 +1,15 @@
+{
+  "coverage": "full",
+  "id": "4560",
+  "name": "Transformers: War for Cybertron",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "physx",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/4560.py",
+  "upstreamCommit": "5ed8518"
+}

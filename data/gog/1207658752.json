@@ -1,0 +1,29 @@
+{
+  "coverage": "full",
+  "id": "1207658752",
+  "name": "Tom Clancy's Rainbow Six",
+  "schema": 1,
+  "steps": [
+    {
+      "hive": "HKCU",
+      "key": "Software\\Wine",
+      "op": "registry",
+      "values": {
+        "Version": {
+          "type": "REG_SZ",
+          "value": "win98"
+        }
+      }
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-1207658752",
+  "upstream": "gamefixes-gog/umu-1207658752.py",
+  "upstreamCommit": "b610d9a"
+}

@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "1062040",
+  "name": "Dragon Star Varnir",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "xactengine3_7": "n"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1062040.py",
+  "upstreamCommit": "8854a7c"
+}

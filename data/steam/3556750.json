@@ -1,0 +1,21 @@
+{
+  "aliases": [
+    {
+      "id": "1296823600",
+      "store": "gog"
+    }
+  ],
+  "coverage": "full",
+  "id": "3556750",
+  "name": "Warhammer 40000: Dawn of War - Definitive Edition",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "ucrtbase2019",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/3556750.py",
+  "upstreamCommit": "8719713"
+}

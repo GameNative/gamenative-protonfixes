@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "39540",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "1207658719",
+  "name": "SpellForce Platinum",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "directplay",
+      "op": "verb"
+    }
+  ],
+  "store": "gog",
+  "umuId": "umu-39540",
+  "upstream": "gamefixes-gog/umu-39540.py",
+  "upstreamCommit": "4eef22e"
+}

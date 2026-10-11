@@ -1,0 +1,19 @@
+{
+  "coverage": "none",
+  "id": "1184050",
+  "name": "Gears Tactics",
+  "schema": 1,
+  "steps": [
+    {
+      "desktopOnly": [
+        "noopwr"
+      ],
+      "flags": [
+        "noopwr"
+      ],
+      "op": "compat_config"
+    }
+  ],
+  "store": "steam",
+  "upstream": "proton"
+}
