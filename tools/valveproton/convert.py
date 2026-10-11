@@ -78,9 +78,14 @@ def is_appid_expr(node):
     return False
 
 
+def is_appid_literal(node):
+    value = const_str(node)
+    return value is not None and value.isdigit()
+
+
 def str_items(node):
     if isinstance(node, (ast.List, ast.Tuple, ast.Set)):
-        if all(const_str(e) is not None for e in node.elts):
+        if node.elts and all(is_appid_literal(e) for e in node.elts):
             return list(node.elts)
     return None
 
@@ -128,7 +133,7 @@ def appid_predicate(test):
             items = str_items(right)
             if items is not None:
                 return items, isinstance(op, ast.NotIn), []
-        if isinstance(op, (ast.Eq, ast.NotEq)) and const_str(right) is not None:
+        if isinstance(op, (ast.Eq, ast.NotEq)) and is_appid_literal(right):
             return [right], isinstance(op, ast.NotEq), []
         return None
     if isinstance(test, ast.BoolOp) and isinstance(test.op, ast.And):

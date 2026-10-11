@@ -31,12 +31,6 @@
     "xalia": "Xalia accessibility layer is not shipped"
   },
   "entries": {
-    "steam/": {
-      "coverage": "none",
-      "file": "valve/.json",
-      "name": null,
-      "sha256": "f915681c520753574340c5bfbd11709b4cd625e44c8fe20e0680c956e96cb6ca"
-    },
     "steam/10150": {
       "coverage": "full",
       "file": "valve/10150.json",
@@ -1268,7 +1262,7 @@
       "sha256": "967b31024bebc1ae30f9159bc67eff55285a1928e9c6539314384884bfa0cf33"
     }
   },
-  "generatedAt": "2026-10-11T08:57:19Z",
+  "generatedAt": "2026-10-11T10:30:14Z",
   "schema": 1,
   "unparsed": [
     {
