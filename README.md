@@ -47,8 +47,8 @@ The app tries these sources in order and caches what it fetched under `filesDir/
    `<segment>` is one path segment (`<YYYYMMDD>-<short sha>`). The data is then read from
    `https://fixes.gamenative.app/protonfixes/<version>/`, a copy of `data/` (`<version>/index.json`,
    `<version>/steam/<appid>.json`, `<version>/verbs.json`, `<version>/valve/...`, ...).
-2. The `published` branch of this repo:
-   `https://raw.githubusercontent.com/GameNative/gamenative-protonfixes/published/data/`.
+2. The `main` branch of this repo:
+   `https://raw.githubusercontent.com/GameNative/gamenative-protonfixes/main/data/`.
 3. The local cache.
 
 A versioned folder is never changed after upload. `latest.json` is written last, so the app never sees a version
@@ -69,7 +69,7 @@ that is only partly uploaded.
    previous file.
 7. Runs `tools/valveproton/convert.py --out data/valve`.
 8. Commits a changed `tools/verbs/pins.json` to `main`.
-9. Force-pushes `data/` as one commit to the `published` branch.
+9. Commits the regenerated `data/` and any changed pins to `main`.
 10. If the `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` and `R2_ACCOUNT_ID` secrets are set, uploads `data/` to
     `s3://gamenative-protonfixes/protonfixes/<version>/` on R2 (served at `https://fixes.gamenative.app/protonfixes/`) and then writes `protonfixes/latest.json`.
 

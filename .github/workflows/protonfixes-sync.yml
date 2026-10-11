@@ -108,31 +108,17 @@ jobs:
             --out data/valve
           echo "PROTON_SHA=$(git -C "$UPSTREAM/proton" rev-parse --short HEAD)" >> "$GITHUB_ENV"
 
-      - name: Commit pins
-        run: |
-          if ! git diff --quiet tools/verbs/pins.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add tools/verbs/pins.json
-            git commit -m "Update verb download pins"
-            git push origin HEAD:main
-          fi
-
-      - name: Publish to the published branch
+      - name: Commit data and pins to main
         run: |
           VERSION="$(date -u +%Y%m%d)-$(git rev-parse --short HEAD)"
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
-          PUB="${{ runner.temp }}/published"
-          rm -rf "$PUB"
-          mkdir -p "$PUB"
-          cp -R data "$PUB/data"
-          cd "$PUB"
-          git init -q -b published
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -q -m "Data $VERSION" -m "umu-protonfixes $UPSTREAM_SHA, winetricks $WINETRICKS_SHA, Proton proton_11.0 $PROTON_SHA"
-          git push --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" published
+          git add data tools/verbs/pins.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "Data $VERSION" -m "umu-protonfixes $UPSTREAM_SHA, winetricks $WINETRICKS_SHA, Proton proton_11.0 $PROTON_SHA"
+            git push origin HEAD:main
+          fi
 
       - name: Upload to R2
         env:
