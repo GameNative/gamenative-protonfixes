@@ -17,7 +17,7 @@ The app never runs Python and does not ship this data; it downloads the JSON at 
 |---|---|
 | `tools/protonfixes/` | `convert.py` (umu-protonfixes + winetricks → JSON), `verbs.py` (verb classes), hand-written `overrides/`, tests. See its [README](tools/protonfixes/README.md). |
 | `tools/valveproton/` | `convert.py` (Valve's `proton` per-app tables → JSON), tests. |
-| `tools/verbs/` | `pins.py`/`pins.json` (sha256 pins for unhashed winetricks URLs), `msi_tables.py` (offline-installer layouts), tests. See its [README](tools/verbs/README.md). |
+| `tools/verbs/` | `pins.py`/`pins.json` (sha256 pins for unhashed winetricks URLs), `msi_tables.py` (offline-installer layouts), `ranges.py`/`ranges.json` (byte ranges of service-pack DLLs), `device_tools.py` (`data/tools.json`), tests. See its [README](tools/verbs/README.md). |
 | `data/` | The generated output (below). |
 
 ## The JSON contract
@@ -32,6 +32,7 @@ The app never runs Python and does not ship this data; it downloads the JSON at 
 - `<store>/<id>.json`: one fix document per store id; `<store>/default.json`: the store default.
 - `verbs.json`: the winetricks verb table.
 - `verbs/<verb>.layout.json`: offline-installer layouts, referenced by path and sha256 from `verbs.json`.
+- `tools.json`: the Termux aarch64 packages of `cabextract` and `7zz`, which some layouts need (`requiresTools`).
 - `valve/index.json` and `valve/<appid>.json`: Valve's per-app tables.
 - `REPORT.md`: coverage, unsupported steps, override state and verb classes. Read it after each run.
 
@@ -42,12 +43,12 @@ sha256 does not match the index.
 
 The app tries these sources in order and caches what it fetched under `filesDir/protonfixes/`:
 
-1. `https://downloads.gamenative.app/protonfixes/latest.json`, which is `{"version":"<segment>","schema":1}`.
+1. `https://fixes.gamenative.app/protonfixes/latest.json`, which is `{"version":"<segment>","schema":1}`.
    `<segment>` is one path segment (`<YYYYMMDD>-<short sha>`). The data is then read from
-   `https://downloads.gamenative.app/protonfixes/<version>/`, a copy of `data/` (`<version>/index.json`,
+   `https://fixes.gamenative.app/protonfixes/<version>/`, a copy of `data/` (`<version>/index.json`,
    `<version>/steam/<appid>.json`, `<version>/verbs.json`, `<version>/valve/...`, ...).
 2. The `published` branch of this repo:
-   `https://raw.githubusercontent.com/utkarshdalal/gamenative-protonfixes/published/data/`.
+   `https://raw.githubusercontent.com/GameNative/gamenative-protonfixes/published/data/`.
 3. The local cache.
 
 A versioned folder is never changed after upload. `latest.json` is written last, so the app never sees a version
@@ -57,7 +58,7 @@ that is only partly uploaded.
 
 `.github/workflows/protonfixes-sync.yml` runs every Monday and on manual dispatch:
 
-1. Installs `libarchive-tools` and `cabextract` (LZX cabinets in the installers).
+1. Installs `libarchive-tools`, `cabextract` and `7zip` (cabinets and 7z archives that libarchive cannot read).
 2. Clones umu-protonfixes (full history, blobs filtered, for per-file commits) with its umu-database submodule,
    winetricks, and ValveSoftware/Proton `proton_11.0`.
 3. Runs the three test suites.
@@ -70,7 +71,7 @@ that is only partly uploaded.
 8. Commits a changed `tools/verbs/pins.json` to `main`.
 9. Force-pushes `data/` as one commit to the `published` branch.
 10. If the `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` and `R2_ACCOUNT_ID` secrets are set, uploads `data/` to
-    `s3://gamenative-assets/protonfixes/<version>/` on R2 and then writes `protonfixes/latest.json`.
+    `s3://gamenative-protonfixes/protonfixes/<version>/` on R2 (served at `https://fixes.gamenative.app/protonfixes/`) and then writes `protonfixes/latest.json`.
 
 `.github/workflows/ci.yml` runs the tests on every pull request.
 
