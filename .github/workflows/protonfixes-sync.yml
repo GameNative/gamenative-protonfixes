@@ -28,7 +28,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install cabinet tools
-        run: sudo apt-get update && sudo apt-get install -y libarchive-tools cabextract
+        run: sudo apt-get update && sudo apt-get install -y libarchive-tools cabextract 7zip
 
       - name: Clone umu-protonfixes
         env:

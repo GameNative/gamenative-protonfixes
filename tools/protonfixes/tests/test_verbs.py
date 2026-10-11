@@ -195,12 +195,14 @@ class VerbClassTests(unittest.TestCase):
 
     def test_offline_installer_records_an_existing_layout(self):
         with open(os.path.join(self.layouts, 'vcrun2019.layout.json'), 'w') as f:
-            f.write('{"schema": 1}\n')
+            f.write('{"schema": 1, "requiresTools": ["7zz", "cabextract"], "dictSizeBytes": 67108864}\n')
         try:
             resolved = {k: v for k, v in self.wt.resolve('vcrun2019').items() if v is not None}
             vc = verbs.classify('vcrun2019', resolved, self.wt, self.pins, self.layouts)
             self.assertEqual(vc['layout']['path'], 'verbs/vcrun2019.layout.json')
             self.assertEqual(len(vc['layout']['sha256']), 64)
+            self.assertEqual(vc['requiresTools'], ['7zz', 'cabextract'])
+            self.assertEqual(vc['dictSizeBytes'], 67108864)
         finally:
             os.remove(os.path.join(self.layouts, 'vcrun2019.layout.json'))
 

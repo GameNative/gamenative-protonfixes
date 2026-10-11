@@ -74,6 +74,9 @@ REQUIRES = {
     'xna40': [['dotnet40', 'dotnet45', 'dotnet452', 'dotnet462', 'dotnet472', 'dotnet48']],
     'xna31': [['dotnet20sp2', 'dotnet35sp1']],
 }
+MSI_PACKAGES = {
+    'dotnet452': ['netfx_Full_GDR_x86.msi', 'netfx_Full_GDR_x64.msi'],
+}
 MSI_WINXP = {'VersionNT': '501', 'VersionNT64': '502', 'WindowsBuild': '3790', 'ServicePackLevel': '2'}
 MSI_WIN7 = {'VersionNT': '601', 'VersionNT64': '601', 'WindowsBuild': '7601', 'ServicePackLevel': '1'}
 MSI_PROPERTIES = dict(
@@ -298,7 +301,18 @@ def _layout_sha(verb, layout_dir):
     if not os.path.isfile(path):
         return None
     with open(path, 'rb') as f:
-        return {'path': 'verbs/%s.layout.json' % verb, 'sha256': hashlib.sha256(f.read()).hexdigest()}
+        data = f.read()
+    return {'path': 'verbs/%s.layout.json' % verb, 'sha256': hashlib.sha256(data).hexdigest()}
+
+
+def _layout_needs(verb, layout_dir):
+    """`requiresTools` and `dictSizeBytes` of the verb's layout, when it has them."""
+    try:
+        with open(os.path.join(layout_dir, '%s.layout.json' % verb), encoding='utf-8') as f:
+            layout = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return {k: layout[k] for k in ('requiresTools', 'dictSizeBytes') if layout.get(k)}
 
 
 def classify(name, resolved, wt=None, pins=None, layout_dir=None, ranges=None):
@@ -402,11 +416,14 @@ def _offline(name, verb, lines, pins, layout_dir):
                                     for arch in ('x86', 'x64')]
     if name in REQUIRES:
         verb['requires'] = REQUIRES[name]
+    if name in MSI_PACKAGES:
+        verb['msi'] = list(MSI_PACKAGES[name])
     if name in MSI_PROPERTIES:
         verb['msiProperties'] = dict(MSI_PROPERTIES[name])
     layout = _layout_sha(name, layout_dir)
     if layout:
         verb['layout'] = layout
+        verb.update(_layout_needs(name, layout_dir))
     return verb
 
 

@@ -278,6 +278,23 @@ class MsiTableTests(unittest.TestCase):
         self.assertEqual(msi_tables.burn_names(ux.decode('latin-1')), {'a0': 'packages/x/a.msi'})
         self.assertEqual(msi_tables.embedded_cabinets(data), found)
 
+    def test_tool_hops_and_7z_sfx(self):
+        self.assertEqual(msi_tables.member_hop('a0', 'bsdtar'), 'a0')
+        self.assertEqual(msi_tables.member_hop('a0', 'python'), 'a0')
+        self.assertEqual(msi_tables.member_hop('x.mzz', '7z', 1 << 29),
+                         {'type': 'tool', 'tool': '7zz', 'member': 'x.mzz', 'dictSizeBytes': 1 << 29})
+        self.assertEqual(msi_tables.member_hop('cab1', 'cabextract'), {'type': 'tool', 'tool': 'cabextract', 'member': 'cab1'})
+        hops = [{'slice': [1, 2]}, {'type': 'tool', 'tool': '7zz', 'member': 'a', 'dictSizeBytes': 64}, 'b']
+        self.assertEqual(msi_tables.hop_tools(hops), {'7zz'})
+        self.assertEqual(msi_tables.hop_dict_size(hops), 64)
+        self.assertEqual(msi_tables._dict_bytes('26'), 1 << 26)
+        self.assertEqual(msi_tables._dict_bytes('3m'), 3 << 20)
+        body = b'\0' * 40
+        header = msi_tables.SEVENZIP_MAGIC + b'\0\4' + b'\0' * 4 + struct.pack('<QQ', 30, 10) + b'\0' * 4
+        exe = b'MZ' + b'\0' * 100 + header + body + b'tail'
+        self.assertEqual(msi_tables.embedded_7z(exe), (102, 32 + 40))
+        self.assertIsNone(msi_tables.embedded_7z(b'MZ' + header[:20]))
+
     def test_choose_packages_prefers_full_framework(self):
         work = tempfile.mkdtemp()
         nodes = []
