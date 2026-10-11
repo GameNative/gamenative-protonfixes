@@ -1,0 +1,12 @@
+{
+  "rolling": [
+    "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe"
+  ],
+  "sha256": {
+    "https://download.microsoft.com/download/B/0/C/B0C80BA3-8AD6-4958-810B-6882485230B5/standalonesdk/Installers/2630bae9681db6a9f6722366f47d055c.cab": "d0440eb81c532dc23639c0c63f2fcde9deddb23bb4cce01c19ac6b96cc3e269d",
+    "https://download.microsoft.com/download/B/0/C/B0C80BA3-8AD6-4958-810B-6882485230B5/standalonesdk/Installers/61d57a7a82309cd161a854a6f4619e52.cab": "f736e161547095bb8d98c636b85fdfeb4070fefeee3c3745db3ce88f6eb1d9de",
+    "https://download.microsoft.com/download/F/1/3/F1300C9C-A120-4341-90DF-8A52509B23AC/standalonesdk/Installers/2630bae9681db6a9f6722366f47d055c.cab": "359ff931beaeb24f0493099baceddfdb27876617dc5057e86742de652faf1d38",
+    "https://download.microsoft.com/download/F/1/3/F1300C9C-A120-4341-90DF-8A52509B23AC/standalonesdk/Installers/61d57a7a82309cd161a854a6f4619e52.cab": "e3e05076784fed086203eff7c5ff4b406bbd2e649fd938eb73c1b7d05f49cdfc",
+    "https://ubistatic3-a.akamaihd.net/orbit/launcher_installer/UbisoftConnectInstaller.exe": "50431349564846c751281be4b855e00cc6a6d9ffcb2f8ec88c6745a61ad0d4b8"
+  }
+}
