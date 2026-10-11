@@ -1,0 +1,152 @@
+name: Sync protonfixes data
+
+on:
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: protonfixes-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install cabinet tools
+        run: sudo apt-get update && sudo apt-get install -y libarchive-tools cabextract
+
+      - name: Clone umu-protonfixes
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: |
+          mkdir -p "$UPSTREAM"
+          git clone --filter=blob:none https://github.com/Open-Wine-Components/umu-protonfixes "$UPSTREAM/umu-protonfixes"
+          if ! git -C "$UPSTREAM/umu-protonfixes" submodule update --init --depth 1 subprojects/umu-database; then
+            rm -rf "$UPSTREAM/umu-protonfixes/subprojects/umu-database"
+            git clone --depth 1 https://github.com/Open-Wine-Components/umu-database "$UPSTREAM/umu-protonfixes/subprojects/umu-database"
+          fi
+          test -f "$UPSTREAM/umu-protonfixes/subprojects/umu-database/umu-database.csv"
+
+      - name: Clone winetricks
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: git clone --depth 1 https://github.com/Winetricks/winetricks "$UPSTREAM/winetricks"
+
+      - name: Clone Valve Proton
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: git clone --depth 1 --branch proton_11.0 https://github.com/ValveSoftware/Proton "$UPSTREAM/proton"
+
+      - name: Run tests
+        run: |
+          python3 -I -m unittest discover tools/protonfixes/tests
+          python3 -I -m unittest discover tools/valveproton/tests
+          python3 -I -m unittest discover tools/verbs/tests
+
+      - name: Convert protonfixes
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: |
+          python3 -I tools/protonfixes/convert.py \
+            --protonfixes "$UPSTREAM/umu-protonfixes" \
+            --umu-database "$UPSTREAM/umu-protonfixes/subprojects/umu-database/umu-database.csv" \
+            --winetricks "$UPSTREAM/winetricks/src/winetricks" \
+            --out data
+          echo "UPSTREAM_SHA=$(git -C "$UPSTREAM/umu-protonfixes" rev-parse --short HEAD)" >> "$GITHUB_ENV"
+          echo "WINETRICKS_SHA=$(git -C "$UPSTREAM/winetricks" rev-parse --short HEAD)" >> "$GITHUB_ENV"
+
+      - name: Pin unpinned verb downloads
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: |
+          python3 -I tools/verbs/pins.py --verbs data/verbs.json
+          if ! git diff --quiet tools/verbs/pins.json; then
+            python3 -I tools/protonfixes/convert.py \
+              --protonfixes "$UPSTREAM/umu-protonfixes" \
+              --umu-database "$UPSTREAM/umu-protonfixes/subprojects/umu-database/umu-database.csv" \
+              --winetricks "$UPSTREAM/winetricks/src/winetricks" \
+              --out data
+          fi
+
+      - name: Cache verb installer downloads
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/verb-downloads
+          key: verb-downloads-${{ hashFiles('data/verbs.json') }}
+          restore-keys: verb-downloads-
+
+      - name: Build offline-installer layouts
+        run: |
+          python3 -I tools/verbs/msi_tables.py \
+            --verbs data/verbs.json \
+            --out data/verbs \
+            --cache "${{ runner.temp }}/verb-downloads" \
+            --update-verbs
+
+      - name: Convert Valve Proton tables
+        env:
+          UPSTREAM: ${{ runner.temp }}/upstream
+        run: |
+          python3 -I tools/valveproton/convert.py \
+            --proton "$UPSTREAM/proton/proton" \
+            --branch proton_11.0 \
+            --out data/valve
+          echo "PROTON_SHA=$(git -C "$UPSTREAM/proton" rev-parse --short HEAD)" >> "$GITHUB_ENV"
+
+      - name: Commit pins
+        run: |
+          if ! git diff --quiet tools/verbs/pins.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add tools/verbs/pins.json
+            git commit -m "Update verb download pins"
+            git push origin HEAD:main
+          fi
+
+      - name: Publish to the published branch
+        run: |
+          VERSION="$(date -u +%Y%m%d)-$(git rev-parse --short HEAD)"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          PUB="${{ runner.temp }}/published"
+          rm -rf "$PUB"
+          mkdir -p "$PUB"
+          cp -R data "$PUB/data"
+          cd "$PUB"
+          git init -q -b published
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Data $VERSION" -m "umu-protonfixes $UPSTREAM_SHA, winetricks $WINETRICKS_SHA, Proton proton_11.0 $PROTON_SHA"
+          git push --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" published
+
+      - name: Upload to R2
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$AWS_SECRET_ACCESS_KEY" ] || [ -z "$R2_ACCOUNT_ID" ]; then
+            echo "R2 secrets are not set; skipping upload"
+            exit 0
+          fi
+          ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          aws s3 sync data "s3://gamenative-assets/protonfixes/${VERSION}/" --endpoint-url "$ENDPOINT" --no-progress
+          printf '{"version":"%s","schema":1}\n' "$VERSION" > "${{ runner.temp }}/latest.json"
+          aws s3 cp "${{ runner.temp }}/latest.json" "s3://gamenative-assets/protonfixes/latest.json" \
+            --endpoint-url "$ENDPOINT" --content-type application/json --cache-control "max-age=300"
