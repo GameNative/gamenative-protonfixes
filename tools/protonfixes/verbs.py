@@ -21,6 +21,7 @@ import shlex
 CLASSES = ('component', 'registry', 'download', 'offline_installer', 'exec', 'skip')
 HERE = os.path.dirname(os.path.abspath(__file__))
 PINS_PATH = os.path.join(HERE, '..', 'verbs', 'pins.json')
+RANGES_PATH = os.path.join(HERE, '..', 'verbs', 'ranges.json')
 LAYOUT_DIR = os.path.join(HERE, '..', '..', 'data', 'verbs')
 
 EXTRA_VERBS = [
@@ -95,14 +96,18 @@ EXEC_ENTRY = {'openal': 'oalinst.exe'}
 EXEC_TIMEOUT = {'ubisoftconnect': 1200}
 EXEC_GAME_COPY = {'ubisoftconnect'}
 
-SKIP = {
-    'gdiplus': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
-    'usp10': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
-    'oleaut32': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
-    'crypt32': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
-    'wininet': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
-    'urlmon': 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used',
+SERVICE_PACK_SKIP = 'taken from the Windows 7 SP1 update (several hundred MB); Wine\'s builtin is used'
+RANGE_VERBS = {
+    'gdiplus': SERVICE_PACK_SKIP,
+    'usp10': SERVICE_PACK_SKIP,
+    'oleaut32': SERVICE_PACK_SKIP,
+    'crypt32': SERVICE_PACK_SKIP,
+    'wininet': SERVICE_PACK_SKIP,
+    'urlmon': SERVICE_PACK_SKIP,
     'msxml3': 'the 64-bit DLL is taken from the Windows 7 SP1 update; Wine\'s builtin is used',
+}
+RANGE_NOTE = 'each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download'
+SKIP = {
     'ie8': 'Internet Explorer 8 needs its own installer and the Windows 7 SP1 update',
     'icodecs': 'the Indeo codec installer needs a GUI and registers drivers under Wine',
     'webview2': 'the WebView2 runtime installer does not work under Wine on Android',
@@ -133,6 +138,46 @@ def load_pins(path=None):
             return {k: v.lower() for k, v in json.load(f).get('sha256', {}).items()}
     except (OSError, ValueError):
         return {}
+
+
+def load_ranges(path=None):
+    try:
+        with open(path or RANGES_PATH, encoding='utf-8') as f:
+            return json.load(f).get('files', {})
+    except (OSError, ValueError):
+        return {}
+
+
+def range_key(entry):
+    return '%s:%s' % ((entry.get('sha256') or '').lower(),
+                      '|'.join(list(entry.get('nested') or []) + [entry.get('entry') or '']))
+
+
+def range_hops(record):
+    hops = [{'type': 'range', 'url': record['url'], 'sha256': record['sha256'], 'offset': record['offset'],
+             'length': record['length'], 'rangeSha256': record['rangeSha256'], 'header': record['header']}]
+    hops.extend({'type': 'cab', 'member': member} for member in record['members'])
+    return hops
+
+
+def _ranged(name, verb, ranges):
+    """A `download` verb whose files come from byte ranges, or a `skip` verb when a file has no usable range."""
+    files = verb.get('files', [])
+    records = [ranges.get(range_key(entry)) for entry in files]
+    if not files or any(r is None for r in records):
+        verb.update({'class': 'skip', 'reason': RANGE_VERBS[name]})
+        return verb
+    if any(r.get('tooLarge') for r in records):
+        verb.update({'class': 'skip', 'reason': 'slice too large'})
+        return verb
+    for entry, record in zip(files, records):
+        entry['hops'] = range_hops(record)
+        entry['extractedSha256'] = record['extractedSha256']
+        entry['extractedSize'] = record['extractedSize']
+    verb['class'] = 'download'
+    verb['note'] = RANGE_NOTE
+    verb.pop('reason', None)
+    return verb
 
 
 def function_lines(wt, verb):
@@ -256,9 +301,10 @@ def _layout_sha(verb, layout_dir):
         return {'path': 'verbs/%s.layout.json' % verb, 'sha256': hashlib.sha256(f.read()).hexdigest()}
 
 
-def classify(name, resolved, wt=None, pins=None, layout_dir=None):
+def classify(name, resolved, wt=None, pins=None, layout_dir=None, ranges=None):
     """Adds `class` and that class's data to one resolved verb; never drops what older builds read."""
     pins = pins if pins is not None else {}
+    ranges = ranges if ranges is not None else {}
     layout_dir = layout_dir or LAYOUT_DIR
     verb = dict(resolved)
     _with_pins(verb.get('files', []), pins)
@@ -266,6 +312,8 @@ def classify(name, resolved, wt=None, pins=None, layout_dir=None):
     if name in SKIP:
         verb.update({'class': 'skip', 'reason': SKIP[name]})
         return verb
+    if name in RANGE_VERBS:
+        return _ranged(name, verb, ranges)
     if name in COMPONENTS:
         verb['class'] = 'component'
         verb['component'] = COMPONENTS[name]
@@ -362,9 +410,10 @@ def _offline(name, verb, lines, pins, layout_dir):
     return verb
 
 
-def classify_all(verbs, wt=None, pins=None, layout_dir=None):
+def classify_all(verbs, wt=None, pins=None, layout_dir=None, ranges=None):
     pins = load_pins() if pins is None else pins
-    return {name: classify(name, v, wt, pins, layout_dir) for name, v in verbs.items()}
+    ranges = load_ranges() if ranges is None else ranges
+    return {name: classify(name, v, wt, pins, layout_dir, ranges) for name, v in verbs.items()}
 
 
 def unpinned(verbs):

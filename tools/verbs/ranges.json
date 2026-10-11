@@ -1,0 +1,244 @@
+{
+ "files": {
+  "167bb78d4adc957cc39fb4902517e1f32b1e62092353be5f8fb9ee647642de7e:i386/msasn1.dl_|*": {
+   "extractedSha256": "8d2b6750e90a27bfa916520cc3a52fbeac317aea40662bc0d9b71e4de34c1207",
+   "extractedSize": 53008,
+   "folderBytes": 135290698,
+   "header": "TVNDRgAAAAAXjhsCAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAaAAAAEIEAxU1jyACAAAAAAAA0y6iYAAAcGFkZGluZy5iaW4Au14AADWPIAIAANMuomAgAGkzODZcbXNhc24xLmRsXwA=",
+   "length": 35360175,
+   "members": [
+    "i386/msasn1.dl_",
+    "msasn1.dll"
+   ],
+   "offset": 179739,
+   "rangeSha256": "5433453008cab2b40a7cc3bd9f664108b1b79fe50285742d126c191a9e67701d",
+   "sha256": "167bb78d4adc957cc39fb4902517e1f32b1e62092353be5f8fb9ee647642de7e",
+   "url": "http://x3270.bgp.nu/download/specials/W2KSP4_EN.EXE"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_5d772bc73c15dfe5/crypt32.dll": {
+   "extractedSha256": "9179657aa2928627d73608d7eba5a9a8d7507f9f67dd8ec1011c76aee4914043",
+   "extractedSize": 1154048,
+   "folderBytes": 76649828,
+   "header": "TVNDRgAAAAC4hT4DAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAvAAAAD8TAxWnxo0JAAAAAAAAdD1NIgAAcGFkZGluZy5iaW4AAJwRAKfGjQkAAHQ9TSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1jcnlwdDMyLWRsbF8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfNWQ3NzJiYzczYzE1ZGZlNVxjcnlwdDMyLmRsbAA=",
+   "length": 54428924,
+   "members": [
+    "x86_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_5d772bc73c15dfe5/crypt32.dll"
+   ],
+   "offset": 182385923,
+   "rangeSha256": "7ec9870f5e3358f47df49d6ef964a3b2fd11648162fc4c9609785ed798768ad6",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_d1a4c8feac0dfcdb/urlmon.dll": {
+   "extractedSha256": "669bed2f3a2cffb5e25fe6cf6956e61036fa1d9127ae59f05b22cfd57cea3e2a",
+   "extractedSize": 1229824,
+   "folderBytes": 76649828,
+   "header": "TVNDRgAAAAA+KLQAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxgAAAO4DAxVBFeQBAAAAAAAAdD2xIgAAcGFkZGluZy5iaW4AAMQSAEEV5AEAAHQ9sSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pLi5lcnNhbmRzZWN1cml0eXpvbmVzXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV9kMWE0YzhmZWFjMGRmY2RiXHVybG1vbi5kbGwA",
+   "length": 11806584,
+   "members": [
+    "x86_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_d1a4c8feac0dfcdb/urlmon.dll"
+   ],
+   "offset": 182385923,
+   "rangeSha256": "95a1ae59f340bb9fc2956e6a5cdb180faa01cd4dcd7854627850fe86b72534fe",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_1eaaa4a07717236e/wininet.dll": {
+   "extractedSha256": "4b01872788057ecf5a1ac6647512f5671213f76651ff8e808f1310a1240f35a2",
+   "extractedSize": 980992,
+   "folderBytes": 82035708,
+   "header": "TVNDRgAAAAAn9VgDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxwAAALUYAxVuOksMAAAAAAAAdD2zIgAAcGFkZGluZy5iaW4AAPgOAG46SwwAAHQ9syIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pLi50b2NvbGltcGxlbWVudGF0aW9uXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV8xZWFhYTRhMDc3MTcyMzZlXHdpbmluZXQuZGxsAA==",
+   "length": 56161376,
+   "members": [
+    "x86_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_1eaaa4a07717236e/wininet.dll"
+   ],
+   "offset": 19022073,
+   "rangeSha256": "4a97219f4246b8ce80bc691e2b728999ff6e729001178a556fe6f9962841c863",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll": {
+   "extractedSha256": "f5cd7de4b315f318d495c4e28292fa47b96640d044502131934190ec58f3d1d5",
+   "extractedSize": 2064384,
+   "folderBytes": 76649828,
+   "header": "TVNDRgAAAADznF0CAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxQAAAGwOAxXWGBYHAAAAAAAAdD1qIgAAcGFkZGluZy5iaW4AAIAfANYYFgcAAHQ9aiIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pZS1ydW50aW1ldXRpbGl0aWVzXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV82NDY1NWI3YzYxYzg0MWNiXGllcnR1dGlsLmRsbAA=",
+   "length": 39689262,
+   "members": [
+    "x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll"
+   ],
+   "offset": 182385923,
+   "rangeSha256": "d1dc2793819f4ef9852dbd5426a465b707d8b4b60b550c7f5df0c41df3a529a3",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_bf07947959bc4c33/oleaut32.dll": {
+   "extractedSha256": "045887f7424a0fae471bd285ed7a3507efdcef986313651e462323ace3312173",
+   "extractedSize": 571904,
+   "folderBytes": 71150302,
+   "header": "TVNDRgAAAADKv4MDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAwAAAAI0UAxXMRj0KAAAAAAAAdD2ZIgAAcGFkZGluZy5iaW4AALoIAMxGPQoAAHQ9mSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1vbGUtYXV0b21hdGlvbl8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfYmYwNzk0Nzk1OWJjNGMzM1xvbGVhdXQzMi5kbGwA",
+   "length": 58965770,
+   "members": [
+    "x86_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_bf07947959bc4c33/oleaut32.dll"
+   ],
+   "offset": 259035751,
+   "rangeSha256": "ce1ebd1c708ed1c38eebcbec8c6f339f6bb0ff3f0c6c70986bce12018d1a030a",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_af01e2f9b6be7939/usp10.dll": {
+   "extractedSha256": "eb5da86810d405555c84f4d452a604665250ab5d01714e0fbecf81cc8e791ac5",
+   "extractedSize": 626176,
+   "folderBytes": 71150302,
+   "header": "TVNDRgAAAAA21MwAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAsgAAAMMEAxW7oFcCAAAAAAAAdD2xIgAAcGFkZGluZy5iaW4AAI4JALugVwIAAHQ9sSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy11c3BfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2FmMDFlMmY5YjZiZTc5MzlcdXNwMTAuZGxsAA==",
+   "length": 13423492,
+   "members": [
+    "x86_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_af01e2f9b6be7939/usp10.dll"
+   ],
+   "offset": 259035751,
+   "rangeSha256": "b75c59ad34d711431c82da9d8fb2cef500e0aa570b3b5e18947d5cec977b1385",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97:x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80/gdiplus.dll": {
+   "extractedSha256": "c07a936009fb275d56dc451c7d05b5f5a3f4dcd985c7f02dee57d674034c602b",
+   "extractedSize": 1624576,
+   "folderBytes": 71150302,
+   "header": "TVNDRgAAAAC+OdMBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuAAAABgLAxU6KHMFAAAAAAAAdD3lHgAAcGFkZGluZy5iaW4AAMoYADoocwUAAHQ95R4gAHg4Nl9taWNyb3NvZnQud2luZG93cy5nZGlwbHVzXzY1OTViNjQxNDRjY2YxZGZfMS4xLjc2MDEuMTc1MTRfbm9uZV83MmQxOGE0Mzg2Njk2YzgwXGdkaXBsdXMuZGxsAA==",
+   "length": 30619910,
+   "members": [
+    "x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80/gdiplus.dll"
+   ],
+   "offset": 259035751,
+   "rangeSha256": "f30c562d2bf2c92a4c7bc6f5850ca80d8959737e39d9a73b2a4f3ba5d63c8144",
+   "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_b995c74af473511b/crypt32.dll": {
+   "extractedSha256": "276d1c9c78c529625c2ef3d77079324628686ea184767971901a1de93681c133",
+   "extractedSize": 1456128,
+   "folderBytes": 98972992,
+   "header": "TVNDRgAAAABq97cDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAvgAAALMVAxUjO8MKAAAAAAAAdD1AKwAAcGFkZGluZy5iaW4AADgWACM7wwoAAHQ9QCsgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWNyeXB0MzItZGxsXzMxYmYzODU2YWQzNjRlMzVfNi4xLjc2MDEuMTc1MTRfbm9uZV9iOTk1Yzc0YWY0NzM1MTFiXGNyeXB0MzIuZGxsAA==",
+   "length": 62387884,
+   "members": [
+    "amd64_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_b995c74af473511b/crypt32.dll"
+   ],
+   "offset": 126375580,
+   "rangeSha256": "113be4dc16382f26741d55b473e34d8a9c00288c0144fe70d2bb63e39be2a739",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_2dc36482646b6e11/urlmon.dll": {
+   "extractedSha256": "2590e88cab52fcc1b24cb262d293131c6280a5f234e0c130e77aa8697efa3b5f",
+   "extractedSize": 1490944,
+   "folderBytes": 99332122,
+   "header": "TVNDRgAAAACabQcBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAyAAAAGAGAxUG/BgDAAAAAAAAdD1uKwAAcGFkZGluZy5iaW4AAMAWAAb8GAMAAHQ9bisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWkuLmVyc2FuZHNlY3VyaXR5em9uZXNfMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lXzJkYzM2NDgyNjQ2YjZlMTFcdXJsbW9uLmRsbAA=",
+   "length": 17263826,
+   "members": [
+    "amd64_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_2dc36482646b6e11/urlmon.dll"
+   ],
+   "offset": 225348572,
+   "rangeSha256": "33a661d325dd7b5be6bc4e368caa2b137819a6957a543adbb81a1d3118d316a1",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_7ac940242f7494a4/wininet.dll": {
+   "extractedSha256": "e3ebf44621efc6381baae0f0efc13c356dcb6ee31bb258137edb3cc3e18549b5",
+   "extractedSize": 1188864,
+   "folderBytes": 96035508,
+   "header": "TVNDRgAAAAC7tboBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAyQAAAG8KAxWq/CQFAAAAAAAAdD1vKwAAcGFkZGluZy5iaW4AACQSAKr8JAUAAHQ9bysgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWkuLnRvY29saW1wbGVtZW50YXRpb25fMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lXzdhYzk0MDI0MmY3NDk0YTRcd2luaW5ldC5kbGwA",
+   "length": 29013234,
+   "members": [
+    "amd64_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_7ac940242f7494a4/wininet.dll"
+   ],
+   "offset": 324680694,
+   "rangeSha256": "c1b9f7b2f314c4aabab4d12d3786ea083f8823e5974356d5520eb44f4e7596ee",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll": {
+   "extractedSha256": "89b894eccf65704d00d30ea3bd45b184bfab8345b779f9ae2be66b9fc7226f72",
+   "extractedSize": 2444288,
+   "folderBytes": 110564354,
+   "header": "TVNDRgAAAACtcPoAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxwAAAGAOAxVYswoHAAAAAAAAdD1SKwAAcGFkZGluZy5iaW4AAEwlAFizCgcAAHQ9UisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWllLXJ1bnRpbWV1dGlsaXRpZXNfMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lX2MwODNmNzAwMWEyNWIzMDFcaWVydHV0aWwuZGxsAA==",
+   "length": 16412646,
+   "members": [
+    "amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll"
+   ],
+   "offset": 15811226,
+   "rangeSha256": "f4360e8c8662979f543a5a8d5ada172cab2b7c8342d1502882feca540ad4fdc0",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_e6944609ad75ac7d/msxml3.dll": {
+   "extractedSha256": "3b864d1471ed0949b02f1fa251b987185abeaddcbecd44efdbb6a7b7f03ca8bc",
+   "extractedSize": 1881088,
+   "folderBytes": 98972992,
+   "header": "TVNDRgAAAADPcwEFAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuQAAALscAxWKV0AOAAAAAAAAdD1mKwAAcGFkZGluZy5iaW4AALQcAIpXQA4AAHQ9ZisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLW1zeG1sMzBfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2U2OTQ0NjA5YWQ3NWFjN2RcbXN4bWwzLmRsbAA=",
+   "length": 83981078,
+   "members": [
+    "amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_e6944609ad75ac7d/msxml3.dll"
+   ],
+   "offset": 126375580,
+   "rangeSha256": "b383911f8520d6dc8c4bbdf083f3e02152821c26e9b761ca8424d5baa45a369e",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_1b262ffd1219bd69/oleaut32.dll": {
+   "extractedSha256": "0813749847b08f6577791d18ad9eca6dff5b41c2f727ab5ee9e5bf9602ed50cb",
+   "extractedSize": 861696,
+   "folderBytes": 110564354,
+   "header": "TVNDRgAAAAA2XQoEAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAwgAAANMgAxW3U1wQAAAAAAAAdD1sKwAAcGFkZGluZy5iaW4AACYNALdTXBAAAHQ9bCsgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLW9sZS1hdXRvbWF0aW9uXzMxYmYzODU2YWQzNjRlMzVfNi4xLjc2MDEuMTc1MTRfbm9uZV8xYjI2MmZmZDEyMTliZDY5XG9sZWF1dDMyLmRsbAA=",
+   "length": 67787892,
+   "members": [
+    "amd64_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_1b262ffd1219bd69/oleaut32.dll"
+   ],
+   "offset": 15811226,
+   "rangeSha256": "9d615f5a4347e1d398bf3f43ca7ad9429388222b6b5c82a1d1f91cfb5f9e7ef1",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_0b207e7d6f1bea6f/usp10.dll": {
+   "extractedSha256": "2a3ec01f3bafe7d7d656886437f7ffecce440c0d3f3467804769ab4bf1ff7a99",
+   "extractedSize": 800256,
+   "folderBytes": 91375748,
+   "header": "TVNDRgAAAADwzy8BAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAtAAAAFYHAxVHup4DAAAAAAAAdD1uKwAAcGFkZGluZy5iaW4AADYMAEe6ngMAAHQ9bisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLXVzcF8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfMGIyMDdlN2Q2ZjFiZWE2Zlx1c3AxMC5kbGwA",
+   "length": 19910460,
+   "members": [
+    "amd64_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_0b207e7d6f1bea6f/usp10.dll"
+   ],
+   "offset": 420716202,
+   "rangeSha256": "9c73ad53b409fe727b9daebc37627b7aa9169bb54542da41d28c4930369c4d05",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a/gdiplus.dll": {
+   "extractedSha256": "980ea189929d95eb36e35980fff0c81f7b78de9422771fde8f4ac7a779f5bd89",
+   "extractedSize": 2165248,
+   "folderBytes": 98972992,
+   "header": "TVNDRgAAAADQnUIDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAugAAAFESAxWKTgcJAAAAAAAAdD10JgAAcGFkZGluZy5iaW4AAAohAIpOBwkAAHQ9dCYgAGFtZDY0X21pY3Jvc29mdC53aW5kb3dzLmdkaXBsdXNfNjU5NWI2NDE0NGNjZjFkZl8xLjEuNzYwMS4xNzUxNF9ub25lXzJiMjQ1MzZjNzFlZDQzN2FcZ2RpcGx1cy5kbGwA",
+   "length": 54697238,
+   "members": [
+    "amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a/gdiplus.dll"
+   ],
+   "offset": 126375580,
+   "rangeSha256": "880c590b91a401d403dc537a3bbe180ee20731fac1fa5a40da3c1564cc638b82",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  },
+  "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8:wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_f0e8f05be1d66e78/msxml3.dll": {
+   "extractedSha256": "d49c3b4b2ff0455a434b352de37070b6e13b5c5557cc688e6e46eec404840abe",
+   "extractedSize": 1236992,
+   "folderBytes": 98972992,
+   "header": "TVNDRgAAAAAbWOoEAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuQAAABIcAxWKw/UNAAAAAAAAdD19IgAAcGFkZGluZy5iaW4AAOASAIrD9Q0AAHQ9fSIgAHdvdzY0X21pY3Jvc29mdC13aW5kb3dzLW1zeG1sMzBfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2YwZThmMDViZTFkNjZlNzhcbXN4bWwzLmRsbAA=",
+   "length": 82466658,
+   "members": [
+    "wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_f0e8f05be1d66e78/msxml3.dll"
+   ],
+   "offset": 126375580,
+   "rangeSha256": "84a2981afa85a9c0eb5ea078b1cdc8b250d8c731b070771a56391e68b3a86624",
+   "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+   "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+  }
+ },
+ "schema": 1
+}

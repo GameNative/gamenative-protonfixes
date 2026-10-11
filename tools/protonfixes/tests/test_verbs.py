@@ -159,7 +159,7 @@ class VerbClassTests(unittest.TestCase):
         names = ['vcrun2019', 'vcrun2008', 'dotnet40', 'ubisoftconnect', 'directplay', 'd3dx9_43', 'd3dcompiler_47',
                  'gdiplus', 'sound=alsa', 'videomemorysize=default', 'win81', 'nosuchverb', 'hidewineexports=enable']
         resolved = {n: {k: v for k, v in cls.wt.resolve(n).items() if v is not None} for n in names}
-        cls.v = verbs.classify_all(resolved, cls.wt, cls.pins, cls.layouts)
+        cls.v = verbs.classify_all(resolved, cls.wt, cls.pins, cls.layouts, {})
 
     def test_every_verb_gets_a_known_class(self):
         for name, verb in self.v.items():
@@ -237,6 +237,28 @@ class VerbClassTests(unittest.TestCase):
         self.assertIn('Windows 7 SP1', self.v['gdiplus']['reason'])
         self.assertEqual(self.v['hidewineexports=enable']['class'], 'skip')
         self.assertEqual(self.v['nosuchverb']['class'], 'skip')
+
+    def test_service_pack_verbs_use_byte_ranges(self):
+        resolved = {k: v for k, v in self.wt.resolve('gdiplus').items() if v is not None}
+        entry = resolved['files'][0]
+        record = {'url': entry['url'], 'sha256': entry['sha256'], 'offset': 10, 'length': 20,
+                  'rangeSha256': 'b' * 64, 'header': 'TVNDRg==', 'members': [entry['entry']],
+                  'extractedSha256': 'c' * 64, 'extractedSize': 5, 'folderBytes': 99}
+        ranged = verbs.classify('gdiplus', resolved, self.wt, self.pins, self.layouts,
+                                {verbs.range_key(entry): record})
+        self.assertEqual(ranged['class'], 'download')
+        self.assertNotIn('reason', ranged)
+        f = ranged['files'][0]
+        self.assertEqual(f['hops'], [
+            {'type': 'range', 'url': entry['url'], 'sha256': entry['sha256'], 'offset': 10, 'length': 20,
+             'rangeSha256': 'b' * 64, 'header': 'TVNDRg=='},
+            {'type': 'cab', 'member': entry['entry']},
+        ])
+        self.assertEqual((f['extractedSha256'], f['extractedSize']), ('c' * 64, 5))
+        large = dict(record, tooLarge=True)
+        skipped = verbs.classify('gdiplus', resolved, self.wt, self.pins, self.layouts,
+                                 {verbs.range_key(entry): large})
+        self.assertEqual((skipped['class'], skipped['reason']), ('skip', 'slice too large'))
 
     def test_wayback_urls_use_the_raw_form(self):
         self.assertEqual(verbs.raw_url('https://web.archive.org/web/20120325002813/https://download.microsoft.com/x.msi'),

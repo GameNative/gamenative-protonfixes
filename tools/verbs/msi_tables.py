@@ -1100,7 +1100,7 @@ def file_sha256(path):
     return digest.hexdigest()
 
 
-def download(url, sha256, cache):
+def download(url, sha256, cache, max_bytes=MAX_DOWNLOAD_BYTES):
     os.makedirs(cache, exist_ok=True)
     target = os.path.join(cache, sha256)
     if os.path.isfile(target) and file_sha256(target) == sha256:
@@ -1114,8 +1114,8 @@ def download(url, sha256, cache):
             if not block:
                 break
             total += len(block)
-            if total > MAX_DOWNLOAD_BYTES:
-                raise LayoutError('%s is larger than %d bytes' % (url, MAX_DOWNLOAD_BYTES))
+            if total > max_bytes:
+                raise LayoutError('%s is larger than %d bytes' % (url, max_bytes))
             out.write(block)
     actual = file_sha256(partial)
     if actual != sha256:
