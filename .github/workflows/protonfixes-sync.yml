@@ -146,7 +146,7 @@ jobs:
             exit 0
           fi
           ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
-          aws s3 sync data "s3://gamenative-assets/protonfixes/${VERSION}/" --endpoint-url "$ENDPOINT" --no-progress
+          aws s3 sync data "s3://gamenative-protonfixes/protonfixes/${VERSION}/" --endpoint-url "$ENDPOINT" --no-progress
           printf '{"version":"%s","schema":1}\n' "$VERSION" > "${{ runner.temp }}/latest.json"
-          aws s3 cp "${{ runner.temp }}/latest.json" "s3://gamenative-assets/protonfixes/latest.json" \
+          aws s3 cp "${{ runner.temp }}/latest.json" "s3://gamenative-protonfixes/protonfixes/latest.json" \
             --endpoint-url "$ENDPOINT" --content-type application/json --cache-control "max-age=300"
