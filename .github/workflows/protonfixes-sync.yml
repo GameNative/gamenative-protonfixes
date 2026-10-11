@@ -117,6 +117,7 @@ jobs:
           git add data tools/verbs/pins.json
           if ! git diff --cached --quiet; then
             git commit -q -m "Data $VERSION" -m "umu-protonfixes $UPSTREAM_SHA, winetricks $WINETRICKS_SHA, Proton proton_11.0 $PROTON_SHA"
+            git pull --rebase -q origin main
             git push origin HEAD:main
           fi
 
