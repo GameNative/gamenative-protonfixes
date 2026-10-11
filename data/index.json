@@ -2117,10 +2117,10 @@
       "sha256": "de29c0378603f126e76d063501c6caec2a02aa73ea99497529428b750f3a1d65"
     },
     "steam/497360": {
-      "coverage": "partial",
+      "coverage": "full",
       "file": "steam/497360.json",
       "name": "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned",
-      "sha256": "09e691abdb5b2776b972c6cbbf43590c02d2f137100477c94329b0773630e2a0"
+      "sha256": "e6aa8b4e9d567071dcee07f3cfc969223c2b93829404b303e985e8af32c72560"
     },
     "steam/49900": {
       "coverage": "full",
@@ -2465,10 +2465,10 @@
       "sha256": "715c5bcaa648dbf35a608b7293c9f59e4df025ef19e75dbf8bf0e3b57cdf40c0"
     },
     "steam/950670": {
-      "coverage": "partial",
+      "coverage": "full",
       "file": "steam/950670.json",
       "name": "Gothic Playable Teaser",
-      "sha256": "d79792333cd90d001d38e585d8fa0018fdee2ea5b004975f3323e96304c04883"
+      "sha256": "5d484f0d02bb5533e04129e5371c2ddde9e1f95215225b2b98be841dae1a779c"
     },
     "steam/955050": {
       "coverage": "full",
@@ -2831,7 +2831,7 @@
       "sha256": "7cf296a6a4a322246ecde0dd6dda43fcd7e42f1c6cbd68d1566579adcc6e18c2"
     }
   },
-  "generatedAt": "2026-10-11T09:34:37Z",
+  "generatedAt": "2026-10-11T10:34:14Z",
   "schema": 1,
   "upstreamCommit": "7e57c0cb4e6d5918d3825cfdd5e3cf00d28700a0",
   "upstreamDate": "2026-10-10T13:56:58-06:00",

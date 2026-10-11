@@ -188,6 +188,11 @@ override applies to every document made from that file, aliases included. Format
   - `ifMissing` is never emitted. That condition is in `when` instead.
   - In a document that also has an unsupported step, `delete`/`move` steps that come before it become `unsupported`. This
     prevents half-applied destructive fixes, e.g. deleting the Desktop folder without making the link that replaces it.
+  - `glob: true` (only on `delete`): the last path component of `to` is a glob pattern (`*`, `?`, `[...]`;
+    case-sensitive, not recursive, as upstream `Path(dir).glob(pattern)`). Delete every regular file in that folder
+    whose name matches; directories are never deleted. Do nothing when the folder is missing.
+  - `minSizeBytes: N` (only with `glob`): delete a matched file only if its size is at least `N` bytes. Upstream
+    `size // 1000 // 1000 > 10` becomes `11000000`. Used by steam/950670 to remove huge log files.
 - `download`:
   - `backup` paths are relative to `to`.
   - `sha256` is `null` when upstream does not check the archive.
@@ -201,6 +206,12 @@ override applies to every document made from that file, aliases included. Format
   `ignore_user_setting` is dropped.
 - `env`: `set_game_drive(x)` is emitted as `PROTON_SET_GAME_DRIVE`. The converter never sees two values for one key that
   have the same `when`: when an env var is set more than once (e.g. around a winetricks call), only the last value is kept.
+- Screen placeholders (upstream `util.get_resolution()`), usable in `registry`, `ini` and `env` values: `${screen_w}`
+  and `${screen_h}` are the width and height in pixels of the screen the game runs on (the container resolution).
+  `${screen_w_h<N>}` (e.g. `${screen_w_h768}`) is the width that keeps that aspect ratio at height `N`:
+  `floor(screen_w * N / screen_h)`, from upstream `int(width / height * N)` (steam/497360 sets `Screen Width` to
+  it with `Screen Height` 768). `REG_DWORD` values with a screen placeholder are written as the decimal number after
+  expansion. Other arithmetic on the resolution stays `unsupported` ("derived screen resolution expression").
 - New placeholders: `${user}` (the prefix user name, see above), `${steam_id64}` and `${steam_account_id}`.
   `${steam_id64}` is the signed-in user's 64-bit SteamID (17 digits), which is what upstream `get_steam_account_id()`
   returns and what the SEGA/Square Enix save folders use. `${steam_account_id}` is the 32-bit account id (the

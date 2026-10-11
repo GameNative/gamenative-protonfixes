@@ -1,5 +1,5 @@
 {
-  "coverage": "partial",
+  "coverage": "full",
   "id": "497360",
   "name": "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned",
   "schema": 1,
@@ -57,13 +57,12 @@
         "Screen Height": {
           "type": "REG_DWORD",
           "value": "768"
+        },
+        "Screen Width": {
+          "type": "REG_DWORD",
+          "value": "${screen_w_h768}"
         }
       }
-    },
-    {
-      "op": "unsupported",
-      "reason": "derived screen resolution expression",
-      "source": "util.regedit_add(\n    'HKCU\\\\Software\\\\Sierra On-Line\\\\Gabriel Knight 3\\\\Engine',\n    'Screen Width',\n    'REG_DWORD',\n    hex(width),\n)"
     },
     {
       "hive": "HKCU",

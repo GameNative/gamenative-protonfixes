@@ -4,10 +4,10 @@
 - winetricks commit: `f3890f670867b5ffbc3938726db45c0f7d16c8ba`
 - upstream fix files: 468 (354 real files, 114 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
 - documents written: 468 (354 canonical, 114 aliases)
-- coverage: full 466, partial 2, none 0
-- coverage from the converter alone (before overrides): full 452, partial 6, none 10
+- coverage: full 468, partial 0, none 0
+- coverage from the converter alone (before overrides): full 454, partial 4, none 10
 - hand-ported overrides: 13 files, 13 applied to 17 documents
-- full documents whose verbs are all supported too: 400
+- full documents whose verbs are all supported too: 402
 
 ## Documents per store
 
@@ -16,7 +16,7 @@
 | egs | 26 | 6 | 20 | 26 | 0 | 0 |
 | gog | 77 | 27 | 50 | 77 | 0 | 0 |
 | humble | 1 | 0 | 1 | 1 | 0 | 0 |
-| steam | 313 | 294 | 19 | 311 | 2 | 0 |
+| steam | 313 | 294 | 19 | 313 | 0 | 0 |
 | ubisoft | 7 | 0 | 7 | 7 | 0 | 0 |
 | umu | 37 | 25 | 12 | 37 | 0 | 0 |
 | zoomplatform | 7 | 2 | 5 | 7 | 0 | 0 |
@@ -26,15 +26,11 @@
 | count | reason |
 |---|---|
 | 1 | pins the game to the Intel P-cores (taskset) from the host CPU topology |
-| 1 | derived screen resolution expression |
-| 1 | Path.glob() |
 
 ## Partial and none documents
 
 | document | coverage | name | reasons |
 |---|---|---|---|
-| steam/497360 | partial | Gabriel Knight 3: Blood of the Sacred, Blood of the Damned | derived screen resolution expression |
-| steam/950670 | partial | Gothic Playable Teaser | Path.glob() |
 
 ## Hand-ported overrides (`tools/protonfixes/overrides/`)
 
