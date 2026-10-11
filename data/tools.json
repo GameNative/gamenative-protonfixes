@@ -1,0 +1,53 @@
+{
+  "7zz": {
+    "arch": "aarch64",
+    "fileSha256": "b8d52c0aa056110155155c6a1015d113b6321bd8be3303e0a520c1b8827e47b1",
+    "libs": [
+      {
+        "fileSha256": "05bef9d3901910c3ff8ab450b03bc8b28383d363a2290f2f7b9aed7331ea6ff7",
+        "member": "data.tar.xz",
+        "name": "libc++_shared.so",
+        "needed": [
+          "libc.so",
+          "libm.so",
+          "libdl.so"
+        ],
+        "package": "libc++",
+        "path": "data/data/com.termux/files/usr/lib/libc++_shared.so",
+        "sha256": "53d0b84a7ba7459024257cb94d5b136fe13ef858567f65a8064b35950799f2ca",
+        "size": 341604,
+        "url": "https://packages.termux.dev/apt/termux-main/pool/main/libc/libc++/libc++_30_aarch64.deb",
+        "version": "30"
+      }
+    ],
+    "member": "data.tar.xz",
+    "needed": [
+      "libc.so",
+      "libdl.so",
+      "libc++_shared.so"
+    ],
+    "package": "7zip",
+    "path": "data/data/com.termux/files/usr/bin/7zz",
+    "schema": 1,
+    "sha256": "d0d87bcbcd11a932ab94926ac32717eca49b4ed45e3d7dde5d5a1503f3c05baf",
+    "size": 1555692,
+    "url": "https://packages.termux.dev/apt/termux-main/pool/main/7/7zip/7zip_26.04_aarch64.deb",
+    "version": "26.04"
+  },
+  "cabextract": {
+    "arch": "aarch64",
+    "fileSha256": "e981fb5b0e66cf048ecf1d9083faf167f1e27ef52f15570c68b689436c88d948",
+    "libs": [],
+    "member": "data.tar.xz",
+    "needed": [
+      "libc.so"
+    ],
+    "package": "cabextract",
+    "path": "data/data/com.termux/files/usr/bin/cabextract",
+    "schema": 1,
+    "sha256": "2337080a8dbbd937d7d861567eb6d9f4ee1b4491f373dbec1d27907735a284da",
+    "size": 26804,
+    "url": "https://packages.termux.dev/apt/termux-main/pool/main/c/cabextract/cabextract_1.11-1_aarch64.deb",
+    "version": "1.11-1"
+  }
+}
