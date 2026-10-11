@@ -1,5 +1,5 @@
 {
-  "coverage": "partial",
+  "coverage": "full",
   "id": "950670",
   "name": "Gothic Playable Teaser",
   "schema": 1,
@@ -40,9 +40,11 @@
       }
     },
     {
-      "op": "unsupported",
-      "reason": "Path.glob()",
-      "source": "for file in log_files:\n    file_size = file.stat().st_size  # Bytes\n    file_size = file_size // 1000 // 1000  # Megabytes\n    if file.is_file() and file_size > 10:\n        log.info(f'Removing log file \"{file}\" with a size of {file_size} MB.')\n        file.unlink()"
+      "action": "delete",
+      "glob": true,
+      "minSizeBytes": 11000000,
+      "op": "file",
+      "to": "${install}/GothicRemake/Saved/Logs/*.log"
     }
   ],
   "store": "steam",

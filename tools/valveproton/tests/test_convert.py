@@ -104,6 +104,13 @@ SAMPLE = textwrap.dedent('''
                 ('2000', 'arial.ttf'),    # Twenty
             }
 
+        def sync_appcache(self):
+            sgi = os.environ.get('SteamGameId', '')
+            if sgi == '':
+                return
+            if sgi != "":
+                pass
+
         def setup(self):
             if os.environ.get("SteamGameId", 0) == "2100":
                 srcdir = os.path.join("a", "b")
@@ -184,6 +191,10 @@ class ConvertTest(unittest.TestCase):
     def test_all_except_is_reported(self):
         self.assertEqual([u['ids'] for u in self.col.unparsed if u['kind'] == 'all-except'], [['900']])
         self.assertNotIn('900', self.docs)
+
+    def test_empty_appid_check_is_not_an_app(self):
+        self.assertNotIn('', self.docs)
+        self.assertTrue(all(appid.isdigit() for appid in self.docs))
 
     def test_generate_writes_index_and_prunes(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -23,6 +23,7 @@ import subprocess
 import sys
 import textwrap
 from collections import Counter, OrderedDict
+from fractions import Fraction
 from datetime import datetime, timezone
 
 SCHEMA = 1
@@ -97,6 +98,30 @@ class Opaque:
 
 class PathV(str):
     pass
+
+
+class GlobPath(PathV):
+    """One file matched by `Path(dir).glob(pattern)`: the dir joined with the pattern."""
+
+
+class GlobList:
+    def __init__(self, path):
+        self.path = path
+
+
+class FileSize:
+    """`path.stat().st_size // div`."""
+
+    def __init__(self, path, div=1):
+        self.path = path
+        self.div = div
+
+
+class ScreenRatio:
+    """`screen_w / screen_h * factor`."""
+
+    def __init__(self, factor):
+        self.factor = factor
 
 
 class Module:
@@ -310,8 +335,18 @@ def to_dnf(value):
     return value.dnf
 
 
+SCREEN_PLACEHOLDER = re.compile(r'^\$\{screen_(w|h|w_h\d+)\}$')
+
+
 def is_placeholder_value(value):
     return isinstance(value, str) and '${screen_' in value
+
+
+def screen_w_for_height(factor):
+    """`${screen_w_h<N>}`: the width that keeps the screen's aspect ratio at height N."""
+    if factor.denominator != 1 or factor <= 0:
+        raise Unsupported('derived screen resolution expression')
+    return '${screen_w_h%d}' % factor.numerator
 
 
 def norm_path(p):
@@ -864,6 +899,8 @@ class FixInterp:
             return self.exec_line_scan(s, it, env, guard)
         if isinstance(it, Opaque):
             raise Unsupported(it.reason)
+        if isinstance(it, GlobList):
+            return self.exec_glob_for(s, it, env, guard, frame)
         if isinstance(it, dict):
             items = list(it.keys())
         elif isinstance(it, (list, tuple, str)):
@@ -887,6 +924,25 @@ class FixInterp:
             del self.raw[start:]
             self.emit({'op': 'unsupported', 'reason': bad[0]['reason'], 'source': self.seg(s)}, entry_guard)
             return entry_guard
+        return guard
+
+    def exec_glob_for(self, s, it, env, guard, frame):
+        """A loop over `Path.glob()` whose only effect is deleting matched files becomes one glob delete."""
+        if not isinstance(s.target, ast.Name):
+            raise Unsupported('unsupported loop target')
+        for sub in ast.walk(s):
+            if isinstance(sub, (ast.Break, ast.Continue, ast.Return)):
+                raise Unsupported('break/continue in loop')
+        start = len(self.raw)
+        env[s.target.id] = GlobPath(it.path)
+        self.exec_block(s.body, env, guard, frame)
+        added = self.raw[start:]
+        bad = [st for st, g, p in added if st['op'] == 'unsupported']
+        if not bad and not all(st['op'] == 'file' and st.get('glob') for st, g, p in added):
+            bad = [{'reason': 'Path.glob() loop with other effects than deleting files'}]
+        if bad:
+            del self.raw[start:]
+            self.emit({'op': 'unsupported', 'reason': bad[0]['reason'], 'source': self.seg(s)}, guard)
         return guard
 
     def bind_target(self, target, value, env):
@@ -1058,6 +1114,8 @@ class FixInterp:
         left_node, right_node = node.left, node.comparators[0]
         left = self.ev_raw(left_node, env, guard)
         right = self.ev_raw(right_node, env, guard)
+        if isinstance(left, FileSize) or isinstance(right, FileSize):
+            return self.size_compare(op, left, right)
         if isinstance(op, (ast.In, ast.NotIn)):
             positive = isinstance(op, ast.In)
             if isinstance(right, Module) and right.name == 'os.environ' and isinstance(left, str):
@@ -1110,6 +1168,22 @@ class FixInterp:
             return bool(self.py_compare(op, left, right))
         except TypeError as e:
             raise Unsupported(f'comparison failed: {e}')
+
+    @staticmethod
+    def size_compare(op, left, right):
+        """`size // div > n` (or `>=`) as a minimum size in bytes; only glob deletes accept it."""
+        flip = {ast.Lt: ast.Gt, ast.LtE: ast.GtE}
+        if isinstance(right, FileSize) and type(op) in flip:
+            left, right, op = right, left, flip[type(op)]()
+        if not (isinstance(left, FileSize) and isinstance(right, int) and not isinstance(right, bool)):
+            raise Unsupported('comparison on a file size')
+        if isinstance(op, ast.Gt):
+            least = (right + 1) * left.div
+        elif isinstance(op, ast.GtE):
+            least = right * left.div
+        else:
+            raise Unsupported('comparison on a file size')
+        return mk_cond((frozenset([lit('minSize', norm_path(left.path), max(least, 0))]),))
 
     @staticmethod
     def env_equals(a, b):
@@ -1245,6 +1319,15 @@ class FixInterp:
         raise Unsupported(f'cannot format {type(x).__name__}')
 
     def binop(self, op, a, b):
+        num = lambda x: isinstance(x, (int, float)) and not isinstance(x, bool)
+        if isinstance(op, ast.Div) and a == '${screen_w}' and b == '${screen_h}':
+            return ScreenRatio(Fraction(1))
+        if isinstance(op, ast.Mult) and isinstance(a, ScreenRatio) and num(b):
+            return ScreenRatio(a.factor * Fraction(b))
+        if isinstance(op, ast.Mult) and isinstance(b, ScreenRatio) and num(a):
+            return ScreenRatio(b.factor * Fraction(a))
+        if isinstance(op, ast.FloorDiv) and isinstance(a, FileSize) and isinstance(b, int) and b > 0:
+            return FileSize(a.path, a.div * b)
         if is_placeholder_value(a) or is_placeholder_value(b):
             if isinstance(op, ast.Add) and isinstance(a, str) and isinstance(b, str):
                 return a + b
@@ -1314,6 +1397,8 @@ class FixInterp:
         if isinstance(base, StatObj):
             if name == 'st_mode':
                 return StatMode(base.path)
+            if name == 'st_size' and isinstance(base.path, GlobPath):
+                return FileSize(base.path)
             raise Unsupported(f'file stat {name}')
         if isinstance(base, UrlResp):
             if name == 'status':
@@ -1401,6 +1486,10 @@ class FixInterp:
             step['to'] = norm_path(dst)
         if recursive:
             step['recursive'] = True
+        if isinstance(src, GlobPath) or (isinstance(dst, GlobPath) and action != 'delete'):
+            raise Unsupported('file operation on a glob match')
+        if isinstance(dst, GlobPath):
+            step['glob'] = True
         for k in ('from', 'to'):
             if k in step and is_host_path(step[k]) and not (action == 'symlink' and k == 'from' and not step[k].startswith('/')):
                 raise Unsupported('file operation on a host path outside the prefix or game')
@@ -1663,6 +1752,10 @@ class FixInterp:
             return self.to_str(v)
         if name == 'int':
             v = R(0, 'x')
+            if isinstance(v, ScreenRatio):
+                return screen_w_for_height(v.factor)
+            if is_placeholder_value(v) and SCREEN_PLACEHOLDER.match(v):
+                return v
             if is_placeholder_value(v):
                 raise Unsupported('derived screen resolution expression')
             try:
@@ -1677,6 +1770,8 @@ class FixInterp:
                 raise Unsupported('float() of a runtime value')
         if name == 'hex':
             v = R(0, 'x')
+            if isinstance(v, str) and SCREEN_PLACEHOLDER.match(v):
+                return v
             if isinstance(v, int):
                 return hex(v)
             raise Unsupported('hex() of a runtime value')
@@ -1766,6 +1861,11 @@ class FixInterp:
                 return PathV(posixpath.join(obj, *parts))
             if meth == 'stat':
                 return StatObj(obj)
+            if meth == 'glob':
+                pattern = R(0, 'pattern')
+                if not isinstance(pattern, str) or '/' in pattern or '**' in pattern or isinstance(obj, GlobPath):
+                    raise Unsupported('Path.glob() with a recursive or runtime pattern')
+                return GlobList(posixpath.join(obj, pattern))
             if meth == 'chmod':
                 mode = R(0, 'mode')
                 if isinstance(mode, ReadonlyMode) and norm_path(mode.path) == norm_path(obj):
@@ -1779,7 +1879,8 @@ class FixInterp:
                 return obj
             raise Unsupported(f'Path.{meth}()')
         if isinstance(obj, tuple) and len(obj) == 3 and obj[0] == 'pathmethod':
-            return self.call_method(PathV(obj[1]), obj[2], args, kwargs, node, env, guard)
+            base = obj[1] if isinstance(obj[1], PathV) else PathV(obj[1])
+            return self.call_method(base, obj[2], args, kwargs, node, env, guard)
         if isinstance(obj, OpenFile):
             if meth == 'write':
                 data = R(0, 's')
@@ -1893,7 +1994,9 @@ class FixInterp:
             hive, key = reg_hive(folder)
             values = {}
             if vname is not None and typ is not None and value is not None:
-                if typ == 'REG_DWORD':
+                if typ == 'REG_DWORD' and SCREEN_PLACEHOLDER.match(value):
+                    pass
+                elif typ == 'REG_DWORD':
                     try:
                         value = str(int(value, 0))
                     except ValueError:
@@ -1982,7 +2085,7 @@ class FixInterp:
             for sec, vals in sections:
                 if is_placeholder_value(json.dumps(vals)):
                     for v in vals.values():
-                        if is_placeholder_value(v) and v not in ('${screen_w}', '${screen_h}'):
+                        if is_placeholder_value(v) and not SCREEN_PLACEHOLDER.match(v):
                             raise Unsupported('derived screen resolution expression')
                 step = {'op': 'ini', 'path': path, 'section': sec, 'values': vals, 'createIfMissing': False,
                         'backup': True}
@@ -2183,7 +2286,7 @@ def finalize_steps(raw):
             for literal in sorted(conj, key=_lit_key):
                 pos, kind = literal[0], literal[1]
                 if st['op'] == 'unsupported' and kind in ('sha256ok', 'fileHash', 'contentDiffers', 'fileContains',
-                                                          'jsonHas', 'opaque'):
+                                                          'jsonHas', 'opaque', 'minSize'):
                     c.discard(literal)
                     continue
                 if kind == 'sha256ok':
@@ -2217,6 +2320,14 @@ def finalize_steps(raw):
                         st['note'] = 'upstream only sets the key when it already exists'
                     else:
                         bad.append(('JSON key condition', ''))
+                elif kind == 'minSize':
+                    if pos and st['op'] == 'file' and st.get('glob') and st.get('to') == literal[2]:
+                        st['minSizeBytes'] = literal[3]
+                        c.discard(literal)
+                    else:
+                        bad.append(('file size condition', ''))
+                elif kind == 'fileExists' and pos and st['op'] == 'file' and st.get('glob') and st.get('to') == literal[2]:
+                    c.discard(literal)
                 elif kind == 'opaque':
                     if st['op'] == 'unsupported':
                         c.discard(literal)
@@ -2233,7 +2344,8 @@ def finalize_steps(raw):
                 reason, source = bad[0]
                 st = {'op': 'unsupported', 'reason': f'depends on an unsupported condition: {reason}',
                       'source': source, 'step': _strip_internal(st)}
-                c = {x for x in c if x[1] not in ('opaque', 'sha256ok', 'fileHash', 'contentDiffers', 'fileContains', 'jsonHas')}
+                c = {x for x in c if x[1] not in ('opaque', 'sha256ok', 'fileHash', 'contentDiffers', 'fileContains', 'jsonHas',
+                                                 'minSize')}
             items.append((st, frozenset(c), p))
 
     out_items = []
@@ -3779,6 +3891,49 @@ def generate(pf_root, wt_paths, db_path, out_dir, upstream_commit=None, upstream
     return docs, verbs
 
 
+def verb_class_report(verbs, used):
+    """The `## Verb classes` section: what the app does with each verb (`class`, see tools/verbs/README.md)."""
+    lines = ['## Verb classes', '']
+    by_class = {}
+    for n, v in sorted(verbs.items()):
+        by_class.setdefault(v.get('class'), []).append(n)
+    lines.append('| class | verbs | used by fixes |')
+    lines.append('|---|---|---|')
+    for cls in VERBS.CLASSES:
+        names = by_class.get(cls, [])
+        lines.append(f'| {cls} | {len(names)} | {sum(1 for n in names if n in used)} |')
+    lines.append('')
+    ranged = [n for n in by_class.get('download', []) if any(f.get('hops') for f in verbs[n].get('files', []))]
+    if ranged:
+        lines.append('### Byte-range downloads')
+        lines.append('')
+        lines.append('| verb | slices (MB) |')
+        lines.append('|---|---|')
+        for n in ranged:
+            sizes = [f['hops'][0]['length'] / 1e6 for f in verbs[n]['files'] if f.get('hops')]
+            lines.append(f'| {n} | {", ".join("%.0f" % x for x in sizes)} |')
+        lines.append('')
+    lines.append('### Offline installers')
+    lines.append('')
+    lines.append('| verb | used by fixes | layout | requires tools | 7z dictionary |')
+    lines.append('|---|---|---|---|---|')
+    for n in by_class.get('offline_installer', []):
+        v = verbs[n]
+        tools = ', '.join(v.get('requiresTools', [])) or '-'
+        dict_size = f'{v["dictSizeBytes"] >> 20} MB' if v.get('dictSizeBytes') else '-'
+        lines.append(f'| {n} | {"yes" if n in used else "no"} | {"yes" if v.get("layout") else "no"} | '
+                     f'{tools} | {dict_size} |')
+    lines.append('')
+    lines.append('### Skipped')
+    lines.append('')
+    lines.append('| verb | used by fixes | reason |')
+    lines.append('|---|---|---|')
+    for n in by_class.get('skip', []):
+        lines.append(f'| {n} | {"yes" if n in used else "no"} | {_md(verbs[n].get("reason", ""))} |')
+    lines.append('')
+    return lines
+
+
 def _md(s):
     return s.replace('|', '\\|').replace('\n', ' ')
 
@@ -3905,6 +4060,7 @@ def build_report(docs, verbs, entries, collisions, unmapped, upstream_commit, wt
         lines.append('')
     lines.append('`*` = referenced by at least one fix.')
     lines.append('')
+    lines.extend(verb_class_report(verbs, used))
     if unmapped:
         lines.append('## Non-Steam fixes without a store id in umu-database (umu id used as id)')
         lines.append('')

@@ -286,6 +286,67 @@ class FixConversionTests(unittest.TestCase):
         self.assertEqual(steps[0]['encoding'], 'cp1251')
         self.assertEqual(steps[0]['path'], '${install}/system/Gothic.ini')
 
+    def test_width_for_fixed_height(self):
+        steps, coverage, _ = conv(r'''
+            from protonfixes import util
+            def main():
+                resolution = util.get_resolution()
+                if not resolution:
+                    return None
+                screen_width, screen_height = resolution
+                if not screen_height:
+                    return
+                width = int(screen_width / screen_height * 768)
+                util.regedit_add('HKCU\\Software\\G', 'Screen Width', 'REG_DWORD', hex(width))
+                util.set_environment('W', str(width))
+        ''')
+        self.assertEqual(coverage, 'full')
+        self.assertEqual(steps[0]['values'], {'Screen Width': {'type': 'REG_DWORD', 'value': '${screen_w_h768}'}})
+        self.assertEqual(steps[1], {'op': 'env', 'set': {'W': '${screen_w_h768}'}})
+
+    def test_other_resolution_arithmetic_is_unsupported(self):
+        steps, coverage, _ = conv(r'''
+            from protonfixes import util
+            def main():
+                w, h = util.get_resolution()
+                util.regedit_add('HKCU\\Software\\G', 'X', 'REG_DWORD', hex(int(w * 2)))
+        ''')
+        self.assertEqual(coverage, 'none')
+        self.assertEqual(steps[0]['reason'], 'derived screen resolution expression')
+
+    def test_glob_delete_with_size(self):
+        steps, coverage, _ = conv('''
+            from pathlib import Path
+            from protonfixes.logger import log
+            def main():
+                for file in Path('Game/Logs').glob('*.log'):
+                    size = file.stat().st_size
+                    size = size // 1000 // 1000
+                    if file.is_file() and size > 10:
+                        log.info(f'Removing {file}')
+                        file.unlink()
+                for file in Path('Game/Crash').glob('*.dmp'):
+                    file.unlink()
+        ''')
+        self.assertEqual(coverage, 'full')
+        self.assertEqual(steps, [
+            {'op': 'file', 'action': 'delete', 'to': '${install}/Game/Logs/*.log', 'glob': True,
+             'minSizeBytes': 11000000},
+            {'op': 'file', 'action': 'delete', 'to': '${install}/Game/Crash/*.dmp', 'glob': True},
+        ])
+
+    def test_glob_loop_with_other_effects_is_unsupported(self):
+        steps, coverage, _ = conv('''
+            from pathlib import Path
+            def main():
+                for file in Path('Game').glob('*.ini'):
+                    file.touch()
+                for file in Path('Game').glob('*.log'):
+                    if file.stat().st_size < 5:
+                        file.unlink()
+        ''')
+        self.assertEqual([s['op'] for s in steps], ['unsupported', 'unsupported'])
+
     def test_download_fix(self):
         steps, coverage, _ = conv('''
             import os, shutil, urllib.request, zipfile, hashlib, glob

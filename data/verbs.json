@@ -1,5 +1,5 @@
 {
-  "protonfixesCommit": "f84287168e3ec4107131893c63cae76f66ea5011",
+  "protonfixesCommit": "7e57c0cb4e6d5918d3825cfdd5e3cf00d28700a0",
   "schema": 1,
   "verbs": {
     "allfonts": {
@@ -1505,12 +1505,29 @@
     },
     "crypt32": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_5d772bc73c15dfe5/crypt32.dll",
+          "extractedSha256": "9179657aa2928627d73608d7eba5a9a8d7507f9f67dd8ec1011c76aee4914043",
+          "extractedSize": 1154048,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAC4hT4DAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAvAAAAD8TAxWnxo0JAAAAAAAAdD1NIgAAcGFkZGluZy5iaW4AAJwRAKfGjQkAAHQ9TSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1jcnlwdDMyLWRsbF8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfNWQ3NzJiYzczYzE1ZGZlNVxjcnlwdDMyLmRsbAA=",
+              "length": 54428924,
+              "offset": 182385923,
+              "rangeSha256": "7ec9870f5e3358f47df49d6ef964a3b2fd11648162fc4c9609785ed798768ad6",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_5d772bc73c15dfe5/crypt32.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -1523,8 +1540,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_b995c74af473511b/crypt32.dll",
+          "extractedSha256": "276d1c9c78c529625c2ef3d77079324628686ea184767971901a1de93681c133",
+          "extractedSize": 1456128,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAABq97cDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAvgAAALMVAxUjO8MKAAAAAAAAdD1AKwAAcGFkZGluZy5iaW4AADgWACM7wwoAAHQ9QCsgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWNyeXB0MzItZGxsXzMxYmYzODU2YWQzNjRlMzVfNi4xLjc2MDEuMTc1MTRfbm9uZV9iOTk1Yzc0YWY0NzM1MTFiXGNyeXB0MzIuZGxsAA==",
+              "length": 62387884,
+              "offset": 126375580,
+              "rangeSha256": "113be4dc16382f26741d55b473e34d8a9c00288c0144fe70d2bb63e39be2a739",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-crypt32-dll_31bf3856ad364e35_6.1.7601.17514_none_b995c74af473511b/crypt32.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -1537,9 +1571,30 @@
         },
         {
           "entry": "*",
+          "extractedSha256": "8d2b6750e90a27bfa916520cc3a52fbeac317aea40662bc0d9b71e4de34c1207",
+          "extractedSize": 53008,
           "formats": [
             "cab",
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAAXjhsCAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAaAAAAEIEAxU1jyACAAAAAAAA0y6iYAAAcGFkZGluZy5iaW4Au14AADWPIAIAANMuomAgAGkzODZcbXNhc24xLmRsXwA=",
+              "length": 35360175,
+              "offset": 179739,
+              "rangeSha256": "5433453008cab2b40a7cc3bd9f664108b1b79fe50285742d126c191a9e67701d",
+              "sha256": "167bb78d4adc957cc39fb4902517e1f32b1e62092353be5f8fb9ee647642de7e",
+              "type": "range",
+              "url": "http://x3270.bgp.nu/download/specials/W2KSP4_EN.EXE"
+            },
+            {
+              "member": "i386/msasn1.dl_",
+              "type": "cab"
+            },
+            {
+              "member": "msasn1.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -1558,10 +1613,10 @@
         "msasn1"
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "crypt32": "n"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "MS crypt32"
     },
@@ -4085,7 +4140,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet10.layout.json",
+        "sha256": "b3e509ea79de236323f69c025e11d25c941a4a28651e2185f90ace053f06f16b"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-10.0.0-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 10.0 LTS"
     },
@@ -4219,6 +4281,7 @@
     "dotnet40": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 67108864,
       "includes": [
         "remove_mono",
         "winxp"
@@ -4231,6 +4294,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet40.layout.json",
+        "sha256": "0fd5e4ae47bc033e0a9cc0c756a8db192de155fac32e6c4c609a4ef28131f96b"
+      },
       "msiProperties": {
         "ServicePackLevel": "2",
         "VersionNT": "501",
@@ -4320,12 +4387,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.0"
     },
     "dotnet45": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 67108864,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4338,6 +4410,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet45.layout.json",
+        "sha256": "b5061647fb6daa4a6a4e78c5265974ec657ef724b894b5cf315b530894a54edd"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4415,12 +4491,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.5"
     },
     "dotnet452": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4433,6 +4514,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet452.layout.json",
+        "sha256": "7233db00ba6c467280daf88d254e87af4714efd70dbaa91ff190c54be439ebba"
+      },
+      "msi": [
+        "netfx_Full_GDR_x86.msi",
+        "netfx_Full_GDR_x64.msi"
+      ],
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4490,12 +4579,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.5.2"
     },
     "dotnet462": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet461"
@@ -4508,6 +4602,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet462.layout.json",
+        "sha256": "9aa89ec55c1d872021b86b6fd16ee810cb2163aa5087ac55d160659eef626221"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4565,12 +4663,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.6.2"
     },
     "dotnet472": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet462"
@@ -4583,6 +4686,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet472.layout.json",
+        "sha256": "e452b2fe0aec8f3f9bc2243e4ed81f6c69f7e157dadcdca2eb626a48e95c1f2d"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4640,12 +4747,17 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.7.2"
     },
     "dotnet48": {
       "category": "dlls",
       "class": "offline_installer",
+      "dictSizeBytes": 536870912,
       "includes": [
         "remove_mono",
         "dotnet40"
@@ -4658,6 +4770,10 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet48.layout.json",
+        "sha256": "fe32aaace647142e30b056f981c782bd51eec28bf5504745dbd64e03ef04454a"
+      },
       "msiProperties": {
         "ServicePackLevel": "1",
         "VersionNT": "601",
@@ -4715,6 +4831,10 @@
         }
       ],
       "removeMono": true,
+      "requiresTools": [
+        "7zz",
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET 4.8"
     },
@@ -4734,7 +4854,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet6.layout.json",
+        "sha256": "a99c23b08c2ab73da3878a7749d296c40b2724f529b79ed3460dca0642ce4f6f"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-6.0.36-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 6.0 LTS"
     },
@@ -4754,7 +4881,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet7.layout.json",
+        "sha256": "d1667dd9c26eddca4a13db2d2e7aeead6c349820a425da9e152036ba7feda154"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-7.0.20-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 7.0 LTS"
     },
@@ -4774,7 +4908,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet8.layout.json",
+        "sha256": "196dd1743acc1cb6d0dcc65e3d2a472d57894bd86369f0bfcdcb5256d920951b"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-8.0.12-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 8.0 LTS"
     },
@@ -4794,7 +4935,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnet9.layout.json",
+        "sha256": "a15299d0751631b2c79a49dd58b50ce61acead5d85da40fb61bbfce21cd05bc6"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-9.0.14-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Runtime 9.0 LTS"
     },
@@ -4814,7 +4962,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetcore3.layout.json",
+        "sha256": "c1a311f353a42e31d379ed11822e490bee1509873740098a38925ae8d1e71188"
+      },
       "reason": "runs an installer under Wine: dotnet-runtime-3.1.10-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Core Runtime 3.1 LTS"
     },
@@ -4834,7 +4989,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop10.layout.json",
+        "sha256": "b42bd306cf0fe325a1890744e1943b97797e07e40e5acc64d3a02f549fcb22d2"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-10.0.0-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 10.0 LTS"
     },
@@ -4854,7 +5016,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop6.layout.json",
+        "sha256": "f98c4d643299f052c28b8ff67604cebd3b605ac8e7eb56777f138df2fdf5391e"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-6.0.36-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 6.0 LTS"
     },
@@ -4874,7 +5043,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop8.layout.json",
+        "sha256": "d8853012ee36c1201919b599fc10474d3c69b702c9b1306333113e2c67e9e884"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-8.0.12-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 8.0 LTS"
     },
@@ -4894,7 +5070,14 @@
         }
       ],
       "kind": "unsupported",
+      "layout": {
+        "path": "verbs/dotnetdesktop9.layout.json",
+        "sha256": "02e5ab8ca99b39a35161e631e2089b53293888175d249e817b8534f8f5a12728"
+      },
       "reason": "runs an installer under Wine: windowsdesktop-runtime-9.0.7-win-x86.exe /quiet",
+      "requiresTools": [
+        "cabextract"
+      ],
       "source": "winetricks",
       "title": "MS .NET Desktop Runtime 9.0 LTS"
     },
@@ -5573,12 +5756,29 @@
     },
     "gdiplus": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80/gdiplus.dll",
+          "extractedSha256": "c07a936009fb275d56dc451c7d05b5f5a3f4dcd985c7f02dee57d674034c602b",
+          "extractedSize": 1624576,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAC+OdMBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuAAAABgLAxU6KHMFAAAAAAAAdD3lHgAAcGFkZGluZy5iaW4AAMoYADoocwUAAHQ95R4gAHg4Nl9taWNyb3NvZnQud2luZG93cy5nZGlwbHVzXzY1OTViNjQxNDRjY2YxZGZfMS4xLjc2MDEuMTc1MTRfbm9uZV83MmQxOGE0Mzg2Njk2YzgwXGdkaXBsdXMuZGxsAA==",
+              "length": 30619910,
+              "offset": 259035751,
+              "rangeSha256": "f30c562d2bf2c92a4c7bc6f5850ca80d8959737e39d9a73b2a4f3ba5d63c8144",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80/gdiplus.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -5591,8 +5791,25 @@
         },
         {
           "entry": "amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a/gdiplus.dll",
+          "extractedSha256": "980ea189929d95eb36e35980fff0c81f7b78de9422771fde8f4ac7a779f5bd89",
+          "extractedSize": 2165248,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADQnUIDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAugAAAFESAxWKTgcJAAAAAAAAdD10JgAAcGFkZGluZy5iaW4AAAohAIpOBwkAAHQ9dCYgAGFtZDY0X21pY3Jvc29mdC53aW5kb3dzLmdkaXBsdXNfNjU5NWI2NDE0NGNjZjFkZl8xLjEuNzYwMS4xNzUxNF9ub25lXzJiMjQ1MzZjNzFlZDQzN2FcZ2RpcGx1cy5kbGwA",
+              "length": 54697238,
+              "offset": 126375580,
+              "rangeSha256": "880c590b91a401d403dc537a3bbe180ee20731fac1fa5a40da3c1564cc638b82",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a/gdiplus.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -5605,10 +5822,10 @@
         }
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "gdiplus": "n"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "MS GDI+"
     },
@@ -6735,12 +6952,29 @@
     },
     "msxml3": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_f0e8f05be1d66e78/msxml3.dll",
+          "extractedSha256": "d49c3b4b2ff0455a434b352de37070b6e13b5c5557cc688e6e46eec404840abe",
+          "extractedSize": 1236992,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAAbWOoEAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuQAAABIcAxWKw/UNAAAAAAAAdD19IgAAcGFkZGluZy5iaW4AAOASAIrD9Q0AAHQ9fSIgAHdvdzY0X21pY3Jvc29mdC13aW5kb3dzLW1zeG1sMzBfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2YwZThmMDViZTFkNjZlNzhcbXN4bWwzLmRsbAA=",
+              "length": 82466658,
+              "offset": 126375580,
+              "rangeSha256": "84a2981afa85a9c0eb5ea078b1cdc8b250d8c731b070771a56391e68b3a86624",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_f0e8f05be1d66e78/msxml3.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -6753,8 +6987,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_e6944609ad75ac7d/msxml3.dll",
+          "extractedSha256": "3b864d1471ed0949b02f1fa251b987185abeaddcbecd44efdbb6a7b7f03ca8bc",
+          "extractedSize": 1881088,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADPcwEFAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAuQAAALscAxWKV0AOAAAAAAAAdD1mKwAAcGFkZGluZy5iaW4AALQcAIpXQA4AAHQ9ZisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLW1zeG1sMzBfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2U2OTQ0NjA5YWQ3NWFjN2RcbXN4bWwzLmRsbAA=",
+              "length": 83981078,
+              "offset": 126375580,
+              "rangeSha256": "b383911f8520d6dc8c4bbdf083f3e02152821c26e9b761ca8424d5baa45a369e",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.1.7601.17514_none_e6944609ad75ac7d/msxml3.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -6767,10 +7018,10 @@
         }
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "msxml3": "n"
       },
-      "reason": "the 64-bit DLL is taken from the Windows 7 SP1 update; Wine's builtin is used",
       "skipped": [
         "msiexec /i msxml3.msi"
       ],
@@ -6944,12 +7195,29 @@
     },
     "oleaut32": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_bf07947959bc4c33/oleaut32.dll",
+          "extractedSha256": "045887f7424a0fae471bd285ed7a3507efdcef986313651e462323ace3312173",
+          "extractedSize": 571904,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADKv4MDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAwAAAAI0UAxXMRj0KAAAAAAAAdD2ZIgAAcGFkZGluZy5iaW4AALoIAMxGPQoAAHQ9mSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1vbGUtYXV0b21hdGlvbl8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfYmYwNzk0Nzk1OWJjNGMzM1xvbGVhdXQzMi5kbGwA",
+              "length": 58965770,
+              "offset": 259035751,
+              "rangeSha256": "ce1ebd1c708ed1c38eebcbec8c6f339f6bb0ff3f0c6c70986bce12018d1a030a",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_bf07947959bc4c33/oleaut32.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -6962,8 +7230,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_1b262ffd1219bd69/oleaut32.dll",
+          "extractedSha256": "0813749847b08f6577791d18ad9eca6dff5b41c2f727ab5ee9e5bf9602ed50cb",
+          "extractedSize": 861696,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAA2XQoEAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAwgAAANMgAxW3U1wQAAAAAAAAdD1sKwAAcGFkZGluZy5iaW4AACYNALdTXBAAAHQ9bCsgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLW9sZS1hdXRvbWF0aW9uXzMxYmYzODU2YWQzNjRlMzVfNi4xLjc2MDEuMTc1MTRfbm9uZV8xYjI2MmZmZDEyMTliZDY5XG9sZWF1dDMyLmRsbAA=",
+              "length": 67787892,
+              "offset": 15811226,
+              "rangeSha256": "9d615f5a4347e1d398bf3f43ca7ad9429388222b6b5c82a1d1f91cfb5f9e7ef1",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-ole-automation_31bf3856ad364e35_6.1.7601.17514_none_1b262ffd1219bd69/oleaut32.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -6976,10 +7261,10 @@
         }
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "oleaut32": "n,b"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "MS oleaut32.dll"
     },
@@ -7593,12 +7878,29 @@
     },
     "urlmon": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_d1a4c8feac0dfcdb/urlmon.dll",
+          "extractedSha256": "669bed2f3a2cffb5e25fe6cf6956e61036fa1d9127ae59f05b22cfd57cea3e2a",
+          "extractedSize": 1229824,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAA+KLQAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxgAAAO4DAxVBFeQBAAAAAAAAdD2xIgAAcGFkZGluZy5iaW4AAMQSAEEV5AEAAHQ9sSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pLi5lcnNhbmRzZWN1cml0eXpvbmVzXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV9kMWE0YzhmZWFjMGRmY2RiXHVybG1vbi5kbGwA",
+              "length": 11806584,
+              "offset": 182385923,
+              "rangeSha256": "95a1ae59f340bb9fc2956e6a5cdb180faa01cd4dcd7854627850fe86b72534fe",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_d1a4c8feac0dfcdb/urlmon.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7611,8 +7913,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_2dc36482646b6e11/urlmon.dll",
+          "extractedSha256": "2590e88cab52fcc1b24cb262d293131c6280a5f234e0c130e77aa8697efa3b5f",
+          "extractedSize": 1490944,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAACabQcBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAyAAAAGAGAxUG/BgDAAAAAAAAdD1uKwAAcGFkZGluZy5iaW4AAMAWAAb8GAMAAHQ9bisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWkuLmVyc2FuZHNlY3VyaXR5em9uZXNfMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lXzJkYzM2NDgyNjQ2YjZlMTFcdXJsbW9uLmRsbAA=",
+              "length": 17263826,
+              "offset": 225348572,
+              "rangeSha256": "33a661d325dd7b5be6bc4e368caa2b137819a6957a543adbb81a1d3118d316a1",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-i..ersandsecurityzones_31bf3856ad364e35_8.0.7601.17514_none_2dc36482646b6e11/urlmon.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7625,8 +7944,25 @@
         },
         {
           "entry": "x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll",
+          "extractedSha256": "f5cd7de4b315f318d495c4e28292fa47b96640d044502131934190ec58f3d1d5",
+          "extractedSize": 2064384,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADznF0CAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxQAAAGwOAxXWGBYHAAAAAAAAdD1qIgAAcGFkZGluZy5iaW4AAIAfANYYFgcAAHQ9aiIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pZS1ydW50aW1ldXRpbGl0aWVzXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV82NDY1NWI3YzYxYzg0MWNiXGllcnR1dGlsLmRsbAA=",
+              "length": 39689262,
+              "offset": 182385923,
+              "rangeSha256": "d1dc2793819f4ef9852dbd5426a465b707d8b4b60b550c7f5df0c41df3a529a3",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7639,8 +7975,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll",
+          "extractedSha256": "89b894eccf65704d00d30ea3bd45b184bfab8345b779f9ae2be66b9fc7226f72",
+          "extractedSize": 2444288,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAACtcPoAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxwAAAGAOAxVYswoHAAAAAAAAdD1SKwAAcGFkZGluZy5iaW4AAEwlAFizCgcAAHQ9UisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWllLXJ1bnRpbWV1dGlsaXRpZXNfMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lX2MwODNmNzAwMWEyNWIzMDFcaWVydHV0aWwuZGxsAA==",
+              "length": 16412646,
+              "offset": 15811226,
+              "rangeSha256": "f4360e8c8662979f543a5a8d5ada172cab2b7c8342d1502882feca540ad4fdc0",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7656,22 +8009,39 @@
         "iertutil"
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "iertutil": "n,b",
         "urlmon": "n,b"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "MS urlmon"
     },
     "usp10": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_af01e2f9b6be7939/usp10.dll",
+          "extractedSha256": "eb5da86810d405555c84f4d452a604665250ab5d01714e0fbecf81cc8e791ac5",
+          "extractedSize": 626176,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAA21MwAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAsgAAAMMEAxW7oFcCAAAAAAAAdD2xIgAAcGFkZGluZy5iaW4AAI4JALugVwIAAHQ9sSIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy11c3BfMzFiZjM4NTZhZDM2NGUzNV82LjEuNzYwMS4xNzUxNF9ub25lX2FmMDFlMmY5YjZiZTc5MzlcdXNwMTAuZGxsAA==",
+              "length": 13423492,
+              "offset": 259035751,
+              "rangeSha256": "b75c59ad34d711431c82da9d8fb2cef500e0aa570b3b5e18947d5cec977b1385",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_af01e2f9b6be7939/usp10.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7684,8 +8054,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_0b207e7d6f1bea6f/usp10.dll",
+          "extractedSha256": "2a3ec01f3bafe7d7d656886437f7ffecce440c0d3f3467804769ab4bf1ff7a99",
+          "extractedSize": 800256,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADwzy8BAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAtAAAAFYHAxVHup4DAAAAAAAAdD1uKwAAcGFkZGluZy5iaW4AADYMAEe6ngMAAHQ9bisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLXVzcF8zMWJmMzg1NmFkMzY0ZTM1XzYuMS43NjAxLjE3NTE0X25vbmVfMGIyMDdlN2Q2ZjFiZWE2Zlx1c3AxMC5kbGwA",
+              "length": 19910460,
+              "offset": 420716202,
+              "rangeSha256": "9c73ad53b409fe727b9daebc37627b7aa9169bb54542da41d28c4930369c4d05",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-usp_31bf3856ad364e35_6.1.7601.17514_none_0b207e7d6f1bea6f/usp10.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -7698,10 +8085,10 @@
         }
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "usp10": "n,b"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "Uniscribe"
     },
@@ -8601,12 +8988,29 @@
     },
     "wininet": {
       "category": "dlls",
-      "class": "skip",
+      "class": "download",
       "files": [
         {
           "entry": "x86_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_1eaaa4a07717236e/wininet.dll",
+          "extractedSha256": "4b01872788057ecf5a1ac6647512f5671213f76651ff8e808f1310a1240f35a2",
+          "extractedSize": 980992,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAAn9VgDAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxwAAALUYAxVuOksMAAAAAAAAdD2zIgAAcGFkZGluZy5iaW4AAPgOAG46SwwAAHQ9syIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pLi50b2NvbGltcGxlbWVudGF0aW9uXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV8xZWFhYTRhMDc3MTcyMzZlXHdpbmluZXQuZGxsAA==",
+              "length": 56161376,
+              "offset": 19022073,
+              "rangeSha256": "4a97219f4246b8ce80bc691e2b728999ff6e729001178a556fe6f9962841c863",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_1eaaa4a07717236e/wininet.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -8619,8 +9023,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_7ac940242f7494a4/wininet.dll",
+          "extractedSha256": "e3ebf44621efc6381baae0f0efc13c356dcb6ee31bb258137edb3cc3e18549b5",
+          "extractedSize": 1188864,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAAC7tboBAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAyQAAAG8KAxWq/CQFAAAAAAAAdD1vKwAAcGFkZGluZy5iaW4AACQSAKr8JAUAAHQ9bysgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWkuLnRvY29saW1wbGVtZW50YXRpb25fMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lXzdhYzk0MDI0MmY3NDk0YTRcd2luaW5ldC5kbGwA",
+              "length": 29013234,
+              "offset": 324680694,
+              "rangeSha256": "c1b9f7b2f314c4aabab4d12d3786ea083f8823e5974356d5520eb44f4e7596ee",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-i..tocolimplementation_31bf3856ad364e35_8.0.7601.17514_none_7ac940242f7494a4/wininet.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -8633,8 +9054,25 @@
         },
         {
           "entry": "x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll",
+          "extractedSha256": "f5cd7de4b315f318d495c4e28292fa47b96640d044502131934190ec58f3d1d5",
+          "extractedSize": 2064384,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAADznF0CAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxQAAAGwOAxXWGBYHAAAAAAAAdD1qIgAAcGFkZGluZy5iaW4AAIAfANYYFgcAAHQ9aiIgAHg4Nl9taWNyb3NvZnQtd2luZG93cy1pZS1ydW50aW1ldXRpbGl0aWVzXzMxYmYzODU2YWQzNjRlMzVfOC4wLjc2MDEuMTc1MTRfbm9uZV82NDY1NWI3YzYxYzg0MWNiXGllcnR1dGlsLmRsbAA=",
+              "length": 39689262,
+              "offset": 182385923,
+              "rangeSha256": "d1dc2793819f4ef9852dbd5426a465b707d8b4b60b550c7f5df0c41df3a529a3",
+              "sha256": "e5449839955a22fc4dd596291aff1433b998f9797e1c784232226aba1f8abd97",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe"
+            },
+            {
+              "member": "x86_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_64655b7c61c841cb/iertutil.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -8647,8 +9085,25 @@
         },
         {
           "entry": "amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll",
+          "extractedSha256": "89b894eccf65704d00d30ea3bd45b184bfab8345b779f9ae2be66b9fc7226f72",
+          "extractedSize": 2444288,
           "formats": [
             "cab"
+          ],
+          "hops": [
+            {
+              "header": "TVNDRgAAAACtcPoAAAAAACwAAAAAAAAAAwEBAAIAAAAAAAAAxwAAAGAOAxVYswoHAAAAAAAAdD1SKwAAcGFkZGluZy5iaW4AAEwlAFizCgcAAHQ9UisgAGFtZDY0X21pY3Jvc29mdC13aW5kb3dzLWllLXJ1bnRpbWV1dGlsaXRpZXNfMzFiZjM4NTZhZDM2NGUzNV84LjAuNzYwMS4xNzUxNF9ub25lX2MwODNmNzAwMWEyNWIzMDFcaWVydHV0aWwuZGxsAA==",
+              "length": 16412646,
+              "offset": 15811226,
+              "rangeSha256": "f4360e8c8662979f543a5a8d5ada172cab2b7c8342d1502882feca540ad4fdc0",
+              "sha256": "f4d1d418d91b1619688a482680ee032ffd2b65e420c6d2eaecf8aa3762aa64c8",
+              "type": "range",
+              "url": "http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x64_74865ef2562006e51d7f9333b4a8d45b7a749dab.exe"
+            },
+            {
+              "member": "amd64_microsoft-windows-ie-runtimeutilities_31bf3856ad364e35_8.0.7601.17514_none_c083f7001a25b301/iertutil.dll",
+              "type": "cab"
+            }
           ],
           "install": [
             {
@@ -8664,11 +9119,11 @@
         "iertutil"
       ],
       "kind": "dll",
+      "note": "each DLL comes from a byte range of a Windows service pack (see files[].hops), not the whole download",
       "overrides": {
         "iertutil": "n,b",
         "wininet": "n,b"
       },
-      "reason": "taken from the Windows 7 SP1 update (several hundred MB); Wine's builtin is used",
       "source": "winetricks",
       "title": "MS Windows Internet API"
     },

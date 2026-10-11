@@ -188,6 +188,11 @@ override applies to every document made from that file, aliases included. Format
   - `ifMissing` is never emitted. That condition is in `when` instead.
   - In a document that also has an unsupported step, `delete`/`move` steps that come before it become `unsupported`. This
     prevents half-applied destructive fixes, e.g. deleting the Desktop folder without making the link that replaces it.
+  - `glob: true` (only on `delete`): the last path component of `to` is a glob pattern (`*`, `?`, `[...]`;
+    case-sensitive, not recursive, as upstream `Path(dir).glob(pattern)`). Delete every regular file in that folder
+    whose name matches; directories are never deleted. Do nothing when the folder is missing.
+  - `minSizeBytes: N` (only with `glob`): delete a matched file only if its size is at least `N` bytes. Upstream
+    `size // 1000 // 1000 > 10` becomes `11000000`. Used by steam/950670 to remove huge log files.
 - `download`:
   - `backup` paths are relative to `to`.
   - `sha256` is `null` when upstream does not check the archive.
@@ -201,6 +206,12 @@ override applies to every document made from that file, aliases included. Format
   `ignore_user_setting` is dropped.
 - `env`: `set_game_drive(x)` is emitted as `PROTON_SET_GAME_DRIVE`. The converter never sees two values for one key that
   have the same `when`: when an env var is set more than once (e.g. around a winetricks call), only the last value is kept.
+- Screen placeholders (upstream `util.get_resolution()`), usable in `registry`, `ini` and `env` values: `${screen_w}`
+  and `${screen_h}` are the width and height in pixels of the screen the game runs on (the container resolution).
+  `${screen_w_h<N>}` (e.g. `${screen_w_h768}`) is the width that keeps that aspect ratio at height `N`:
+  `floor(screen_w * N / screen_h)`, from upstream `int(width / height * N)` (steam/497360 sets `Screen Width` to
+  it with `Screen Height` 768). `REG_DWORD` values with a screen placeholder are written as the decimal number after
+  expansion. Other arithmetic on the resolution stays `unsupported` ("derived screen resolution expression").
 - New placeholders: `${user}` (the prefix user name, see above), `${steam_id64}` and `${steam_account_id}`.
   `${steam_id64}` is the signed-in user's 64-bit SteamID (17 digits), which is what upstream `get_steam_account_id()`
   returns and what the SEGA/Square Enix save folders use. `${steam_account_id}` is the 32-bit account id (the
@@ -236,6 +247,30 @@ override applies to every document made from that file, aliases included. Format
     For example, `msxml3` skips `msiexec /i msxml3.msi`, which gives the 32-bit resources DLL.
   - `unparsed`: winetricks lines that the converter could not follow (e.g. `dgvoodoo2`'s `sed` edits of `dgvoodoo.conf`).
   - `note`: e.g. a warning that the source is a Windows service pack, which is a download of several hundred MB.
+- Byte-range files (`gdiplus`, `usp10`, `oleaut32`, `crypt32`, `wininet`, `urlmon`, `msxml3`): winetricks takes these
+  DLLs from the Windows 7 SP1 update (537 MB x86, 903 MB x64) or, for `msasn1` in `crypt32`, the Windows 2000 SP4
+  update (129 MB). Their file entries have `hops`, `extractedSha256` and `extractedSize`, and the verb is
+  `class: download`. `url`, `sha256`, `entry`, `nested` and `formats` stay as before for older builds. When `hops` is
+  present, the app follows it instead of downloading `url`:
+  - `{"type": "range", "url", "sha256", "offset", "length", "rangeSha256", "header"}`: download bytes
+    `offset` .. `offset + length - 1` of `url` with an HTTP `Range` request and check them against `rangeSha256`
+    (`sha256` is the hash of the whole file, for identification only). The output of the hop is the bytes of
+    `header` (base64) followed by the downloaded bytes. Together they form a small, valid cabinet: the header
+    describes the one LZX folder that holds the file, cut after the data block where the file ends, and lists the
+    file (plus `padding.bin` for the bytes before it, because libarchive needs a folder's files to have no gaps).
+  - `{"type": "cab", "member": "<path>"}`: extract `member` (`/` separators, case-insensitive) from the previous
+    hop's output with libarchive. A second `cab` hop opens a cabinet inside the first (e.g. `i386/msasn1.dl_`, then
+    `msasn1.dll`).
+  - The output of the last hop is the file to install; its sha256 must be `extractedSha256`. Install it as
+    `install[]` says (`name: "*"` means the last hop's member file name, lowercased).
+  - Slices are 11 to 80 MB; `tools/verbs/ranges.json` has each `length` and the size of the whole folder. The
+    servers (`download.windowsupdate.com`, `x3270.bgp.nu`) answer range requests with 206. `msxml3` still has
+    `skipped: ["msiexec /i msxml3.msi"]`: its 32-bit resources DLL (`msxml3r.dll`) only comes from that MSI.
+- Offline-installer verbs whose layout needs an extractor other than libarchive have `requiresTools`
+  (`["cabextract"]`, `["7zz"]` or both) and, for 7z, `dictSizeBytes`: the largest LZMA dictionary of the 7z archives
+  the layout opens. 7-Zip needs about that much memory to unpack them (64 MB for .NET 4.0, 512 MB for .NET 4.8), so
+  the app can refuse the verb on a device with too little free memory. The tools are described by `data/tools.json`
+  (below), and the layout's `tool` hops are described in `tools/verbs/README.md`.
 - `winver` versions are winetricks names (`winxp`, `win7`, `win10`, ...). Winetricks itself passes `winxp64` to winecfg
   on 64-bit prefixes.
 - `premark` (vcrun*) has only `overrides`. The extra msvcp140 files that winetricks copies are not listed.
@@ -252,3 +287,30 @@ override applies to every document made from that file, aliases included. Format
 - `ini.backup` is ignored: the app applies the INI values on every launch.
 - `verbs.json` `regsvr32` lists are ignored: the app does not run regsvr32 (directplay, the dm* verbs, xact, l3codecx).
 - `winver` versions other than `win10`, `win7` and `winxp` are skipped. No document uses them at this commit.
+
+## tools.json
+
+`data/tools.json` (made by `tools/verbs/device_tools.py`) lists the extractors that layout `tool` hops run, as
+Termux aarch64 packages from `packages.termux.dev`. It has one key per tool name (`cabextract`, `7zz`); there is no
+top-level `schema`, each entry has its own:
+
+```json
+{"7zz": {"schema": 1, "package": "7zip", "version": "26.04", "arch": "aarch64",
+         "url": "https://packages.termux.dev/apt/termux-main/pool/main/7/7zip/7zip_26.04_aarch64.deb",
+         "sha256": "<sha256 of the .deb>", "size": 1555692, "member": "data.tar.xz",
+         "path": "data/data/com.termux/files/usr/bin/7zz", "fileSha256": "<sha256 of the binary>",
+         "needed": ["libc.so", "libdl.so", "libc++_shared.so"],
+         "libs": [{"name": "libc++_shared.so", "package": "libc++", "version": "30", "url": "...", "sha256": "...",
+                   "size": 341604, "member": "data.tar.xz",
+                   "path": "data/data/com.termux/files/usr/lib/libc++_shared.so", "fileSha256": "...",
+                   "needed": ["libc.so", "libm.so", "libdl.so"]}]}}
+```
+
+- A `.deb` is an `ar` archive; `member` is the ar member (`data.tar.xz`), and `path` is the file inside it (tar names
+  start with `./`). libarchive reads both.
+- `needed` is the binary's full `DT_NEEDED` list. `libs` holds only the libraries that are neither Android system
+  libraries nor in the imagefs (libz, liblzma, libffi, libandroid-support). The binaries have the RUNPATH
+  `/data/data/com.termux/files/usr/lib`, which does not exist in the app, so run them with `LD_LIBRARY_PATH` set to
+  the folder that holds the `libs`.
+- Termux keeps only the current version of a package in its pool, so these URLs stop working when Termux updates a
+  package. Run `device_tools.py` again then (or mirror the files).

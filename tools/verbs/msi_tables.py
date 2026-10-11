@@ -8,8 +8,10 @@ which archive member each file comes from, where it goes in the prefix, and the 
 values to write. The app then needs only the layout and libarchive.
 
 The MSI reader is pure Python. Cabinets are read with bsdtar, cabextract or 7z when one is
-installed, else with the built-in reader (stored and MSZIP only). Installers are untrusted
-data: nothing in them is executed.
+installed, else with the built-in reader (stored and MSZIP only). What libarchive (bsdtar) can
+read is a plain member hop; what only cabextract or 7z can read is a `tool` hop, and the verb
+then lists those tools in `requiresTools`. Installers are untrusted data: nothing in them is
+executed.
 """
 
 import argparse
@@ -78,6 +80,10 @@ SYSTEM_PROPERTIES = {
 UNSUPPORTED_TABLES = ('SelfReg', 'Class', 'ProgId', 'TypeLib', 'Extension', 'MIME', 'AppId', 'IniFile',
                       'ServiceInstall', 'MoveFile', 'PublishComponent', 'ODBCDriver')
 SKIP_PLATFORMS = ('arm64', 'arm')
+SETUP_CACHE = re.compile(r'/SetupCache/', re.I)
+SEVENZIP_MAGIC = b"7z\xbc\xaf'\x1c"
+LIBARCHIVE_READERS = ('zip', 'bsdtar', 'python')
+DEVICE_TOOLS = {'cabextract': 'cabextract', '7z': '7zz'}
 
 
 class LayoutError(Exception):
@@ -959,8 +965,65 @@ def _has_files(root):
 
 
 def device_readers():
-    """The unpackers whose success means libarchive on the device can open the archive too."""
-    return ('zip', 'bsdtar', 'python') if _tool('bsdtar') else ('zip', 'bsdtar', 'python', 'cabextract')
+    """The unpackers the device has: libarchive, plus the cabextract and 7zz binaries that `tool` hops run."""
+    return LIBARCHIVE_READERS + tuple(DEVICE_TOOLS)
+
+
+def member_hop(rel, tool, dict_size=None):
+    """The hop to the member [rel] of an archive that [tool] unpacked on this machine."""
+    if tool in LIBARCHIVE_READERS:
+        return rel
+    hop = {'type': 'tool', 'tool': DEVICE_TOOLS[tool], 'member': rel}
+    if dict_size:
+        hop['dictSizeBytes'] = dict_size
+    return hop
+
+
+def hop_tools(hops):
+    return {h['tool'] for h in hops if isinstance(h, dict) and h.get('type') == 'tool'}
+
+
+def hop_dict_size(hops):
+    return max([h.get('dictSizeBytes', 0) for h in hops if isinstance(h, dict)] or [0])
+
+
+def embedded_7z(data):
+    """(offset, size) of a 7z archive appended to an executable, or None."""
+    at = data.find(SEVENZIP_MAGIC)
+    while 0 <= at and at + 32 <= len(data):
+        next_offset, next_size = struct.unpack_from('<QQ', data, at + 12)
+        size = 32 + next_offset + next_size
+        if data[at + 6] == 0 and next_size and at + size <= len(data):
+            return at, size
+        at = data.find(SEVENZIP_MAGIC, at + 6)
+    return None
+
+
+def _dict_bytes(token):
+    match = re.match(r'^(\d+)([kmg]?)$', token.lower())
+    if not match:
+        return 0
+    value, unit = int(match.group(1)), match.group(2)
+    if not unit:
+        return 1 << value if value < 64 else 0
+    return value << {'k': 10, 'm': 20, 'g': 30}[unit]
+
+
+def sevenzip_dict_size(path):
+    """The largest LZMA/LZMA2/PPMd dictionary of the 7z archive at [path], in bytes (0 when unknown)."""
+    binary = _tool('7z', '7zz', '7za')
+    if not binary:
+        return 0
+    result = subprocess.run([binary, 'l', '-slt', path], capture_output=True, timeout=600, check=False)
+    largest = 0
+    for line in result.stdout.decode('utf-8', 'replace').splitlines():
+        if not line.startswith('Method = '):
+            continue
+        for method in line[len('Method = '):].split():
+            parts = method.split(':')
+            if parts[0] in ('LZMA', 'LZMA2', 'PPMD') and len(parts) > 1:
+                largest = max(largest, _dict_bytes(parts[1]))
+    return largest
 
 
 def extract_archive(path, dest, tools=True, sevenzip=True):
@@ -1048,7 +1111,7 @@ def unpack(path, chain, work, depth=0, parent=None, out=None):
         dest = tempfile.mkdtemp(dir=work)
         tool = extract_archive(path, dest)
         if tool:
-            groups.append((dest, [], {}, tool))
+            groups.append((dest, [], {}, tool, sevenzip_dict_size(path) if tool == '7z' else 0))
     elif kind == 'exe':
         containers = burn_containers(data)
         if containers:
@@ -1072,16 +1135,26 @@ def unpack(path, chain, work, depth=0, parent=None, out=None):
                 tool = extract_archive(_sliced(data, start, size, work, 'sfx%d' % depth), dest)
                 if tool:
                     groups.append((dest, [{'slice': [start, size]}], {}, tool))
-            if not cabinets:
+            sevenzip = None if cabinets else embedded_7z(data)
+            if sevenzip:
+                start, size = sevenzip
+                dest = tempfile.mkdtemp(dir=work)
+                sliced = _sliced(data, start, size, work, 'sz%d' % depth)
+                tool = extract_archive(sliced, dest)
+                if tool:
+                    groups.append((dest, [{'slice': [start, size]}], {}, tool, sevenzip_dict_size(sliced)))
+            if not cabinets and not sevenzip:
                 dest = tempfile.mkdtemp(dir=work)
                 tool = extract_archive(path, dest, sevenzip=depth == 0)
                 if tool:
                     groups.append((dest, [], {}, tool))
+    groups = [g if len(g) == 5 else g + ((sevenzip_dict_size(path) if g[3] == '7z' else 0),) for g in groups]
     if parent is not None and groups:
         parent.opened = groups[0][3]
-    for dest, prefix, names, tool in groups:
+    for dest, prefix, names, tool, dict_size in groups:
         for full, rel in _walk(dest):
-            node = Node(full, chain + prefix + [rel], names.get(rel, rel), parent, parent_ok and tool in readable)
+            hop = member_hop(rel, tool, dict_size)
+            node = Node(full, chain + prefix + [hop], names.get(rel, rel), parent, parent_ok and tool in readable)
             out.append(node)
             with open(full, 'rb') as f:
                 head = f.read(8)
@@ -1100,7 +1173,7 @@ def file_sha256(path):
     return digest.hexdigest()
 
 
-def download(url, sha256, cache):
+def download(url, sha256, cache, max_bytes=MAX_DOWNLOAD_BYTES):
     os.makedirs(cache, exist_ok=True)
     target = os.path.join(cache, sha256)
     if os.path.isfile(target) and file_sha256(target) == sha256:
@@ -1114,8 +1187,8 @@ def download(url, sha256, cache):
             if not block:
                 break
             total += len(block)
-            if total > MAX_DOWNLOAD_BYTES:
-                raise LayoutError('%s is larger than %d bytes' % (url, MAX_DOWNLOAD_BYTES))
+            if total > max_bytes:
+                raise LayoutError('%s is larger than %d bytes' % (url, max_bytes))
             out.write(block)
     actual = file_sha256(partial)
     if actual != sha256:
@@ -1138,6 +1211,10 @@ def choose_packages(nodes, patterns):
         return []
     depth = min(len(n.chain) for n in msis)
     top = [n for n in msis if len(n.chain) == depth]
+    folders = min(n.logical.count('/') for n in top)
+    shallow = [n for n in top if n.logical.count('/') == folders]
+    if any('full' in n.logical.lower() for n in shallow):
+        top = shallow
     lower = [n.logical.lower() for n in top]
     if any('full' in name for name in lower) and any('_core' in name or '_extended' in name for name in lower):
         top = [n for n in top if '_core' not in n.logical.lower() and '_extended' not in n.logical.lower()]
@@ -1158,8 +1235,10 @@ class LayoutBuilder:
         self.undecodable = 0
         self.missing = 0
 
-    def archive_id(self, installer, hops):
+    def archive_id(self, installer, hops, tool=None):
         entry = {'installer': installer, 'hops': hops}
+        if tool:
+            entry['tool'] = tool
         if entry not in self.archives:
             self.archives.append(entry)
         return self.archives.index(entry)
@@ -1181,6 +1260,7 @@ class LayoutBuilder:
         destinations = package.destinations()
         cabinets = {}
         missing = 0
+        setup_cache = 0
         placed = {}
         for row in msi.table('File'):
             key = row['File']
@@ -1199,13 +1279,19 @@ class LayoutBuilder:
                 self.undecodable += 1
                 continue
             if source is None or key not in source[1]:
-                missing += 1
+                if SETUP_CACHE.search(rel):
+                    setup_cache += 1
+                else:
+                    missing += 1
                 continue
             placed[key] = (source[0], source[1][key])
             self.add_file(source[0], key, rel, source[1][key])
         for key, rel in package.duplicates():
             if key in placed:
                 self.add_file(placed[key][0], key, rel, placed[key][1])
+        if setup_cache:
+            self.notes.append('%s: %d setup-cache file(s) that the setup chainer copies from its own payload are '
+                              'not laid out' % (node.logical, setup_cache))
         if missing:
             self.missing += missing
             self.notes.append('%s: %d file(s) are not in its cabinets' % (node.logical, missing))
@@ -1224,9 +1310,11 @@ class LayoutBuilder:
             ranges = msi.cf.ranges(stream)
             if ranges is None or data[:8] != CAB_MAGIC:
                 return None
-            if not libarchive_reads(data):
+            tool = cab_reader(data)
+            if tool is None:
                 return 'undecodable'
             hops = node.chain + [{'ranges': ranges, 'size': len(data)}]
+            tool = tool or None
         else:
             folder = posixpath.dirname(node.logical)
             wanted = (posixpath.join(folder, cabinet) if folder else cabinet).lower()
@@ -1242,7 +1330,21 @@ class LayoutBuilder:
             if not match[0].device or match[0].opened not in device_readers():
                 return 'undecodable'
             hops = match[0].chain
-        return self.archive_id(installer, hops), dict(cab_members(data))
+            tool = None if match[0].opened in LIBARCHIVE_READERS else DEVICE_TOOLS[match[0].opened]
+        return self.archive_id(installer, hops, tool), dict(cab_members(data))
+
+
+def cab_reader(data):
+    """None when no device reader opens the cabinet [data]; '' for libarchive; else the device tool."""
+    if libarchive_reads(data):
+        return ''
+    with tempfile.TemporaryDirectory() as work:
+        cab = os.path.join(work, 'x.cab')
+        with open(cab, 'wb') as f:
+            f.write(data)
+        if _tool('cabextract') and extract_archive(cab, os.path.join(work, 'out'), sevenzip=False) == 'cabextract':
+            return 'cabextract'
+    return None
 
 
 def libarchive_reads(data):
@@ -1278,13 +1380,15 @@ def build_layout(verb, spec, cache, keep=None):
             for node in packages:
                 builder.add_package(index, node, nodes)
     if builder.undecodable:
-        raise LayoutError('%d file(s) are in archives libarchive cannot unpack on the device '
-                          '(7z LZMA/BCJ2 with a large dictionary, or a cabinet libarchive rejects)' % builder.undecodable)
+        raise LayoutError('%d file(s) are in archives that neither libarchive nor cabextract/7z unpack'
+                          % builder.undecodable)
     if builder.missing:
         raise LayoutError('%d file(s) are not in the package cabinets; a partial layout is not shipped' % builder.missing)
     if not builder.files:
         raise LayoutError('the packages install no files here')
-    return {
+    used = sorted(set().union(*[hop_tools(a['hops']) | ({a['tool']} if a.get('tool') else set())
+                                 for a in builder.archives]))
+    layout = {
         'schema': LAYOUT_SCHEMA,
         'verb': verb,
         'installers': installers,
@@ -1294,10 +1398,22 @@ def build_layout(verb, spec, cache, keep=None):
         'unpackedBytes': builder.unpacked,
         'notes': builder.notes,
     }
+    if used:
+        layout['requiresTools'] = used
+    dict_size = max([hop_dict_size(a['hops']) for a in builder.archives] or [0])
+    if dict_size:
+        layout['dictSizeBytes'] = dict_size
+    return layout
 
 
 def dump(obj):
     return json.dumps(obj, indent=1, sort_keys=True, ensure_ascii=False) + '\n'
+
+
+NO_LAYOUT = {
+    'dotnet35': 'the .NET 2.0/3.0/3.5 runtimes are .exe/.msp chains, not MSI packages; only MSXML 6 would be laid out',
+    'dotnet35sp1': 'the .NET 2.0/3.0/3.5 runtimes are .exe/.msp chains, not MSI packages; only MSXML 6 would be laid out',
+}
 
 
 def offline_specs(verbs_doc):
@@ -1310,6 +1426,13 @@ def record_layouts(verbs_doc, out_dir):
         path = os.path.join(out_dir, '%s.layout.json' % name)
         if verb.get('class') == 'offline_installer' and os.path.isfile(path):
             verb['layout'] = {'path': 'verbs/%s.layout.json' % name, 'sha256': file_sha256(path)}
+            with open(path, encoding='utf-8') as f:
+                layout = json.load(f)
+            for key in ('requiresTools', 'dictSizeBytes'):
+                if layout.get(key):
+                    verb[key] = layout[key]
+                else:
+                    verb.pop(key, None)
 
 
 def main(argv=None):
@@ -1326,6 +1449,9 @@ def main(argv=None):
     failures = []
     for name, spec in offline_specs(verbs_doc).items():
         if a.only and name not in a.only:
+            continue
+        if name in NO_LAYOUT:
+            print('%s: %s' % (name, NO_LAYOUT[name]), file=sys.stderr)
             continue
         try:
             layout = build_layout(name, spec, a.cache)
