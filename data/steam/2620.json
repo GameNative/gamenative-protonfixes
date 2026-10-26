@@ -8,9 +8,6 @@
   "coverage": "full",
   "id": "2620",
   "name": "Call of Duty",
-  "notes": [
-    "upstream fix has no main()"
-  ],
   "schema": 1,
   "steps": [
     {
@@ -23,5 +20,5 @@
   ],
   "store": "steam",
   "upstream": "gamefixes-steam/2620.py",
-  "upstreamCommit": "5282529"
+  "upstreamCommit": "cd01354"
 }

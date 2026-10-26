@@ -1,7 +1,7 @@
 {
   "coverage": "full",
   "id": "umu-kanvaslauncher",
-  "name": "kanvaslauncher https://gitgud.io/playervalley/kanvaslauncherpublic",
+  "name": "Kanvas Launcher",
   "schema": 1,
   "steps": [
     {
@@ -13,7 +13,7 @@
       "op": "verb"
     },
     {
-      "name": "dotnetdesktop8",
+      "name": "dotnetdesktop10",
       "op": "verb"
     },
     {
@@ -32,5 +32,5 @@
   "store": "umu",
   "umuId": "umu-kanvaslauncher",
   "upstream": "gamefixes-umu/umu-kanvaslauncher.py",
-  "upstreamCommit": "f842871"
+  "upstreamCommit": "5c91db8"
 }

@@ -1,24 +1,25 @@
 # protonfixes import report
 
-- umu-protonfixes commit: `e89ce7b43800b0df4c37015239d64952fb42ed8b`
+- umu-protonfixes commit: `4500d09ff2af530afd400962f8fa5a40a888a7f3`
 - winetricks commit: `f3890f670867b5ffbc3938726db45c0f7d16c8ba`
-- upstream fix files: 468 (354 real files, 114 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
-- documents written: 468 (354 canonical, 114 aliases)
-- coverage: full 468, partial 0, none 0
-- coverage from the converter alone (before overrides): full 454, partial 4, none 10
+- upstream fix files: 474 (357 real files, 117 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
+- documents written: 475 (357 canonical, 118 aliases)
+- coverage: full 474, partial 1, none 0
+- coverage from the converter alone (before overrides): full 460, partial 5, none 10
 - hand-ported overrides: 13 files, 13 applied to 17 documents
-- full documents whose verbs are all supported too: 402
+- full documents whose verbs are all supported too: 407
 
 ## Documents per store
 
 | store | documents | canonical | aliases | full | partial | none |
 |---|---|---|---|---|---|---|
-| egs | 26 | 6 | 20 | 26 | 0 | 0 |
-| gog | 77 | 27 | 50 | 77 | 0 | 0 |
+| battlenet | 1 | 0 | 1 | 1 | 0 | 0 |
+| egs | 27 | 6 | 21 | 27 | 0 | 0 |
+| gog | 79 | 27 | 52 | 79 | 0 | 0 |
 | humble | 1 | 0 | 1 | 1 | 0 | 0 |
-| steam | 313 | 294 | 19 | 313 | 0 | 0 |
+| steam | 312 | 293 | 19 | 311 | 1 | 0 |
 | ubisoft | 7 | 0 | 7 | 7 | 0 | 0 |
-| umu | 37 | 25 | 12 | 37 | 0 | 0 |
+| umu | 41 | 29 | 12 | 41 | 0 | 0 |
 | zoomplatform | 7 | 2 | 5 | 7 | 0 | 0 |
 
 ## Unsupported step reasons (canonical documents)
@@ -26,11 +27,13 @@
 | count | reason |
 |---|---|
 | 1 | pins the game to the Intel P-cores (taskset) from the host CPU topology |
+| 1 | subscript of Module |
 
 ## Partial and none documents
 
 | document | coverage | name | reasons |
 |---|---|---|---|
+| steam/23460 | partial | Ceville | subscript of Module |
 
 ## Hand-ported overrides (`tools/protonfixes/overrides/`)
 
@@ -97,8 +100,8 @@
 | dotnet9 | no | runs an installer under Wine: dotnet-runtime-9.0.14-win-x86.exe /quiet |
 | dotnetcore3 | yes | runs an installer under Wine: dotnet-runtime-3.1.10-win-x86.exe /quiet |
 | dotnetdesktop10 | yes | runs an installer under Wine: windowsdesktop-runtime-10.0.0-win-x86.exe /quiet |
-| dotnetdesktop6 | no | runs an installer under Wine: windowsdesktop-runtime-6.0.36-win-x86.exe /quiet |
-| dotnetdesktop8 | yes | runs an installer under Wine: windowsdesktop-runtime-8.0.12-win-x86.exe /quiet |
+| dotnetdesktop6 | yes | runs an installer under Wine: windowsdesktop-runtime-6.0.36-win-x86.exe /quiet |
+| dotnetdesktop8 | no | runs an installer under Wine: windowsdesktop-runtime-8.0.12-win-x86.exe /quiet |
 | dotnetdesktop9 | yes | runs an installer under Wine: windowsdesktop-runtime-9.0.7-win-x86.exe /quiet |
 | eossdk | yes | the EOS SDK archive is 580 MB and its installer only adds the Epic overlay service |
 | gui | yes | opens the interactive winetricks GUI |
@@ -165,8 +168,8 @@
 | dotnet9 | no | yes | cabextract | - |
 | dotnetcore3 | yes | yes | cabextract | - |
 | dotnetdesktop10 | yes | yes | cabextract | - |
-| dotnetdesktop6 | no | yes | cabextract | - |
-| dotnetdesktop8 | yes | yes | cabextract | - |
+| dotnetdesktop6 | yes | yes | cabextract | - |
+| dotnetdesktop8 | no | yes | cabextract | - |
 | dotnetdesktop9 | yes | yes | cabextract | - |
 | msxml4 | no | yes | - | - |
 | vcrun2005 | no | yes | - | - |
@@ -197,6 +200,7 @@
 ## Non-Steam fixes without a store id in umu-database (umu id used as id)
 
 - gamefixes-zoomplatform/umu-12810.py
+- gamefixes-battlenet/umu-292030.py
 - gamefixes-egs/umu-50620.py
 - gamefixes-gog/umu-50620.py
 - gamefixes-gog/umu-955050.py

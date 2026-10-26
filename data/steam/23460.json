@@ -1,5 +1,5 @@
 {
-  "coverage": "full",
+  "coverage": "partial",
   "id": "23460",
   "name": "Ceville",
   "schema": 1,
@@ -12,17 +12,22 @@
       }
     },
     {
+      "op": "env",
+      "set": {
+        "PROTON_USE_XALIA": "0"
+      }
+    },
+    {
       "name": "dotnet35sp1",
       "op": "verb"
     },
     {
-      "op": "env",
-      "set": {
-        "PROTON_USE_XALIA": "1"
-      }
+      "op": "unsupported",
+      "reason": "subscript of Module",
+      "source": "util.set_environment('PROTON_USE_XALIA', use_xalia)"
     }
   ],
   "store": "steam",
   "upstream": "gamefixes-steam/23460.py",
-  "upstreamCommit": "e89ce7b"
+  "upstreamCommit": "5a28783"
 }

@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "id": "292030",
+    "store": "steam"
+  },
+  "coverage": "full",
+  "id": "umu-292030",
+  "name": "The Witcher 3: Wild Hunt — Remastered",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    }
+  ],
+  "store": "battlenet",
+  "umuId": "umu-292030",
+  "upstream": "gamefixes-battlenet/umu-292030.py",
+  "upstreamCommit": "7686472"
+}

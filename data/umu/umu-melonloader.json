@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "umu-melonloader",
+  "name": "MelonLoader https://melonwiki.xyz/#/?id=requirements",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "dotnetdesktop6",
+      "op": "verb"
+    },
+    {
+      "op": "dll_override",
+      "overrides": {
+        "version": "n,b"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-melonloader",
+  "upstream": "gamefixes-umu/umu-melonloader.py",
+  "upstreamCommit": "442791f"
+}

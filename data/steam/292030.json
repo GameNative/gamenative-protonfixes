@@ -1,7 +1,25 @@
 {
+  "aliases": [
+    {
+      "id": "umu-292030",
+      "store": "battlenet"
+    },
+    {
+      "id": "725a22e15ed74735bb0d6a19f3cc82d0",
+      "store": "egs"
+    },
+    {
+      "id": "1207664643",
+      "store": "gog"
+    },
+    {
+      "id": "1495134320",
+      "store": "gog"
+    }
+  ],
   "coverage": "full",
   "id": "292030",
-  "name": "The Witcher 3: Wild Hunt",
+  "name": "The Witcher 3: Wild Hunt — Remastered",
   "schema": 1,
   "steps": [
     {

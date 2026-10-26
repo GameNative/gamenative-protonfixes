@@ -5,11 +5,59 @@
   "schema": 1,
   "steps": [
     {
+      "op": "env",
+      "phase": "early",
+      "set": {
+        "PROTON_DLL_COPY": "*"
+      }
+    },
+    {
+      "action": "symlink",
+      "from": "security.dll",
+      "op": "file",
+      "to": "${drive_c}/windows/system32/cryptbase.dll",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/system32/cryptbase.dll"
+        }
+      ]
+    },
+    {
+      "action": "symlink",
+      "from": "security.dll",
+      "op": "file",
+      "to": "${drive_c}/windows/system32/devobj.dll",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/system32/devobj.dll"
+        }
+      ]
+    },
+    {
+      "action": "symlink",
+      "from": "security.dll",
+      "op": "file",
+      "to": "${drive_c}/windows/system32/drvstore.dll",
+      "when": [
+        {
+          "fileMissing": "${drive_c}/windows/system32/drvstore.dll"
+        }
+      ]
+    },
+    {
       "name": "powershell",
       "op": "verb"
     },
     {
       "name": "vcrun2022",
+      "op": "verb"
+    },
+    {
+      "name": "dotnet48",
+      "op": "verb"
+    },
+    {
+      "name": "win10",
       "op": "verb"
     },
     {
@@ -23,5 +71,5 @@
   "store": "umu",
   "umuId": "umu-starcitizen",
   "upstream": "gamefixes-umu/umu-starcitizen.py",
-  "upstreamCommit": "77147fd"
+  "upstreamCommit": "dfac336"
 }

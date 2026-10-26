@@ -22,6 +22,12 @@
     }
   },
   "entries": {
+    "battlenet/umu-292030": {
+      "coverage": "full",
+      "file": "battlenet/umu-292030.json",
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "sha256": "382167f8215e41f05469d6f34c579c10941c26711af7b9130c55bf1709a7bc02"
+    },
     "egs/0b9d1072cd674b8b91c8e25e9d695ed9": {
       "coverage": "full",
       "file": "egs/0b9d1072cd674b8b91c8e25e9d695ed9.json",
@@ -75,6 +81,12 @@
       "file": "egs/68c214c58f694ae88c2dab6f209b43e4.json",
       "name": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
       "sha256": "bdb1ba6c1ed1ca985861c1d1ed6eaf3b5bd1cf1f0157d20badf8ba17347c790a"
+    },
+    "egs/725a22e15ed74735bb0d6a19f3cc82d0": {
+      "coverage": "full",
+      "file": "egs/725a22e15ed74735bb0d6a19f3cc82d0.json",
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "sha256": "0dce4e328b3dd15e216022fc7f1671030a6420eb9455153638392c65beb83da6"
     },
     "egs/7580986b33344aeb8fd733caa7457a72": {
       "coverage": "full",
@@ -346,6 +358,12 @@
       "name": "Chronology",
       "sha256": "ce39dd54cf1c7fa3f1978e9a41a26db37fbee80b7fed8ff5338a84321f20cf03"
     },
+    "gog/1207664643": {
+      "coverage": "full",
+      "file": "gog/1207664643.json",
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "sha256": "d6f85cea3c950df8700442f1bafd465df93e7674512371e784fdef8c54fbf833"
+    },
     "gog/1209025141": {
       "coverage": "full",
       "file": "gog/1209025141.json",
@@ -459,6 +477,12 @@
       "file": "gog/1482265668.json",
       "name": "BioShock 2 Remastered",
       "sha256": "94dca56223bd80831d9fa78630e65b0f21e707368a840d2ecd38f17708374c7a"
+    },
+    "gog/1495134320": {
+      "coverage": "full",
+      "file": "gog/1495134320.json",
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "sha256": "43ec01d01f630a320465c83314d7bc13305af69495618b98058334b08564fb3c"
     },
     "gog/1564851593": {
       "coverage": "full",
@@ -1337,10 +1361,10 @@
       "sha256": "f228f7e2aa58c1736f28749b66bd33a5850d928b8f5d7150b6f334630f3a8935"
     },
     "steam/23460": {
-      "coverage": "full",
+      "coverage": "partial",
       "file": "steam/23460.json",
       "name": "Ceville",
-      "sha256": "52b8de3953761015846f37e7da805c7a58d59e73bc9b5981bed663c5d0772fcc"
+      "sha256": "a780440dd564734924ab017e9afaf660a46367fc111d0ed85b38ffa3375e3da3"
     },
     "steam/240600": {
       "coverage": "full",
@@ -1407,12 +1431,6 @@
       "file": "steam/2475980.json",
       "name": "Gobliiins 5 (and Demo - 2505910)",
       "sha256": "6ac43da52a6eb7dde13ccc95d4adfd52584aed10f9443a648d073f48c10b2006"
-    },
-    "steam/2479810": {
-      "coverage": "full",
-      "file": "steam/2479810.json",
-      "name": "Gray Zone Warfare",
-      "sha256": "b2adc7d2ea038206d2410d1a3dd68bc9cde8fa384c550d644c13b96462f48e80"
     },
     "steam/2505910": {
       "coverage": "full",
@@ -1496,7 +1514,7 @@
       "coverage": "full",
       "file": "steam/2620.json",
       "name": "Call of Duty",
-      "sha256": "6cf755b2bf22f763fb463369b5b9c9729638a6a795286fe87f02f5a384719413"
+      "sha256": "b87ead97d971376af52ac16ec76aa7e1c475df619ee4eb38e55b428f623ee84e"
     },
     "steam/2623190": {
       "coverage": "full",
@@ -1609,8 +1627,8 @@
     "steam/292030": {
       "coverage": "full",
       "file": "steam/292030.json",
-      "name": "The Witcher 3: Wild Hunt",
-      "sha256": "713e5b69c7e400161b4d438cfe6427ef20bb50d07d1c35781d4717d7908672ef"
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "sha256": "2cb3ff04b45b774b8c42d60d02dcb2f4419e602cb54d4b1b0edf54387b0ae42f"
     },
     "steam/292820": {
       "coverage": "full",
@@ -2594,7 +2612,7 @@
       "coverage": "full",
       "file": "umu/umu-2620.json",
       "name": "Call of Duty",
-      "sha256": "53581f579ec367de6c7f38de1e668b403761192ec3f945e31286b165e64d881c"
+      "sha256": "e78532751ada217b8fc7b90844721500ac32cda9f099c19a726fadad5df959f1"
     },
     "umu/umu-271590": {
       "coverage": "full",
@@ -2656,6 +2674,12 @@
       "name": "Artificial Academy 2",
       "sha256": "8231a3f8a26ec223e453affbd01a00f5e41b98fa2c5e69f321b85372da43ef61"
     },
+    "umu/umu-bepinex": {
+      "coverage": "full",
+      "file": "umu/umu-bepinex.json",
+      "name": "BepInEx https://docs.bepinex.dev/articles/advanced/proton_wine.html",
+      "sha256": "13ebada57aa869fadc14ee972870b07166c1206fd99778594ca67f1b65ddda45"
+    },
     "umu/umu-cxbxreloaded": {
       "coverage": "full",
       "file": "umu/umu-cxbxreloaded.json",
@@ -2673,6 +2697,12 @@
       "file": "umu/umu-endfield.json",
       "name": "Arknights: Endfield",
       "sha256": "cce1f7f1e6c1881eff320ce3beb71dded0ee0bfa7bb5c20820150c5ed0ea5a7c"
+    },
+    "umu/umu-frostymodmanager": {
+      "coverage": "full",
+      "file": "umu/umu-frostymodmanager.json",
+      "name": "FrostyModManager linux fork https://github.com/maniman303/FrostyToolsuite",
+      "sha256": "238d00655259b46abd37301ef6c809a2abe11bf6210c732c56efd1a95c5f4931"
     },
     "umu/umu-genshin": {
       "coverage": "full",
@@ -2701,14 +2731,20 @@
     "umu/umu-kanvaslauncher": {
       "coverage": "full",
       "file": "umu/umu-kanvaslauncher.json",
-      "name": "kanvaslauncher https://gitgud.io/playervalley/kanvaslauncherpublic",
-      "sha256": "e187d70c9902e830e757869591f4ba304f3717631ed6caeb7aed763555e01909"
+      "name": "Kanvas Launcher",
+      "sha256": "09615a0642377382d1f16757b203f7bde5d0549728ae870a708d481b7d6d129f"
     },
     "umu/umu-limelightlj": {
       "coverage": "full",
       "file": "umu/umu-limelightlj.json",
       "name": "LimeLight Lemonade Jam",
       "sha256": "eda96dd87eb55013f3a9d79a2a794a00feb6166447b544e8afbca96043b7ac06"
+    },
+    "umu/umu-melonloader": {
+      "coverage": "full",
+      "file": "umu/umu-melonloader.json",
+      "name": "MelonLoader https://melonwiki.xyz/#/?id=requirements",
+      "sha256": "6d6e94409f3ed07a8ce327af93f668a6403f0205e3e95798b49ff489cf1a4145"
     },
     "umu/umu-model2": {
       "coverage": "full",
@@ -2756,13 +2792,19 @@
       "coverage": "full",
       "file": "umu/umu-starcitizen.json",
       "name": "Star Citizen",
-      "sha256": "cc21c20b26fc8fc62e1625b165330e3f6abd1507f0a90d4339e8f7f3d1fd5764"
+      "sha256": "c7ee9ffbaf2be93c804a5675f5b9ac92834f71b1fea792ab968c1fa3c3dc68f3"
     },
     "umu/umu-tenshisz": {
       "coverage": "full",
       "file": "umu/umu-tenshisz.json",
       "name": "Angelic☆Chaos RE-BOOT!",
       "sha256": "478a627a3c68ba7fc1c2d90cca66955117caed59657f68d1cfa87ec7eb6d3f8b"
+    },
+    "umu/umu-ultimaonline": {
+      "coverage": "full",
+      "file": "umu/umu-ultimaonline.json",
+      "name": "Ultima Online",
+      "sha256": "96b0372441181d3a73493f331e32bd66982fb767c920049589d1c3c4b6f68e4e"
     },
     "umu/umu-zenlesszonezero": {
       "coverage": "full",
@@ -2831,9 +2873,9 @@
       "sha256": "7cf296a6a4a322246ecde0dd6dda43fcd7e42f1c6cbd68d1566579adcc6e18c2"
     }
   },
-  "generatedAt": "2026-10-11T12:08:26Z",
+  "generatedAt": "2026-10-26T10:14:45Z",
   "schema": 1,
-  "upstreamCommit": "e89ce7b43800b0df4c37015239d64952fb42ed8b",
-  "upstreamDate": "2026-10-11T03:03:38-06:00",
+  "upstreamCommit": "4500d09ff2af530afd400962f8fa5a40a888a7f3",
+  "upstreamDate": "2026-10-24T22:17:47-06:00",
   "winetricksCommit": "f3890f670867b5ffbc3938726db45c0f7d16c8ba"
 }

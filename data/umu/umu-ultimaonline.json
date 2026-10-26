@@ -1,0 +1,16 @@
+{
+  "coverage": "full",
+  "id": "umu-ultimaonline",
+  "name": "Ultima Online",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "webview2",
+      "op": "verb"
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-ultimaonline",
+  "upstream": "gamefixes-umu/umu-ultimaonline.py",
+  "upstreamCommit": "9643359"
+}

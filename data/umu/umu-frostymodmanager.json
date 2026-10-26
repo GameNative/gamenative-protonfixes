@@ -1,0 +1,19 @@
+{
+  "coverage": "full",
+  "id": "umu-frostymodmanager",
+  "name": "FrostyModManager linux fork https://github.com/maniman303/FrostyToolsuite",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "dinput8": "n,b",
+        "winmm": "n,b"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-frostymodmanager",
+  "upstream": "gamefixes-umu/umu-frostymodmanager.py",
+  "upstreamCommit": "fe9b84e"
+}
