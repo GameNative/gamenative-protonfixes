@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    {
+      "id": "umu-1041720",
+      "store": "umu"
+    }
+  ],
+  "coverage": "full",
+  "id": "1041720",
+  "name": "Kingdoms of Amalur: Re-Reckoning",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "d3dcompiler_43",
+      "op": "verb"
+    },
+    {
+      "name": "d3dcompiler_47",
+      "op": "verb"
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/1041720.py",
+  "upstreamCommit": "28a02c2"
+}

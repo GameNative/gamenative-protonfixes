@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "2399420",
+  "name": "Le Mans Ultimate",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "d3dx11_43": "b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/2399420.py",
+  "upstreamCommit": "9466f1e"
+}

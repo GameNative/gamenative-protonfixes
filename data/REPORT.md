@@ -1,13 +1,13 @@
 # protonfixes import report
 
-- umu-protonfixes commit: `4500d09ff2af530afd400962f8fa5a40a888a7f3`
+- umu-protonfixes commit: `9466f1e638d4a66fe5415c1d903979490ad687c8`
 - winetricks commit: `f3890f670867b5ffbc3938726db45c0f7d16c8ba`
-- upstream fix files: 474 (357 real files, 117 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
-- documents written: 475 (357 canonical, 118 aliases)
-- coverage: full 474, partial 1, none 0
-- coverage from the converter alone (before overrides): full 460, partial 5, none 10
+- upstream fix files: 477 (359 real files, 118 symlinks; `__init__.py` is not imported; each `default.py` becomes `<store>/default.json`)
+- documents written: 478 (359 canonical, 119 aliases)
+- coverage: full 477, partial 1, none 0
+- coverage from the converter alone (before overrides): full 463, partial 5, none 10
 - hand-ported overrides: 13 files, 13 applied to 17 documents
-- full documents whose verbs are all supported too: 407
+- full documents whose verbs are all supported too: 410
 
 ## Documents per store
 
@@ -17,9 +17,9 @@
 | egs | 27 | 6 | 21 | 27 | 0 | 0 |
 | gog | 79 | 27 | 52 | 79 | 0 | 0 |
 | humble | 1 | 0 | 1 | 1 | 0 | 0 |
-| steam | 312 | 293 | 19 | 311 | 1 | 0 |
+| steam | 314 | 295 | 19 | 313 | 1 | 0 |
 | ubisoft | 7 | 0 | 7 | 7 | 0 | 0 |
-| umu | 41 | 29 | 12 | 41 | 0 | 0 |
+| umu | 42 | 29 | 13 | 42 | 0 | 0 |
 | zoomplatform | 7 | 2 | 5 | 7 | 0 | 0 |
 
 ## Unsupported step reasons (canonical documents)

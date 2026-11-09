@@ -688,6 +688,12 @@
       "name": "Mafia II: Definitive Edition",
       "sha256": "2a3992a33c2586b59c6a8fd69e6a9afbe8b23801ee99f21db142d783ecca3deb"
     },
+    "steam/1041720": {
+      "coverage": "full",
+      "file": "steam/1041720.json",
+      "name": "Kingdoms of Amalur: Re-Reckoning",
+      "sha256": "84b5727b27973d10ca0f8e2f1d925626d5f15dfbd222b7746d8b819fa7c2f1dd"
+    },
     "steam/105400": {
       "coverage": "full",
       "file": "steam/105400.json",
@@ -1365,6 +1371,12 @@
       "file": "steam/23460.json",
       "name": "Ceville",
       "sha256": "a780440dd564734924ab017e9afaf660a46367fc111d0ed85b38ffa3375e3da3"
+    },
+    "steam/2399420": {
+      "coverage": "full",
+      "file": "steam/2399420.json",
+      "name": "Le Mans Ultimate",
+      "sha256": "c8c492aae9acd9060d9bc79269c69503aeb6141a93178b6219057fdb3afc1ffe"
     },
     "steam/240600": {
       "coverage": "full",
@@ -2584,6 +2596,12 @@
       "name": "Far Cry 4",
       "sha256": "a48c3d071898f01b8521faa5e3472a65cd075ca9feeab634ea1a7552abc2d904"
     },
+    "umu/umu-1041720": {
+      "coverage": "full",
+      "file": "umu/umu-1041720.json",
+      "name": "Kingdoms of Amalur: Re-Reckoning",
+      "sha256": "c9b269bff3d22f339d6714111af8d137db456951a0131b97c1655d1361934f8c"
+    },
     "umu/umu-1144400": {
       "coverage": "full",
       "file": "umu/umu-1144400.json",
@@ -2873,9 +2891,9 @@
       "sha256": "7cf296a6a4a322246ecde0dd6dda43fcd7e42f1c6cbd68d1566579adcc6e18c2"
     }
   },
-  "generatedAt": "2026-10-26T10:14:45Z",
+  "generatedAt": "2026-11-09T12:59:32Z",
   "schema": 1,
-  "upstreamCommit": "4500d09ff2af530afd400962f8fa5a40a888a7f3",
-  "upstreamDate": "2026-10-24T22:17:47-06:00",
+  "upstreamCommit": "9466f1e638d4a66fe5415c1d903979490ad687c8",
+  "upstreamDate": "2026-11-06T15:18:41-07:00",
   "winetricksCommit": "f3890f670867b5ffbc3938726db45c0f7d16c8ba"
 }
