@@ -1,0 +1,22 @@
+{
+  "coverage": "full",
+  "id": "umu-elonaplus-zh-hans",
+  "name": "ElonaPlus(zh_Hans)",
+  "schema": 1,
+  "steps": [
+    {
+      "name": "hidewineexports=enable",
+      "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "LANG": "zh_CN.UTF-8"
+      }
+    }
+  ],
+  "store": "umu",
+  "umuId": "umu-elonaplus-zh-hans",
+  "upstream": "gamefixes-umu/umu-elonaplus-zh-hans.py",
+  "upstreamCommit": "7d5adf8"
+}

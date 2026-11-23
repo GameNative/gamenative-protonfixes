@@ -1,0 +1,17 @@
+{
+  "coverage": "full",
+  "id": "223710",
+  "name": "Cry of Fear",
+  "schema": 1,
+  "steps": [
+    {
+      "op": "dll_override",
+      "overrides": {
+        "opengl32": "n,b"
+      }
+    }
+  ],
+  "store": "steam",
+  "upstream": "gamefixes-steam/223710.py",
+  "upstreamCommit": "5bec617"
+}

@@ -1120,6 +1120,12 @@
       "name": "Serious Sam: The Random Encounter",
       "sha256": "d1af20d8b1f3a772d7f6abcd1ec4f43ba1205137ff51c1671dc7cfeb65f60aa1"
     },
+    "steam/201810": {
+      "coverage": "full",
+      "file": "steam/201810.json",
+      "name": "Wolfenstein: The New Order",
+      "sha256": "5176e8409dcf4f2147bfac0a41ac4eaf06f9bea921643ef8be97c5ca8beb7d96"
+    },
     "steam/205650": {
       "coverage": "full",
       "file": "steam/205650.json",
@@ -1281,6 +1287,12 @@
       "file": "steam/22370.json",
       "name": "Fallout 3: Game of the Year Edition",
       "sha256": "e973857a2e631e97edefdef55667649e3d9947462793fec482c8181fa7091258"
+    },
+    "steam/223710": {
+      "coverage": "full",
+      "file": "steam/223710.json",
+      "name": "Cry of Fear",
+      "sha256": "2a329c232b0e3a6f96a8d1c2887c843e4b140867eff12638e79f4abe50e8fb4a"
     },
     "steam/223750": {
       "coverage": "full",
@@ -1786,6 +1798,12 @@
       "name": "Mini Ninjas",
       "sha256": "827d145b56dcf37509ebede797211a8625e9d5f15805a58815abb668b9654682"
     },
+    "steam/350080": {
+      "coverage": "full",
+      "file": "steam/350080.json",
+      "name": "Wolfenstein: The Old Blood",
+      "sha256": "7d2ee5333d636c769b314eeb9948237c2b1acb2100932d24d3f91c5a7164b186"
+    },
     "steam/3513350": {
       "coverage": "full",
       "file": "steam/3513350.json",
@@ -1991,10 +2009,10 @@
       "sha256": "f6bca5e956ca1150a8df103324937a117a69563988433c4dab3396d390b07d6e"
     },
     "steam/40970": {
-      "coverage": "full",
+      "coverage": "partial",
       "file": "steam/40970.json",
       "name": "Stronghold Crusader HD",
-      "sha256": "9f23d155a2ff013a6974ceeabff466ad1e2e7d5ea055340678aa664b91cc5d1c"
+      "sha256": "dd4eed1d5a9e5c0cbef0eafa755d69bfd555d942a2a29e3611309558798cd326"
     },
     "steam/409710": {
       "coverage": "full",
@@ -2043,6 +2061,12 @@
       "file": "steam/43110.json",
       "name": "Metro 2033",
       "sha256": "f8c59267c0f6938f89e68e6631b5c67f26eda1fdaa8ef2b7bae4ef96800ee284"
+    },
+    "steam/431930": {
+      "coverage": "full",
+      "file": "steam/431930.json",
+      "name": "Kabounce",
+      "sha256": "4e09752e7da1dc263ccd6f72526827cff359097979b8b44f004b5b662d3f67c9"
     },
     "steam/436670": {
       "coverage": "full",
@@ -2710,6 +2734,12 @@
       "name": "Dark Earth",
       "sha256": "2cec7599496cc0566c9166ed419f69bb18b7dced4ee72e903f4ca3189c209de1"
     },
+    "umu/umu-elonaplus-zh-hans": {
+      "coverage": "full",
+      "file": "umu/umu-elonaplus-zh-hans.json",
+      "name": "ElonaPlus(zh_Hans)",
+      "sha256": "8d4f67cc4cb3a324f04e486a360db1c3037d15d6959b5a3d4ee3be5d32d8d41b"
+    },
     "umu/umu-endfield": {
       "coverage": "full",
       "file": "umu/umu-endfield.json",
@@ -2891,9 +2921,9 @@
       "sha256": "7cf296a6a4a322246ecde0dd6dda43fcd7e42f1c6cbd68d1566579adcc6e18c2"
     }
   },
-  "generatedAt": "2026-11-09T12:59:32Z",
+  "generatedAt": "2026-11-23T14:51:38Z",
   "schema": 1,
-  "upstreamCommit": "9466f1e638d4a66fe5415c1d903979490ad687c8",
-  "upstreamDate": "2026-11-06T15:18:41-07:00",
+  "upstreamCommit": "4e4f13bc11cee73d0a340a5893a71d6c24f82afe",
+  "upstreamDate": "2026-11-21T00:59:39-05:00",
   "winetricksCommit": "f3890f670867b5ffbc3938726db45c0f7d16c8ba"
 }

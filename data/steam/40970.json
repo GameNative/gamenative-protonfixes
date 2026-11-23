@@ -1,5 +1,5 @@
 {
-  "coverage": "full",
+  "coverage": "partial",
   "id": "40970",
   "name": "Stronghold Crusader HD",
   "schema": 1,
@@ -7,9 +7,30 @@
     {
       "name": "directplay",
       "op": "verb"
+    },
+    {
+      "op": "env",
+      "set": {
+        "WINE_DDRAW_MAXGAMETICKS": "60"
+      },
+      "when": [
+        {
+          "envMissing": "WINE_DDRAW_MAXGAMETICKS"
+        }
+      ]
+    },
+    {
+      "op": "unsupported",
+      "reason": "calls os.listdir()",
+      "source": "for card in sorted(os.listdir(drm_path)):\n    status = os.path.join(drm_path, card, 'status')\n    modes = os.path.join(drm_path, card, 'modes')\n    if not (os.path.isfile(status) and os.path.isfile(modes)):\n        continue\n    with open(status, encoding='utf-8') as file:\n        if file.read().strip() != 'connected':\n            continue\n    with open(modes, encoding='utf-8') as file:\n        match = re.match(r'(\\d+)x(\\d+)', file.readline().strip())\n    if match:\n        return int(match.group(2))",
+      "when": [
+        {
+          "envMissing": "WINE_CURSOR_SCALE"
+        }
+      ]
     }
   ],
   "store": "steam",
   "upstream": "gamefixes-steam/40970.py",
-  "upstreamCommit": "490f513"
+  "upstreamCommit": "5e9b170"
 }
